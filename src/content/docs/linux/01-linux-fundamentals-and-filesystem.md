@@ -10,7 +10,7 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/01-linux-fundamentals-and-filesystem
 ---
-> **You are in the Foundations track — Everything in this notebook — every hack, every defense, every tool — runs on Linux or talks to something that does. This chapter builds the mental model the entire series sits on. Skip nothing.
+> **You are in the Foundations track.** Everything in this notebook — every hack, every defense, every tool — runs on Linux or talks to something that does. This chapter builds the mental model the entire series sits on. Skip nothing.
 
 ---
 

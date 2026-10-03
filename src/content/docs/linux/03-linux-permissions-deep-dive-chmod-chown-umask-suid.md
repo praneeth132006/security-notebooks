@@ -14,7 +14,7 @@ head:
 
 ## Who This Is For, and Why Permissions Matter
 
-Part of the Foundations track in Praneeth's free cybersecurity notebook, this chapter teaches Linux permissions — arguably the single most exploited misconfiguration category in real-world penetration testing. If you've ever seen a walkthrough end with "we found a SUID binary and got root in two commands," this chapter is where that skill comes from.
+This chapter teaches Linux permissions — arguably the single most exploited misconfiguration category in real-world penetration testing. If you've ever seen a walkthrough end with "we found a SUID binary and got root in two commands," this chapter is where that skill comes from.
 
 Every file and directory on a Linux system carries a permission model that decides who can read it, write it, or execute it. Get this model wrong — even slightly — and you've opened a door. A world-writable configuration file, a misconfigured SUID binary, an overly generous `sudoers` entry, a `chmod 777` slapped on a directory to "just make it work" — these are not hypothetical. They show up constantly in HackTheBox boxes, TryHackMe rooms, real bug bounty reports, and real breach postmortems.
 

@@ -4,8 +4,10 @@
 :root {
 	--sl-font: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
 	--sl-font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;
-	--sl-content-width: 46rem;
-	--sl-sidebar-width: 19rem;
+	/* Both side panels share this width, so keeping it narrow is what
+	   gives the reading column its room. */
+	--sl-content-width: 54rem;
+	--sl-sidebar-width: 16.5rem;
 	--sl-line-height: 1.75;
 
 	--sl-color-accent-low: #1e1b4b;
@@ -121,4 +123,49 @@ header.header {
 }
 .hero h1 {
 	letter-spacing: -0.03em;
+}
+
+/* Footer: edit links and last-updated are off, so drop their empty row and
+   the gap it leaves above the previous/next links. */
+footer.sl-flex > .meta {
+	display: none;
+}
+footer.sl-flex {
+	margin-top: 2.5rem;
+}
+
+/* Previous/next: compact cards with the label above a two-line title. */
+.pagination-links {
+	gap: 0.75rem;
+}
+.pagination-links a {
+	padding: 0.85rem 1rem;
+	gap: 0.75rem;
+	box-shadow: none;
+	border-color: var(--sl-color-gray-5);
+	border-radius: 0.6rem;
+	font-size: var(--sl-text-xs);
+	color: var(--sl-color-gray-3);
+	transition: border-color 0.15s, background-color 0.15s;
+}
+.pagination-links a:hover {
+	border-color: var(--sl-color-accent);
+	background: var(--sl-color-gray-6);
+}
+.pagination-links .link-title {
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	margin-top: 0.15rem;
+	font-size: var(--sl-text-sm);
+	font-weight: 500;
+	line-height: 1.4;
+}
+.pagination-links svg {
+	color: var(--sl-color-gray-3);
+	font-size: 1.1rem;
+}
+.pagination-links a:hover svg {
+	color: var(--sl-color-text-accent);
 }

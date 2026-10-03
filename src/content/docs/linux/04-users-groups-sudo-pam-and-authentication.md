@@ -14,7 +14,7 @@ head:
 
 ## Who This Is For, and Why Identity Matters
 
-Part of the Foundations track in Praneeth's free cybersecurity notebook, this chapter covers Linux's user and authentication model: how accounts are represented, how `sudo` grants (and is abused to grant) elevated privileges, and how the Pluggable Authentication Modules (PAM) system decides what "prove you're you" actually means on a given machine.
+This chapter covers Linux's user and authentication model: how accounts are represented, how `sudo` grants (and is abused to grant) elevated privileges, and how the Pluggable Authentication Modules (PAM) system decides what "prove you're you" actually means on a given machine.
 
 Every permission chapter concept — owner, group, other — is meaningless without a system that reliably identifies *who* a process is running as. That identity system is the target of an enormous share of real attacks: credential stuffing, `sudoers` misconfiguration, PAM backdoors, password hash cracking, and privilege escalation via group membership all live in this chapter's territory. If permissions are the locks, this chapter is the keyring — and the office that decides who gets a key.
 
