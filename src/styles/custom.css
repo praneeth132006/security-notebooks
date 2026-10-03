@@ -1,0 +1,11 @@
+/* Accent matches the portfolio's lime. */
+:root {
+	--sl-color-accent-low: #2a3510;
+	--sl-color-accent: #9fd12a;
+	--sl-color-accent-high: #e4ffb0;
+}
+:root[data-theme='light'] {
+	--sl-color-accent-low: #ecf8cf;
+	--sl-color-accent: #4f6b0c;
+	--sl-color-accent-high: #2c3c06;
+}
