@@ -1,9 +1,8 @@
 ---
 title: Forensics & Steganography CTF Challenges
-description: A Intermediate-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Intermediate-level Career chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Forensics & Steganography CTF Challenges
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ctf-wargames/04-forensics-and-steganography-ctf-challenges
 ---
-**Level:** Intermediate · **Track:** Career · **Read time:** 245 min
-
 Forensics is the category that most rewards patience and most punishes guessing. You are handed a large artifact — a disk image, a packet capture, a memory dump, a photograph — and told that a flag is hidden inside it somewhere. There is no clever insight that cracks it in one move; there is a *routine*, applied methodically, that surfaces the signal. The players who are good at forensics are not the ones with the deepest knowledge of any single format. They are the ones who run the same enumeration every time, notice the one thing that is out of place, and follow it.
 
 That is why this chapter is structured around *procedures* rather than tricks. The single most valuable thing in it is Part 2's first-five-minutes routine — `file`, `strings`, `exiftool`, `binwalk`, `xxd` — which you run on every artifact before forming any theory, and which ends a large fraction of forensics challenges on its own. Everything after that is what you do when the routine does not immediately win: the format-specific techniques for images, audio, network captures, disks, and memory.
@@ -558,7 +555,3 @@ pdfid f.pdf ; pdf-parser f.pdf      # pdf objects/JS
 - Notebook 33 (DFIR) for the professional-grade versions of disk and memory forensics, and Notebook 35 (malware analysis) for the document-macro and reversing crossover.
 - The SANS DFIR posters and cheat sheets — dense, authoritative references for Volatility, Wireshark, and file systems.
 - Didier Stevens' PDF and Office tools documentation, for document forensics done properly.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ctf-wargames/04-forensics-and-steganography-ctf-challenges), with comments and the latest edits.*

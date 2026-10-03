@@ -1,11 +1,8 @@
 ---
 title: Microsoft Sentinel & KQL for SOC Analysts
-description: >-
-  A Intermediate-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · Microsoft Sentinel & KQL for SOC Analysts
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/05-microsoft-sentinel-and-kql-for-soc-analysts
 ---
-**Level:** Intermediate · **Track:** SOC & Blue Team · **Read time:** 175 min
-
 This is Chapter 5 of the SOC & Blue Team notebook and the second tool primer. Chapter 4 put Splunk and SPL under your hands; this chapter does the same for **Microsoft Sentinel**, the cloud-native SIEM, and its query language **KQL (Kusto Query Language)**. Sentinel has become one of the most common SIEMs in the enterprise, largely because so many organizations already run Microsoft 365 and Azure, and Sentinel plugs directly into that identity, endpoint, and cloud telemetry. If Splunk is the incumbent, Sentinel is the fast-rising challenger, and KQL is now nearly as common a job requirement as SPL.
 
 The good news, promised at the end of Chapter 4: the *thinking* transfers completely. KQL is a pipeline language just like SPL — a data source, then a series of operators joined by pipes, each transforming the data. Where SPL says `| stats count by user`, KQL says `| summarize count() by user`. The keywords differ; the mental model — constrain the source, transform in stages, aggregate, filter, correlate per entity — is identical. This chapter teaches KQL from scratch, but you will find yourself recognizing the shape of everything from Chapter 4.
@@ -902,7 +897,3 @@ In the next chapter we cover the third major SIEM stack, **the Elastic Stack (EL
 
 6. Use `make-series` to build a per-host time series and `series_decompose_anomalies()` to flag statistical outliers relative to that host's own baseline. It beats a static threshold because "normal" volume varies enormously by host — a fixed number either misses anomalies on busy hosts or floods you with false positives on quiet ones; a per-entity baseline adapts to each host.
 7. Move the verbose firewall logs to **Basic/Auxiliary Logs** (cheap, still queryable on demand for investigations) rather than Analytics. Keep sign-in logs, endpoint process/network events, and alerts in **Analytics** because you write scheduled detections on them. This is Chapter 2's "collect with intent" as a Sentinel budget decision.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/05-microsoft-sentinel-and-kql-for-soc-analysts), with comments and the latest edits.*

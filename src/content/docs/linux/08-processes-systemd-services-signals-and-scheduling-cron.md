@@ -1,11 +1,8 @@
 ---
 title: 'Processes, systemd, Services, Signals & Scheduling (cron)'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: '08 · Processes, systemd, Services, Signals & Scheduling (cron)'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/08-processes-systemd-services-signals-and-scheduling-cron
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 115 min
-
 Chapter 8 of the Linux series turns from *text on disk* to *code running right now*. It builds on the text-processing skills from the previous chapter — you'll use `grep`/`awk` constantly here to filter process listings — and introduces the process model, `systemd` service management, Unix signals, and the two classic Linux schedulers, `cron` and `systemd` timers. This is also where "Linux Foundations" starts overlapping directly with red-team and blue-team tradecraft: persistence mechanisms, privilege escalation via misconfigured services, and cron-based backdoors are all built on exactly what's in this chapter.
 
 ---
@@ -366,7 +361,3 @@ systemctl list-timers
 - **`pspy` on GitHub** — download and practice using it on a lab VM to watch cron/systemd activity without root, the exact tool referenced in the CTF Angle above.
 - **VulnHub boxes tagged "cron" or "privesc"** — dozens of downloadable VMs built specifically around the misconfigurations covered here.
 - **MITRE ATT&CK T1053 (Scheduled Task/Job)** and **T1543.002 (systemd Service)** pages — read the real-world procedure examples linked from each technique for case studies of these mechanisms used by actual malware families.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/linux/08-processes-systemd-services-signals-and-scheduling-cron), with comments and the latest edits.*

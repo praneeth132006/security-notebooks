@@ -1,9 +1,8 @@
 ---
 title: 'Red Team Infrastructure: Redirectors, Domains & OPSEC'
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Red Team Infrastructure: Redirectors, Domains & OPSEC'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-operations/05-red-team-infrastructure-redirectors-domains-and-opsec
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 210 min
-
 This is Chapter 5 of the Red Team Operations notebook. The previous four chapters
 built the conceptual core of an engagement — how a red team differs from a
 pentest, how command-and-control and beaconing actually work, and how both the
@@ -926,7 +923,3 @@ fingerprint) that still give it away. When that reasoning is automatic, you
 understand attacker infrastructure well enough to defeat it — which is the entire
 point. The next chapter moves from *where C2 lives* to *how the first foothold is
 delivered*: initial access, phishing infrastructure, payloads, and delivery.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-operations/05-red-team-infrastructure-redirectors-domains-and-opsec), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: GraphQL API Attacks
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: 02 · GraphQL API Attacks
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-api-bugbounty/02-graphql-api-attacks
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 240 min
-
 This is Chapter 2 of the APIs & CMS notebook. Chapter 1 built a repeatable methodology for REST APIs — discovery, documentation harvesting, BOLA/BFLA authorization testing, mass assignment, injection, and business-logic abuse. GraphQL is the other API paradigm you will meet constantly on modern bug-bounty programs, and although the *bugs* rhyme with REST (authorization is still the number-one killer), the *shape* of the attack surface is completely different. A single GraphQL endpoint — almost always one URL, usually `/graphql` — replaces dozens of REST routes, and the client, not the server, decides exactly what data comes back. That inversion of control is powerful for developers and a goldmine for attackers.
 
 We start from the absolute basics — what GraphQL is, why companies adopt it, and how the type system, queries, mutations, subscriptions, and resolvers fit together — so a beginner who has never sent a GraphQL request can follow. Then we climb to the exact tradecraft a senior tester uses: recovering a schema from an endpoint that "disabled introspection", abusing query batching to bypass rate limits and brute-force protections, weaponising aliases for denial-of-service and 2FA-code guessing, finding BOLA/BFLA in resolvers, chaining GraphQL arguments into SQL/NoSQL/SSRF/command injection, and pulling off CSRF against mutation endpoints. By the end you will have a mental model of the GraphQL attack surface and a checklist you can run against any endpoint you find in the wild.
@@ -967,7 +962,3 @@ Train each skill in this chapter on purpose-built targets:
 3. `me { email }` requires auth and returns only your own address, but `project(id:X){ members { email } }` returns every member's email with no membership check. Name the vulnerability class and describe the two-account test that proves it.
 4. You find `importDocument(url: String!)` as a mutation. List three distinct classes of bug you'd test it for and one payload each.
 5. Design the minimal set of server-side controls that would simultaneously defeat: introspection recon, alias brute-force, nesting DoS, and BOLA. (Hint: one control — persisted queries — plus centralised authz — covers most of it.)
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-api-bugbounty/02-graphql-api-attacks), with comments and the latest edits.*

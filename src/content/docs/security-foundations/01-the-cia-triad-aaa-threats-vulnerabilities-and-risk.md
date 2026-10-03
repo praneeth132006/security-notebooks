@@ -1,9 +1,8 @@
 ---
 title: 'The CIA Triad, AAA, Threats, Vulnerabilities & Risk'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · The CIA Triad, AAA, Threats, Vulnerabilities & Risk'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/security-foundations/01-the-cia-triad-aaa-threats-vulnerabilities-and-risk
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 175 min
-
 This is Chapter 1 of the Security Foundations series — Notebook 8. Everything you've built so far — Linux,
 networking, web, cryptography — has been *mechanism*: how things work and how they break. This notebook is
 the *framework* that organizes all of it into a discipline. Before you can defend a system, break into one
@@ -896,7 +893,3 @@ If you can keep threat, vulnerability, and risk distinct, separate authenticatio
 sight, name which CIA property any incident violated, compute an ALE and decide whether a control is worth
 buying, and reach for defense-in-depth / least-privilege / zero-trust as deliberate tools — you own this
 chapter, and you have the coordinate system every later topic plots onto.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/security-foundations/01-the-cia-triad-aaa-threats-vulnerabilities-and-risk), with comments and the latest edits.*

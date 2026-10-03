@@ -1,11 +1,10 @@
 ---
 title: 'IOCs, IOAs, the Pyramid of Pain & the Diamond Model'
 description: >-
-  A Intermediate-level Threat Intel & Hunting chapter from Praneeth's
-  cybersecurity notebook.
+  A Intermediate-level Threat Intel & Hunting chapter from the Security
+  Notebooks.
 sidebar:
   order: 2
-  label: '02 · IOCs, IOAs, the Pyramid of Pain & the Diamond Model'
 head:
   - tag: link
     attrs:
@@ -13,8 +12,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/02-iocs-ioas-the-pyramid-of-pain-and-the-diamond-model
 ---
-**Level:** Intermediate · **Track:** Threat Intel & Hunting · **Read time:** 255 min
-
 This is Chapter 2 of the Threat Intel & Hunting notebook. The previous
 chapter established what intelligence is and how it is produced. This
 chapter gives you the conceptual toolkit for the *tactical and
@@ -889,7 +886,3 @@ the start of the intrusion and at the level of behaviour.
 The next chapter builds directly on the Diamond's *Adversary* vertex:
 threat-actor profiling, TTP analysis, and the hard, heavily-caveated
 discipline of attribution.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/02-iocs-ioas-the-pyramid-of-pain-and-the-diamond-model), with comments and the latest edits.*

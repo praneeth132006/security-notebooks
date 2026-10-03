@@ -1,9 +1,8 @@
 ---
 title: 'IP Addressing, Binary Math, Subnetting & CIDR Mastery'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · IP Addressing, Binary Math, Subnetting & CIDR Mastery'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/03-ip-addressing-binary-math-subnetting-and-cidr-mastery
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 125 min
-
 This is Chapter 13 of the series. The previous chapters gave you the layered model; this one makes you fluent in the *numbers* that make Layer 3 work. Subnetting terrifies beginners and it shouldn't — it's just binary counting with a couple of rules. By the end you will read `10.0.0.0/24`, `192.168.1.128/26` or `172.16.0.0/12` and instantly know the network address, the broadcast address, how many hosts fit, and the exact range to feed Nmap. This is not academic: **defining scan scope, spotting internal ranges, sizing a target's attack surface, and reading firewall rules all depend on subnetting**, and doing it in your head is a genuine professional superpower.
 
 We start at the true foundation — binary — because every subnetting shortcut is just a consequence of how bits work. Master the binary and the rest is arithmetic you can do on a napkin.
@@ -372,7 +369,3 @@ ip -o -f inet addr show          # your IP + prefix
 - **Exercise** — take five random `IP/prefix` pairs daily and write network, broadcast, range and host count from memory, then verify with `ipcalc`.
 
 Next we drop to Layer 2 and get concrete about the *local* network: **Ethernet, MAC addresses, switching, ARP and VLANs** — including the ARP-spoofing man-in-the-middle attack that this chapter's subnet boundaries make possible.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/03-ip-addressing-binary-math-subnetting-and-cidr-mastery), with comments and the latest edits.*

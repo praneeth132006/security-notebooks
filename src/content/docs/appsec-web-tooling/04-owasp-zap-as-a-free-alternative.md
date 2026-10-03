@@ -1,11 +1,8 @@
 ---
 title: OWASP ZAP as a Free Alternative
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · OWASP ZAP as a Free Alternative
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/04-owasp-zap-as-a-free-alternative
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 185 min
-
 This is Chapter 4 of the Web Tooling notebook. The three preceding chapters built
 you into a Burp Suite user. This chapter covers the other pillar of web security
 tooling: **OWASP ZAP** (the Zed Attack Proxy), a fully free, open-source
@@ -593,7 +588,3 @@ Practice questions:
    `blog.example.com`.
 5. ZAP raises a "High/High" SQL injection alert. What is your exact process before it
    becomes a bug-bounty report?
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/04-owasp-zap-as-a-free-alternative), with comments and the latest edits.*

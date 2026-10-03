@@ -1,9 +1,8 @@
 ---
 title: Defending Against Social Engineering & Security Awareness
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 11
-  label: 11 · Defending Against Social Engineering & Security Awareness
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/11-defending-against-social-engineering-and-security-awareness
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 185 min
-
 This is Chapter 11 of the Social Engineering series, and it turns the whole series around. The previous ten chapters were written from the attacker's chair: the psychology of influence, pretext development, phishing and spoofing, SET and Gophish, malicious documents, Evilginx-style adversary-in-the-middle, vishing and physical pretexting, and AI-driven synthetic media. This chapter is the defender's answer to all of it. Every technique you learned to *run* has a control, a detection, and a program response that makes it fail — and building those, at organizational scale, is a distinct discipline with its own craft.
 
 The core claim of this chapter is uncomfortable but load-bearing: **you cannot train people out of being human.** Curiosity, deference to authority, time pressure, and the desire to be helpful are not bugs to be patched — they are the operating system. A defense that depends on every employee being suspicious every minute of every day will fail, because attackers only need one success and defenders need to win every time. So the real goal of a human-risk program is not "make users perfect." It is to (1) shrink the attack surface with technical controls so that most lures never arrive and most successful lures cannot be monetized, (2) make the *right* action easy and fast — one-click reporting — so that the humans who do spot something become a sensor network, and (3) measure the residual risk honestly so you know whether you are getting better.
@@ -901,7 +898,3 @@ Practice questions to test yourself:
 5. A finance clerk just wired $180,000 after a convincing "CEO" email and follow-up call. Walk through your first hour of incident response in priority order, and name the one procedural control that would have stopped the attack before any money moved.
 
 This closes the Social Engineering series. The next notebook, Malware & Evasion, shifts to the *payloads* that phishing and pretexting are so often used to deliver — beginning, in its first chapter, with a precise taxonomy of malware families and how they're built, detected, and defended against, entirely within a lab-scoped, conceptual frame.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/11-defending-against-social-engineering-and-security-awareness), with comments and the latest edits.*

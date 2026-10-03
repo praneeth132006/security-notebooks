@@ -1,9 +1,8 @@
 ---
 title: 'Building a CTF Workflow, Toolkit & Team Strategy'
-description: A Advanced-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Career chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: '08 · Building a CTF Workflow, Toolkit & Team Strategy'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ctf-wargames/08-building-a-ctf-workflow-toolkit-and-team-strategy
 ---
-**Level:** Advanced · **Track:** Career · **Read time:** 260 min
-
 The previous seven chapters taught you how to solve challenges. This one is about everything *around* solving — the infrastructure, habits, and team dynamics that turn a person who can solve challenges into someone who reliably places well and keeps improving. The gap between those two is larger than beginners expect. A player with strong technical skills but no workflow loses hours to environment friction, forgets what they already ruled out, works the wrong challenges under decay scoring, and burns out. A player with slightly weaker skills but a sharp workflow — a ready toolkit, a triage routine, disciplined notes, and a team that communicates — consistently out-performs them.
 
 So this is the systems chapter. It treats your CTF practice the way an engineer treats a production system: your environment is *infrastructure* that should be reproducible, your solving process is a *workflow* that should be repeatable, your notes are a *pipeline* that feeds your portfolio, and your team is an *organisation* with roles and communication. The specific tricks matter less here than the meta-skill: building a personal system that compounds, so that each event makes you measurably better at the next one rather than being a fresh scramble every time.
@@ -568,7 +565,3 @@ translate HONESTLY: fundamentals + ability to learn, paired with
 - Notebook 9 (reporting) — the professional version of the writeup discipline, and the skill CTF does not otherwise train.
 - Notebook 37 (cloud) for the cloud-challenge and ephemeral-compute tooling, and Chapter 1 of this notebook for the methodology this workflow scales up.
 - Top teams' published writeup repositories (PPP, Dragon Sector, and others on CTFtime) — read not just for the solutions but for how organised, well-communicated work looks.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ctf-wargames/08-building-a-ctf-workflow-toolkit-and-team-strategy), with comments and the latest edits.*

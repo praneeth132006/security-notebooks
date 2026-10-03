@@ -1,9 +1,8 @@
 ---
 title: Deepfakes & AI-Driven Social Engineering
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 10
-  label: 10 · Deepfakes & AI-Driven Social Engineering
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/10-deepfakes-and-ai-driven-social-engineering
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 190 min
-
 This is Chapter 10 of the Social Engineering series, and the final one. The previous nine chapters built social engineering from the human attack surface up: the psychology of influence, pretext development, email and web phishing, spoofing, SET and Gophish, malicious documents, Evilginx-style adversary-in-the-middle, and the phone-and-doorway channels — vishing, smishing, and physical pretexting. Every technique so far assumed a human attacker crafting each lure by hand and delivering it one target at a time. This chapter is about what happens when generative AI removes both limits at once: when the voice on the phone, the face on the video call, and the email in the inbox can all be **synthesised on demand**, at scale, at near-zero marginal cost.
 
 Synthetic media — colloquially "deepfakes" — collapses the last technical defences that older social engineering relied on the target to provide. A finance clerk trained to "call the CFO back on a known number to verify" is defeated when the voice that answers that callback is a real-time clone. A "join the video call to confirm it's really the executive" control is defeated when every face on the call is a rendered puppet. And the spear-phishing email that once took an operator an hour to research and write now takes a language model seconds, in the target's own language, referencing their real projects pulled from AI-accelerated OSINT.
@@ -903,7 +900,3 @@ Work these without looking back at the chapter, then check yourself:
 Model answers live in the mechanics above (Parts 2, 3, 5, 9) — if any question is hard, that section is where to re-read.
 
 This is the last chapter of the Social Engineering series. You began with the psychology of a single human decision and end with the industrialisation of deception by machines — and in both, the lesson is identical: defend the *process*, not just the perception.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/10-deepfakes-and-ai-driven-social-engineering), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: 'Fuzzing for Bugs: AFL++, libFuzzer & Crash Triage'
-description: >-
-  A Expert-level Vulnerability Research chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Vulnerability Research chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: '08 · Fuzzing for Bugs: AFL++, libFuzzer & Crash Triage'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/08-fuzzing-for-bugs-afl-libfuzzer-and-crash-triage
 ---
-**Level:** Expert · **Track:** Vulnerability Research · **Read time:** 290 min
-
 This is Chapter 8 of the Binary Exploitation notebook and the one that closes the loop. Chapters 2–7 assumed you already *had* a bug — a stack overflow, a format string, a UAF — and taught you to weaponise it. This chapter is about the step that comes first and matters most in real vulnerability research: **finding** those bugs at scale. The dominant technique, responsible for the overwhelming majority of memory-safety CVEs discovered in the last decade, is **fuzzing**: automatically feeding a program a torrent of malformed inputs and watching for crashes.
 
 Naïve fuzzing (throw random bytes at a program) finds shallow bugs and then stalls. The breakthrough that made fuzzing the industry-standard bug-finding method is **coverage-guided fuzzing** — the fuzzer instruments the target to observe which code paths each input exercises, and *evolves* its inputs toward ones that reach new code. It's a feedback loop that, given a trivial starting input, teaches itself the target's input format well enough to find deep bugs. AFL and its successor **AFL++**, plus **libFuzzer**, made this accessible to everyone, and **OSS-Fuzz** now runs it continuously against thousands of open-source projects.
@@ -906,7 +901,3 @@ Practice question set:
 Fuzzing shows up in **CTF** as "pwn/rev with a provided source or binary and a hint that it parses input" — a quick AFL++/libFuzzer run often finds the intended bug faster than manual review, and QEMU mode handles binary-only challenges. In **bug bounty and real VR**, fuzzing is *the* discovery engine for native targets (parsers, media codecs, VPN/protocol stacks, firmware): the winning report is a minimised PoC + ASan root-cause + an exploitability demonstration built with Chapters 2–7. Many six-figure bounties and browser/kernel CVEs began as a fuzzer crash triaged exactly the way Part 9 describes. The reason this chapter closes the notebook is that it *feeds* every earlier chapter: fuzzing finds the stack overflow (Ch2), the format string (Ch5), the UAF (Ch6) — and those chapters turn the crash into an exploit.
 
 This chapter closes the Binary Exploitation notebook's core arc: you can now **find** memory-safety bugs with coverage-guided fuzzing and sanitizers, **triage and root-cause** them, and — using the stack, format-string, heap, mitigation-bypass, and shellcoding chapters that preceded it — **prove their exploitability**. The next notebook moves up the stack to a new domain, but the discipline is the same: understand the system deeply, find where its assumptions break, and demonstrate the impact responsibly.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/08-fuzzing-for-bugs-afl-libfuzzer-and-crash-triage), with comments and the latest edits.*

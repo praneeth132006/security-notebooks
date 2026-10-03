@@ -1,9 +1,8 @@
 ---
 title: 'Full Adversary Emulation: Chaining the Kill Chain End to End'
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: '08 · Full Adversary Emulation: Chaining the Kill Chain End to End'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-operations/08-full-adversary-emulation-chaining-the-kill-chain-end-to-end
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 225 min
-
 This is Chapter 8 of the Red Team Operations notebook. The previous three chapters
 built the pieces in isolation: **infrastructure** (Chapter 5), **initial access**
 (Chapter 6), and **living-off-the-land + evasion + OPSEC** (Chapter 7). A real
@@ -904,7 +901,3 @@ seams your defenses miss and which you've fixed, you're doing adversary emulatio
 and you're ready for the final chapter, which turns this evidence into the reports,
 attack narratives, and executive deliverables that make an engagement worth paying
 for.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-operations/08-full-adversary-emulation-chaining-the-kill-chain-end-to-end), with comments and the latest edits.*

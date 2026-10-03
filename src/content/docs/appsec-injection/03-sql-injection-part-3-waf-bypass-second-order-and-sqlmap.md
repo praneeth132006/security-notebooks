@@ -1,11 +1,8 @@
 ---
 title: 'SQL Injection Part 3: WAF Bypass, Second-Order & sqlmap'
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · SQL Injection Part 3: WAF Bypass, Second-Order & sqlmap'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-injection/03-sql-injection-part-3-waf-bypass-second-order-and-sqlmap
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 3 of the Injection notebook — Notebook 23. Chapter 1 taught you what a
 database is and how to *discover* an injection point; Chapter 2 taught you how to *exploit*
 one with UNION, error-based, and blind techniques once you had a clean, reflective sink.
@@ -1069,7 +1064,3 @@ Train these exact skills, not generic SQLi:
 Chapter 4 of this notebook moves from SQL injection to **OS command injection** — the next rung
 of the injection ladder, where user input reaches a shell instead of a query, and where many of
 the same obfuscation and filter-bypass instincts you built here carry directly over.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-injection/03-sql-injection-part-3-waf-bypass-second-order-and-sqlmap), with comments and the latest edits.*

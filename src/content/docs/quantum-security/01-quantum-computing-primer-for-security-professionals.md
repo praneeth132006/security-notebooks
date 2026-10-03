@@ -1,11 +1,8 @@
 ---
 title: Quantum Computing Primer for Security Professionals
-description: >-
-  A Advanced-level Quantum Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Quantum Security chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: 01 · Quantum Computing Primer for Security Professionals
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/quantum-security/01-quantum-computing-primer-for-security-professionals
 ---
-**Level:** Advanced · **Track:** Quantum Security · **Read time:** 300 min
-
 This is Chapter 1 of the Quantum Security notebook. Everything that follows in this notebook — Shor's and Grover's algorithms in detail, harvest-now-decrypt-later risk modelling, the NIST post-quantum standards, hybrid key exchange, migration planning, QKD — depends on you having an accurate, non-hand-wavy mental model of what a quantum computer actually is and what it actually does. This chapter builds that model from zero, using the same linear algebra the physicists use, but framed entirely around the question a security engineer cares about: *which of my cryptographic assumptions survive, and when.*
 
 You do not need a physics background. You need comfort with vectors, matrices, complex numbers at the level of "a complex number has a magnitude and a phase," and the ability to read a Python script. Everything else is built here.
@@ -1069,7 +1064,3 @@ X + Y > Z  ->  you are already behind. Start now.
 - Nielsen & Chuang, *Quantum Computation and Quantum Information* — the standard reference. Chapters 1–2 and 4–5 cover everything in this chapter with full rigour.
 
 The next chapter takes the two algorithms that matter most — Shor's and Grover's — and pulls them apart in full detail: the quantum Fourier transform derived from scratch, the modular exponentiation circuits that dominate the cost, the exact resource estimates and how to reproduce them, and precisely how much of your key length Grover really takes.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/quantum-security/01-quantum-computing-primer-for-security-professionals), with comments and the latest edits.*

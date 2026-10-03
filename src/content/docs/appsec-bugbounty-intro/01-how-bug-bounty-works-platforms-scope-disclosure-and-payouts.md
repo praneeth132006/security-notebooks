@@ -1,11 +1,8 @@
 ---
 title: 'How Bug Bounty Works: Platforms, Scope, Disclosure & Payouts'
-description: >-
-  A Beginner-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Beginner-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · How Bug Bounty Works: Platforms, Scope, Disclosure & Payouts'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-bugbounty-intro/01-how-bug-bounty-works-platforms-scope-disclosure-and-payouts
 ---
-**Level:** Beginner · **Track:** Bug Bounty & AppSec · **Read time:** 165 min
-
 This is Chapter 1 of the Bug Bounty & AppSec notebook — Notebook 21. Everything
 before this point built the machine: the Web Fundamentals series taught how HTTP,
 cookies, the same-origin policy and TLS behave; the Recon & OSINT, Scanning and
@@ -927,7 +922,3 @@ Practice questions to test yourself before the next chapter:
    critical bug while browsing. What is the correct, legal course of action?
 5. Rewrite this bad title into a good one: "Found XSS". Assume it's a stored XSS in
    the support-ticket subject field that fires in the agent's dashboard.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-bugbounty-intro/01-how-bug-bounty-works-platforms-scope-disclosure-and-payouts), with comments and the latest edits.*

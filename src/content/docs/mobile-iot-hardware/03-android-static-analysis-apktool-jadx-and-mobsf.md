@@ -1,9 +1,8 @@
 ---
 title: 'Android Static Analysis: apktool, jadx & MobSF'
-description: A Advanced-level Mobile & IoT chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Mobile & IoT chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Android Static Analysis: apktool, jadx & MobSF'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/03-android-static-analysis-apktool-jadx-and-mobsf
 ---
-**Level:** Advanced · **Track:** Mobile & IoT · **Read time:** 300 min
-
 This is Chapter 3 of the Mobile & IoT notebook. Chapter 2 got you a device, a shell, and a proxy. Now we stop *watching* the app and start *reading* it. Static analysis is looking at an app's code and resources without executing it — and for Android it is unusually productive, because an APK is a shippable archive of bytecode and XML that decompiles back to something very close to the developer's original source. A huge fraction of real mobile findings — hardcoded keys, exported components, weak crypto, hidden endpoints, debug flags left on — are visible in static analysis alone, before you ever intercept a single packet.
 
 This chapter builds the workflow from zero: get the APK, understand its layout, decode it with **apktool**, decompile it with **jadx**, scan it with **MobSF**, read the **manifest** and **Smali** like an attacker, hunt for **secrets**, and finally **repackage** an app to make it testable (add a debug Network Security Config, flip `debuggable`, weaken pinning) and re-sign it. Everything here feeds the runtime work in Chapters 4 and 5 — static analysis tells you *where* to hook.
@@ -507,7 +504,3 @@ adb install -r out.apk
 - **Firebase/S3 misconfig hunting write-ups** on HackerOne/Bugcrowd disclosures — see how hardcoded APK endpoints turned into real bounties.
 
 In the next chapter we go dynamic: attaching **Frida** to a running app to hook methods, dump decrypted values, and change behaviour live — turning the static map you just built into runtime exploitation.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/03-android-static-analysis-apktool-jadx-and-mobsf), with comments and the latest edits.*

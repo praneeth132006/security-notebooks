@@ -1,9 +1,8 @@
 ---
 title: OSI & TCP/IP Models Layer by Layer
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: 02 · OSI & TCP/IP Models Layer by Layer
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/02-osi-and-tcp-ip-models-layer-by-layer
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 115 min
-
 This is Chapter 12 of the series. The previous chapter gave you the big picture — packets, encapsulation, addresses, and a request travelling end to end. This chapter zooms into the *model itself*. We dissect all seven OSI layers and all four TCP/IP layers, one at a time, and — crucially for a security career — we map **every common attack and defence to the exact layer it lives on**. When you finish, "that's a Layer 2 attack" or "the WAF only sees Layer 7" will be second nature, and you'll be able to place any protocol or exploit on the stack instantly.
 
 Why obsess over a model? Because the OSI model is the *shared language of the entire industry*. Every firewall datasheet, every IDS rule, every interview question, every incident report references layers. "Layer 3 routing," "Layer 4 load balancer," "Layer 7 attack," "L2 adjacency" — these phrases only make sense if the model is burned into your memory. It is the coordinate system on which all networking and network security is plotted.
@@ -365,7 +362,3 @@ http.request                       (L7)
 - **Exercise** — capture your own traffic, pick five packets, and write down every layer's address and PDU for each. Do it until it's automatic.
 
 Next, we drop into the numbers that make Layer 3 work: **IP addressing, binary math, subnetting and CIDR** — the skill that lets you read `10.0.0.0/24`, define scan ranges, and reason about network boundaries without a calculator.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/02-osi-and-tcp-ip-models-layer-by-layer), with comments and the latest edits.*

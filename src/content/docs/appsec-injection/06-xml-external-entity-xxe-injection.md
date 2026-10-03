@@ -1,11 +1,8 @@
 ---
 title: XML External Entity (XXE) Injection
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: 06 · XML External Entity (XXE) Injection
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-injection/06-xml-external-entity-xxe-injection
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 6 of the Injection notebook — Notebook 23. The previous chapters walked through
 four different interpreters: a SQL engine, an operating-system shell, and a template engine. Each
 time the pattern was the same — attacker-controlled text reaches an interpreter that was never
@@ -1272,7 +1267,3 @@ Train each specific skill in this chapter on these targets:
 Work the PortSwigger set until the blind-OOB-with-external-DTD and repurpose-a-local-DTD labs are
 muscle memory — those two are what separate a surface-level understanding of XXE from operational
 capability, and they are exactly what real hardened targets demand.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-injection/06-xml-external-entity-xxe-injection), with comments and the latest edits.*

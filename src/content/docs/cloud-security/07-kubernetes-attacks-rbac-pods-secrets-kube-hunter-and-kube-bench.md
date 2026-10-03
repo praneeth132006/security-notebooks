@@ -1,11 +1,8 @@
 ---
 title: 'Kubernetes Attacks: RBAC, Pods, Secrets, kube-hunter & kube-bench'
-description: >-
-  A Advanced-level Cloud Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Cloud Security chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: '07 · Kubernetes Attacks: RBAC, Pods, Secrets, kube-hunter & kube-bench'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cloud-security/07-kubernetes-attacks-rbac-pods-secrets-kube-hunter-and-kube-bench
 ---
-**Level:** Advanced · **Track:** Cloud Security · **Read time:** 340 min
-
 This is Chapter 7 of the Cloud Security notebook. The previous chapter took apart a single container — namespaces, cgroups, capabilities, the Docker socket, and the breakout primitives that turn one container into control of its host. This chapter zooms out to the system that runs thousands of those containers in production: **Kubernetes**. If a container is a lied-to Linux process, a Kubernetes cluster is the machine that decides which lies get told, on which node, with which identity, and with access to which secrets — and almost every one of those decisions is a place an attacker can subvert.
 
 The single idea to carry through the whole chapter: **in Kubernetes, everything is an object in the API server, and every action is an authenticated, authorized request to that one endpoint.** Get a token that the API server trusts, and the entire cluster is a REST API away. That is why Kubernetes attacks are rarely about memory-corruption exploits and almost always about *identity and authorization*: a ServiceAccount token left in a pod, an RBAC Role that is one verb too generous, a kubelet that answers unauthenticated requests, a Secret sitting base64-encoded in etcd. Understand how the pieces authenticate and authorize each other, and both the offensive path (token theft → RBAC abuse → pod escape → node → cluster-admin) and the defensive path (least-privilege RBAC, admission control, audit logging) stop being magic.
@@ -917,7 +912,3 @@ Train each skill in this chapter on a range built for it:
 - **Official docs to internalise:** the Kubernetes RBAC docs, the Pod Security Standards page, and the "Securing a Cluster" task page — these are the authoritative source for every control in Part 9.
 
 Practice the full chain end-to-end at least once on `kube-goat`: get a shell, read a token, enumerate with `can-i --list`, escalate via a misconfigured verb, escape a pod to the node, and read a cross-namespace Secret. Once that loop is muscle memory, you understand Kubernetes attack and defense at the level this chapter is aiming for. The next chapter moves outward again — to **serverless, CI/CD and supply-chain attacks**, where the compromise often begins in the pipeline that builds these very images.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cloud-security/07-kubernetes-attacks-rbac-pods-secrets-kube-hunter-and-kube-bench), with comments and the latest edits.*

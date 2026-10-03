@@ -1,11 +1,8 @@
 ---
 title: EDR Fundamentals & Endpoint Investigation
-description: >-
-  A Advanced-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 11
-  label: 11 · EDR Fundamentals & Endpoint Investigation
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/11-edr-fundamentals-and-endpoint-investigation
 ---
-**Level:** Advanced · **Track:** SOC & Blue Team · **Read time:** 185 min
-
 This is Chapter 11 of the SOC & Blue Team notebook. Chapter 10 gave you the network's view of an intrusion; this chapter gives you the endpoint's. When the network says "10.0.0.10 is beaconing," the very next question is *which process, launched by what, run by whom, is doing it* — and that question is answered on the host, by **Endpoint Detection and Response (EDR)**. EDR is the richest single telemetry source in a modern SOC: it records process executions, command lines, file and registry changes, network connections, and module loads, ties them into a **process tree**, and lets you both *detect* behaviourally and *respond* by isolating or remediating the machine remotely. Reading Windows events (Chapter 7) taught you the raw logs; EDR is the productised, correlated, response-capable evolution of that telemetry, and knowing how to drive it is a core Tier 1/Tier 2 skill.
 
 We teach EDR from the ground up: the **telemetry model** and why the process tree is the analyst's primary artifact, how EDR differs from legacy antivirus, the **sensor architecture** (kernel vs user mode, ETW on Windows, eBPF on Linux) that lets EDR see what it sees, how **behavioural detections** work and map to **MITRE ATT&CK**, the step-by-step **investigation workflow** (alert → process tree → command line → parent/child → network → scope), **threat hunting** with EDR query languages (Microsoft Defender KQL, Splunk, and the vendor-neutral **osquery**), the **response actions** EDR gives you (isolate, kill, quarantine, remediate), and the **evasion/tamper** reality so you don't mistake silence for safety. A full hands-on lab walks a malicious-document → PowerShell → C2 chain across the endpoint.
@@ -902,7 +897,3 @@ SELECT name,path,source FROM autoexec;          -- persistence surfaces
 Answer each as an IR note — the telemetry you'd cite, the query you'd run, and the next pivot. That process-tree-plus-command-line-plus-scope discipline is the endpoint core of the SOC, and it feeds directly into Chapter 12's alert triage (deciding which of these fire as true positives) and Chapter 13's incident handling (turning this investigation into a managed response).
 
 Practise on a real range until reading a tree and decoding a command line are reflexes, not tasks — the analysts who close endpoint cases fastest are the ones for whom "walk up, walk down, decode, scope" needs no conscious thought.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/11-edr-fundamentals-and-endpoint-investigation), with comments and the latest edits.*

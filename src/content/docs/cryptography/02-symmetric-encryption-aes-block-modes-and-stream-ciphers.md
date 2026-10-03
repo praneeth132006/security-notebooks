@@ -1,11 +1,8 @@
 ---
 title: 'Symmetric Encryption: AES, Block Modes & Stream Ciphers'
-description: >-
-  A Intermediate-level Cryptography chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Cryptography chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Symmetric Encryption: AES, Block Modes & Stream Ciphers'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cryptography/02-symmetric-encryption-aes-block-modes-and-stream-ciphers
 ---
-**Level:** Intermediate · **Track:** Cryptography · **Read time:** 190 min
-
 This is Chapter 2 of the Cryptography series — Notebook 7. Chapter 1 drew the line between
 encoding, encryption, and hashing, introduced keys and entropy, and showed the XOR/one-time-pad
 atom that underlies all symmetric encryption. It also planted two warnings we now cash in:
@@ -902,7 +897,3 @@ This chapter turned a one-block cipher into practical, high-speed confidentialit
 every real symmetric-crypto bug is a *mode/nonce/integrity/key* mistake, not broken math. The next
 chapter crosses to the other family: **asymmetric encryption — RSA, ECC, and Diffie–Hellman** — the
 public-key mathematics that finally solves the key-distribution problem this chapter left open.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cryptography/02-symmetric-encryption-aes-block-modes-and-stream-ciphers), with comments and the latest edits.*

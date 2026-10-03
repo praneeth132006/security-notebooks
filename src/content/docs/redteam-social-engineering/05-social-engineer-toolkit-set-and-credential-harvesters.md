@@ -1,9 +1,8 @@
 ---
 title: Social-Engineer Toolkit (SET) & Credential Harvesters
-description: A Advanced-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · Social-Engineer Toolkit (SET) & Credential Harvesters
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/05-social-engineer-toolkit-set-and-credential-harvesters
 ---
-**Level:** Advanced · **Track:** Red Team · **Read time:** 175 min
-
 This is Chapter 5 of the Social Engineering series. Chapter 3 built the phishing pipeline end to end — pretext, infrastructure, delivery, and credential capture — and Chapter 4 explained the email-authentication engine (SPF/DKIM/DMARC) that decides whether your mail ever reaches an inbox. This chapter zooms into the single most widely used piece of tooling in that pipeline: the **Social-Engineer Toolkit (SET)**, written by Dave Kennedy (@HackingDave) and maintained under TrustedSec. SET is the open-source framework that turned "clone a login page and capture passwords" from a bespoke scripting job into a menu you drive in ninety seconds — and, precisely because it is so easy, it is a tool you must understand deeply to use professionally and to defend against.
 
 SET is a **credential-harvesting and payload-delivery multitool**. Its headline feature — the Credential Harvester — clones a real login page, serves the clone from your own web server, records every username and password a victim types, and transparently forwards them to the real site so the victim notices nothing. Around that core it wraps spear-phishing email generation, malicious-file and payload creation (via Metasploit's `msfvenom`), infectious-media generators, a mass mailer, QR-code and wireless access-point attack vectors, and more. This chapter teaches SET from zero — installation, architecture, every menu path that matters — then confronts the uncomfortable truth an experienced operator already knows: a static credential harvester captures a password but **not** a second factor, so against any target with MFA it fails at the login step. That limitation is exactly why Chapter 3 introduced AiTM reverse proxies like evilginx2, and this chapter draws the precise boundary between the two.
@@ -913,7 +910,3 @@ Train the exact skills in this chapter against **lawful, intentionally-vulnerabl
 - **MITRE ATT&CK** techniques to map your work to a common language: **T1566** (Phishing), **T1566.002** (Spearphishing Link), **T1598** (Phishing for Information), **T1056.003** (Web Portal Capture), and **T1557** (Adversary-in-the-Middle) — read the detection and mitigation sections for each.
 
 Do every lab against infrastructure and accounts **you own or are explicitly authorized to test**, destroy captured data when finished, and write the corresponding detection for each attack you run — that dual offense-and-defense habit is what separates a professional from a script-runner. The next chapter continues the Red Team track by building on these delivery primitives.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/05-social-engineer-toolkit-set-and-credential-harvesters), with comments and the latest edits.*

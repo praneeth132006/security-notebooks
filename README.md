@@ -4,7 +4,7 @@
 
 **Read it as a site:** https://praneeth132006.github.io/security-notebooks/
 
-These notes are written and maintained in my [portfolio](https://ping-praneeth.vercel.app/notebook) and synced here automatically, so please don't open PRs against the chapter files. Corrections are welcome as [issues](https://github.com/praneeth132006/security-notebooks/issues).
+The chapter files are generated, so please don't open PRs against them. Corrections and questions are welcome as [issues](https://github.com/praneeth132006/security-notebooks/issues) or in the comments under each chapter.
 
 > Everything here is for learning and for authorized testing only. Only test systems you own or have written permission to test.
 

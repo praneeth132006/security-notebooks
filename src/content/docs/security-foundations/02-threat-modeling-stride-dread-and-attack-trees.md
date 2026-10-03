@@ -1,9 +1,8 @@
 ---
 title: 'Threat Modeling: STRIDE, DREAD & Attack Trees'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Threat Modeling: STRIDE, DREAD & Attack Trees'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/security-foundations/02-threat-modeling-stride-dread-and-attack-trees
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 180 min
-
 This is Chapter 2 of the Security Foundations series — Notebook 8. Chapter 1 gave you the vocabulary: the
 CIA triad, AAA, and the asset → threat → vulnerability → risk chain, plus how to quantify risk. That
 chapter was *reactive* framing — how to describe and rank what could go wrong. This chapter is the
@@ -898,7 +895,3 @@ own this chapter, and you can do the single highest-leverage proactive security 
 Keep the four questions in your head as a permanent loop — *what are we building, what can go wrong, what
 do we do about it, did we do a good job* — and threat modeling stops being a framework you memorize and
 becomes a habit you apply to every design you touch.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/security-foundations/02-threat-modeling-stride-dread-and-attack-trees), with comments and the latest edits.*

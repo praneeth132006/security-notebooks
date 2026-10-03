@@ -1,13 +1,8 @@
 ---
 title: 'Secure Code Review Fundamentals: Methodology, Checklists & Prioritization'
-description: >-
-  A Advanced-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: >-
-    01 · Secure Code Review Fundamentals: Methodology, Checklists &
-    Prioritization
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/01-secure-code-review-fundamentals-methodology-checklists-and-prioritization
 ---
-**Level:** Advanced · **Track:** Product Security · **Read time:** 255 min
-
 The previous notebook taught you to write secure code and to recognize the twenty-five weakness patterns that matter most. This notebook is about the other half of the job: **checking that the code is actually secure** — systematically, repeatably, at the scale of a real codebase, and inside a delivery pipeline that ships every day. Secure code review is the human core of that checking, and it is the skill this whole notebook is built around, because every automated tool in the chapters that follow — SAST, DAST, SCA, secrets scanning — is ultimately a way to scale, focus, or verify the judgment that a good reviewer applies by hand.
 
 The distinction that opens the notebook is the one people most often miss: **secure code review is not the same as ordinary peer review, and it is not a penetration test.** Peer review asks *is this code correct, readable, and maintainable* — a security bug can sail through a peer review that was looking at naming and test coverage. A penetration test attacks the running system from the outside and finds what is *reachable and exploitable* right now, but it cannot see the code path it never triggered, the dangerous function guarded by a condition it never met, or the backdoor sitting behind an obscure header. Secure code review reads the source with an adversary's questions in mind, and it finds a **distinct class of bugs** that neither of the others will — which is exactly why it is worth doing as its own discipline.
@@ -513,7 +506,3 @@ references
 - Notebook 45 Chapters 6–8 (the bugs this chapter looks for) and Chapter 2 next (the manual review of injection, auth, and logic flaws in depth).
 - Chapter 3 (SAST) for the automated counterpart, and the rest of this notebook for making review continuous in a pipeline.
 - Dowd, McDonald & Schuh, *The Art of Software Security Assessment* — the deep reference on manual code review technique.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/01-secure-code-review-fundamentals-methodology-checklists-and-prioritization), with comments and the latest edits.*

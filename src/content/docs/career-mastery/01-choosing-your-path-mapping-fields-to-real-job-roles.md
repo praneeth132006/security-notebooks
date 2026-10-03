@@ -1,9 +1,8 @@
 ---
 title: 'Choosing Your Path: Mapping Fields to Real Job Roles'
-description: A Beginner-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Career chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Choosing Your Path: Mapping Fields to Real Job Roles'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/career-mastery/01-choosing-your-path-mapping-fields-to-real-job-roles
 ---
-**Level:** Beginner · **Track:** Career · **Read time:** 210 min
-
 You have spent forty-three notebooks building skills. This notebook is about turning those skills into a career, and it starts with the question that quietly derails more aspiring security people than any technical gap: *what job am I actually trying to get?* "I want to work in cybersecurity" is not a goal a hiring manager can act on, because there is no such job. There are SOC analysts and penetration testers and detection engineers and application security engineers and GRC analysts and malware researchers and cloud security engineers, and those roles differ from each other as much as a surgeon differs from a pharmacist. They require different skills, attract different personalities, pay differently, and have wildly different numbers of open positions. Choosing the wrong target — or failing to choose at all — means preparing for the average of everything and being competitive for nothing.
 
 This chapter is the map. It lays out the families of security work, the real job titles inside each, what those people actually do on a Tuesday, and — critically — which ones you can realistically be hired into first. That last qualifier matters more than any glossy list of dream jobs. Penetration testing is the most-wanted entry point and one of the least available; the SOC is the least glamorous and the widest open door. Knowing which doors are open, and matching them to your strengths rather than your fantasies, is the single most valuable career decision you will make, and it is why this is Chapter 1.
@@ -284,7 +281,3 @@ want ownership fast -> startup (risky)
 - Chapter 2 (Certification Roadmaps) — which certs actually matter for *your* chosen target, and which are a waste.
 - Chapter 3 (Portfolio, Home Lab & CTF Plan) — building the demonstrated-work proof your target requires.
 - Chapter 4 (Resume & Interviews) — landing it.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/career-mastery/01-choosing-your-path-mapping-fields-to-real-job-roles), with comments and the latest edits.*

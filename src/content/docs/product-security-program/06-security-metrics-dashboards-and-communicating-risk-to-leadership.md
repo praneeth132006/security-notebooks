@@ -1,11 +1,8 @@
 ---
 title: 'Security Metrics, Dashboards & Communicating Risk to Leadership'
-description: >-
-  A Expert-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · Security Metrics, Dashboards & Communicating Risk to Leadership'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-program/06-security-metrics-dashboards-and-communicating-risk-to-leadership
 ---
-**Level:** Expert · **Track:** Product Security · **Read time:** 270 min
-
 Every previous chapter of this notebook built *capability* — programs, champions, bounties, vendor assessment, privacy engineering. This chapter is about the skill that determines whether any of it *matters to the people who fund it*: **communication.** A security program can be technically excellent and still fail — lose its budget, lose leadership trust, get overruled at every turn — because the people who decide its fate do not *understand* its value. Conversely, a modest program that communicates well earns support, funding, and the organizational backing that lets it grow. Communication is not a soft addendum to the technical work; it is the *force multiplier* that converts technical work into organizational reality, and it is the skill that most reliably separates security *leaders* from security *technicians*.
 
 The reason this is a distinct and difficult skill is the **audience problem**: the people who most need to understand your program — executives, the board, the budget-holders — do not speak your language and do not want to. They do not care about CVE counts, SAST findings, or the elegance of your threat model; they care about *risk to the business, the trend of that risk, and the money*. The core competence of this chapter is *translation*: turning "we found 4,213 vulnerabilities and our SAST coverage is 78%" (which means nothing to an executive) into "our exposure to the kind of attack that breached our competitor is down 40% this year, and here is the one investment that would close the largest remaining gap" (which means everything). The engineer who can make that translation gets funded; the one who cannot, however technically brilliant, is perpetually explaining and perpetually on the defensive.
@@ -541,7 +536,3 @@ every communication builds or spends it -- it makes all the rest work
 - Chapter 1 (the program this chapter communicates and funds) and Notebook 46 Chapter 9 (the vulnerability metrics this chapter elevates to the leadership audience).
 - Notebook 42 Chapter 3 (risk quantification — the likelihood × impact and FAIR foundations) and Chapter 2 (frameworks like the NIST CSF used here for benchmarking).
 - Books on the CISO communication craft and the board conversation (many recent titles); and Chapter 7 next — the capstone, where this communication skill is the thread that presents a full S-SDLC engagement's outcome to its stakeholders.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-program/06-security-metrics-dashboards-and-communicating-risk-to-leadership), with comments and the latest edits.*

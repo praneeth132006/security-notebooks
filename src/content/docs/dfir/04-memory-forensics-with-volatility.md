@@ -1,11 +1,8 @@
 ---
 title: Memory Forensics with Volatility
-description: >-
-  A Advanced-level DFIR & Incident Response chapter from Praneeth's
-  cybersecurity notebook.
+description: A Advanced-level DFIR & Incident Response chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Memory Forensics with Volatility
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/dfir/04-memory-forensics-with-volatility
 ---
-**Level:** Advanced · **Track:** DFIR & Incident Response · **Read time:** 255 min
-
 This is Chapter 4 of the DFIR notebook. Chapter 3 took a verified disk image apart layer by layer and reconstructed what a person did on a machine over hours and days. This chapter narrows the lens to a single instant — the moment a RAM capture was taken — and asks a different, sharper question: *what was this machine actually doing right now?*
 
 Disk forensics answers "what happened". Memory forensics answers "what is happening", frozen mid-stride. A process that unpacked itself entirely in RAM and never wrote a file to disk leaves nothing for Autopsy to find, but it is right there in the memory image: its injected code, its decrypted strings, its open sockets, the command line that launched it, and often the plaintext credentials it just harvested. Fileless malware, packed and encrypted droppers, reflective DLL loads, injected shellcode, in-memory Cobalt Strike and Meterpreter beacons, and the LSASS secrets every attacker wants — all of them are most visible, and sometimes *only* visible, in memory.
@@ -1135,7 +1130,3 @@ Practice questions to test yourself on any image:
 3. Locate one injected code region with `malfind`, dump it, and identify the shellcode family from its prologue and a YARA hit.
 4. Extract every external IP the host was communicating with at capture time and attribute each to a PID.
 5. Determine whether local and domain-cached credentials were exposed, and explain what a null `hashdump` result would and would not prove.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/dfir/04-memory-forensics-with-volatility), with comments and the latest edits.*

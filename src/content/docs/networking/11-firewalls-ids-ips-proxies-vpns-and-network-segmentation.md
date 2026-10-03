@@ -1,11 +1,8 @@
 ---
 title: 'Firewalls, IDS/IPS, Proxies, VPNs & Network Segmentation'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 11
-  label: '11 · Firewalls, IDS/IPS, Proxies, VPNs & Network Segmentation'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/11-firewalls-ids-ips-proxies-vpns-and-network-segmentation
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 115 min
-
 This is Chapter 21 of the series. So far you've learned how traffic is *built* and *moved*; now you'll learn how it's **controlled and inspected**. Between an attacker and a target sit firewalls, intrusion detection/prevention systems, proxies and segmentation boundaries — the defensive fabric of every real network. Understanding these devices is doubly essential: as an attacker you must recognise them, fingerprint them, and evade or tunnel around them; as a defender you must configure and monitor them. This chapter builds each control from scratch, shows you real `iptables`/`nftables` and Snort rules, and covers the evasion and pivoting techniques (VPNs, proxies, tunnels) that route your traffic where it needs to go.
 
 ## The Defensive Stack: What Sits Between You and the Target
@@ -347,7 +342,3 @@ EVASION: fragment | decoy | src-port | slow | idle | encode | tunnel(443/53)
 - **Exercise** — on two lab VMs, build a default-deny iptables policy, scan it (observe filtered vs closed), stand up Suricata and trip a rule with a scan, then evade the rule with slow/fragmented options and confirm it goes quiet.
 
 Next we close the Networking track wireless-side: **Wireless 802.11 fundamentals and network-analysis methodology** — frames, channels, monitor mode, the four-way handshake and packet capture, the groundwork for the Wi-Fi attacks in the Pentest track.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/11-firewalls-ids-ips-proxies-vpns-and-network-segmentation), with comments and the latest edits.*

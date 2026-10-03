@@ -1,11 +1,8 @@
 ---
 title: 'What is Active Directory? Domains, Forests, Trees & OUs'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · What is Active Directory? Domains, Forests, Trees & OUs'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/active-directory-fundamentals/01-what-is-active-directory-domains-forests-trees-and
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 150 min
-
 This is Chapter 1 of the Active Directory series — Notebook 4. The Windows Internals
 notebook took you through a single machine: its processes, its authentication, its
 logs. Active Directory is what happens when you connect thousands of those machines
@@ -899,7 +894,3 @@ Labs that train *this* chapter's structural understanding specifically:
    domain in the forest, while the same query on TCP 389 returns only the local
    domain's users. Name the service on 3268, explain why the result set differs,
    and state why this matters to an attacker enumerating SPNs forest-wide.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/active-directory-fundamentals/01-what-is-active-directory-domains-forests-trees-and), with comments and the latest edits.*

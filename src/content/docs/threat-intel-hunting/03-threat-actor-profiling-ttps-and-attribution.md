@@ -1,11 +1,8 @@
 ---
 title: 'Threat Actor Profiling, TTPs & Attribution'
-description: >-
-  A Advanced-level Threat Intel & Hunting chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Threat Intel & Hunting chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Threat Actor Profiling, TTPs & Attribution'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/03-threat-actor-profiling-ttps-and-attribution
 ---
-**Level:** Advanced · **Track:** Threat Intel & Hunting · **Read time:** 265 min
-
 This is Chapter 3 of the Threat Intel & Hunting notebook. The previous
 chapter ended at the Diamond Model's *Adversary* vertex — the hardest
 one to fill. This chapter is about filling it responsibly: building a
@@ -887,7 +882,3 @@ confirm
 The next chapter turns from the analysis to the machinery: the platforms
 and standards that store, share, and operationalise everything you've
 profiled — MISP, OpenCTI, and STIX/TAXII.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/03-threat-actor-profiling-ttps-and-attribution), with comments and the latest edits.*

@@ -1,9 +1,8 @@
 ---
 title: Bypassing Root Detection & SSL Pinning
-description: A Advanced-level Mobile & IoT chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Mobile & IoT chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · Bypassing Root Detection & SSL Pinning
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/05-bypassing-root-detection-and-ssl-pinning
 ---
-**Level:** Advanced · **Track:** Mobile & IoT · **Read time:** 300 min
-
 This is Chapter 5 of the Mobile & IoT notebook. Chapters 2–4 gave you a rooted device, a static map, and a live-instrumentation toolkit. Two defenses now stand between you and most real apps: **root/tamper detection** (the app refuses to run, or degrades, on a rooted device) and **certificate pinning** (the app refuses to trust your proxy's CA even from the system store, so you can't read its traffic). This chapter is dedicated to both, because between them they account for the majority of "I set everything up and it still doesn't work" moments in mobile testing.
 
 The theme carries over from Chapter 4: these are **client-side** controls, and a client-side control on a device the attacker owns can always be defeated — the only question is cost. We'll go from the cheapest reliable methods to the ones you reach for when an app fights back with native code and layered checks.
@@ -372,7 +369,3 @@ adb shell su -c 'iptables -t nat -A OUTPUT -p tcp --dport 443 -j DNAT --to-desti
 - **OWASP MASTG "Testing Network Communication" and "Anti-Reversing Defenses"** chapters — the reference for pinning and root-detection testing.
 
 In the next chapter we turn from defenses to *offense against the app's own surface*: **Android IPC** — deep links, intents, and exported components — where a malicious app or a crafted link can reach into the target and abuse the very components you catalogued in Chapter 3.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/05-bypassing-root-detection-and-ssl-pinning), with comments and the latest edits.*

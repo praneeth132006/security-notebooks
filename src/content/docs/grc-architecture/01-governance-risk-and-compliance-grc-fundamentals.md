@@ -1,11 +1,8 @@
 ---
 title: 'Governance, Risk & Compliance (GRC) Fundamentals'
-description: >-
-  A Beginner-level GRC & Architecture chapter from Praneeth's cybersecurity
-  notebook.
+description: A Beginner-level GRC & Architecture chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Governance, Risk & Compliance (GRC) Fundamentals'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/grc-architecture/01-governance-risk-and-compliance-grc-fundamentals
 ---
-**Level:** Beginner · **Track:** GRC & Architecture · **Read time:** 220 min
-
 This is Chapter 1 of the GRC & Architecture notebook. Every notebook so far in this series has been hands-on: break something, detect something, defend something, migrate something. This one starts a different kind of work — the discipline that decides *what a security program is trying to achieve in the first place*, who is accountable when it fails, and how an organisation proves to itself and to outsiders that its controls actually exist and actually work. That discipline is **governance, risk, and compliance**, universally shortened to **GRC**.
 
 If you have come from the technical chapters, GRC can feel like the part that grown-ups in suits do to slow engineers down. This chapter argues the opposite: GRC is the load-bearing structure that turns a pile of individual controls into a *program* — one that can be reasoned about, resourced, prioritised by risk, and defended in front of a regulator or a board. By the end you will be able to write a real policy set, build a risk register that scores and ranks risks, explain the difference between compliance and security to someone who conflates them, and place any control you have ever configured into a taxonomy that tells you what it is *for*.
@@ -869,7 +864,3 @@ Rank by RESIDUAL score. Review on a cadence or it becomes fiction.
 - **TryHackMe / free GRC courses.** Introductory GRC, security-management, and ISO 27001 foundation materials reinforce the roles, documents, and cycle from this chapter; pair them with the hands-on register you built rather than treating them as pure reading.
 
 The next chapter takes the control objectives introduced here and grounds them in the actual frameworks the industry runs on — NIST CSF, ISO 27001, CIS Controls, and SOC 2 — showing how each is structured, when to use which, and how one well-designed control can satisfy several at once.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/grc-architecture/01-governance-risk-and-compliance-grc-fundamentals), with comments and the latest edits.*

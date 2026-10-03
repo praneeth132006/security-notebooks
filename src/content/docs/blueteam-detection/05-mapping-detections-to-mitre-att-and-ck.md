@@ -1,9 +1,8 @@
 ---
 title: Mapping Detections to MITRE ATT&CK
-description: A Expert-level SOC & Blue Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · Mapping Detections to MITRE ATT&CK
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-detection/05-mapping-detections-to-mitre-att-and-ck
 ---
-**Level:** Expert · **Track:** SOC & Blue Team · **Read time:** 210 min
-
 This is Chapter 5 of the Detection Engineering notebook. Chapter 1 gave you Sigma as a portable rule format, Chapters 2 and 3 gave you the endpoint telemetry and file/memory pattern matching that feed detections, and Chapter 4 had you write real tuned rules in SPL and KQL. Every one of those rules ended with a line like `attack.t1003.001` or `mitre_attack_id: T1558.003`, and we treated that line as a label. This chapter is about taking that label seriously — because the mapping is not documentation, it is the *measurement layer* of a detection programme, and a programme that maps carelessly will confidently report 80% coverage of an adversary it cannot actually see.
 
 ## Why This Matters
@@ -1172,7 +1169,3 @@ Train these exact skills, not generic ones:
 - **CyberDefenders / Blue Team Labs Online** — SIEM challenges where reading the technique page first (Part 3) and pivoting on the right data component is a measurable speed advantage.
 
 Work the loop until it is muscle memory: point the auditor at a rule repo, read the coverage skew, compute the gap layer against a priority actor, write and correctly map the top gap rule, detonate its atomics, record the validation, and re-run. That measure → gap → build → validate cycle — not a green matrix screenshot — is the deliverable of detection-coverage engineering, and the thing this chapter exists to make automatic.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-detection/05-mapping-detections-to-mitre-att-and-ck), with comments and the latest edits.*

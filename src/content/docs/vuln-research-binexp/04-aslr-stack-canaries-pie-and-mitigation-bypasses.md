@@ -1,11 +1,8 @@
 ---
 title: 'ASLR, Stack Canaries, PIE & Mitigation Bypasses'
-description: >-
-  A Expert-level Vulnerability Research chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Vulnerability Research chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · ASLR, Stack Canaries, PIE & Mitigation Bypasses'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/04-aslr-stack-canaries-pie-and-mitigation-bypasses
 ---
-**Level:** Expert · **Track:** Vulnerability Research · **Read time:** 285 min
-
 This is Chapter 4 of the Binary Exploitation notebook. Chapters 2 and 3 assumed a friendly target: a binary with an executable stack, no stack canary, no address randomisation, and a fixed load address you could read straight out of the ELF. Real binaries are not like that. Since roughly the mid-2000s, every mainstream compiler and operating system ships a stack of *exploit mitigations* — stack canaries, non-executable memory (NX/DEP, covered in Chapter 3), Address Space Layout Randomisation (ASLR), Position-Independent Executables (PIE), and RELRO. None of these fix the underlying memory-corruption bug. Each of them raises the cost of turning that bug into a working exploit, and each of them can be defeated with the right primitive.
 
 This chapter is about the *cost model*. For every mitigation we ask three questions: what exactly does it protect, what does an attacker need in order to bypass it, and how do you obtain that thing from a real bug. The recurring answer is an **information leak** — a way to read one secret value out of the target's address space (a canary, a code pointer, a libc pointer). Once you internalise "mitigation X is defeated by leak primitive Y", the whole modern exploitation workflow snaps into focus: find a bug that leaks, use it to defeat ASLR/canary, then find (or reuse) a bug that corrupts control flow, and hand off to the ROP chain from Chapter 3.
@@ -902,7 +897,3 @@ Practice question set:
 5. Give two code-level changes that would make Lab B's byte-by-byte canary brute-force impossible, and explain the mechanism of each.
 
 In the next chapter we go deep on the single most versatile leak-*and*-write primitive in this whole playbook — the **format string vulnerability** — turning `printf(user)` into arbitrary reads (the canary/libc leaks used here) and arbitrary writes (GOT/hook overwrites).
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/04-aslr-stack-canaries-pie-and-mitigation-bypasses), with comments and the latest edits.*

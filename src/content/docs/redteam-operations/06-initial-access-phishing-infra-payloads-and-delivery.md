@@ -1,9 +1,8 @@
 ---
 title: 'Initial Access: Phishing Infra, Payloads & Delivery'
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · Initial Access: Phishing Infra, Payloads & Delivery'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-operations/06-initial-access-phishing-infra-payloads-and-delivery
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 215 min
-
 This is Chapter 6 of the Red Team Operations notebook. Chapter 5 built the
 *infrastructure* an operation runs on — the tiered team-server/redirector model,
 domain reputation, TLS fingerprints, and the OPSEC that keeps it all
@@ -904,7 +901,3 @@ the exact process lineage you'd hunt for. That is the analyst skill that catches
 initial access. The next chapter follows the foothold *inward*: living-off-the-land
 tradecraft, EDR evasion concepts, and the OPSEC that keeps a foothold quiet — again,
 strictly defender-first and lab-scoped.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-operations/06-initial-access-phishing-infra-payloads-and-delivery), with comments and the latest edits.*

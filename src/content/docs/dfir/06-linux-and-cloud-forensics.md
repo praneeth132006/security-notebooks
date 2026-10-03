@@ -1,11 +1,8 @@
 ---
 title: Linux & Cloud Forensics
-description: >-
-  A Advanced-level DFIR & Incident Response chapter from Praneeth's
-  cybersecurity notebook.
+description: A Advanced-level DFIR & Incident Response chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: 06 · Linux & Cloud Forensics
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/dfir/06-linux-and-cloud-forensics
 ---
-**Level:** Advanced · **Track:** DFIR & Incident Response · **Read time:** 265 min
-
 This is Chapter 6 of the DFIR notebook. Chapter 5 mapped everything a Windows endpoint remembers about its own past. This chapter moves to the machines that carry production traffic — Linux servers, the containers running on them, and the cloud control planes that create and destroy those servers hundreds of times a day.
 
 The shift is not just a change of file paths. On a Windows workstation the disk is the archive: the registry and the artifact caches are so chatty that an attacker has to work hard to erase themselves. Linux is the opposite — it records only what it was configured to record, most of it in flat text files that any root user can rewrite, and a default cloud instance may exist for eleven minutes and then vanish with its disk. What replaces the disk as the authoritative record is the **control plane**: an API log, outside the attacker's blast radius, that captured every call they made. Learning where that record lives and how to read it is now as fundamental as knowing what Prefetch proves.
@@ -1746,7 +1741,3 @@ mount -o ro,noexec,nodev,noload /dev/nvme1n1p1 /mnt/evidence
 4. From a CloudTrail export alone, determine whether a set of credentials belonged to an instance role and whether they were used from outside the account's infrastructure. State the exact fields you used.
 5. For a compromised container, list every file the attacker created inside it **without executing anything in the container**, and determine whether an escape to the host was possible from the container's configuration.
 6. Given a `wtmp` file, determine whether login records were surgically removed, and describe the two independent structural checks that support your answer.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/dfir/06-linux-and-cloud-forensics), with comments and the latest edits.*

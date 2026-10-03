@@ -1,9 +1,8 @@
 ---
 title: 'Red Team Reporting, Attack Narratives & Deliverables'
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 9
-  label: '09 · Red Team Reporting, Attack Narratives & Deliverables'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-operations/09-red-team-reporting-attack-narratives-and-deliverables
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 205 min
-
 This is Chapter 9, the final chapter of the Red Team Operations notebook. Chapters 1
 through 8 built an entire operation: the mindset and lifecycle, C2 and beaconing,
 commercial and open-source frameworks, infrastructure, initial access, living-off-
@@ -902,7 +899,3 @@ in miniature, the entire deliverable set that a real engagement demands. That is
 skill that makes everything in Chapters 1–8 actually matter: not the break-in, but the
 document that turns a break-in into a stronger defender. With that, the Red Team
 Operations notebook is complete.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-operations/09-red-team-reporting-attack-narratives-and-deliverables), with comments and the latest edits.*

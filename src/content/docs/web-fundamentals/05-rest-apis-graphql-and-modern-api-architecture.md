@@ -1,11 +1,8 @@
 ---
 title: 'REST APIs, GraphQL & Modern API Architecture'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · REST APIs, GraphQL & Modern API Architecture'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/web-fundamentals/05-rest-apis-graphql-and-modern-api-architecture
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 185 min
-
 This is Chapter 5 of the Web Fundamentals series — Notebook 6. The last two chapters were about
 how the browser carries identity (sessions/tokens) and how it isolates origins (SOP/CORS). Both
 increasingly serve one thing: an **API**. Modern applications are frequently a thin front-end
@@ -916,7 +911,3 @@ fields* — every time, server-side.
    form would enforce, and give the fix.
 5. Design authorization for `DELETE /api/comments/{id}` so that it resists BOLA *and* BFLA. Name
    both checks and where they live.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/web-fundamentals/05-rest-apis-graphql-and-modern-api-architecture), with comments and the latest edits.*

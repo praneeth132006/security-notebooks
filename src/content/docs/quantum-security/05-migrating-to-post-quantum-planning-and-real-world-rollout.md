@@ -1,11 +1,8 @@
 ---
 title: 'Migrating to Post-Quantum: Planning & Real-World Rollout'
-description: >-
-  A Expert-level Quantum Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Quantum Security chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Migrating to Post-Quantum: Planning & Real-World Rollout'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/quantum-security/05-migrating-to-post-quantum-planning-and-real-world-rollout
 ---
-**Level:** Expert · **Track:** Quantum Security · **Read time:** 355 min
-
 This is Chapter 5 of the Quantum Security notebook, and the last one. Chapter 2 showed what quantum computing breaks, Chapter 3 showed why the risk is already live through harvest-now-decrypt-later, and Chapter 4 went deep on the algorithms that replace what breaks. All three left the same question unanswered: *how do you actually move an organisation?*
 
 That is not a cryptography problem. Every algorithm you need is standardised, implemented, and shipping in mainline OpenSSL and OpenSSH. The blockers are discovery, prioritisation, vendor dependency, testing, sequencing, budget, and the unglamorous work of finding the RSA-2048 key wrapping a decade of backups in a system nobody owns. This chapter is about that work.
@@ -1793,7 +1788,3 @@ Test yourself before moving on. Answers below.
 7. Under the current architecture the second change costs **approximately the same as the first** — 200 separate code changes, 200 reviews, 200 release cycles — because the algorithm is named in each service's code. Under a completed Phase 3 it would be **a configuration change plus a canary rollout**, perhaps two orders of magnitude cheaper, and measured in days rather than quarters. The artefact that makes the difference is **a single configuration-driven crypto service or policy layer that is the only place in the codebase naming an algorithm**, with the algorithm supplied by configuration, a `policy_version` emitted in telemetry so you can see fleet state, an `alg` identifier recorded on every output so you know what needs re-signing or rewrapping, and loud failure on unknown algorithms rather than a silent fallback. Building that during the first migration adds a small marginal cost; skipping it means paying for the whole migration twice — and given the SIKE and Rainbow breaks from Chapter 4, a third time is not unlikely.
 
 This completes the Quantum Security notebook. Across five chapters it moved from the physics of qubits, through the algorithms that break classical cryptography and the harvest-now-decrypt-later risk that makes the threat present rather than future, to the standardised replacements and finally to the programme that deploys them. The next notebook shifts from a single threat domain to the practice of testing defences against offence directly.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/quantum-security/05-migrating-to-post-quantum-planning-and-real-world-rollout), with comments and the latest edits.*

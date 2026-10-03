@@ -1,11 +1,8 @@
 ---
 title: 'SMB, RPC, Named Pipes & Windows Networking Services'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · SMB, RPC, Named Pipes & Windows Networking Services'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/windows-fundamentals/06-smb-rpc-named-pipes-and-windows-networking-services
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 130 min
-
 This is Chapter 6 of the Windows Internals series. Chapter 5 covered how PowerShell and WMI reach across the network. This chapter goes one layer deeper, into the actual protocols carrying that traffic and file access: **SMB** (Server Message Block), **named pipes**, and **MS-RPC/DCERPC**. If you've ever wondered how `psexec` actually starts a service remotely, how `secretsdump.py` pulls password hashes without ever touching disk on the target, or why "SMB signing" appears in every hardening checklist you've ever read, this chapter answers it from the wire up.
 
 ---
@@ -442,7 +437,3 @@ Set-SmbServerConfiguration -RequireSecuritySignature $true -Force
 3. **rpcclient manual-enumeration exercise:** in your own lab domain, disable all higher-level tools and manually recover the full user list, password policy, and share list using only `rpcclient` interactive commands.
 4. **Responder + ntlmrelayx lab (isolated network only):** stand up Responder to capture a poisoned LLMNR authentication attempt, then relay it with `ntlmrelayx.py` to a target with SMB signing disabled — then re-run with signing enabled and confirm the relay fails.
 5. **Zerologon lab (patched vs. unpatched VM pair):** run a Zerologon proof-of-concept against a deliberately unpatched Server 2019 domain controller in an isolated lab, observe the NETLOGON secure-channel reset, then repeat against a patched DC and confirm it's blocked.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/windows-fundamentals/06-smb-rpc-named-pipes-and-windows-networking-services), with comments and the latest edits.*

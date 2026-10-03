@@ -1,11 +1,8 @@
 ---
 title: Subdomain Takeover & Dangling DNS
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: 08 · Subdomain Takeover & Dangling DNS
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-server-side/08-subdomain-takeover-and-dangling-dns
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 8 of the Server-Side notebook — Notebook 26. The previous chapters attacked what a
 server *does* with a request: it fetches a URL for you (SSRF), it desynchronises a connection
 (request smuggling), it loses a race (TOCTOU), it caches the wrong thing (cache poisoning). This
@@ -1192,7 +1187,3 @@ Practise the *mechanics* safely and the *recon* legally:
 The next chapter continues the Server-Side notebook. Before moving on, make sure you can, from memory,
 run the full detect-verify-prove-release loop on the local lab, explain why an app 404 is not a
 takeover, and name the exact ordering rule that prevents dangles at the source.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-server-side/08-subdomain-takeover-and-dangling-dns), with comments and the latest edits.*

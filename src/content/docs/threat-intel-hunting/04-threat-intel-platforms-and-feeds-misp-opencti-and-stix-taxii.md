@@ -1,11 +1,8 @@
 ---
 title: 'Threat Intel Platforms & Feeds: MISP, OpenCTI & STIX/TAXII'
-description: >-
-  A Advanced-level Threat Intel & Hunting chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Threat Intel & Hunting chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Threat Intel Platforms & Feeds: MISP, OpenCTI & STIX/TAXII'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/04-threat-intel-platforms-and-feeds-misp-opencti-and-stix-taxii
 ---
-**Level:** Advanced · **Track:** Threat Intel & Hunting · **Read time:** 270 min
-
 This is Chapter 4 of the Threat Intel & Hunting notebook, and it is the
 tool-primer of the series. The first three chapters were about
 *thinking*: what intelligence is, how to reason about indicators, how to
@@ -893,7 +888,3 @@ The final chapter of this notebook brings everything together into
 proactive defence: threat-hunting methodology and hypothesis-driven
 hunting — using the intelligence, indicators, profiles, and platforms of
 the previous chapters to find the adversary *before* they trip an alert.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/04-threat-intel-platforms-and-feeds-misp-opencti-and-stix-taxii), with comments and the latest edits.*

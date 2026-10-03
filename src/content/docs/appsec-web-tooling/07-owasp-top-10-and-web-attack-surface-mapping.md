@@ -1,11 +1,8 @@
 ---
 title: OWASP Top 10 & Web Attack-Surface Mapping
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: 07 · OWASP Top 10 & Web Attack-Surface Mapping
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/07-owasp-top-10-and-web-attack-surface-mapping
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 205 min
-
 This is Chapter 7 of the Web Tooling notebook and its capstone. The previous chapters
 handed you instruments: Burp and ZAP for interception and scanning, ffuf/feroxbuster/
 Arjun for discovery, Nuclei for templated detection. This chapter supplies the thing
@@ -584,7 +579,3 @@ Practice questions:
    non-destructively?
 5. Define a "trust boundary" and give two concrete examples from a typical SaaS app,
    explaining why bugs cluster there.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/07-owasp-top-10-and-web-attack-surface-mapping), with comments and the latest edits.*

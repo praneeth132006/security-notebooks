@@ -1,9 +1,8 @@
 ---
 title: 'Users, Groups, sudo, PAM & Authentication'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Users, Groups, sudo, PAM & Authentication'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/04-users-groups-sudo-pam-and-authentication
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 75 min
-
 ---
 
 ## Who This Is For, and Why Identity Matters
@@ -523,7 +520,3 @@ grep -v '^#' /etc/passwd | awk -F: '$3 == 0 { print }'   # find every UID-0 (roo
 - **OverTheWire — Bandit** — repeated, safe practice reading `/etc/passwd`-style files and using enumeration commands.
 - **GTFOBins** (gtfobins.github.io) — search the "Sudo" function for any binary you find in a `sudo -l` result.
 - **LinPEAS** (github.com/peass-ng/PEASS-ng) — automates sudoers, PAM, and identity-file enumeration; run it after you've done this chapter's checks manually so you understand exactly what it's finding.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/linux/04-users-groups-sudo-pam-and-authentication), with comments and the latest edits.*

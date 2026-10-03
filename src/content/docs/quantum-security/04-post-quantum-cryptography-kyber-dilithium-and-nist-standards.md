@@ -1,11 +1,8 @@
 ---
 title: 'Post-Quantum Cryptography: Kyber, Dilithium & NIST Standards'
-description: >-
-  A Expert-level Quantum Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Quantum Security chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Post-Quantum Cryptography: Kyber, Dilithium & NIST Standards'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/quantum-security/04-post-quantum-cryptography-kyber-dilithium-and-nist-standards
 ---
-**Level:** Expert · **Track:** Quantum Security · **Read time:** 345 min
-
 This is Chapter 4 of the Quantum Security notebook. Chapter 2 established *what breaks* — Shor's algorithm dissolving RSA, finite-field Diffie-Hellman, and every elliptic curve in production — and Chapter 3 established *why the clock is already running*, through harvest-now-decrypt-later and Mosca's inequality. Both chapters ended by pointing at the same replacement set without opening it up. This chapter opens it up.
 
 The goal here is not to admire the mathematics from a distance. It is to make you the person on the team who can read FIPS 203, argue about whether ML-KEM-768 or ML-KEM-1024 belongs on your load balancers, explain to a firmware team why they want LMS instead of ML-DSA, spot a decapsulation oracle in a code review, and reproduce every claim in a lab. By the end you will have generated real post-quantum keys, signed and verified with three different signature families, issued a post-quantum certificate, completed a hybrid TLS 1.3 handshake, and measured the byte cost of all of it.
@@ -1826,7 +1821,3 @@ Test yourself before moving on. Answers below.
 7. Determinism means signing the same message twice produces byte-identical execution. That gives a physical attacker the ideal baseline for a **differential fault attack**: sign once cleanly, sign again while injecting a voltage or clock glitch, and difference the outputs — because everything except the faulted computation is identical, the difference isolates secret-dependent intermediates and can yield key recovery. A smartcard is exactly the environment where an attacker holds the device and can glitch it. **Hedged mode** mixes fresh randomness into the mask derivation *in addition to* the secret key and the message, so repeated signatures differ and the attacker has no identical baseline. Critically, if the RNG is broken or returns constants, hedged mode degrades gracefully to deterministic behaviour rather than failing catastrophically — the mask still depends on the secret key and message, so a weak RNG costs you fault resistance but not key confidentiality. That is why hedged is both the safer default and the safe choice under entropy uncertainty.
 
 The next chapter takes everything here and turns it into a programme: how to sequence a real post-quantum migration across an estate — inventory to pilot to rollout — with the vendor management, testing strategy, timelines, and failure modes that decide whether it lands.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/quantum-security/04-post-quantum-cryptography-kyber-dilithium-and-nist-standards), with comments and the latest edits.*

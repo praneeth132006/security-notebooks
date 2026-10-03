@@ -1,11 +1,8 @@
 ---
 title: 'Understanding C, Memory Layout, Pointers & the Stack'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Understanding C, Memory Layout, Pointers & the Stack'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/programming-for-security/05-understanding-c-memory-layout-pointers-and-the-stack
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 175 min
-
 This is Chapter 5 of the Programming for Security series — Notebook 5. The four previous
 chapters gave you Python and Bash: high-level languages where memory is invisible, strings just
 work, and a variable is a name you never have to think about the *address* of. This chapter goes
@@ -1163,7 +1158,3 @@ Work these in order; each trains a piece of this chapter directly:
    trigger the integer-signedness bug from Part 3 and catch it with AddressSanitizer.
 4. Run `pwn checksec` on five binaries in `/usr/bin` and note which mitigations real distro tools
    ship with by default on a current system.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/programming-for-security/05-understanding-c-memory-layout-pointers-and-the-stack), with comments and the latest edits.*

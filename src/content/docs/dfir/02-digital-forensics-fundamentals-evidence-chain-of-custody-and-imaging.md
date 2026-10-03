@@ -1,11 +1,10 @@
 ---
 title: 'Digital Forensics Fundamentals: Evidence, Chain of Custody & Imaging'
 description: >-
-  A Intermediate-level DFIR & Incident Response chapter from Praneeth's
-  cybersecurity notebook.
+  A Intermediate-level DFIR & Incident Response chapter from the Security
+  Notebooks.
 sidebar:
   order: 2
-  label: '02 · Digital Forensics Fundamentals: Evidence, Chain of Custody & Imaging'
 head:
   - tag: link
     attrs:
@@ -13,8 +12,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/dfir/02-digital-forensics-fundamentals-evidence-chain-of-custody-and-imaging
 ---
-**Level:** Intermediate · **Track:** DFIR & Incident Response · **Read time:** 215 min
-
 This is Chapter 2 of the DFIR notebook. Chapter 1 walked the incident response lifecycle end to end and stopped, repeatedly, at the same fork: *do we contain now and lose evidence, or preserve first and risk the attacker moving?* This chapter is about the second half of that fork. It teaches you how to preserve, acquire, and prove the integrity of digital evidence so that whatever you find later — a deleted file, a browser history entry, a malware sample, a login timestamp — holds up when someone hostile asks "how do you know you didn't change it?"
 
 Digital forensics is the science of recovering and interpreting data from digital devices in a way that is **repeatable, defensible, and complete**. The word that matters most there is *defensible*. Anyone can plug a disk in and copy files. A forensic examiner copies the disk in a way that a second examiner, months later, working from your notes, gets a byte-identical result — and can prove neither of you altered anything. That property is what separates forensics from ordinary data recovery, and it is the entire subject of this chapter.
@@ -1085,7 +1082,3 @@ Train these exact skills — imaging, verification, mounting, carving, and volat
 - **Read in full:** RFC 3227 (evidence collection), the ACPO Good Practice Guide for Digital Evidence, and NIST SP 800-86 (*Guide to Integrating Forensic Techniques into Incident Response*) — short, foundational, frequently cited.
 
 The next chapter moves from *acquiring* the image to *analysing* it: file systems, the NTFS `$MFT`, timestamps, and recovering deleted data from the very unallocated space this chapter taught you to capture.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/dfir/02-digital-forensics-fundamentals-evidence-chain-of-custody-and-imaging), with comments and the latest edits.*

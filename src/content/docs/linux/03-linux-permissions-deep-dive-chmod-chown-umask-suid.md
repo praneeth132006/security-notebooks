@@ -1,9 +1,8 @@
 ---
 title: 'Linux Permissions Deep Dive: chmod, chown, umask, SUID/SGID/Sticky'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Linux Permissions Deep Dive: chmod, chown, umask, SUID/SGID/Sticky'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/03-linux-permissions-deep-dive-chmod-chown-umask-suid
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 80 min
-
 ---
 
 ## Who This Is For, and Why Permissions Matter
@@ -596,7 +593,3 @@ setfacl -b file                                   # strip all ACLs
 - **GTFOBins** (gtfobins.github.io) — the reference database for abusing SUID/sudo/capabilities on standard Unix binaries; bookmark it, you'll use it constantly.
 - **OverTheWire — Bandit (levels 1–10)** — heavy repetition of permission reading and `find`-based enumeration in a safe wargame environment.
 - **LinPEAS** (github.com/peass-ng/PEASS-ng) — once you understand this chapter manually, run LinPEAS on a lab box and read its output line by line to see how it automates everything covered here.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/linux/03-linux-permissions-deep-dive-chmod-chown-umask-suid), with comments and the latest edits.*

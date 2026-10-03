@@ -1,9 +1,8 @@
 ---
 title: 'OSINT CTF Challenges: Finding the Needle'
-description: A Intermediate-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Intermediate-level Career chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · OSINT CTF Challenges: Finding the Needle'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ctf-wargames/05-osint-ctf-challenges-finding-the-needle
 ---
-**Level:** Intermediate · **Track:** Career · **Read time:** 245 min
-
 Every other category in this notebook gives you an artifact and asks you to break it. OSINT gives you a *seed* — a photograph, a username, an email address, a domain, a name — and asks a specific question: where was this taken, who owns this account, what is this person's employer, what was on this page before it was deleted. The flag is not hidden inside the thing you were given; it is out on the public internet, connected to your seed by a chain of pivots you have to build.
 
 That makes OSINT the category that feels least like "hacking" and is, in some ways, the most broadly useful skill in the whole curriculum. It is what a penetration tester does in the reconnaissance phase (Notebook 10), what a threat intelligence analyst does tracking an actor (Notebook 34), what a social engineer does building a pretext (Notebook 28), and what an investigative journalist does verifying a story. The core motion — start from one known fact, find a second fact connected to it, use that to find a third — is identical across all of them.
@@ -523,7 +520,3 @@ Google Earth historical imagery + SunCalc (chronolocation)
 **Further reading**
 - Notebook 10 (reconnaissance & OSINT as a pentest phase), Notebook 34 (threat intel, infrastructure clustering, and attack-surface OSINT), and Notebook 28 (how OSINT feeds pretexting) — the professional contexts this category trains for.
 - Notebook 42, Chapter 6 (privacy) — the other side of the coin: what OSINT collects is exactly what data-protection law governs.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ctf-wargames/05-osint-ctf-challenges-finding-the-needle), with comments and the latest edits.*

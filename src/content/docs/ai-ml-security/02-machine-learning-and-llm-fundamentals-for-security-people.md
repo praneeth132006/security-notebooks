@@ -1,11 +1,8 @@
 ---
 title: Machine Learning & LLM Fundamentals for Security People
-description: >-
-  A Intermediate-level AI/ML Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level AI/ML Security chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: 02 · Machine Learning & LLM Fundamentals for Security People
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ai-ml-security/02-machine-learning-and-llm-fundamentals-for-security-people
 ---
-**Level:** Intermediate · **Track:** AI/ML Security · **Read time:** 255 min
-
 This is Chapter 2 of the AI/ML Security notebook. Chapter 1 mapped the whole
 attack surface — the four asset classes, the lifecycle of attacks, and the
 frameworks — but it deliberately deferred one thing: *how the machine actually
@@ -949,7 +944,3 @@ Build the fundamentals with hands-on, topic-specific material.
 crafting adversarial examples (FGSM/PGD), poisoning training data with
 backdoors, and extracting a model through its outputs — all building directly on
 the features/weights/loss/boundary model you now hold.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ai-ml-security/02-machine-learning-and-llm-fundamentals-for-security-people), with comments and the latest edits.*

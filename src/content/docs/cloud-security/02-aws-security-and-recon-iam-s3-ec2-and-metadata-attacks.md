@@ -1,11 +1,8 @@
 ---
 title: 'AWS Security & Recon: IAM, S3, EC2 & Metadata Attacks'
-description: >-
-  A Intermediate-level Cloud Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Cloud Security chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · AWS Security & Recon: IAM, S3, EC2 & Metadata Attacks'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cloud-security/02-aws-security-and-recon-iam-s3-ec2-and-metadata-attacks
 ---
-**Level:** Intermediate · **Track:** Cloud Security · **Read time:** 295 min
-
 This is Chapter 2 of the Cloud Security notebook. Chapter 1 built the conceptual map — shared responsibility, control vs data plane, identity as the perimeter, the IMDS crown jewel, and the cloud kill chain. This chapter makes it concrete on the provider that dominates the market and most assessments: **Amazon Web Services**. We go hands-on with the AWS CLI, IAM enumeration, S3 exposure, the EC2 metadata credential-theft chain, and IAM privilege escalation — the exact techniques that turn a single leaked key or SSRF into account-wide control.
 
 The through-line from Chapter 1 holds: **on AWS, everything is an authenticated API call, so the game is about credentials and the permissions attached to them.** You obtain a credential (a leaked key, an IMDS role, an assumed role), you discover what it can do, and you either act directly or escalate to something more powerful. This chapter teaches that loop — enumerate, escalate, move, persist — with real commands and realistic output, then shows the detection and hardening that counter each step.
@@ -902,7 +897,3 @@ Practice question set:
 The next chapters continue the cloud track — cloud pentest tooling (Pacu, ScoutSuite, Prowler in depth), then Azure/Entra ID and GCP — but the AWS loop you learned here (enumerate → escalate → move → persist, all as logged API calls) is the template every provider follows. Master this loop on AWS and the Azure and GCP chapters become a matter of translating vocabulary — the attack shapes, and the defenses that counter them, stay the same.
 
 Above all, remember the discipline that makes this work legitimate: explicit authorisation, a defined scope, AWS's testing policy, read-only proof where possible, and clean-up afterward. In the cloud a single API call can affect an entire organisation — so the professional's edge is not just knowing the loop, but running it carefully.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cloud-security/02-aws-security-and-recon-iam-s3-ec2-and-metadata-attacks), with comments and the latest edits.*

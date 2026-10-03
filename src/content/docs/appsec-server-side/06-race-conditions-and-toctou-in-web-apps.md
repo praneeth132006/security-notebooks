@@ -1,11 +1,8 @@
 ---
 title: Race Conditions & TOCTOU in Web Apps
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: 06 · Race Conditions & TOCTOU in Web Apps
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-server-side/06-race-conditions-and-toctou-in-web-apps
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 6 of the Server-Side notebook — Notebook 26 — and the last one in it. The five
 chapters before it all attacked the *content* of a single request: SSRF steered where a server
 reached out to, file upload steered what got stored and executed, path traversal steered which file
@@ -1177,7 +1172,3 @@ traversal, deserialization, and smuggling each broke that rule in *space*; race 
 *time*. The defensive answer is always to move the decision to the layer that can enforce it
 atomically, and let it be the single, authoritative point where the check and the use are one and the
 same.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-server-side/06-race-conditions-and-toctou-in-web-apps), with comments and the latest edits.*

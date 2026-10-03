@@ -1,9 +1,8 @@
 ---
 title: 'Phishing Fundamentals: Pretexts, Lures & Payload Delivery'
-description: A Intermediate-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Intermediate-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Phishing Fundamentals: Pretexts, Lures & Payload Delivery'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/03-phishing-fundamentals-pretexts-lures-and-payload-delivery
 ---
-**Level:** Intermediate · **Track:** Red Team · **Read time:** 170 min
-
 This is Chapter 3 of the Social Engineering series. Chapter 1 built the psychology; Chapter 2 built the recon and the pretext. This chapter puts a pretext on the wire as an actual phishing message and follows it all the way to compromise.
 
 Phishing is the single most important initial-access technique in the modern threat landscape. It is how ransomware crews, criminal fraud rings, and nation-state actors most often get their first foothold. Understanding it deeply — as a builder and as a defender — is non-negotiable for anyone doing red teaming or blue teaming.
@@ -900,7 +897,3 @@ A distilled, staff-facing list you can lift straight into an awareness deck. If 
 The single habit that neutralises most of these: **never authenticate or pay from a message — open the site from a bookmark or call a known number — and report anything suspicious.** That one behaviour, plus phishing-resistant MFA and dual-authorisation on payments, defeats the large majority of real-world phishing.
 
 In the next chapter we go under the hood of the sender: **Email Spoofing, SPF/DKIM/DMARC & Deliverability** — exactly why some spoofs land and others bounce, and how defenders shut the door.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/03-phishing-fundamentals-pretexts-lures-and-payload-delivery), with comments and the latest edits.*

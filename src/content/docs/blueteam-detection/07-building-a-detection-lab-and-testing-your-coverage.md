@@ -1,9 +1,8 @@
 ---
 title: Building a Detection Lab & Testing Your Coverage
-description: A Expert-level SOC & Blue Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: 07 · Building a Detection Lab & Testing Your Coverage
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-detection/07-building-a-detection-lab-and-testing-your-coverage
 ---
-**Level:** Expert · **Track:** SOC & Blue Team · **Read time:** 225 min
-
 This is Chapter 7 of the Detection Engineering notebook, and it closes the loop on everything the previous six chapters taught. You have written Sigma rules, instrumented endpoints with Sysmon and osquery, authored YARA signatures, built SPL and KQL detections, mapped all of it to MITRE ATT&CK, and wired the resulting alerts into SOAR playbooks. Every one of those chapters made the same quiet assumption: that you had somewhere safe to *run the attack* and *watch the rule fire*. This chapter builds that place, and then turns it into the instrument you use to answer the only question that ultimately matters — **does this detection actually work?**
 
 ## Why This Matters
@@ -1454,7 +1451,3 @@ Hands-on, topic-specific practice that actually trains lab-building and coverage
 - **PurpleSharp + Stratus Red Team** — add AD-specific and cloud-specific detonation to your suite once the endpoint loop is solid.
 
 Build the lab, wire the telemetry, prove it arrives, detonate a technique, watch the rule fire, run the negative test, and score coverage across all three layers — and you will have converted "we think we detect this" into "we have proven we detect this," which is the single most valuable sentence a detection engineer can say. The next chapter continues the notebook by moving from proving coverage to responding at scale.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-detection/07-building-a-detection-lab-and-testing-your-coverage), with comments and the latest edits.*

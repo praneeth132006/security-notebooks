@@ -1,11 +1,8 @@
 ---
 title: Format String Vulnerabilities
-description: >-
-  A Expert-level Vulnerability Research chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Vulnerability Research chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · Format String Vulnerabilities
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/05-format-string-vulnerabilities
 ---
-**Level:** Expert · **Track:** Vulnerability Research · **Read time:** 280 min
-
 This is Chapter 5 of the Binary Exploitation notebook. Chapter 4 leaned on a "read primitive" and a "write primitive" as if they were free — leak the canary, leak libc, overwrite a GOT entry. This chapter is where those primitives come from. The **format string vulnerability** is unique in the exploitation canon: a *single* bug class gives you both an arbitrary **read** (the most powerful info-leak in the game — it defeats the canary, ASLR and PIE all at once) and an arbitrary **write** (overwrite any writable pointer: a GOT entry, a saved return address, a function hook). No other common bug is both at once.
 
 The root cause is deceptively small. C's `printf` family is *variadic* — it decides how many arguments to consume, and of what type, entirely from the **format string** you pass it. When that format string is attacker-controlled (`printf(user_input)` instead of `printf("%s", user_input)`), the attacker dictates how `printf` walks memory. This chapter builds the complete mental model of that ABI, then turns it into read and write primitives, and finally into full exploits.
@@ -902,7 +897,3 @@ Practice question set:
 - **"Literal format, data as argument."** — the one-line fix that eliminates the entire bug class.
 
 The next chapter leaves the stack behind for the richest and most modern corruption target — the **heap**: chunks, bins, `tcache`, use-after-free and double-free, and how a single freed pointer becomes arbitrary write and code execution.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/05-format-string-vulnerabilities), with comments and the latest edits.*

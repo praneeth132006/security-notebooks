@@ -1,11 +1,8 @@
 ---
 title: Return-Oriented Programming (ROP) & Bypassing DEP/NX
-description: >-
-  A Expert-level Vulnerability Research chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Vulnerability Research chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: 03 · Return-Oriented Programming (ROP) & Bypassing DEP/NX
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/03-return-oriented-programming-rop-and-bypassing-dep-nx
 ---
-**Level:** Expert · **Track:** Vulnerability Research · **Read time:** 270 min
-
 This is Chapter 3 of the Binary Exploitation notebook. Chapter 2 ended at the doorway of this technique: to defeat the non-executable stack (NX/DEP) we returned into `system` with a single `pop rdi; ret` gadget — a two-gadget ret2libc. Return-oriented programming is the full generalisation of that idea. Instead of injecting our own machine code (which NX forbids from running), we assemble a program out of tiny fragments of code that *already exist and are already executable* inside the binary and its libraries, stitched together by the `ret` instruction.
 
 ROP is the central technique of modern binary exploitation. Once you can build an arbitrary ROP chain you can call any function with any arguments, invoke any syscall, make memory executable and jump into your own shellcode after all, or spawn a shell in a single magic gadget. Everything after this chapter — canary and ASLR bypasses (Chapter 4), format-string write primitives (Chapter 5), heap control-flow hijacks (Chapter 6) — ultimately hands control to a ROP chain. Master this and the rest is plumbing.
@@ -851,7 +846,3 @@ rop.read(0,bss,len(sc)); rop.mprotect(bss&~0xfff,0x1000,7); rop.raw(bss)
 Graduation test for this chapter: on a dynamically-linked NX+ASLR no-canary binary you have not seen, write one pwntools script that leaks libc, fingerprints an *unknown* libc if none is provided, rebases, and pops a **remote** shell; then, on a seccomp-`execve`-blocked variant of the same binary, adapt it into a working **ORW** chain that prints the flag. Clearing both — a shell where allowed, a file read where not — proves you can build arbitrary computation out of borrowed code against a realistically hardened target, which is exactly what Chapter 4's canary/ASLR/PIE bypasses will let you do even when the mitigations are all switched on.
 
 Graduation test: against a dynamically-linked, NX+ASLR, no-canary binary you have not seen, write one templated pwntools script that leaks libc, rebases, and pops a **remote** shell with a ROP chain — and separately, on a static binary, get a shell via `mprotect`+shellcode. Clear both and you are ready for Chapter 4, where the canary and full ASLR/PIE stop standing conveniently out of the way.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/03-return-oriented-programming-rop-and-bypassing-dep-nx), with comments and the latest edits.*

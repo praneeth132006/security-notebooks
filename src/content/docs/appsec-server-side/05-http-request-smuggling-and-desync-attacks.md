@@ -1,11 +1,8 @@
 ---
 title: HTTP Request Smuggling & Desync Attacks
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · HTTP Request Smuggling & Desync Attacks
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-server-side/05-http-request-smuggling-and-desync-attacks
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 270 min
-
 This is Chapter 5 of the Server-Side notebook — Notebook 26. The four chapters before it all shared
 a root cause: attacker-controlled input steering a *single* server operation — SSRF steered a fetch,
 file upload steered storage and execution, path traversal steered file access, and insecure
@@ -1300,7 +1295,3 @@ traversal, deserialization, and now desync each turn a single trusted server ope
 *disagreement between two* — into attacker control. The recurring defensive theme across all of them is
 the same: never let attacker-controlled input silently decide the meaning of a server-side operation,
 and in this chapter's case, never let two servers disagree about what that input *was*.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-server-side/05-http-request-smuggling-and-desync-attacks), with comments and the latest edits.*

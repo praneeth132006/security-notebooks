@@ -1,11 +1,8 @@
 ---
 title: Harvest-Now-Decrypt-Later & Crypto-Agility Risk
-description: >-
-  A Advanced-level Quantum Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Quantum Security chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: 03 · Harvest-Now-Decrypt-Later & Crypto-Agility Risk
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/quantum-security/03-harvest-now-decrypt-later-and-crypto-agility-risk
 ---
-**Level:** Advanced · **Track:** Quantum Security · **Read time:** 330 min
-
 This is Chapter 3 of the Quantum Security notebook. Chapter 1 built the machine — qubits, gates, interference, logical-versus-physical qubits — and Chapter 2 spent that machine on the two algorithms that matter, showing that Shor's algorithm collapses every public-key primitive in production while Grover barely dents symmetric cryptography. Both chapters ended on the same uncomfortable observation: the cryptographically relevant quantum computer (CRQC) does not exist yet, and yet the risk is already here. This chapter is about *why* the risk is already here, and what you do about it before the hardware arrives.
 
 The mechanism is **harvest-now-decrypt-later** (HNDL, also written "store-now-decrypt-later" or "retrospective decryption"). An adversary who cannot break your RSA or ECDH key exchange today can still record your encrypted traffic today, sit on it for a decade, and decrypt it the moment a CRQC becomes available. Nothing about that attack requires a quantum computer to *exist now* — it requires only cheap storage now and patience. That single asymmetry is what turns "quantum is twenty years away" from a reason to relax into a reason to act.
@@ -902,7 +897,3 @@ Test yourself before moving on. Answers below.
 7. Interrogate **how the two shared secrets are combined**: it should be a KDF over the concatenation of both secrets (or an equivalent proven combiner), applied unconditionally. A choice that voids the guarantee is combining them in a way that lets one secret dominate — e.g. plain XOR of raw secrets, or logic that falls back to using only the classical secret when the PQC arm "seems fine" — because then breaking that one arm breaks the session, defeating the "only lose if both break" property.
 
 The next chapter moves from the confidentiality problem (HNDL) to the authentication problem — the post-quantum migration of signatures and PKI, where "sign later" finally comes due and the mechanics of ML-DSA, SLH-DSA, and post-quantum certificates take centre stage.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/quantum-security/03-harvest-now-decrypt-later-and-crypto-agility-risk), with comments and the latest edits.*

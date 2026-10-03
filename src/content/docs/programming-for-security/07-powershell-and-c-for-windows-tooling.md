@@ -1,9 +1,8 @@
 ---
 title: PowerShell & C# for Windows Tooling
-description: A Advanced-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: 07 · PowerShell & C# for Windows Tooling
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/programming-for-security/07-powershell-and-c-for-windows-tooling
 ---
-**Level:** Advanced · **Track:** Foundations · **Read time:** 180 min
-
 This is Chapter 7 of the Programming for Security series — Notebook 5. The previous chapters gave
 you Python, Bash, C, and client-side JavaScript. Those cover Linux hosts, the network, native
 binaries, and the browser. This chapter crosses to the other operating system — the one that runs
@@ -1231,7 +1228,3 @@ Watch: amsi.dll patch, EtwEventWrite patch, wsmprovhost.exe children, csc.exe fr
   will use whenever you need a new `[DllImport]`.
 - **Microsoft "PowerShell ♥ the Blue Team"** and the **DotNET runtime docs on the CLR/assemblies**:
   authoritative background for the logging pipeline (Part 13) and the runtime model (Part 9).
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/programming-for-security/07-powershell-and-c-for-windows-tooling), with comments and the latest edits.*

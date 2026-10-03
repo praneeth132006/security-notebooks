@@ -1,11 +1,8 @@
 ---
 title: 'Burp Suite Part 3: Scanner, BApp Extensions & Collaborator'
-description: >-
-  A Intermediate-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Burp Suite Part 3: Scanner, BApp Extensions & Collaborator'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/03-burp-suite-part-3-scanner-bapp-extensions-and-collaborator
 ---
-**Level:** Intermediate · **Track:** Bug Bounty & AppSec · **Read time:** 195 min
-
 This is Chapter 3 of the Web Tooling notebook and the last of the three-part Burp
 series. Chapter 1 built the proxy and scope foundation; Chapter 2 gave you the manual
 firepower of Repeater, Intruder, Sequencer and Decoder. This chapter covers the parts
@@ -526,7 +521,3 @@ Practice questions:
    and what free tools replace each?
 5. What does a **DNS-only** Collaborator interaction tell you that an **HTTP**
    interaction does not, and why might egress filtering explain the difference?
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/03-burp-suite-part-3-scanner-bapp-extensions-and-collaborator), with comments and the latest edits.*

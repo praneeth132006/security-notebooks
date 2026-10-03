@@ -1,13 +1,8 @@
 ---
 title: 'Integrating Security into CI/CD Pipelines: GitHub Actions, GitLab CI & Jenkins'
-description: >-
-  A Expert-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: >-
-    07 · Integrating Security into CI/CD Pipelines: GitHub Actions, GitLab CI &
-    Jenkins
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/07-integrating-security-into-ci-cd-pipelines-github-actions-gitlab-ci-and-jenkins
 ---
-**Level:** Expert · **Track:** Product Security · **Read time:** 270 min
-
 The last six chapters built a toolbox: manual review, SAST, DAST, SCA, secrets scanning. Individually, each is a capability. This chapter assembles them into a *system* — an automated security pipeline that runs on every commit, every pull request, every deploy, without anyone remembering to invoke it. This is **DevSecOps**: security woven into the continuous-integration and continuous-delivery pipeline so that it happens at the speed the business ships, rather than as a gate the business ships *around*.
 
 The problem this solves is one of arithmetic. A modern engineering organization deploys dozens, hundreds, or thousands of times a day. A security model built on humans reviewing each release — the classic pre-release security sign-off — cannot survive contact with that velocity; it becomes either a bottleneck that the business routes around or a rubber stamp that provides no assurance. The only way security scales to continuous delivery is to **automate it into the pipeline itself**, so that every change is scanned automatically, the common bugs are caught without human involvement, and the scarce human attention (Chapters 1–2) is reserved for the tier only humans cover. Automation is not a nice-to-have here; it is the *only* model that works at modern velocity, and building it well is the defining skill of the DevSecOps discipline.
@@ -494,7 +487,3 @@ Jenkins        -> plugins, self-hosted (harden the server itself)
 - **OWASP Top 10 CI/CD Security Risks** — the definitive list of the Part 6 pipeline threats.
 - The SLSA specification and the CNCF/CISA software-supply-chain guidance.
 - Chapters 3–6 (the scanners this chapter assembles) and Chapter 8 next (container and IaC scanning, the build/test-stage controls), and Chapter 9 (vulnerability management and SLAs — what happens to the findings the pipeline produces).
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/07-integrating-security-into-ci-cd-pipelines-github-actions-gitlab-ci-and-jenkins), with comments and the latest edits.*

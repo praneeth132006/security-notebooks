@@ -1,11 +1,8 @@
 ---
 title: 'Path Traversal, LFI & RFI'
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Path Traversal, LFI & RFI'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-server-side/03-path-traversal-lfi-and-rfi
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 3 of the Server-Side notebook — Notebook 26, and it completes the notebook's arc: SSRF
 made the server *fetch* a dangerous URL, file upload made it *store and run* dangerous content, and
 this chapter makes it *read and include* dangerous files. All three share a root cause — attacker-
@@ -892,7 +887,3 @@ verify the true target of any operation, deny by default, and run the server wit
 that still does the job.
 
 Each chapter in this notebook is self-contained but they compose: an upload that lands a polyglot on disk plus an LFI that includes it is the archetypal chained RCE, and SSRF frequently supplies the internal reach that makes a file-read or inclusion bug reachable in the first place.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-server-side/03-path-traversal-lfi-and-rfi), with comments and the latest edits.*

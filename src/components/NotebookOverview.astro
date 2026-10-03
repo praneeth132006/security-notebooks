@@ -1,0 +1,183 @@
+---
+/* Notebook landing page: totals, a start/continue button, and every chapter
+   as a numbered timeline. Visited chapters get a check, from this browser's
+   reading progress. */
+import { formatMinutes, href, notebooks } from '../lib/notebooks';
+
+interface Props {
+	slug: string;
+}
+
+const notebook = notebooks.find((n) => n.slug === Astro.props.slug)!;
+const ids = notebook.chapters.map((c) => `${notebook.slug}/${c.slug}`);
+const total = notebook.chapters.reduce((t, c) => t + c.minutes, 0);
+const levels = [...new Set(notebook.chapters.map((c) => c.level))];
+---
+
+<div class="overview not-content" data-notebook={notebook.slug} data-chapters={ids.join(' ')}>
+	<p class="field">{notebook.field}</p>
+	<dl class="stats">
+		<div><dt>Chapters</dt><dd>{notebook.chapters.length}</dd></div>
+		<div><dt>Reading time</dt><dd>{formatMinutes(total)}</dd></div>
+		<div><dt>Level</dt><dd>{levels.join(' → ')}</dd></div>
+	</dl>
+
+	<div class="progress">
+		<span class="track" aria-hidden="true"><span class="fill"></span></span>
+		<span data-progress-label>{notebook.chapters.length} chapters</span>
+	</div>
+
+	<a class="start" href={href(ids[0])} data-start data-ids={ids.join(' ')}>Start reading →</a>
+
+	<ol class="timeline">
+		{
+			notebook.chapters.map((c, i) => (
+				<li data-chapter={ids[i]}>
+					<span class="num" aria-hidden="true">
+						{String(c.number).padStart(2, '0')}
+					</span>
+					<a href={href(ids[i])}>{c.title}</a>
+					<span class="info">
+						{c.level}
+						{c.minutes > 0 && ` · ${c.minutes} min`}
+					</span>
+				</li>
+			))
+		}
+	</ol>
+</div>
+
+<script>
+	import { paint, visited } from '../scripts/progress';
+
+	paint();
+
+	// "Continue" from the first unread chapter once someone has started.
+	const start = document.querySelector<HTMLAnchorElement>('[data-start]');
+	if (start) {
+		const ids = (start.dataset.ids ?? '').split(' ');
+		const seen = visited();
+		const next = ids.find((id) => !seen.has(id));
+		if (seen.size && next && next !== ids[0] && ids.some((id) => seen.has(id))) {
+			start.href = start.href.replace(ids[0], next);
+			start.textContent = 'Continue reading →';
+		}
+	}
+</script>
+
+<style>
+	.field {
+		margin: 0;
+		color: var(--sl-color-text-accent);
+		font-size: var(--sl-text-sm);
+		font-weight: 500;
+	}
+	.stats {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem 2.5rem;
+		margin: 1rem 0 0;
+	}
+	.stats div {
+		margin: 0;
+	}
+	.stats dt {
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-3);
+	}
+	.stats dd {
+		margin: 0;
+		font-weight: 600;
+		color: var(--sl-color-white);
+	}
+	.progress {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-top: 1.25rem;
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-3);
+	}
+	.track {
+		flex: 1;
+		max-width: 16rem;
+		height: 6px;
+		border-radius: 3px;
+		background: var(--sl-color-gray-5);
+		overflow: hidden;
+	}
+	.fill {
+		display: block;
+		height: 100%;
+		width: calc(var(--done, 0) * 100%);
+		background: var(--sl-color-accent);
+		transition: width 0.6s ease;
+	}
+	.start {
+		display: inline-block;
+		margin-top: 1.25rem;
+		padding: 0.55rem 1.1rem;
+		border-radius: 0.5rem;
+		background: var(--sl-color-accent);
+		color: var(--sl-color-black);
+		font-weight: 600;
+		font-size: var(--sl-text-sm);
+		text-decoration: none;
+	}
+	.start:hover {
+		background: var(--sl-color-accent-high);
+	}
+	.timeline {
+		list-style: none;
+		padding: 0;
+		margin: 2.25rem 0 0;
+		border-left: 2px solid var(--sl-color-gray-5);
+	}
+	.timeline li {
+		position: relative;
+		display: grid;
+		grid-template-columns: 2.25rem minmax(0, 1fr);
+		column-gap: 0.75rem;
+		padding: 0 0 1.25rem 1.25rem;
+		margin: 0;
+	}
+	.timeline li::before {
+		content: '';
+		position: absolute;
+		left: -7px;
+		top: 0.45rem;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background: var(--sl-color-bg);
+		border: 2px solid var(--sl-color-gray-4);
+	}
+	.timeline li[data-visited]::before {
+		background: var(--sl-color-accent);
+		border-color: var(--sl-color-accent);
+	}
+	.num {
+		grid-row: span 2;
+		font-variant-numeric: tabular-nums;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+		padding-top: 0.1rem;
+	}
+	.timeline a {
+		color: var(--sl-color-white);
+		font-weight: 500;
+		text-decoration: none;
+	}
+	.timeline a:hover {
+		color: var(--sl-color-text-accent);
+	}
+	.info {
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-3);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.fill {
+			transition: none;
+		}
+	}
+</style>

@@ -1,9 +1,8 @@
 ---
 title: 'Gophish: Running a Full Phishing Campaign'
-description: A Advanced-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · Gophish: Running a Full Phishing Campaign'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/06-gophish-running-a-full-phishing-campaign
 ---
-**Level:** Advanced · **Track:** Red Team · **Read time:** 180 min
-
 This is Chapter 6 of the Social Engineering series. Chapter 3 built the phishing pipeline conceptually — pretext, infrastructure, delivery, capture — Chapter 4 explained the email-authentication engine (SPF/DKIM/DMARC) that decides whether your mail lands, and Chapter 5 took you deep into the Social-Engineer Toolkit (SET) as a fast credential-harvesting multitool. This chapter picks up where SET's single-operator, single-page workflow runs out of road: **Gophish**, the open-source phishing framework built to plan, launch, pace, and *measure* a full campaign against a list of hundreds or thousands of targets, with a proper database, a REST API, and a results dashboard your client actually wants to see.
 
 Gophish is a **campaign engine**. Where SET clones one page and tails a log, Gophish models the whole exercise as first-class objects — Sending Profiles, Email Templates, Landing Pages, target Groups, and Campaigns — stores every event (sent, opened, clicked, submitted, reported) in a database, and renders a per-user timeline you can hand to a customer as evidence. It was written in Go by Jordan Wright, ships as a single static binary with an embedded web server, and runs identically on Linux, macOS, and Windows. This chapter teaches Gophish from zero — architecture, installation, every screen and every API endpoint that matters — then walks a complete authorized campaign end to end, and finishes by confronting the same uncomfortable truth Chapter 5 did: a classic Gophish landing page captures a password but **not** a second factor, so against MFA-protected targets you either pivot to an assessment-of-behaviour metric (who clicked / who submitted) or hand off to an AiTM reverse proxy like evilginx2.
@@ -904,7 +901,3 @@ POST /api/import/email # parse .eml into a template
 3. List the four DNS/authentication prerequisites that most influence whether your lure lands in the inbox versus junk, and state what each one does.
 4. A defender wants to catch Gophish campaigns even after the operator has stripped the `X-Gophish-Contact` header. Give two detection strategies that don't rely on that fingerprint.
 5. Design a safe internal awareness campaign that measures behaviour without ever storing a plaintext password. Which Gophish settings do you toggle, and where do you redirect after submit?
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/06-gophish-running-a-full-phishing-campaign), with comments and the latest edits.*

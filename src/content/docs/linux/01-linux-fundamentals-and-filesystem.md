@@ -1,9 +1,8 @@
 ---
 title: 'Linux Fundamentals, History & Filesystem Hierarchy'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Linux Fundamentals, History & Filesystem Hierarchy'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/01-linux-fundamentals-and-filesystem
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 75 min
-
 > **You are in the Foundations track — Everything in this notebook — every hack, every defense, every tool — runs on Linux or talks to something that does. This chapter builds the mental model the entire series sits on. Skip nothing.
 
 ---
@@ -922,7 +919,3 @@ find / -user root -writable -type f 2>/dev/null | grep -v proc  # Root-owned, wr
 - Open `/etc/passwd` and decode every field of every line. Which accounts have `/bin/bash` as their shell? Which have `/usr/sbin/nologin`? What does `nologin` protect against?
 
 ---
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/linux/01-linux-fundamentals-and-filesystem), with comments and the latest edits.*

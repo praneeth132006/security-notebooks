@@ -1,11 +1,8 @@
 ---
 title: The OWASP Top 10 for LLM Applications
-description: >-
-  A Advanced-level AI/ML Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level AI/ML Security chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: 06 · The OWASP Top 10 for LLM Applications
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ai-ml-security/06-the-owasp-top-10-for-llm-applications
 ---
-**Level:** Advanced · **Track:** AI/ML Security · **Read time:** 300 min
-
 This is Chapter 6 of the AI/ML Security notebook. Chapters 4 and 5 went deep on
 the two highest-impact LLM risks — injection and agentic abuse. This chapter
 zooms out to the whole **OWASP Top 10 for LLM Applications**, the community
@@ -902,7 +897,3 @@ review produces.
 this whole assessment — garak, PyRIT, and Promptfoo — turning the manual
 batteries and scorecards of this chapter into repeatable, CI-friendly AI
 red-teaming pipelines.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ai-ml-security/06-the-owasp-top-10-for-llm-applications), with comments and the latest edits.*

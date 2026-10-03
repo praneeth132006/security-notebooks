@@ -1,11 +1,8 @@
 ---
 title: Threat Hunting Methodology & Hypothesis-Driven Hunting
-description: >-
-  A Expert-level Threat Intel & Hunting chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Threat Intel & Hunting chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · Threat Hunting Methodology & Hypothesis-Driven Hunting
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/05-threat-hunting-methodology-and-hypothesis-driven-hunting
 ---
-**Level:** Expert · **Track:** Threat Intel & Hunting · **Read time:** 275 min
-
 This is Chapter 5, the final chapter of the Threat Intel & Hunting
 notebook, and it is the capstone that puts every prior chapter to work.
 The DFIR notebook taught you to investigate an intrusion after an alert.
@@ -926,7 +921,3 @@ notebook, the arc from investigating intrusions after the fact to
 anticipating and proactively hunting adversaries before they trip an
 alert. The next notebook builds on the malware and capability threads
 touched throughout: malware analysis and reverse engineering.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/05-threat-hunting-methodology-and-hypothesis-driven-hunting), with comments and the latest edits.*

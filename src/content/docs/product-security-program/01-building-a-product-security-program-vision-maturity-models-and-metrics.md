@@ -1,11 +1,8 @@
 ---
 title: 'Building a Product Security Program: Vision, Maturity Models & Metrics'
-description: >-
-  A Expert-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Building a Product Security Program: Vision, Maturity Models & Metrics'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-program/01-building-a-product-security-program-vision-maturity-models-and-metrics
 ---
-**Level:** Expert · **Track:** Product Security · **Read time:** 270 min
-
 The previous two notebooks taught you to *do* security — to threat model, review code, run scanners, manage vulnerabilities. This notebook is about something different and, for a senior product security engineer, ultimately more important: how to build a **program** that produces security *at the scale of an entire engineering organization*, through people who do not report to you, sustainably, over years. It is the shift from being the person who finds the bugs to being the person who builds the *system* that ensures bugs are found, fixed, and increasingly prevented — across dozens of teams and thousands of engineers you will never personally review code for.
 
 This is a genuine change in altitude, and it defeats many excellent individual practitioners. A brilliant code reviewer can secure the code they personally review; they cannot personally review a thousand engineers' code, and if their model of "doing security" is "I review it," they hit a hard ceiling the moment the organization outgrows their hands. A *program* breaks that ceiling by building **systems, processes, tools, and culture** that make security happen without the security team being in the loop for every change — the threat modeling of Notebook 45, the pipeline scanning of Notebook 46, the champions of the next chapter, all assembled into a self-sustaining machine. The defining skill of this notebook is designing that machine: what functions it must have, how to sequence building them, how to know honestly where you stand, and how to prove the whole thing is worth funding.
@@ -526,7 +521,3 @@ perfect process + hostile culture = failure. modest program + strong culture = s
 - Notebooks 45 and 46 (the functions this program assembles) and the rest of Notebook 47 (champions, bug bounty, third-party, privacy, metrics, and the capstone that integrates everything).
 - The BSIMM and SAMM documentation, and case studies of security-program building (many conference talks from security leaders on their program journeys).
 - Chapter 6 of this notebook for the metrics-and-leadership-communication half of Part 8, and Chapter 2 next for the security-champions model that is the program's most powerful scaling and culture mechanism.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-program/01-building-a-product-security-program-vision-maturity-models-and-metrics), with comments and the latest edits.*

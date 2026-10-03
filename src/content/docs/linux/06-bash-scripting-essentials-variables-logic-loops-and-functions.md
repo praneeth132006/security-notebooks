@@ -1,11 +1,8 @@
 ---
 title: 'Bash Scripting Essentials: Variables, Logic, Loops & Functions'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · Bash Scripting Essentials: Variables, Logic, Loops & Functions'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/06-bash-scripting-essentials-variables-logic-loops-and-functions
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 100 min
-
 ---
 
 ## Who This Is For, and Why Bash Scripting Matters
@@ -976,7 +971,3 @@ diff <(cmd1) <(cmd2)
 - **Exploit-DB** — filter for `.sh` PoCs and practice reading them cold: identify the target variable, the payload, and the trigger command before running anything.
 - **The Shellshock (CVE-2014-6271) public writeups and the original bash patch** — read once as the canonical case study connecting shell parsing internals to a real, mass-exploited RCE.
 - **`man bash` / `help` builtin** — the authoritative reference for every builtin and expansion covered here; `help getopts`, `help trap`, and `help read` are worth reading in full at least once.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/linux/06-bash-scripting-essentials-variables-logic-loops-and-functions), with comments and the latest edits.*

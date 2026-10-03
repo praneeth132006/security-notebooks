@@ -1,13 +1,8 @@
 ---
 title: 'Container & IaC Security Scanning: Trivy, Checkov, tfsec & Policy-as-Code'
-description: >-
-  A Expert-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: >-
-    08 · Container & IaC Security Scanning: Trivy, Checkov, tfsec &
-    Policy-as-Code
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/08-container-and-iac-security-scanning-trivy-checkov-tfsec-and-policy-as-code
 ---
-**Level:** Expert · **Track:** Product Security · **Read time:** 270 min
-
 Every chapter so far has scanned *application* code. This one extends the entire discipline to two things that used to be outside a code reviewer's world and are now squarely inside it: the **container images** applications ship in, and the **infrastructure-as-code** that defines the cloud environments they run in. The unifying insight — the one that makes this a code-review chapter rather than an operations chapter — is that **infrastructure is now code**, and code gets reviewed, scanned, and gated exactly like the application code of the previous chapters.
 
 This is a genuine shift in what "product security" covers. A decade ago, the security of a server was a system-administration concern, configured by hand and reviewed, if at all, by an ops team. Today that server is defined in a Terraform file, that Terraform file lives in a git repository next to the application code, and a single line in it — `acl = "public-read"` on a storage bucket, `cidr_blocks = ["0.0.0.0/0"]` on a security group — can expose an entire company's data or open the whole environment to the internet. That line is *code*, it is reviewed in a pull request, and it can be scanned by a tool before it ever provisions anything. The consequence is that the product security engineer's scope now includes the Dockerfile, the Kubernetes manifest, and the Terraform module, and the same shift-left, scan-in-the-pipeline, gate-narrowly discipline of Chapters 3–7 applies directly.
@@ -446,7 +439,3 @@ gate: new high-severity only, advisory early, keep it fast (Ch 7)
 - The **CIS Benchmarks** for Docker, Kubernetes, and the major clouds — the authoritative hardening baselines these tools check against.
 - **OWASP Docker Top 10** and the Kubernetes security documentation (Pod Security Standards, admission control).
 - Chapter 5 (SCA — the dependency problem this extends to the OS layer), Chapter 7 (the pipeline this plugs into), and Chapter 9 next (vulnerability management and SLAs — what happens to all the findings these scanners produce).
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/08-container-and-iac-security-scanning-trivy-checkov-tfsec-and-policy-as-code), with comments and the latest edits.*

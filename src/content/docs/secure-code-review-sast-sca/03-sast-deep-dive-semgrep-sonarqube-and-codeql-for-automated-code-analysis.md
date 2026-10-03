@@ -1,11 +1,8 @@
 ---
 title: 'SAST Deep Dive: Semgrep, SonarQube & CodeQL for Automated Code Analysis'
-description: >-
-  A Advanced-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · SAST Deep Dive: Semgrep, SonarQube & CodeQL for Automated Code Analysis'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/03-sast-deep-dive-semgrep-sonarqube-and-codeql-for-automated-code-analysis
 ---
-**Level:** Advanced · **Track:** Product Security · **Read time:** 255 min
-
 Chapter 2 ended on a division of labor: humans own the authorization and logic tiers, and tools own the injection sweep, because tracing tainted data from a source to a dangerous sink is a mechanical, syntactic property that a machine can check across an entire codebase tirelessly. **Static Application Security Testing (SAST)** is that machine. This chapter is about what it is, what it can and — just as important — *cannot* do, and how to run it so it helps rather than drowns the team in noise.
 
 The honest framing up front, because SAST is the most over-sold and most mis-deployed category of security tooling: **SAST is a force multiplier for the manual review of Chapters 1–2, not a replacement for it.** It scales the part of review that is automatable — the injection taint-tracking — across millions of lines, on every commit, without fatigue. It does not, and by a deep theoretical result *cannot*, find the authorization and business-logic bugs that are the highest-value tier. A program that buys a SAST tool and declares code review "done" has automated the cheap half and abandoned the expensive half. Understanding exactly where the tool's power ends is the difference between a SAST deployment that developers trust and one they route around.
@@ -508,7 +503,3 @@ pipeline gate -> BLOCK only on high-confidence + high-severity + NEW findings
 - Chapter 2 (the manual review SAST scales) and Chapter 4 next (DAST, the dynamic complement that observes rather than reasons).
 - Rice's theorem and the halting problem for the theoretical foundation of Part 3.
 - The Semgrep and CodeQL engineering blogs for real variant-analysis case studies, and Notebook 46 Chapter 7 for wiring SAST into the full CI/CD pipeline.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/03-sast-deep-dive-semgrep-sonarqube-and-codeql-for-automated-code-analysis), with comments and the latest edits.*

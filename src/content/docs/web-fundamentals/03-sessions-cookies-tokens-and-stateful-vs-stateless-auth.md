@@ -1,9 +1,8 @@
 ---
 title: 'Sessions, Cookies, Tokens & Stateful vs Stateless Auth'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Sessions, Cookies, Tokens & Stateful vs Stateless Auth'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/web-fundamentals/03-sessions-cookies-tokens-and-stateful-vs-stateless-auth
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 180 min
-
 This is Chapter 3 of the Web Fundamentals series — Notebook 6. Chapter 2 took HTTP apart down
 to the byte and, near the end, introduced the `Cookie` and `Set-Cookie` headers as "state
 bolted onto a stateless protocol." This chapter is where that bolt gets tightened. We take the
@@ -1157,7 +1154,3 @@ Train each concept from this chapter on a purpose-built, legal target:
    session cookie is not — and what new risk the bearer-token approach introduces instead.
 5. Design the auth for a bank web app that needs both trivial horizontal scaling *and* instant
    "log out everywhere." Which model do you choose, and exactly how do you get both properties?
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/web-fundamentals/03-sessions-cookies-tokens-and-stateful-vs-stateless-auth), with comments and the latest edits.*

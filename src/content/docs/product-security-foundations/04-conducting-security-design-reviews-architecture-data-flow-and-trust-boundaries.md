@@ -1,13 +1,8 @@
 ---
 title: 'Conducting Security Design Reviews: Architecture, Data Flow & Trust Boundaries'
-description: >-
-  A Intermediate-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: >-
-    04 · Conducting Security Design Reviews: Architecture, Data Flow & Trust
-    Boundaries
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-foundations/04-conducting-security-design-reviews-architecture-data-flow-and-trust-boundaries
 ---
-**Level:** Intermediate · **Track:** Product Security · **Read time:** 235 min
-
 Chapter 3 taught threat modeling as a method — the four questions, DFDs, trust boundaries, STRIDE. This chapter turns that method into a *repeatable practice* that a product security engineer runs across an organisation: the **security design review**. Where threat modeling is the intellectual technique for finding what could go wrong in a design, the design review is the *process* — the intake, the methodology, the checklist, the findings, the follow-through, and above all the *scaling* — by which a ProdSec team applies that technique to the steady stream of designs an engineering org produces, without becoming the bottleneck that Chapter 1 warned against.
 
 The distinction matters because the hardest part of design review is not the technical analysis — Chapter 3 gave you that — but the *operational* problem of doing it at scale, consistently, and in a way engineering welcomes rather than routes around. A single ProdSec engineer cannot deeply review every design a hundred-engineer org produces; the review program has to triage by risk (deep reviews where the stakes justify them, self-service everywhere else), it has to be systematic (so any reviewer produces consistent quality, and so the analysis is complete rather than dependent on what the reviewer happened to think of), and it has to scale beyond the central team (through checklists, templates, champions, and the paved road). This chapter is about building that program.
@@ -508,7 +501,3 @@ measure: coverage | fix rate + time-to-fix | shift-left evidence | enabler signa
 - Chapter 3 (threat modeling) — the method this practice operationalises; Chapter 5 (threat-modeling tools) next — the tooling that supports reviews at scale.
 - Notebook 42 (architecture, zero trust, the design principles), Notebook 45 (auth/authz — the top concern areas), Notebook 46 (secrets, dependencies, the pipeline concerns), and Notebook 47 (security champions — the review-scaling multiplier).
 - Chapter 5 (Threat Modeling Tools & Automation) next — OWASP Threat Dragon, the Microsoft tool, and IriusRisk, and how tooling supports the review practice.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-foundations/04-conducting-security-design-reviews-architecture-data-flow-and-trust-boundaries), with comments and the latest edits.*

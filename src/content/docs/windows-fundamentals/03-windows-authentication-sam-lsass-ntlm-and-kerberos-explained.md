@@ -1,9 +1,8 @@
 ---
 title: 'Windows Authentication: SAM, LSASS, NTLM & Kerberos Explained'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Windows Authentication: SAM, LSASS, NTLM & Kerberos Explained'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/windows-fundamentals/03-windows-authentication-sam-lsass-ntlm-and-kerberos-explained
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 140 min
-
 This is Chapter 3 of the Windows Internals series. Chapter 1 gave you the security model in one sentence — *your identity is a token, and permission is an ACL checked when you open something* — and Chapter 2 spent a whole chapter on the ACL half of that sentence. This chapter is about the other half: **where the token comes from in the first place.** Before Windows can hand you a token, it has to be convinced you are who you say you are. That convincing is *authentication*, and on Windows it is a surprisingly deep machine made of four moving parts you will hear named for the rest of your security career: the **SAM**, **LSASS**, **NTLM**, and **Kerberos**.
 
 We start as slowly as possible — with what a password actually is and why Windows never stores it — and climb, layer by layer, to the level a red-teamer or detection engineer at a large tech company needs: how a hash becomes a logon, how a Kerberos ticket is minted and forged, how Mimikatz reaches into memory and walks out with your credentials, and what the defender sees when it happens. Nothing here assumes you memorised the earlier chapters; every idea is re-introduced as we reach it.
@@ -921,7 +918,3 @@ Train each specific skill from this chapter:
 5. Auto-logon and WDigest are both off, LSA Protection is on. List two ways an attacker with local admin might still recover credential material, and the single control that would have stopped both.
 
 ---
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/windows-fundamentals/03-windows-authentication-sam-lsass-ntlm-and-kerberos-explained), with comments and the latest edits.*

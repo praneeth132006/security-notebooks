@@ -1,11 +1,8 @@
 ---
 title: 'Users, Groups, Computers, SIDs, RIDs & Security Principals'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Users, Groups, Computers, SIDs, RIDs & Security Principals'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/active-directory-fundamentals/03-users-groups-computers-sids-rids-and-security-principals
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 160 min
-
 This is Chapter 3 of the Active Directory series — Notebook 4. Chapter 1 built the
 logical map (objects, OUs, domains, trees, forests, trusts) and Chapter 2 descended
 into the machinery that stores and serves it (Domain Controllers, NTDS.dit, LDAP,
@@ -1094,7 +1089,3 @@ Practice questions:
    a single low-priv user can leverage that toward domain compromise, and the one-line
    fix. (They can create computer accounts they own → RBCD/noPac impersonation; set
    `ms-DS-MachineAccountQuota = 0` and delegate joins.)
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/active-directory-fundamentals/03-users-groups-computers-sids-rids-and-security-principals), with comments and the latest edits.*

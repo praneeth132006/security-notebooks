@@ -1,11 +1,8 @@
 ---
 title: Shellcoding & Position-Independent Payloads
-description: >-
-  A Expert-level Vulnerability Research chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Vulnerability Research chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: 07 · Shellcoding & Position-Independent Payloads
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/07-shellcoding-and-position-independent-payloads
 ---
-**Level:** Expert · **Track:** Vulnerability Research · **Read time:** 285 min
-
 This is Chapter 7 of the Binary Exploitation notebook. Chapters 3–6 were about *reusing* code — ROP chains, ret2libc, format-string writes, heap poisons that ultimately call `system` or a `one_gadget`. This chapter is about the opposite discipline: **supplying your own machine code** for the target to execute. When NX is off (or you've made a page executable via `mprotect`, or the target is an embedded/JIT/interpreter context without DEP), the most direct exploitation path is to inject a small, self-contained program — **shellcode** — that does exactly what you want: spawn a shell, read a flag, connect back to you.
 
 Shellcode writing is where exploitation meets systems programming at its most raw. You will hand-write assembly, understand the syscall ABI at the register level, and fight a set of *delivery constraints* that ordinary programs never face: your bytes travel through `strcpy`/`read`/`scanf`, so a single NUL byte can truncate your entire payload; you don't know where you'll land, so you can't hardcode addresses; you may have only 40 bytes of space. Meeting those constraints — NUL-free, position-independent, tiny, bad-char-clean — is the craft this chapter teaches.
@@ -902,7 +897,3 @@ Practice question set:
 - **"Read your own objdump and hunt the `00`."** — the byte-level discipline.
 
 The next chapter turns from *exploiting* a known bug to *finding* one: **fuzzing** — feeding programs mutated and generated inputs at scale with AFL++ and libFuzzer, instrumenting for coverage, and triaging the crashes into the very stack, format-string, and heap bugs the last five chapters taught you to exploit.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/07-shellcoding-and-position-independent-payloads), with comments and the latest edits.*

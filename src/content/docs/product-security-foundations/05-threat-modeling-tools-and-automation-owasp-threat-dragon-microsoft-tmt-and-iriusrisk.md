@@ -2,14 +2,9 @@
 title: >-
   Threat Modeling Tools & Automation: OWASP Threat Dragon, Microsoft TMT &
   IriusRisk
-description: >-
-  A Intermediate-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: >-
-    05 · Threat Modeling Tools & Automation: OWASP Threat Dragon, Microsoft TMT
-    & IriusRisk
 head:
   - tag: link
     attrs:
@@ -17,8 +12,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-foundations/05-threat-modeling-tools-and-automation-owasp-threat-dragon-microsoft-tmt-and-iriusrisk
 ---
-**Level:** Intermediate · **Track:** Product Security · **Read time:** 235 min
-
 Chapters 3 and 4 taught threat modeling as a method and design review as a practice, and both were deliberately tool-agnostic — a whiteboard, a design doc, and the four questions are enough to threat-model well. This chapter adds the tools and automation that turn that method into a *scalable, repeatable program*: the diagramming tools that make DFDs quick to draw and share, the threat-generation tools that suggest STRIDE threats from your diagram, the "threat-modeling-as-code" frameworks that let you represent a model as versioned code living beside the application, and the commercial platforms that industrialise the whole thing with questionnaires, control libraries, and compliance mapping.
 
 The chapter opens with a caveat that governs everything after it, because it is the single most important thing to understand about threat-modeling tooling: **a tool never replaces the thinking.** Threat modeling is a skill of structured reasoning (Chapter 3), and no tool — not even the most sophisticated commercial platform, not even an AI assistant — can do that reasoning for you. What tools *can* do is make the thinking faster, more consistent, more shareable, and more scalable: they automate the mechanical parts (drawing, suggesting known threats, tracking findings), enforce consistency (so any team produces a comparable model), and integrate the model into the developer workflow (so it lives and evolves with the code rather than dying as a one-time document). Used that way, tooling is a genuine force multiplier for a threat-modeling program. Used as a *substitute* for the thinking — "we bought IriusRisk, so we do threat modeling now" — it produces the security theater of Chapter 1: activity that looks like threat modeling without the reasoning that gives it value.
@@ -458,7 +451,3 @@ BEWARE platform-as-substitute (buying it != doing the practice) -- the costliest
 - The **OWASP Threat Dragon** and **pytm** documentation and repositories; the **Threat Modeling Manifesto** (whose values — a living, collaborative practice — the as-code approach best serves).
 - Notebook 44, Chapter 7 (the AI landscape shift) — the frame for AI-assisted threat modeling; Notebook 46 (DevSecOps) — the CI/CD pipeline the as-code model runs in; Notebook 47 — the program metrics and compliance context platforms serve.
 - Chapters 6–7 (secure coding) next — the implementation-phase practice that the design-phase threat modeling feeds into.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-foundations/05-threat-modeling-tools-and-automation-owasp-threat-dragon-microsoft-tmt-and-iriusrisk), with comments and the latest edits.*

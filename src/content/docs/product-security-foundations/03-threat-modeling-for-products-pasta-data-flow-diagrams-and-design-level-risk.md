@@ -1,13 +1,8 @@
 ---
 title: 'Threat Modeling for Products: PASTA, Data Flow Diagrams & Design-Level Risk'
-description: >-
-  A Intermediate-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: >-
-    03 · Threat Modeling for Products: PASTA, Data Flow Diagrams & Design-Level
-    Risk
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-foundations/03-threat-modeling-for-products-pasta-data-flow-diagrams-and-design-level-risk
 ---
-**Level:** Intermediate · **Track:** Product Security · **Read time:** 235 min
-
 Chapter 2's cost-of-fixing curve made an argument that this chapter cashes in: the most valuable place to catch a security defect is in *design*, when fixing it costs a diagram change rather than an incident, and the class of defect that lives there — the design flaw, the missing trust boundary, the fundamentally insecure architecture — is both the most expensive to fix late and the hardest for any downstream testing to catch. **Threat modeling is how you catch it.** It is the systematic, structured practice of examining a design and asking, before a line of code is written, *what could go wrong here and what will we do about it* — and it is, for that reason, the single highest-leverage activity a product security engineer performs.
 
 Threat modeling has a reputation for being either mystically hard or bureaucratically heavy, and both reputations come from doing it wrong. Done wrong, it is a security expert disappearing for two weeks to produce a hundred-page document nobody reads. Done right, it is a lightweight, recurring, collaborative activity — a couple of hours with a whiteboard and the engineers who are building the thing — that reliably surfaces the design flaws that would otherwise ship. This chapter teaches the right way: a repeatable method built on four simple questions, a way of drawing systems that makes threats visible (data flow diagrams and trust boundaries), a systematic way of finding threats (STRIDE), a heavier risk-centric methodology for when the stakes justify it (PASTA), and — most importantly — the practical discipline of keeping threat models lightweight, living, and integrated into how engineering actually works.
@@ -511,7 +504,3 @@ facilitate, don't lecture -> teaches engineers to threat-model themselves
 **Further reading**
 - Chapter 4 (design reviews) and Chapter 5 (threat-modeling tools and automation) — the extensions of this method into the full design-phase practice.
 - Notebook 42 (architecture & zero trust) — the trust-boundary and security-architecture principles this chapter's mitigations draw on; Notebook 3 — the risk reasoning behind prioritisation; Notebooks 21–27 and 45 — the vulnerability knowledge that populates the STRIDE threats.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-foundations/03-threat-modeling-for-products-pasta-data-flow-diagrams-and-design-level-risk), with comments and the latest edits.*

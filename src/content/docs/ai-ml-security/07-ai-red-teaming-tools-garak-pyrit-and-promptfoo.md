@@ -1,11 +1,8 @@
 ---
 title: 'AI Red-Teaming Tools: garak, PyRIT & Promptfoo'
-description: >-
-  A Advanced-level AI/ML Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level AI/ML Security chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: '07 · AI Red-Teaming Tools: garak, PyRIT & Promptfoo'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ai-ml-security/07-ai-red-teaming-tools-garak-pyrit-and-promptfoo
 ---
-**Level:** Advanced · **Track:** AI/ML Security · **Read time:** 300 min
-
 This is Chapter 7 of the AI/ML Security notebook. Chapters 4–6 taught the
 attacks and the OWASP checklist by hand — writing payload batteries, scoring
 attack success rates, filling out assessment templates. That is the right way to
@@ -902,7 +897,3 @@ gate blocks the merge. Record the before/after ASR.
 *using* AI for defense — ML-driven detection, alert triage, and SOC automation —
 and the security caveats of trusting ML in your own defensive stack (the attacks
 of Chapters 3–4 now aimed at *your* models).
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ai-ml-security/07-ai-red-teaming-tools-garak-pyrit-and-promptfoo), with comments and the latest edits.*

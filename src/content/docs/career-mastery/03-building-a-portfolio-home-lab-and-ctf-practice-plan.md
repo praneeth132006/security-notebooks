@@ -1,9 +1,8 @@
 ---
 title: 'Building a Portfolio, Home Lab & CTF Practice Plan'
-description: A Advanced-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Career chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Building a Portfolio, Home Lab & CTF Practice Plan'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/career-mastery/03-building-a-portfolio-home-lab-and-ctf-practice-plan
 ---
-**Level:** Advanced · **Track:** Career · **Read time:** 255 min
-
 Chapters 1 and 2 answered *which direction* to go and *which certifications* prove foundational knowledge. This chapter answers the question that actually gets people hired: **can you show me you can do the work?** A certificate says you passed an exam on a particular day. A portfolio says *here is a body of work I produced, that you can inspect, that demonstrates I can find bugs, build tools, analyse malware, defend a network, and — crucially — communicate what I did.* For anyone breaking into security without professional experience, and for many people levelling up within it, the portfolio is the single most persuasive thing you can put in front of a hiring manager, because it is the only artifact that lets them verify ability directly rather than inferring it.
 
 The portfolio does not appear on its own. It is the output of two engines running continuously: a **home lab** where you practise safely and produce evidence, and a **deliberate practice plan** (CTFs, boot2root machines, projects) that keeps you working at the edge of your ability. This chapter builds both, then shows how to convert their output into the four proof artifacts that make a portfolio persuasive — writeups, a home lab you can describe, a personal project, and community contribution.
@@ -562,7 +559,3 @@ when in doubt -> DO NOT
 - Notebook 9 (reporting) — the professional standard your writeups' remediation sections should aspire to.
 - Notebook 8 (ethics & legality) and Notebook 35 (malware analysis) — the boundaries that govern lab safety.
 - Chapter 4 (Résumé & Interviews) next — how to put this portfolio in front of a hiring manager and land the role.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/career-mastery/03-building-a-portfolio-home-lab-and-ctf-practice-plan), with comments and the latest edits.*

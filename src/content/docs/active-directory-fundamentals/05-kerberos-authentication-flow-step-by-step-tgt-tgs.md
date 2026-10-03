@@ -1,11 +1,8 @@
 ---
 title: 'Kerberos Authentication Flow Step by Step (TGT, TGS, PAC)'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Kerberos Authentication Flow Step by Step (TGT, TGS, PAC)'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/active-directory-fundamentals/05-kerberos-authentication-flow-step-by-step-tgt-tgs
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 175 min
-
 This is Chapter 5 of the Active Directory series — Notebook 4. Chapter 3 gave you
 principals and the SIDs that identify them; Chapter 4 covered how policy and privilege
 are applied and abused. This chapter dissects the protocol that ties it all together:
@@ -905,7 +900,3 @@ Practice questions:
 In the next notebook (Notebook 5) we switch tracks from Active Directory to
 **Programming for Security** — starting with Python, the language in which most of the
 tooling in this chapter (Impacket, many roasting and ticket utilities) is written.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/active-directory-fundamentals/05-kerberos-authentication-flow-step-by-step-tgt-tgs), with comments and the latest edits.*

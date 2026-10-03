@@ -1,11 +1,8 @@
 ---
 title: DHCP & Dynamic Address Assignment
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 9
-  label: 09 · DHCP & Dynamic Address Assignment
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/09-dhcp-and-dynamic-address-assignment
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 115 min
-
 This is Chapter 19 of the series. Every device you've watched send packets so far already *had* an IP address, a subnet mask, a gateway and a DNS server. But where did those come from? On virtually every network, they're handed out automatically by **DHCP (Dynamic Host Configuration Protocol)**. DHCP is quietly one of the most security-critical protocols on a LAN, because **whoever controls DHCP controls a client's gateway and DNS** — which means a rogue DHCP server is a one-move man-in-the-middle. This chapter builds DHCP from zero (the DORA handshake, options, leases), then weaponises and defends it: rogue servers, starvation, and DHCP spoofing, ending with the snooping controls that shut them down.
 
 ## Why DHCP Exists: Configuration at Scale
@@ -317,7 +312,3 @@ sudo yersinia -G                                # starvation
 - **Exercise** — in a lab, capture a clean DORA, then start a rogue `dnsmasq` handing out your gateway/DNS, confirm a victim VM accepts it, then enable DHCP snooping (or a trusted-port rule) and verify the rogue offer is now dropped.
 
 Next we move up to the protocols you'll spend most of your web-hacking life in: **HTTP, HTTPS, TLS/SSL and PKI in practice** — methods, headers, the TLS handshake, certificates and cipher suites, with hands-on `curl` and `openssl`.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/09-dhcp-and-dynamic-address-assignment), with comments and the latest edits.*

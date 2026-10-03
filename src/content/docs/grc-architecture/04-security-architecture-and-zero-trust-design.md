@@ -1,11 +1,8 @@
 ---
 title: Security Architecture & Zero-Trust Design
-description: >-
-  A Intermediate-level GRC & Architecture chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level GRC & Architecture chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Security Architecture & Zero-Trust Design
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/grc-architecture/04-security-architecture-and-zero-trust-design
 ---
-**Level:** Intermediate · **Track:** GRC & Architecture · **Read time:** 240 min
-
 This is Chapter 4 of the GRC & Architecture notebook. Chapter 1 built the governance and risk vocabulary, Chapter 2 placed it inside frameworks, and Chapter 3 taught you to measure risk with real numbers. Those three chapters answer *what should we protect, how much, and how do we prove it*. This chapter answers the next question: *what does the system actually look like once those decisions are baked into the design?* That is the job of **security architecture** — the discipline of arranging people, data, networks, identities, and controls so that the risk decisions from the previous chapters are enforced by the structure of the system itself, not by hope and hard work.
 
 The centrepiece of modern security architecture is **zero trust** — the design philosophy that replaced the decades-old "trust the internal network" model. Zero trust is the most over-marketed term in the industry and one of the most misunderstood, so a large part of this chapter is spent separating the rigorous engineering definition (NIST SP 800-207) from the vendor slogan on the billboard. By the end you will be able to read an existing architecture and find its trust assumptions, design a zero-trust access policy, express that policy as code, enforce it with an identity-aware proxy, and place any organisation honestly on a maturity model rather than accepting the "we bought a zero-trust product, we're done" fiction.
@@ -909,7 +904,3 @@ allow if {
 - **Run the revocation test on a real IdP:** in a free tier of a cloud identity platform, enrol a test user, sign in to a protected app, then disable the account and time how long the existing session survives. Watching per-*login* vs per-*session* behaviour first-hand is worth more than any diagram.
 - **Map a public breach report:** pick a recent incident write-up from a major responder's annual report, build the kill-chain-to-tenet table from Part 20, and identify the two cheapest controls that would have contained it. Repeat until you can predict the root cause before reading it.
 - **Threat-model a design you own:** take one internal application, draw its data-flow diagram, mark every trust boundary, run STRIDE on each, and write down which boundary is drawn-but-not-enforced. Then verify one of them with an actual connection attempt. That single exercise teaches more than any slide deck.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/grc-architecture/04-security-architecture-and-zero-trust-design), with comments and the latest edits.*

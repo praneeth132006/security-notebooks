@@ -1,9 +1,8 @@
 ---
 title: 'Hashing, Salting, HMAC & Integrity'
-description: A Advanced-level Cryptography chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Cryptography chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Hashing, Salting, HMAC & Integrity'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cryptography/04-hashing-salting-hmac-and-integrity
 ---
-**Level:** Advanced · **Track:** Cryptography · **Read time:** 185 min
-
 This is Chapter 4 of the Cryptography series — Notebook 7. Chapters 2 and 3 built confidentiality
 (symmetric and asymmetric encryption). This chapter builds the *other* half of the CIA triad from
 Chapter 1 — **integrity and authenticity** — on top of the one-way functions we've referenced
@@ -896,7 +893,3 @@ slow-KDF for passwords — never one where another is required, and always compa
 If you can name the four hash properties, explain why collisions fall first, spot a
 `hash(secret‖msg)` MAC or a `==` tag compare, identify a hash from a dump, and pick HMAC vs signature
 vs slow-KDF by the guarantee you need, you own this chapter.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cryptography/04-hashing-salting-hmac-and-integrity), with comments and the latest edits.*

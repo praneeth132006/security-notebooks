@@ -1,9 +1,8 @@
 ---
 title: Detection Validation & Closing Coverage Gaps
-description: A Expert-level Purple Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Purple Team chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: 03 · Detection Validation & Closing Coverage Gaps
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/purple-team/03-detection-validation-and-closing-coverage-gaps
 ---
-**Level:** Expert · **Track:** Purple Team · **Read time:** 230 min
-
 This is Chapter 3 of the Purple Team notebook. Chapter 2 built the offensive engine — Atomic Red Team for granular per-technique tests and CALDERA for chained autonomous operations — and ended holding a pile of results: techniques that were *not logged*, techniques that were *logged but never alerted*, and a handful that fired an alert. That pile is raw material, not an outcome. This chapter is about the other half of the loop: turning each of those results into a deployed, tuned, regression-tested detection, and honestly measuring how much of the adversary's playbook you can actually see.
 
 The same discipline that governed the emulation chapters governs this one. Firing the techniques required explicit authorization; the detection work here is defensive and runs on telemetry you already own, but the *validation* of every detection means re-executing real adversary behaviour, so everything in the worked labs assumes the same authorized, snapshotted lab from Chapter 2.
@@ -1127,7 +1124,3 @@ Coverage (score-3+ / relevant-actor techniques)   Regression rate (broke / total
 - **VECTR for tracking.** Log the results of successive purple exercises in VECTR (community edition) to build the MTTD/coverage/regression trend from Part 14 across runs, so you can show the program improving rather than just report a snapshot.
 
 The next chapter puts the two halves together: with emulation (Chapter 2) and detection validation (this chapter) both in hand, we run a **full purple team exercise end to end** — planning, execution, real-time collaboration, scoring, and the report that turns a day of testing into a prioritised program of work.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/purple-team/03-detection-validation-and-closing-coverage-gaps), with comments and the latest edits.*

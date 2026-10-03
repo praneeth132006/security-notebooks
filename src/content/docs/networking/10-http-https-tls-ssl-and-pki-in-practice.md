@@ -1,11 +1,8 @@
 ---
 title: 'HTTP, HTTPS, TLS/SSL & PKI in Practice'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 10
-  label: '10 · HTTP, HTTPS, TLS/SSL & PKI in Practice'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/10-http-https-tls-ssl-and-pki-in-practice
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 130 min
-
 This is Chapter 20 of the series. You will spend more of your hacking life inside **HTTP** than any other protocol — it's the language of the web, of REST APIs, of most bug bounty targets, and of the Burp Suite requests you'll live in throughout the AppSec track. This chapter builds HTTP from the first request line, then wraps it in **TLS** to make HTTPS, and finally explains the **PKI** (certificates, chains of trust, Certificate Authorities) that lets your browser trust a stranger's server. By the end you'll read raw HTTP fluently, drive it with `curl`, dissect a TLS handshake with `openssl`, and understand exactly what an interceptor like Burp does — and why certificate warnings matter.
 
 ## HTTP: The Request/Response Protocol
@@ -348,7 +343,3 @@ ATTACKS: SSL strip->HSTS | downgrade->disable old TLS | Heartbleed->patch | pinn
 - **Exercise** — take any site: audit its headers with `curl -I`, pull and read its cert with `openssl`, run `testssl.sh`, then capture its TLS handshake in Wireshark and identify the ClientHello, SNI, cert, and the point where traffic becomes unreadable.
 
 Next we cover the controls that sit between attacker and target on the network: **firewalls, IDS/IPS, proxies, VPNs and network segmentation** — how traffic is filtered and inspected, and how attackers evade and pivot around it.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/10-http-https-tls-ssl-and-pki-in-practice), with comments and the latest edits.*

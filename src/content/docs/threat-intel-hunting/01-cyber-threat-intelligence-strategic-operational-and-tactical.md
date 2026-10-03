@@ -1,11 +1,10 @@
 ---
 title: 'Cyber Threat Intelligence: Strategic, Operational & Tactical'
 description: >-
-  A Intermediate-level Threat Intel & Hunting chapter from Praneeth's
-  cybersecurity notebook.
+  A Intermediate-level Threat Intel & Hunting chapter from the Security
+  Notebooks.
 sidebar:
   order: 1
-  label: '01 · Cyber Threat Intelligence: Strategic, Operational & Tactical'
 head:
   - tag: link
     attrs:
@@ -13,8 +12,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/01-cyber-threat-intelligence-strategic-operational-and-tactical
 ---
-**Level:** Intermediate · **Track:** Threat Intel & Hunting · **Read time:** 255 min
-
 This is Chapter 1 of the Threat Intel & Hunting notebook. The DFIR
 notebook taught you to investigate an intrusion *after* it happened — to
 reconstruct what an attacker did. This notebook turns that around: it is
@@ -939,7 +936,3 @@ The next chapter drills into the tactical layer this one introduced:
 IOCs and IOAs, the Pyramid of Pain, and the Diamond Model — the
 frameworks for reasoning about indicators and structuring what you know
 about an intrusion.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/01-cyber-threat-intelligence-strategic-operational-and-tactical), with comments and the latest edits.*

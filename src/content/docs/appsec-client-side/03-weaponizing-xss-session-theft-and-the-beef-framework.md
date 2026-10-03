@@ -1,11 +1,8 @@
 ---
 title: 'Weaponizing XSS: Session Theft & the BeEF Framework'
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Weaponizing XSS: Session Theft & the BeEF Framework'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-client-side/03-weaponizing-xss-session-theft-and-the-beef-framework
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 3 of the Client-Side notebook — Notebook 24. The first two chapters were
 about *finding* Cross-Site Scripting: Chapter 1 built the model for Reflected and Stored XSS
 where the server echoes your payload, and Chapter 2 went after DOM-based XSS, mutation XSS,
@@ -1065,7 +1060,3 @@ Train each specific skill from this chapter:
    victim's authenticated app. Describe the minimum set of actions that convincingly proves
    critical impact *without* touching any real user's data, and what you would write in the
    report's remediation section.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-client-side/03-weaponizing-xss-session-theft-and-the-beef-framework), with comments and the latest edits.*

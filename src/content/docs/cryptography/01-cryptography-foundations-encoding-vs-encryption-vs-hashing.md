@@ -1,11 +1,8 @@
 ---
 title: 'Cryptography Foundations: Encoding vs Encryption vs Hashing'
-description: >-
-  A Intermediate-level Cryptography chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Cryptography chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Cryptography Foundations: Encoding vs Encryption vs Hashing'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cryptography/01-cryptography-foundations-encoding-vs-encryption-vs-hashing
 ---
-**Level:** Intermediate · **Track:** Cryptography · **Read time:** 180 min
-
 This is Chapter 1 of the Cryptography series — Notebook 7. The previous notebook (Web
 Fundamentals) ended on a warning it repeated in every chapter: *encoding is not encryption.* A
 Base64 cookie hides nothing; a `base64(user:id)` "session" is forgeable; a JWT payload is readable
@@ -896,7 +891,3 @@ the key is only as strong as its entropy.*
    answer the same for a *preimage*.
 7. A vendor posts a SHA-256 next to a download link over plain HTTP. Explain the exact scenario in
    which this provides *no* integrity protection, and what they should do instead.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cryptography/01-cryptography-foundations-encoding-vs-encryption-vs-hashing), with comments and the latest edits.*

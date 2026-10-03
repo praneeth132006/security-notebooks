@@ -1,11 +1,8 @@
 ---
 title: Server-Side Template Injection (SSTI)
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · Server-Side Template Injection (SSTI)
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-injection/05-server-side-template-injection-ssti
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 260 min
-
 This is Chapter 5 of the Injection notebook — Notebook 23. The previous chapter changed the
 interpreter from a SQL engine to an operating-system shell and showed how attacker text reaching
 a shell becomes command execution. This chapter changes the interpreter again — this time to a
@@ -1445,7 +1440,3 @@ moving from template engines into the closely related families of expression-lan
 object-graph injection (OGNL/SpEL/EL) and the broader server-side injection surface — where the
 exact instinct you built here, *find the interpreter, confirm evaluation, escalate to the host
 runtime*, applies to yet another evaluation engine.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-injection/05-server-side-template-injection-ssti), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: Log-Based Investigation & Timeline Analysis
-description: >-
-  A Expert-level DFIR & Incident Response chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level DFIR & Incident Response chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: 07 · Log-Based Investigation & Timeline Analysis
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/dfir/07-log-based-investigation-and-timeline-analysis
 ---
-**Level:** Expert · **Track:** DFIR & Incident Response · **Read time:** 270 min
-
 This is Chapter 7 of the DFIR notebook. The previous chapters taught you
 how to acquire and read individual artifacts — a memory image, a
 registry hive, an ext4 inode. This chapter is about the discipline that
@@ -1345,7 +1340,3 @@ A few analogies that make the concepts stick:
 The next chapter puts every skill in this notebook together: a full
 ransomware and breach investigation case study, from first alert to a
 complete, timelined incident report.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/dfir/07-log-based-investigation-and-timeline-analysis), with comments and the latest edits.*

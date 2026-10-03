@@ -1,11 +1,8 @@
 ---
 title: The Cyber Kill Chain & MITRE ATT&CK for Analysts
-description: >-
-  A Beginner-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Beginner-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: 03 · The Cyber Kill Chain & MITRE ATT&CK for Analysts
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/03-the-cyber-kill-chain-and-mitre-att-and-ck-for-analysts
 ---
-**Level:** Beginner · **Track:** SOC & Blue Team · **Read time:** 160 min
-
 This is Chapter 3 of the SOC & Blue Team notebook. Chapter 1 built the SOC as a system; Chapter 2 built the raw material — logs and telemetry. This chapter gives that material a **map**. On its own, a log is a dot: "winword.exe spawned powershell.exe." A framework tells you *where that dot sits in an attack* — that it is the "Execution" stage following a phishing "Initial Access," and that the next dots to look for are persistence, credential access, and lateral movement. Frameworks are how analysts stop seeing isolated alerts and start seeing campaigns.
 
 Three frameworks dominate the discipline: the **Cyber Kill Chain** (a linear model of an intrusion's phases), the **Diamond Model** (a way to reason about the relationships in an intrusion), and — the one you will use every single day — **MITRE ATT&CK**, a vast, community-maintained knowledge base of real-world adversary behavior. By the end of this chapter you will be able to take an incident, map each observed action to an ATT&CK technique, see which techniques your detections cover and which they miss, and turn that gap analysis into a plan. That skill — thinking in techniques rather than indicators — is the line between a Tier 1 analyst and a detection engineer.
@@ -902,7 +897,3 @@ In the next chapter we put a real tool under our hands for the first time: **Spl
 
 8. **T1490 (Inhibit System Recovery)** — deleting shadow copies — precedes **T1486 (Data Encrypted for Impact)**. The order matters because T1490 is an earlier, high-signal tripwire: catching `vssadmin delete shadows` gives you a chance to isolate the host *before* encryption starts, whereas detecting the encryption itself is often too late. Detect the precursor.
 9. Read and map the report to ATT&CK IDs, overlay against your heatmap to find gaps, triage gaps by fix cost, write and emulate detections for the cheap high-value ones, and — the commonly skipped step — **retro-hunt** the report's behaviors and IOCs across historical logs in case the campaign already touched you before you had coverage.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/03-the-cyber-kill-chain-and-mitre-att-and-ck-for-analysts), with comments and the latest edits.*

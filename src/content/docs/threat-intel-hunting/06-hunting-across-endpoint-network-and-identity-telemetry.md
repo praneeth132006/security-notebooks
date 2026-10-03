@@ -1,11 +1,8 @@
 ---
 title: 'Hunting Across Endpoint, Network & Identity Telemetry'
-description: >-
-  A Expert-level Threat Intel & Hunting chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Threat Intel & Hunting chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · Hunting Across Endpoint, Network & Identity Telemetry'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/06-hunting-across-endpoint-network-and-identity-telemetry
 ---
-**Level:** Expert · **Track:** Threat Intel & Hunting · **Read time:** 290 min
-
 This is Chapter 6 of the Threat Intel & Hunting notebook. The previous
 chapter taught the *methodology* of hunting — how to form a testable
 hypothesis, scope the data, run the PEAK/TaHiTI loop, and turn a finding
@@ -1255,7 +1250,3 @@ Work one hypothesis per pillar to completion — form it, hunt it, correlate
 across pillars, and graduate the finding into a Sigma rule — and you will have
 exercised the entire loop this chapter teaches. The next notebook moves from
 finding intrusions to the broader program that surrounds hunting.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/threat-intel-hunting/06-hunting-across-endpoint-network-and-identity-telemetry), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: 'Python for Security Part 3: Sockets, Scapy & Writing Your First Tools'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Python for Security Part 3: Sockets, Scapy & Writing Your First Tools'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/programming-for-security/03-python-for-security-part-3-sockets-scapy-and
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 165 min
-
 This is Chapter 3 of the Programming for Security series — Notebook 5. Chapter 2 gave you
 functions, files, modules, and the `requests` library, and you built a directory
 brute-forcer that spoke HTTP. But `requests` is a comfortable, high-level cushion: it
@@ -1302,7 +1297,3 @@ Train these exact skills, not generic ones:
 Chapter 4 moves from Python to **Bash** — scripting the shell itself for offensive and
 defensive automation: glue that stitches these tools into pipelines, log-parsing one-liners,
 and the loops and traps that turn manual command sequences into repeatable, hardened scripts.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/programming-for-security/03-python-for-security-part-3-sockets-scapy-and), with comments and the latest edits.*

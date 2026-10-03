@@ -1,11 +1,8 @@
 ---
 title: Server-Side Request Forgery (SSRF) & Cloud Metadata Attacks
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: 01 · Server-Side Request Forgery (SSRF) & Cloud Metadata Attacks
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-server-side/01-server-side-request-forgery-ssrf-and-cloud-metadata-attacks
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 1 of the Server-Side notebook — Notebook 26. The Access & Logic notebook attacked
 the application's rules; this notebook attacks the *server operations* an attacker can hijack, and it
 opens with the one that most reliably turns a single web bug into full infrastructure compromise:
@@ -894,7 +889,3 @@ reaches the trusted interior and, in the cloud, the credential store. The next c
 server-side theme — file upload and web shells (turning an upload into code execution), then path
 traversal, LFI, and RFI (turning a filename into file read and, sometimes, execution) — each another
 way attacker-controlled input steers a server operation it was never meant to.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-server-side/01-server-side-request-forgery-ssrf-and-cloud-metadata-attacks), with comments and the latest edits.*

@@ -1,13 +1,8 @@
 ---
 title: 'Language-Specific Secure Coding: Python, JavaScript, Java, Go & C/C++ Patterns'
-description: >-
-  A Advanced-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: >-
-    07 · Language-Specific Secure Coding: Python, JavaScript, Java, Go & C/C++
-    Patterns
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-foundations/07-language-specific-secure-coding-python-javascript-java-go-and-c-cpp-patterns
 ---
-**Level:** Advanced · **Track:** Product Security · **Read time:** 255 min
-
 Chapter 6 argued that principles transfer and rules do not, and that argument stands. But there is a reason a chapter on the specific languages has to follow it: **the principle tells you what to do; the language decides how easy it is to do it wrong.** "Never let untrusted data reach an interpreter" is universal. Whether that footgun is spelled `pickle.loads`, `child_process.exec`, `ObjectInputStream.readObject`, `text/template`, or `strcpy` — and whether the language hands you a safe alternative right next to the dangerous one or lets you fall off a cliff silently — is entirely language-specific. This chapter is the map of the cliffs.
 
 The five ecosystems here — Python, JavaScript/Node, Java, Go, and C/C++ — cover the overwhelming majority of what a product security engineer reviews, and they split along one deep line that organizes the whole chapter: **memory safety.** Four of the five are memory-managed, so their characteristic bugs are the *logical* ones from Chapter 6 — injection, deserialization, SSRF — expressed in each language's idioms. C and C++ add an entire second category that the others simply do not have: memory-corruption bugs (buffer overflow, use-after-free, integer overflow) that are the substance of Notebook 36's binary exploitation and the reason the industry is now migrating security-critical code to memory-safe languages.
@@ -496,7 +489,3 @@ tools: pip-audit | npm audit | OWASP Dependency-Check | govulncheck
 - The OWASP Cheat Sheet Series (Deserialization, XXE, Node.js, Injection Prevention) — per-topic, per-language.
 - Notebook 36 (binary exploitation) for the attacker's view of the C/C++ memory bugs, and Notebook 46 Chapter 5 for the full dependency and supply-chain treatment.
 - Chapter 8 next, which takes these language patterns and organizes them by the CWE Top 25 — the industry's ranked list of the mistakes this chapter catalogs.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-foundations/07-language-specific-secure-coding-python-javascript-java-go-and-c-cpp-patterns), with comments and the latest edits.*

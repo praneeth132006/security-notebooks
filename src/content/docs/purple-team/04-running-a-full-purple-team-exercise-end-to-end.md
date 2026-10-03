@@ -1,9 +1,8 @@
 ---
 title: Running a Full Purple Team Exercise End to End
-description: A Expert-level Purple Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Purple Team chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Running a Full Purple Team Exercise End to End
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/purple-team/04-running-a-full-purple-team-exercise-end-to-end
 ---
-**Level:** Expert · **Track:** Purple Team · **Read time:** 235 min
-
 This is Chapter 4 of the Purple Team notebook, and it puts the whole thing together. Chapter 1 defined purple teaming as a transparent, collaborative loop; Chapter 2 built the offensive engine (Atomic Red Team and CALDERA); Chapter 3 built the defensive engine (detection validation, tuning, coverage). Each of those is a capability. This chapter is the *event* that uses all of them — a planned, scoped, time-boxed exercise that starts with an objective and ends with a prioritised, owned program of remediation work with retest dates on the calendar.
 
 The discipline of the earlier chapters carries here in full. A purple exercise executes real adversary behaviour — credential dumping, lateral movement, exfiltration — and every technique in it requires **explicit, written authorization** against systems the organisation owns or is contractually permitted to test. The difference from a covert red team is transparency, not permission: everyone knows the exercise is running, but it is still real attacker tradecraft against real infrastructure, and running any of it outside an authorized window is indistinguishable from an intrusion.
@@ -842,7 +839,3 @@ remediation CLOSE rate (predicts improvement)  |  regression count (rot)
 - **Read published purple/exercise write-ups and IR retrospectives**, and reverse-engineer a technique plan from a real incident: "if this actor did exactly what the report says, which of my detections would fire?" That question is the seed of your next exercise.
 
 This completes the Purple Team notebook. Across four chapters it moved from the collaborative philosophy, through the offensive emulation engines and the defensive detection-engineering discipline, to the structured exercise that fuses them into a measured, trended, continuously improving capability. The next notebook steps up from operating defences to governing them — the frameworks, risk management, and architecture that decide what a security program is trying to achieve in the first place.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/purple-team/04-running-a-full-purple-team-exercise-end-to-end), with comments and the latest edits.*

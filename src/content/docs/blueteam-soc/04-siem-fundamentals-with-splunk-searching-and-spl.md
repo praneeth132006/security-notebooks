@@ -1,11 +1,8 @@
 ---
 title: 'SIEM Fundamentals with Splunk: Searching & SPL'
-description: >-
-  A Intermediate-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · SIEM Fundamentals with Splunk: Searching & SPL'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/04-siem-fundamentals-with-splunk-searching-and-spl
 ---
-**Level:** Intermediate · **Track:** SOC & Blue Team · **Read time:** 175 min
-
 This is Chapter 4 of the SOC & Blue Team notebook, and it is the first chapter where you put a real tool under your hands. The last three chapters built the frame: the SOC and its workflow (Chapter 1), the data sources (Chapter 2), and the technique-level thinking of ATT&CK (Chapter 3). Now we make it concrete. Splunk is one of the most widely deployed SIEMs in the world, and its search language, **SPL (Search Processing Language)**, is a skill that appears in job descriptions across the industry. By the end of this chapter you will be able to install Splunk, get data in, and write SPL that turns the raw logs of Chapter 2 into the technique-level detections of Chapter 3.
 
 This is a **tool primer**, so we teach Splunk from zero — what it is, why it exists, how it is architected, and how to think in SPL — before writing a single detection. The goal is not to memorize commands but to build a mental model: SPL is a pipeline language, a series of commands connected by pipes, each transforming the data flowing through it, exactly like the `grep | awk | sort | uniq` pipelines from Chapter 2, but vastly more powerful. Once that model clicks, the dozens of commands become variations on a theme.
@@ -902,7 +897,3 @@ In the next chapter we move to a second SIEM, **Microsoft Sentinel and its query
 5. Save the SPL (`EventCode=1 ParentImage=*winword.exe Image=*powershell.exe`) as an alert, schedule it (e.g., every 5 minutes over the last 5 minutes), set the trigger to "number of results > 0," add throttling (suppress repeats per host for, say, 60 minutes) so one incident doesn't storm the queue, name it clearly with the ATT&CK ID, and attach the playbook. Operationalizing matters because a hunt catches one instance; a scheduled detection catches every future one automatically — the Chapter 1 feedback loop.
 6. **Data model acceleration + `tstats`.** A CIM data model is accelerated into pre-computed tsidx summaries; `tstats` queries those summaries directly instead of raw events, often 10–100× faster, letting the detection finish within its schedule.
 7. `stats` collapses events into a summary table; `eventstats` adds a global aggregate as a field to every original row; `streamstats` adds a *cumulative/ordered* aggregate row by row. You need `streamstats` to compute the time delta between consecutive connections per host (beacon-interval analysis), because that requires the previous event's value on each current row in time order.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/04-siem-fundamentals-with-splunk-searching-and-spl), with comments and the latest edits.*

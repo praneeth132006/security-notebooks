@@ -1,9 +1,8 @@
 ---
 title: Mobile API & Backend Testing
-description: A Advanced-level Mobile & IoT chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Mobile & IoT chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: 08 · Mobile API & Backend Testing
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/08-mobile-api-and-backend-testing
 ---
-**Level:** Advanced · **Track:** Mobile & IoT · **Read time:** 300 min
-
 This is Chapter 8 of the Mobile & IoT notebook, and it reframes everything before it. Chapters 2–7 were about getting *inside* the app and *reading its traffic*. But once you can see the traffic, a hard truth emerges: **the mobile app is just a client, and almost all the severe, well-paid bugs live in the API behind it.** Broken authorization, token flaws, mass assignment, business-logic abuse — none of these are "mobile" bugs in any deep sense; they're web/API bugs that happen to be reached through a mobile client. The recurring lesson of the whole notebook — *don't trust the client* — is really a statement about the backend, and this chapter is where you attack it.
 
 Everything here builds on the interception you set up in Chapters 2 and 5. With traffic flowing through Burp, and a decompiled client from Chapter 3 to reveal hidden endpoints and how requests are signed, you test the mobile backend the way you'd test any API — with a few mobile-specific twists (device binding, request signing, protobuf/gRPC, OTP flows) that this chapter covers explicitly.
@@ -299,7 +296,3 @@ grep -rnoE 'https?://[^"]+' src/ ; grep -rniE '@(GET|POST|PUT|DELETE)|/api/|Auth
 - **`jwt_tool`, InQL, blackboxprotobuf, Autorize** docs — the practical tooling referenced above.
 
 This closes the Mobile & IoT notebook's mobile-application arc: you can build a lab, take an app apart statically and dynamically, defeat its client-side defenses, attack its IPC and deep links across both platforms — and, most importantly, recognise that the app was always a client, and the real security decisions live on the server you now know how to test.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/08-mobile-api-and-backend-testing), with comments and the latest edits.*

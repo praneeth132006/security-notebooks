@@ -1,9 +1,8 @@
 ---
 title: 'Ethernet, MAC Addresses, Switching, ARP & VLANs'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Ethernet, MAC Addresses, Switching, ARP & VLANs'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/04-ethernet-mac-addresses-switching-arp-and-vlans
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 120 min
-
 This is Chapter 14 of the series. We now drop to **Layer 2 — the local network** — where frames move between machines that share a wire or an access point. This is where an attacker with a foothold on the LAN becomes genuinely dangerous: Layer 2 protocols were designed in an era of implicit trust, so a switch believes almost anything it's told. Master this chapter and you can perform (and detect) man-in-the-middle attacks, sniff a "switched" network, hop VLANs, and understand exactly why network segmentation is a security control. Everything here is the foundation of the Network Attacks track later.
 
 We build from zero: what an Ethernet frame contains, what a MAC address really is, how a switch learns and forwards, how ARP glues IP to MAC — and then how each of those trust assumptions is abused and defended.
@@ -369,7 +366,3 @@ L2 ATTACK -> DEFENCE:
 - **Exercise** — in two lab VMs, run an ARP spoof, capture the victim's cleartext HTTP login, then deploy `arpwatch` + a static ARP entry and confirm the attack now fails. Doing both sides cements it.
 
 Next we climb back to Layer 3 for the logic that moves packets *between* networks: **Routing, NAT and the default gateway** — how your router decides where each packet goes and how private hosts reach the public internet.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/04-ethernet-mac-addresses-switching-arp-and-vlans), with comments and the latest edits.*

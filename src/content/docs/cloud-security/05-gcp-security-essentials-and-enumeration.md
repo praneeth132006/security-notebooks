@@ -1,11 +1,8 @@
 ---
 title: GCP Security Essentials & Enumeration
-description: >-
-  A Advanced-level Cloud Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Cloud Security chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · GCP Security Essentials & Enumeration
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cloud-security/05-gcp-security-essentials-and-enumeration
 ---
-**Level:** Advanced · **Track:** Cloud Security · **Read time:** 320 min
-
 This is Chapter 5 of the Cloud Security notebook. The previous four chapters walked through the shared-responsibility model, hands-on AWS recon (IAM, S3, IMDS), the AWS/multi-cloud tooling stack (Pacu, ScoutSuite, Prowler), and then the Microsoft identity plane in Entra ID. This chapter completes the "big three" by moving to **Google Cloud Platform (GCP)**. If Azure's centre of gravity is identity and AWS's is IAM-policy sprawl, GCP's defining feature is a strict, tree-shaped **resource hierarchy** married to a small, elegant IAM model -- and a service-account system so central that almost every real GCP privilege escalation is, at heart, "become a different service account."
 
 The single most important idea to carry through this chapter: in GCP, **the service account is the unit of privilege**, and the questions "which service account am I?", "which service accounts can I *become*?", and "what can that service account do?" drive every enumeration and escalation decision you will make. Get comfortable with that lens and GCP stops feeling like a pile of 200 APIs and starts feeling like a graph you can walk.
@@ -950,7 +945,3 @@ Train each skill in this chapter on purpose-built, legal targets:
 ---
 
 This chapter mapped Google Cloud from the resource hierarchy down to the individual token, with the service account as the throughline of every attack. The next chapter leaves the managed-cloud identity planes behind and drops a level in the stack -- into **Docker Security, Image Scanning (Trivy) & Container Breakouts** -- where the boundary you attack is the container isolation itself rather than the IAM policy around it.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cloud-security/05-gcp-security-essentials-and-enumeration), with comments and the latest edits.*

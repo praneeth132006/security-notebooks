@@ -1,9 +1,8 @@
 ---
 title: 'How the Web Works End to End: Client, Server, DNS & Rendering'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · How the Web Works End to End: Client, Server, DNS & Rendering'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/web-fundamentals/01-how-the-web-works-end-to-end-client
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 160 min
-
 This is Chapter 1 of the Web Fundamentals series — Notebook 6. The Networking notebook
 gave you packets, TCP, DNS and TLS as protocols in isolation. This notebook stacks the
 web on top of them, and this first chapter is the map: one single request, followed from
@@ -1099,7 +1096,3 @@ Work these in roughly this order; each one drills a specific hop from the journe
 5. Using only `curl` and `openssl`, list the exact commands you would run to (a) confirm a
    host redirects HTTP→HTTPS, (b) extract every subdomain from its certificate, and
    (c) prove the server trusts a forged `X-Forwarded-For`.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/web-fundamentals/01-how-the-web-works-end-to-end-client), with comments and the latest edits.*

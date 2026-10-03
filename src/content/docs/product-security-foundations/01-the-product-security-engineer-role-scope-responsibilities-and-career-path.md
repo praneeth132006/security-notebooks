@@ -1,13 +1,8 @@
 ---
 title: 'The Product Security Engineer Role: Scope, Responsibilities & Career Path'
-description: >-
-  A Beginner-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Beginner-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: >-
-    01 · The Product Security Engineer Role: Scope, Responsibilities & Career
-    Path
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-foundations/01-the-product-security-engineer-role-scope-responsibilities-and-career-path
 ---
-**Level:** Beginner · **Track:** Product Security · **Read time:** 215 min
-
 The previous forty-four notebooks were organised largely around *attacking* systems and *responding* to attacks — the pentester finding the bug, the analyst catching the intrusion, the responder cleaning up. This notebook, and the two that follow it, are about a different and increasingly dominant discipline: **building security into the product before it ships**, so that fewer of those bugs exist to be found and fewer of those intrusions succeed. This is **product security** — ProdSec — and it is where a large and growing share of the industry's security work now lives, because the industry finally internalised a lesson it resisted for decades: it is dramatically cheaper, and dramatically more effective, to build software securely than to bolt security on afterward and hope the pentest catches everything.
 
 The product security engineer is the person who makes that happen. They are not primarily the person who breaks into the finished product (that is the pentester or bug-bounty researcher of the earlier notebooks); they are the person embedded with the engineering organisation, working *alongside* the developers who build the product, ensuring that security is designed in, coded correctly, reviewed continuously, and caught early. It is a role that sits at the intersection of security expertise and software engineering, and it demands both — you cannot review a design you do not understand or advise on code you cannot read.
@@ -543,7 +536,3 @@ progression: junior -> senior -> staff/principal -> lead (doing -> enabling)
 - OWASP SAMM (Software Assurance Maturity Model) and BSIMM — the industry frameworks for what a mature ProdSec program looks like (Part 9, Notebook 47).
 - Notebook 42 (GRC & architecture) — the governance and zero-trust context ProdSec operates within; Notebook 44, Chapter 9 — the career-stage arc; Notebook 3 — the risk judgement ProdSec depends on.
 - Chapter 2 (Secure SDLC) next — how security integrates into the development lifecycle that ProdSec is embedded in.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-foundations/01-the-product-security-engineer-role-scope-responsibilities-and-career-path), with comments and the latest edits.*

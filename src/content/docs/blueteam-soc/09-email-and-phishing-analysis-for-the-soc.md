@@ -1,11 +1,8 @@
 ---
 title: Email & Phishing Analysis for the SOC
-description: >-
-  A Intermediate-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 9
-  label: 09 · Email & Phishing Analysis for the SOC
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/09-email-and-phishing-analysis-for-the-soc
 ---
-**Level:** Intermediate · **Track:** SOC & Blue Team · **Read time:** 180 min
-
 This is Chapter 9 of the SOC & Blue Team notebook. Chapters 7 and 8 taught you to read the host and network evidence *after* an attacker is inside. This chapter steps back to the single most common way they get inside in the first place: **email**. Phishing is the initial-access vector in the large majority of intrusions, and "I got a weird email" is the number-one ticket a Tier 1 analyst handles. Doing it well — quickly, safely, and completely — is the most repeated skill in a SOC, and it is a microcosm of the whole discipline: you take a raw artifact, extract indicators, enrich them, decide impact, and contain.
 
 This chapter teaches phishing analysis from zero. We start with how email actually travels (SMTP and the MTA chain) so the headers make sense, then read those headers to trace an email's true origin, then master the authentication triad — **SPF, DKIM, DMARC** — that tells you whether the sender is who they claim. We cover the taxonomy of phishing (credential harvesting, malware delivery, business email compromise, QR-code "quishing"), how to **safely** extract and analyse the dangerous artifacts (headers, URLs, attachments) without infecting yourself, how to detonate the unknown in a sandbox, and how to enrich indicators with reputation services. Finally we cover the **containment playbook** — what you actually *do* once an email is confirmed malicious: search-and-purge across mailboxes, block the sender/URL/hash, and reset any credentials that were exposed.
@@ -905,7 +900,3 @@ dig +short -x <sending-IP>                       # PTR of the origin IP
 For extra rigor, take a real `.eml` from a training corpus, run `phish-triage.sh` and `ioc-sweep.sh` against it, and write the verdict as a three-line ticket: **claim**, **evidence** (the exact header/verdict/log line), **action** (the specific containment step). Repeat until the SOP is muscle memory — under real time pressure, a memorised, ordered process is what keeps you from missing the one header that changes the verdict.
 
 Answer each as an IR ticket entry — claim, the exact header/command/log that supports it, and the next pivot. That discipline is what turns a "weird email" into a closed, documented, campaign-wide response — and it feeds directly into Chapter 10's network monitoring and Chapter 12's alert-triage workflow.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/09-email-and-phishing-analysis-for-the-soc), with comments and the latest edits.*

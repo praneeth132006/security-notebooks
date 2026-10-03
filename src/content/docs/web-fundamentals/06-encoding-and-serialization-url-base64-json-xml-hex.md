@@ -1,11 +1,8 @@
 ---
 title: 'Encoding & Serialization: URL, Base64, JSON, XML, Hex & CyberChef'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · Encoding & Serialization: URL, Base64, JSON, XML, Hex & CyberChef'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/web-fundamentals/06-encoding-and-serialization-url-base64-json-xml-hex
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 175 min
-
 This is Chapter 6 of the Web Fundamentals series — Notebook 6. The last three chapters dealt with
 identity, origins, and APIs — the *structure* of web communication. This chapter drops to the
 *substance*: the actual bytes. Every payload you'll ever send — an SQL injection string, an XSS
@@ -903,7 +898,3 @@ every payload rides on. It also closes **Notebook 6: Web Fundamentals**. The nex
 **Cryptography**, begins exactly where this chapter's recurring warning points: the boundary
 between *encoding* (reversible, keyless, no secrecy) and *encryption* (keyed, confidential) — and
 builds real confidentiality, integrity, and authenticity from first principles.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/web-fundamentals/06-encoding-and-serialization-url-base64-json-xml-hex), with comments and the latest edits.*

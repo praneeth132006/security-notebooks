@@ -1,11 +1,8 @@
 ---
 title: Detection Engineering with Sigma Rules
-description: >-
-  A Advanced-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: 01 · Detection Engineering with Sigma Rules
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-detection/01-detection-engineering-with-sigma-rules
 ---
-**Level:** Advanced · **Track:** SOC & Blue Team · **Read time:** 185 min
-
 This is Chapter 1 of the Detection Engineering notebook, and it marks a shift in stance. Across the SOC & Blue Team notebook you learned to *consume* detections: read the sources (Windows/Linux logs, network, EDR), triage the alerts those detections raise, and handle the incidents they escalate to. Now you cross to the other side of the glass and learn to *build* the detections. **Detection engineering** is the discipline of turning knowledge of adversary behaviour into reliable, tested, maintainable detection logic — treating detections as **code**: version-controlled, peer-reviewed, tested, and continuously improved. And the lingua franca of portable detection logic is **Sigma** — the "write once, run on any SIEM" rule format that lets you express a detection in a vendor-neutral YAML and convert it to Splunk SPL, Sentinel KQL, Elastic, and dozens of other targets.
 
 We teach the discipline and the tool from the ground up: what detection engineering *is* and the **detection-as-code lifecycle**, then **Sigma** in depth — the rule format field by field (`logsource`, `detection`, `selection`, `condition`, modifiers), the taxonomy that makes rules portable, and how **field mapping** bridges the generic rule to your specific logs. We cover **converting** Sigma to real backends with `sigma-cli`/pySigma, writing **correlation rules** for multi-event detections, and — crucially — **testing** detections with **Atomic Red Team** and driving down false positives (the discipline from the triage chapter, now applied at authoring time). We frame the whole thing around **MITRE ATT&CK** coverage (the detection backlog and the Navigator heatmap), **CI/CD and versioning** for rules, and the **feedback loop** that turns every incident's false negative into a new detection. A full hands-on lab authors, converts, tests, and tunes a Sigma rule for a real technique end to end.
@@ -903,7 +898,3 @@ Invoke-AtomicTest T#### -TestNumbers N -Cleanup
 For a capstone, take one false negative from any incident in the previous notebook (say, the phishing-macro chain or the ransomware entry vector), and carry it all the way through this chapter's lifecycle: research the telemetry, author the Sigma rule with ATT&CK tags and documented false positives, convert it to your SIEM, generate the behaviour with Atomic Red Team to prove it fires, run a benign baseline to prove it's quiet, and commit it through review. That single exercise exercises every concept here and produces a real detection you didn't have before.
 
 Answer each as a detection engineer would — the rule design, the conversion/mapping consideration, and the test that proves it works both ways. That discipline — express the behaviour portably, map it to your data, and *prove* it catches the attack without crying wolf — is detection engineering, and it is where the blue team stops reacting to detections and starts building them. From here the Detection Engineering notebook goes deeper: endpoint detection with Sysmon/osquery/Velociraptor, threat hunting, and purple-teaming your coverage.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-detection/01-detection-engineering-with-sigma-rules), with comments and the latest edits.*

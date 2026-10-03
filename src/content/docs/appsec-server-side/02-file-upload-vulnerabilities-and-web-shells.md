@@ -1,11 +1,8 @@
 ---
 title: File Upload Vulnerabilities & Web Shells
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: 02 · File Upload Vulnerabilities & Web Shells
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-server-side/02-file-upload-vulnerabilities-and-web-shells
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 2 of the Server-Side notebook — Notebook 26. The previous chapter used SSRF to make
 the server *fetch* something dangerous; this chapter makes the server *store and then run* something
 dangerous. **Insecure file upload** is the vulnerability class where an application accepts a file
@@ -891,7 +886,3 @@ With this chapter the server-side "get code or content onto the server" theme is
 upload side. The final chapter of this notebook completes the picture from the *path* side — path
 traversal, LFI, and RFI — which supply the inclusion and file-read primitives that pair with uploads
 (the LFI-to-RCE chain of Part 10) and stand as high-impact bugs in their own right.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-server-side/02-file-upload-vulnerabilities-and-web-shells), with comments and the latest edits.*

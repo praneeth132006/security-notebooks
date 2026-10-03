@@ -1,11 +1,8 @@
 ---
 title: Web Cache Poisoning & Deception
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: 07 · Web Cache Poisoning & Deception
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-server-side/07-web-cache-poisoning-and-deception
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 260 min
-
 This is Chapter 7 of the Server-Side notebook — Notebook 26. The previous chapter closed the
 "break an assumption of atomicity" arc with race conditions and TOCTOU. This chapter attacks a
 different silent assumption that sits in front of almost every large web application: the belief
@@ -1050,7 +1045,3 @@ Train each specific primitive on labs that actually reproduce it:
 In the next chapter we move to the last Server-Side topic — subdomain takeover and dangling DNS —
 another "someone else controls a resource your users trust" bug, but rooted in DNS and cloud resource
 lifecycles rather than caches.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-server-side/07-web-cache-poisoning-and-deception), with comments and the latest edits.*

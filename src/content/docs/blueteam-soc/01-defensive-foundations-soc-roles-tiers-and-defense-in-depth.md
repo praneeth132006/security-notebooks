@@ -1,11 +1,8 @@
 ---
 title: 'Defensive Foundations: SOC Roles, Tiers & Defense-in-Depth'
-description: >-
-  A Beginner-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Beginner-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Defensive Foundations: SOC Roles, Tiers & Defense-in-Depth'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/01-defensive-foundations-soc-roles-tiers-and-defense-in-depth
 ---
-**Level:** Beginner · **Track:** SOC & Blue Team · **Read time:** 150 min
-
 This is Chapter 1 of the SOC & Blue Team notebook, and it flips the polarity of everything the offensive notebooks built. For many chapters you have been the attacker: enumerating, exploiting, pivoting, evading. This notebook puts you on the other side of the glass — inside the Security Operations Center (SOC), where the job is to *see* the attacker in a flood of ordinary noise, decide fast whether an alert is real, and drive it to resolution before it becomes a breach. Every later chapter (SIEM search with Splunk and Sentinel, log analysis, detection engineering, threat hunting, incident response) assumes the frame this chapter builds: what a SOC is, who does what in it, how an alert flows from a sensor to a closed ticket, and the layered model — defense-in-depth — that determines where detections even *come from*.
 
 A framing note that governs the whole notebook. Defensive work is lawful by construction: you are monitoring systems your organization owns and is authorized to monitor, under a documented policy. But that authorization is not unlimited — analysts routinely see private data (emails, DNS lookups, file names, HR-adjacent events), and a professional treats that access with the same restraint a doctor treats a chart. Minimum-necessary access, careful handling of personal data, and honest, non-alarmist reporting are as much a part of the craft as writing a good detection. Keep that in mind as we go: the blue team's power comes from visibility, and visibility is a responsibility.
@@ -902,7 +897,3 @@ Work these before reading the answer notes; the reasoning matters more than the 
 5. A good rewrite names the account, both IPs with ASN/reputation, the devices, the specific post-auth actions with timestamps, the disposition and reasoning, and a concrete recommended action set — like the structured handoff in Part 8, Step 5.
 6. Open the **domain-controller** alert first. Asset criticality outranks raw severity: a new Domain Admin on a production DC is a potential total-compromise event, while malware on a disposable lab VM is low-impact. This is the Part 13b prioritization principle.
 7. The tuning likely *broadened suppression* (muted a whole source/subnet) rather than *narrowing with context* (excluding a specific known-benign case), creating a false negative. Tune by adding precise exclusions tied to verified-benign context, and always ask "could this also hide a real attack?" before applying it.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/01-defensive-foundations-soc-roles-tiers-and-defense-in-depth), with comments and the latest edits.*

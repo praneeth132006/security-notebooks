@@ -1,11 +1,8 @@
 ---
 title: 'Cross-Site Scripting (XSS) Part 2: DOM-Based, Mutation & Filter Bypass'
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Cross-Site Scripting (XSS) Part 2: DOM-Based, Mutation & Filter Bypass'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-client-side/02-cross-site-scripting-xss-part-2-dom-based-mutation-and-filter-bypass
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 2 of the Client-Side notebook — Notebook 24. The previous chapter built the
 XSS mental model from the ground up and spent its length on the two server-driven variants:
 Reflected XSS, where your payload bounces straight back in the HTTP response, and Stored
@@ -1212,7 +1207,3 @@ Train these exact skills on purpose-built, legal targets:
 The next chapter turns confirmed XSS into full weaponisation — session theft and the BeEF
 framework — building directly on the execution primitive you can now find in DOM, mutation,
 and filtered contexts.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-client-side/02-cross-site-scripting-xss-part-2-dom-based-mutation-and-filter-bypass), with comments and the latest edits.*

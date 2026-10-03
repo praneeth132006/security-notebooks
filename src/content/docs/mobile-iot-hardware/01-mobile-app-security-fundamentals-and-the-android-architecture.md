@@ -1,11 +1,8 @@
 ---
 title: Mobile App Security Fundamentals & the Android Architecture
-description: >-
-  A Intermediate-level Mobile & IoT chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Mobile & IoT chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: 01 · Mobile App Security Fundamentals & the Android Architecture
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/01-mobile-app-security-fundamentals-and-the-android-architecture
 ---
-**Level:** Intermediate · **Track:** Mobile & IoT · **Read time:** 310 min
-
 This is Chapter 1 of the Mobile & IoT notebook, and it opens the Android track. Everything the rest of this notebook does to a mobile app — intercepting its traffic, decompiling it, hooking its methods at runtime, bypassing its root and pinning checks, abusing its exported components — only makes sense once you understand what an Android app *is*: a package of bytecode and resources, run by a managed runtime, inside a per-app sandbox enforced by the Linux kernel, talking to the rest of the phone almost entirely through a single IPC mechanism called Binder. This chapter builds that mental model from the ground up. Nothing here is a checklist to memorise; it is the substrate the whole track sits on, in exactly the way the Linux chapters were the substrate for the server-side work.
 
 **Who this is for:** application security engineers who now have a mobile app in scope and have only ever tested web apps; pentesters and bug-bounty hunters moving into the mobile programmes on HackerOne and Bugcrowd, where the payout tables are less crowded than web; CTF players hitting their first Android reversing or `adb` challenge; and blue-teamers who ship an Android app and need to know what a reviewer will look for. You do not need prior Android development experience. You do need the Linux fundamentals from the earlier notebooks — processes, UIDs, file permissions, SELinux — because Android is a Linux system wearing an unusual coat, and almost every security boundary on the device is a Linux boundary underneath.
@@ -902,7 +897,3 @@ Train each skill from this chapter on a target built for it. All are legal, deli
 - **Disclosed HackerOne/Bugcrowd mobile reports** — search for "Android," "exported," "content provider," "deep link" to see how these primitives turn into paid bugs.
 
 Set up InsecureBankv2 on an emulator and reproduce every command in Part 8 until pulling, unzipping, decompiling and reading a manifest is muscle memory. The next chapter builds the dynamic testing lab on top of exactly this foundation.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/01-mobile-app-security-fundamentals-and-the-android-architecture), with comments and the latest edits.*

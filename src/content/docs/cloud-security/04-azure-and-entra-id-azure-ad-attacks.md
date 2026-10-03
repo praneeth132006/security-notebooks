@@ -1,11 +1,8 @@
 ---
 title: Azure & Entra ID (Azure AD) Attacks
-description: >-
-  A Advanced-level Cloud Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Cloud Security chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Azure & Entra ID (Azure AD) Attacks
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cloud-security/04-azure-and-entra-id-azure-ad-attacks
 ---
-**Level:** Advanced · **Track:** Cloud Security · **Read time:** 320 min
-
 This is Chapter 4 of the Cloud Security notebook. The previous three chapters lived almost entirely in Amazon's world — the shared-responsibility model, then hands-on AWS recon and IAM/S3/IMDS abuse, then the tooling (Pacu, ScoutSuite, Prowler) that industrialises that work. This chapter moves to Microsoft Azure, and the single most important thing to understand up front is that Azure's centre of gravity is not the resource plane at all — it is **identity**. In AWS you attack IAM as one service among many; in Azure, the identity provider (**Entra ID**, the product formerly and still widely called **Azure AD**) is the front door to every SaaS app, every Office 365 mailbox, every subscription, and often the on-premises Active Directory as well. Compromise identity and you frequently get everything else for free.
 
 Because of that, most "Azure attacks" you will run are really *identity* attacks — token theft, consent phishing, spraying, role abuse — and only some of them touch the Azure Resource Manager (ARM) plane where VMs and storage live. This chapter is built around that split: the first half is the Entra ID identity plane (recon, initial access, tokens), the second half is the Azure resource plane and the bridges between the two (privilege escalation, lateral movement, on-prem pivot, persistence), and it closes with one consolidated detection-and-defense part.
@@ -1006,7 +1001,3 @@ Practice questions:
 5. On a compromised Azure VM you find an SSRF in a web app. Give the exact request (including the mandatory header) to steal the VM's Managed Identity ARM token, and name the RBAC that determines your resulting blast radius.
 
 Work each one until you can do it without notes. The next chapter moves from Azure's identity plane to **Google Cloud (GCP) security essentials and enumeration**, where the model shifts again — projects, service accounts, and OAuth scopes replace tenants, SPs and Entra roles.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cloud-security/04-azure-and-entra-id-azure-ad-attacks), with comments and the latest edits.*

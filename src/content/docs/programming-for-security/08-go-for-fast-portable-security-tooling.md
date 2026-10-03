@@ -1,9 +1,8 @@
 ---
 title: 'Go for Fast, Portable Security Tooling'
-description: A Advanced-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: '08 · Go for Fast, Portable Security Tooling'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/programming-for-security/08-go-for-fast-portable-security-tooling
 ---
-**Level:** Advanced · **Track:** Foundations · **Read time:** 185 min
-
 This is Chapter 8 of the Programming for Security series — Notebook 5. The earlier chapters gave you
 Python for scripting and automation, Bash for glue, C for understanding memory and the stack, and
 JavaScript for the browser. Each of those owns a niche. This chapter introduces the language that has
@@ -1520,7 +1517,3 @@ Work these in order; each trains a specific skill from this chapter:
    stripped version to recover symbols anyway — this is the exact workflow a Go-malware analyst uses.
 9. **Read one real tool end-to-end:** clone **Chisel** or **`ffuf`** and trace `main.go` → the worker
    package. Every construct will be one you now recognise.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/programming-for-security/08-go-for-fast-portable-security-tooling), with comments and the latest edits.*

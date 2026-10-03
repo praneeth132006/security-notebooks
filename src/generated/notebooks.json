@@ -8,52 +8,72 @@
       {
         "slug": "01-linux-fundamentals-and-filesystem",
         "title": "Linux Fundamentals, History & Filesystem Hierarchy",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 75
       },
       {
         "slug": "02-the-shell-and-terminal-navigation-and-file-management",
         "title": "The Shell & Terminal: Navigation and File Management Mastery",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 70
       },
       {
         "slug": "03-linux-permissions-deep-dive-chmod-chown-umask-suid",
         "title": "Linux Permissions Deep Dive: chmod, chown, umask, SUID/SGID/Sticky",
-        "number": 3
+        "number": 3,
+        "level": "Beginner",
+        "minutes": 80
       },
       {
         "slug": "04-users-groups-sudo-pam-and-authentication",
         "title": "Users, Groups, sudo, PAM & Authentication",
-        "number": 4
+        "number": 4,
+        "level": "Beginner",
+        "minutes": 75
       },
       {
         "slug": "05-package-management-and-compiling-software-from-source",
         "title": "Package Management & Compiling Software from Source",
-        "number": 5
+        "number": 5,
+        "level": "Beginner",
+        "minutes": 110
       },
       {
         "slug": "06-bash-scripting-essentials-variables-logic-loops-and-functions",
         "title": "Bash Scripting Essentials: Variables, Logic, Loops & Functions",
-        "number": 6
+        "number": 6,
+        "level": "Intermediate",
+        "minutes": 100
       },
       {
         "slug": "07-text-processing-and-regex-mastery-grep-sed-awk",
         "title": "Text Processing & Regex Mastery: grep, sed, awk, cut, sort",
-        "number": 7
+        "number": 7,
+        "level": "Intermediate",
+        "minutes": 110
       },
       {
         "slug": "08-processes-systemd-services-signals-and-scheduling-cron",
         "title": "Processes, systemd, Services, Signals & Scheduling (cron)",
-        "number": 8
+        "number": 8,
+        "level": "Intermediate",
+        "minutes": 115
       },
       {
         "slug": "09-linux-networking-ssh-and-tunneling-from-the-command",
         "title": "Linux Networking, SSH & Tunneling from the Command Line",
-        "number": 9
+        "number": 9,
+        "level": "Intermediate",
+        "minutes": 120
       },
       {
         "slug": "10-logging-hardening-and-the-linux-security-baseline",
         "title": "Logging, Hardening & the Linux Security Baseline",
-        "number": 10
+        "number": 10,
+        "level": "Intermediate",
+        "minutes": 120
       }
     ]
   },
@@ -66,62 +86,86 @@
       {
         "slug": "01-how-the-internet-works-packets-encapsulation-and-the",
         "title": "How the Internet Works: Packets, Encapsulation & the Big Picture",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 110
       },
       {
         "slug": "02-osi-and-tcp-ip-models-layer-by-layer",
         "title": "OSI & TCP/IP Models Layer by Layer",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 115
       },
       {
         "slug": "03-ip-addressing-binary-math-subnetting-and-cidr-mastery",
         "title": "IP Addressing, Binary Math, Subnetting & CIDR Mastery",
-        "number": 3
+        "number": 3,
+        "level": "Beginner",
+        "minutes": 125
       },
       {
         "slug": "04-ethernet-mac-addresses-switching-arp-and-vlans",
         "title": "Ethernet, MAC Addresses, Switching, ARP & VLANs",
-        "number": 4
+        "number": 4,
+        "level": "Beginner",
+        "minutes": 120
       },
       {
         "slug": "05-routing-nat-and-the-default-gateway",
         "title": "Routing, NAT & the Default Gateway",
-        "number": 5
+        "number": 5,
+        "level": "Beginner",
+        "minutes": 110
       },
       {
         "slug": "06-tcp-deep-dive-handshake-flags-sequence-numbers-and",
         "title": "TCP Deep Dive: Handshake, Flags, Sequence Numbers & States",
-        "number": 6
+        "number": 6,
+        "level": "Beginner",
+        "minutes": 115
       },
       {
         "slug": "07-udp-icmp-and-connectionless-protocols",
         "title": "UDP, ICMP & Connectionless Protocols",
-        "number": 7
+        "number": 7,
+        "level": "Intermediate",
+        "minutes": 115
       },
       {
         "slug": "08-dns-completely-explained-records-resolution-and-zones",
         "title": "DNS Completely Explained: Records, Resolution & Zones",
-        "number": 8
+        "number": 8,
+        "level": "Intermediate",
+        "minutes": 120
       },
       {
         "slug": "09-dhcp-and-dynamic-address-assignment",
         "title": "DHCP & Dynamic Address Assignment",
-        "number": 9
+        "number": 9,
+        "level": "Intermediate",
+        "minutes": 115
       },
       {
         "slug": "10-http-https-tls-ssl-and-pki-in-practice",
         "title": "HTTP, HTTPS, TLS/SSL & PKI in Practice",
-        "number": 10
+        "number": 10,
+        "level": "Intermediate",
+        "minutes": 130
       },
       {
         "slug": "11-firewalls-ids-ips-proxies-vpns-and-network-segmentation",
         "title": "Firewalls, IDS/IPS, Proxies, VPNs & Network Segmentation",
-        "number": 11
+        "number": 11,
+        "level": "Intermediate",
+        "minutes": 115
       },
       {
         "slug": "12-wireless-802-11-fundamentals-and-network-analysis-methodology",
         "title": "Wireless 802.11 Fundamentals & Network Analysis Methodology",
-        "number": 12
+        "number": 12,
+        "level": "Intermediate",
+        "minutes": 115
       }
     ]
   },
@@ -134,37 +178,51 @@
       {
         "slug": "01-windows-architecture-processes-threads-and-the-registry",
         "title": "Windows Architecture, Processes, Threads & the Registry",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 120
       },
       {
         "slug": "02-windows-file-system-permissions-acls-and-security-descriptors",
         "title": "Windows File System, Permissions, ACLs & Security Descriptors",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 120
       },
       {
         "slug": "03-windows-authentication-sam-lsass-ntlm-and-kerberos-explained",
         "title": "Windows Authentication: SAM, LSASS, NTLM & Kerberos Explained",
-        "number": 3
+        "number": 3,
+        "level": "Beginner",
+        "minutes": 140
       },
       {
         "slug": "04-powershell-fundamentals-and-the-object-pipeline",
         "title": "PowerShell Fundamentals & the Object Pipeline",
-        "number": 4
+        "number": 4,
+        "level": "Beginner",
+        "minutes": 140
       },
       {
         "slug": "05-powershell-remoting-wmi-cim-and-living-off-the",
         "title": "PowerShell Remoting, WMI/CIM & Living-off-the-Land (LOLBAS)",
-        "number": 5
+        "number": 5,
+        "level": "Intermediate",
+        "minutes": 130
       },
       {
         "slug": "06-smb-rpc-named-pipes-and-windows-networking-services",
         "title": "SMB, RPC, Named Pipes & Windows Networking Services",
-        "number": 6
+        "number": 6,
+        "level": "Intermediate",
+        "minutes": 130
       },
       {
         "slug": "07-windows-event-logs-sysmon-and-telemetry",
         "title": "Windows Event Logs, Sysmon & Telemetry",
-        "number": 7
+        "number": 7,
+        "level": "Intermediate",
+        "minutes": 150
       }
     ]
   },
@@ -177,27 +235,37 @@
       {
         "slug": "01-what-is-active-directory-domains-forests-trees-and",
         "title": "What is Active Directory? Domains, Forests, Trees & OUs",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 150
       },
       {
         "slug": "02-domain-controllers-global-catalog-ldap-and-dns-in",
         "title": "Domain Controllers, Global Catalog, LDAP & DNS in AD",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 155
       },
       {
         "slug": "03-users-groups-computers-sids-rids-and-security-principals",
         "title": "Users, Groups, Computers, SIDs, RIDs & Security Principals",
-        "number": 3
+        "number": 3,
+        "level": "Intermediate",
+        "minutes": 160
       },
       {
         "slug": "04-group-policy-gpo-delegation-and-administrative-tiering",
         "title": "Group Policy (GPO), Delegation & Administrative Tiering",
-        "number": 4
+        "number": 4,
+        "level": "Intermediate",
+        "minutes": 165
       },
       {
         "slug": "05-kerberos-authentication-flow-step-by-step-tgt-tgs",
         "title": "Kerberos Authentication Flow Step by Step (TGT, TGS, PAC)",
-        "number": 5
+        "number": 5,
+        "level": "Intermediate",
+        "minutes": 175
       }
     ]
   },
@@ -210,42 +278,58 @@
       {
         "slug": "01-python-for-security-part-1-syntax-data-types",
         "title": "Python for Security Part 1: Syntax, Data Types & Control Flow",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 150
       },
       {
         "slug": "02-python-for-security-part-2-functions-files-modules",
         "title": "Python for Security Part 2: Functions, Files, Modules & Requests",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 155
       },
       {
         "slug": "03-python-for-security-part-3-sockets-scapy-and",
         "title": "Python for Security Part 3: Sockets, Scapy & Writing Your First Tools",
-        "number": 3
+        "number": 3,
+        "level": "Intermediate",
+        "minutes": 165
       },
       {
         "slug": "04-bash-scripting-for-offensive-and-defensive-automation",
         "title": "Bash Scripting for Offensive & Defensive Automation",
-        "number": 4
+        "number": 4,
+        "level": "Intermediate",
+        "minutes": 170
       },
       {
         "slug": "05-understanding-c-memory-layout-pointers-and-the-stack",
         "title": "Understanding C, Memory Layout, Pointers & the Stack",
-        "number": 5
+        "number": 5,
+        "level": "Intermediate",
+        "minutes": 175
       },
       {
         "slug": "06-javascript-and-the-dom-for-web-security",
         "title": "JavaScript & the DOM for Web Security",
-        "number": 6
+        "number": 6,
+        "level": "Intermediate",
+        "minutes": 170
       },
       {
         "slug": "07-powershell-and-c-for-windows-tooling",
         "title": "PowerShell & C# for Windows Tooling",
-        "number": 7
+        "number": 7,
+        "level": "Advanced",
+        "minutes": 180
       },
       {
         "slug": "08-go-for-fast-portable-security-tooling",
         "title": "Go for Fast, Portable Security Tooling",
-        "number": 8
+        "number": 8,
+        "level": "Advanced",
+        "minutes": 185
       }
     ]
   },
@@ -258,32 +342,44 @@
       {
         "slug": "01-how-the-web-works-end-to-end-client",
         "title": "How the Web Works End to End: Client, Server, DNS & Rendering",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 160
       },
       {
         "slug": "02-http-in-depth-verbs-headers-cookies-caching-and",
         "title": "HTTP in Depth: Verbs, Headers, Cookies, Caching & Redirects",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 175
       },
       {
         "slug": "03-sessions-cookies-tokens-and-stateful-vs-stateless-auth",
         "title": "Sessions, Cookies, Tokens & Stateful vs Stateless Auth",
-        "number": 3
+        "number": 3,
+        "level": "Beginner",
+        "minutes": 180
       },
       {
         "slug": "04-same-origin-policy-cors-and-the-browser-security",
         "title": "Same-Origin Policy, CORS & the Browser Security Model",
-        "number": 4
+        "number": 4,
+        "level": "Intermediate",
+        "minutes": 180
       },
       {
         "slug": "05-rest-apis-graphql-and-modern-api-architecture",
         "title": "REST APIs, GraphQL & Modern API Architecture",
-        "number": 5
+        "number": 5,
+        "level": "Intermediate",
+        "minutes": 185
       },
       {
         "slug": "06-encoding-and-serialization-url-base64-json-xml-hex",
         "title": "Encoding & Serialization: URL, Base64, JSON, XML, Hex & CyberChef",
-        "number": 6
+        "number": 6,
+        "level": "Intermediate",
+        "minutes": 175
       }
     ]
   },
@@ -296,37 +392,51 @@
       {
         "slug": "01-cryptography-foundations-encoding-vs-encryption-vs-hashing",
         "title": "Cryptography Foundations: Encoding vs Encryption vs Hashing",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 180
       },
       {
         "slug": "02-symmetric-encryption-aes-block-modes-and-stream-ciphers",
         "title": "Symmetric Encryption: AES, Block Modes & Stream Ciphers",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 190
       },
       {
         "slug": "03-asymmetric-encryption-rsa-ecc-and-diffie-hellman-key",
         "title": "Asymmetric Encryption: RSA, ECC & Diffie-Hellman Key Exchange",
-        "number": 3
+        "number": 3,
+        "level": "Intermediate",
+        "minutes": 190
       },
       {
         "slug": "04-hashing-salting-hmac-and-integrity",
         "title": "Hashing, Salting, HMAC & Integrity",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 185
       },
       {
         "slug": "05-password-storage-done-right-bcrypt-scrypt-argon2-pbkdf2",
         "title": "Password Storage Done Right: bcrypt, scrypt, Argon2, PBKDF2",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 190
       },
       {
         "slug": "06-pki-digital-signatures-certificates-and-chains-of-trust",
         "title": "PKI, Digital Signatures, Certificates & Chains of Trust",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 195
       },
       {
         "slug": "07-practical-crypto-attacks-xor-ecb-padding-oracle-and",
         "title": "Practical Crypto Attacks: XOR, ECB, Padding Oracle & CTF Techniques",
-        "number": 7
+        "number": 7,
+        "level": "Advanced",
+        "minutes": 195
       }
     ]
   },
@@ -339,32 +449,44 @@
       {
         "slug": "01-the-cia-triad-aaa-threats-vulnerabilities-and-risk",
         "title": "The CIA Triad, AAA, Threats, Vulnerabilities & Risk",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 175
       },
       {
         "slug": "02-threat-modeling-stride-dread-and-attack-trees",
         "title": "Threat Modeling: STRIDE, DREAD & Attack Trees",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 180
       },
       {
         "slug": "03-the-cyber-kill-chain-and-mitre-attandck-framework",
         "title": "The Cyber Kill Chain & MITRE ATT&CK Framework",
-        "number": 3
+        "number": 3,
+        "level": "Beginner",
+        "minutes": 190
       },
       {
         "slug": "04-security-roles-teams-red-blue-purple-and-career",
         "title": "Security Roles, Teams (Red/Blue/Purple) & Career Fields Explained",
-        "number": 4
+        "number": 4,
+        "level": "Beginner",
+        "minutes": 185
       },
       {
         "slug": "05-law-and-ethics-authorization-scope-and-rules-of",
         "title": "Law & Ethics: Authorization, Scope & Rules of Engagement",
-        "number": 5
+        "number": 5,
+        "level": "Intermediate",
+        "minutes": 180
       },
       {
         "slug": "06-building-your-hacking-lab-kali-parrot-vms-and",
         "title": "Building Your Hacking Lab: Kali/Parrot, VMs & Vulnerable Targets",
-        "number": 6
+        "number": 6,
+        "level": "Intermediate",
+        "minutes": 185
       }
     ]
   },
@@ -377,17 +499,23 @@
       {
         "slug": "01-pentest-methodology-and-the-engagement-lifecycle",
         "title": "Pentest Methodology & the Engagement Lifecycle",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 165
       },
       {
         "slug": "02-scoping-rules-of-engagement-legal-boundaries-and-ethics",
         "title": "Scoping, Rules of Engagement, Legal Boundaries & Ethics",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 170
       },
       {
         "slug": "03-building-your-hacking-lab-kali-vms-targets-htb-and-thm",
         "title": "Building Your Hacking Lab: Kali, VMs, Targets, HTB & THM",
-        "number": 3
+        "number": 3,
+        "level": "Beginner",
+        "minutes": 175
       }
     ]
   },
@@ -400,67 +528,93 @@
       {
         "slug": "01-reconnaissance-passive-vs-active-and-the-attack-surface",
         "title": "Reconnaissance: Passive vs Active & the Attack Surface",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 170
       },
       {
         "slug": "02-passive-recon-whois-dns-enumeration-and-certificate-transparency",
         "title": "Passive Recon: WHOIS, DNS Enumeration & Certificate Transparency",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 180
       },
       {
         "slug": "03-osint-foundations-discipline-opsec-and-sock-puppet-accounts",
         "title": "OSINT Foundations: Discipline, OPSEC & Sock-Puppet Accounts",
-        "number": 3
+        "number": 3,
+        "level": "Beginner",
+        "minutes": 180
       },
       {
         "slug": "04-google-dorking-and-search-engine-recon-for-hackers",
         "title": "Google Dorking & Search-Engine Recon for Hackers",
-        "number": 4
+        "number": 4,
+        "level": "Intermediate",
+        "minutes": 175
       },
       {
         "slug": "05-subdomain-enumeration-amass-subfinder-sublist3r-and-assetfinder",
         "title": "Subdomain Enumeration: Amass, Subfinder, Sublist3r & Assetfinder",
-        "number": 5
+        "number": 5,
+        "level": "Intermediate",
+        "minutes": 185
       },
       {
         "slug": "06-osint-frameworks-theharvester-recon-ng-spiderfoot-and-maltego",
         "title": "OSINT Frameworks: theHarvester, Recon-ng, SpiderFoot & Maltego",
-        "number": 6
+        "number": 6,
+        "level": "Intermediate",
+        "minutes": 190
       },
       {
         "slug": "07-username-email-and-account-osint-sherlock-maigret-and-holehe",
         "title": "Username, Email & Account OSINT: Sherlock, Maigret & Holehe",
-        "number": 7
+        "number": 7,
+        "level": "Intermediate",
+        "minutes": 195
       },
       {
         "slug": "08-breach-data-credential-leaks-and-dark-web-osint",
         "title": "Breach Data, Credential Leaks & Dark-Web OSINT",
-        "number": 8
+        "number": 8,
+        "level": "Intermediate",
+        "minutes": 200
       },
       {
         "slug": "09-shodan-censys-and-internet-wide-asset-discovery",
         "title": "Shodan, Censys & Internet-Wide Asset Discovery",
-        "number": 9
+        "number": 9,
+        "level": "Advanced",
+        "minutes": 205
       },
       {
         "slug": "10-active-recon-and-tech-fingerprinting-httpx-whatweb-and-wappalyzer",
         "title": "Active Recon & Tech Fingerprinting: httpx, whatweb & Wappalyzer",
-        "number": 10
+        "number": 10,
+        "level": "Advanced",
+        "minutes": 210
       },
       {
         "slug": "11-image-geolocation-and-metadata-osint-exiftool-reverse-image-and-geoint",
         "title": "Image, Geolocation & Metadata OSINT: ExifTool, Reverse Image & GEOINT",
-        "number": 11
+        "number": 11,
+        "level": "Advanced",
+        "minutes": 215
       },
       {
         "slug": "12-corporate-people-and-social-media-osint-for-red-teams",
         "title": "Corporate, People & Social-Media OSINT for Red Teams",
-        "number": 12
+        "number": 12,
+        "level": "Advanced",
+        "minutes": 215
       },
       {
         "slug": "13-automating-recon-building-an-end-to-end-osint-and-attack-surface-pipeline",
         "title": "Automating Recon: Building an End-to-End OSINT & Attack-Surface Pipeline",
-        "number": 13
+        "number": 13,
+        "level": "Advanced",
+        "minutes": 215
       }
     ]
   },
@@ -473,42 +627,58 @@
       {
         "slug": "01-host-discovery-and-the-scanning-methodology",
         "title": "Host Discovery & the Scanning Methodology",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 205
       },
       {
         "slug": "02-nmap-part-1-install-host-discovery-and-scan-types",
         "title": "Nmap Part 1: Install, Host Discovery & Scan Types",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 215
       },
       {
         "slug": "03-nmap-part-2-service-os-detection-timing-and-output-formats",
         "title": "Nmap Part 2: Service/OS Detection, Timing & Output Formats",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 225
       },
       {
         "slug": "04-nmap-part-3-nse-scripting-engine-and-firewall-ids-evasion",
         "title": "Nmap Part 3: NSE Scripting Engine & Firewall/IDS Evasion",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 230
       },
       {
         "slug": "05-masscan-and-rustscan-high-speed-scanning",
         "title": "Masscan & RustScan: High-Speed Scanning",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 230
       },
       {
         "slug": "06-service-enumeration-ftp-ssh-smtp-telnet-and-banner-grabbing",
         "title": "Service Enumeration: FTP, SSH, SMTP, Telnet & Banner Grabbing",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 235
       },
       {
         "slug": "07-smb-rpc-and-netbios-enumeration-enum4linux-smbclient-netexec",
         "title": "SMB, RPC & NetBIOS Enumeration: enum4linux, smbclient, NetExec",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "08-snmp-ldap-nfs-and-database-service-enumeration",
         "title": "SNMP, LDAP, NFS & Database Service Enumeration",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 260
       }
     ]
   },
@@ -521,22 +691,30 @@
       {
         "slug": "01-vulnerability-scanning-concepts-cve-cvss-and-cwe",
         "title": "Vulnerability Scanning Concepts: CVE, CVSS & CWE",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 240
       },
       {
         "slug": "02-nessus-installation-policies-scanning-and-reporting",
         "title": "Nessus: Installation, Policies, Scanning & Reporting",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 245
       },
       {
         "slug": "03-openvas-greenbone-and-nikto-web-scanning",
         "title": "OpenVAS/Greenbone & Nikto Web Scanning",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "04-manual-vulnerability-validation-and-triage",
         "title": "Manual Vulnerability Validation & Triage",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 260
       }
     ]
   },
@@ -549,22 +727,30 @@
       {
         "slug": "01-web-application-pentest-methodology-and-the-owasp-testing-guide",
         "title": "Web Application Pentest Methodology & the OWASP Testing Guide",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 255
       },
       {
         "slug": "02-mapping-the-web-attack-surface-crawling-params-and-hidden-endpoints",
         "title": "Mapping the Web Attack Surface: Crawling, Params & Hidden Endpoints",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 240
       },
       {
         "slug": "03-authentication-session-and-access-control-testing-in-practice",
         "title": "Authentication, Session & Access-Control Testing in Practice",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 250
       },
       {
         "slug": "04-from-web-bug-to-shell-chaining-web-vulns-in-a-pentest",
         "title": "From Web Bug to Shell: Chaining Web Vulns in a Pentest",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 260
       }
     ]
   },
@@ -577,42 +763,58 @@
       {
         "slug": "01-wireshark-part-1-capturing-and-packet-anatomy",
         "title": "Wireshark Part 1: Capturing & Packet Anatomy",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 240
       },
       {
         "slug": "02-wireshark-part-2-display-filters-streams-and-protocol-analysis",
         "title": "Wireshark Part 2: Display Filters, Streams & Protocol Analysis",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 250
       },
       {
         "slug": "03-wireshark-part-3-analyzing-attacks-and-extracting-credentials",
         "title": "Wireshark Part 3: Analyzing Attacks & Extracting Credentials",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "04-tcpdump-and-command-line-packet-capture",
         "title": "tcpdump & Command-Line Packet Capture",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 245
       },
       {
         "slug": "05-man-in-the-middle-and-arp-spoofing-ettercap-and-bettercap",
         "title": "Man-in-the-Middle & ARP Spoofing: Ettercap & Bettercap",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 260
       },
       {
         "slug": "06-dns-spoofing-ssl-stripping-and-traffic-manipulation",
         "title": "DNS Spoofing, SSL Stripping & Traffic Manipulation",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 270
       },
       {
         "slug": "07-responder-llmnr-nbt-ns-poisoning-and-credential-capture",
         "title": "Responder, LLMNR/NBT-NS Poisoning & Credential Capture",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 260
       },
       {
         "slug": "08-pivoting-and-tunneling-chisel-sshuttle-ligolo-ng-and-proxychains",
         "title": "Pivoting & Tunneling: chisel, sshuttle, ligolo-ng & proxychains",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 265
       }
     ]
   },
@@ -625,32 +827,44 @@
       {
         "slug": "01-password-fundamentals-hashes-storage-entropy-and-attack-types",
         "title": "Password Fundamentals: Hashes, Storage, Entropy & Attack Types",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 210
       },
       {
         "slug": "02-wordlists-and-rules-rockyou-crunch-cewl-and-mangling",
         "title": "Wordlists & Rules: rockyou, crunch, CeWL & Mangling",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 215
       },
       {
         "slug": "03-hydra-online-brute-force-of-login-services",
         "title": "Hydra: Online Brute Force of Login Services",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 215
       },
       {
         "slug": "04-john-the-ripper-offline-cracking-formats-and-rules",
         "title": "John the Ripper: Offline Cracking, Formats & Rules",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 230
       },
       {
         "slug": "05-hashcat-gpu-cracking-attack-modes-and-masks",
         "title": "Hashcat: GPU Cracking, Attack Modes & Masks",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 235
       },
       {
         "slug": "06-credential-stuffing-spraying-and-hash-identification",
         "title": "Credential Stuffing, Spraying & Hash Identification",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 225
       }
     ]
   },
@@ -663,42 +877,58 @@
       {
         "slug": "01-exploitation-fundamentals-shells-payloads-and-delivery",
         "title": "Exploitation Fundamentals: Shells, Payloads & Delivery",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 230
       },
       {
         "slug": "02-finding-and-using-public-exploits-exploit-db-and-searchsploit",
         "title": "Finding & Using Public Exploits: Exploit-DB & searchsploit",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 240
       },
       {
         "slug": "03-metasploit-part-1-architecture-msfconsole-and-modules",
         "title": "Metasploit Part 1: Architecture, msfconsole & Modules",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 240
       },
       {
         "slug": "04-metasploit-part-2-exploits-payloads-sessions-and-meterpreter",
         "title": "Metasploit Part 2: Exploits, Payloads, Sessions & Meterpreter",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "05-metasploit-part-3-msfvenom-payloads-and-encoders",
         "title": "Metasploit Part 3: msfvenom Payloads & Encoders",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 250
       },
       {
         "slug": "06-metasploit-part-4-post-modules-pivoting-and-automation",
         "title": "Metasploit Part 4: Post Modules, Pivoting & Automation",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "07-reverse-vs-bind-shells-stabilization-and-tty-upgrading",
         "title": "Reverse vs Bind Shells, Stabilization & TTY Upgrading",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 80
       },
       {
         "slug": "08-netcat-and-socat-the-swiss-army-knives-of-shells",
         "title": "Netcat & Socat: The Swiss-Army Knives of Shells",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 80
       }
     ]
   },
@@ -711,37 +941,51 @@
       {
         "slug": "01-post-exploitation-methodology-and-situational-awareness",
         "title": "Post-Exploitation Methodology & Situational Awareness",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 80
       },
       {
         "slug": "02-linux-privilege-escalation-part-1-enumeration-linpeas-and-manual",
         "title": "Linux Privilege Escalation Part 1: Enumeration (LinPEAS & Manual)",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 85
       },
       {
         "slug": "03-linux-privilege-escalation-part-2-suid-capabilities-cron-path-kernel",
         "title": "Linux Privilege Escalation Part 2: SUID, Capabilities, Cron, PATH, Kernel",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 95
       },
       {
         "slug": "04-windows-privilege-escalation-part-1-enumeration-winpeas-seatbelt",
         "title": "Windows Privilege Escalation Part 1: Enumeration (WinPEAS, Seatbelt)",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 95
       },
       {
         "slug": "05-windows-privilege-escalation-part-2-services-tokens-uac-unquoted-paths",
         "title": "Windows Privilege Escalation Part 2: Services, Tokens, UAC, Unquoted Paths",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 110
       },
       {
         "slug": "06-credential-harvesting-mimikatz-lsass-and-sam-ntds",
         "title": "Credential Harvesting: Mimikatz, LSASS & SAM/NTDS",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 120
       },
       {
         "slug": "07-persistence-and-lateral-movement-across-linux-and-windows",
         "title": "Persistence & Lateral Movement Across Linux & Windows",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 90
       }
     ]
   },
@@ -754,62 +998,86 @@
       {
         "slug": "01-ad-attack-methodology-and-the-assumed-breach-mindset",
         "title": "AD Attack Methodology & the Assumed-Breach Mindset",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 220
       },
       {
         "slug": "02-bloodhound-and-sharphound-mapping-ad-attack-paths",
         "title": "BloodHound & SharpHound: Mapping AD Attack Paths",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 230
       },
       {
         "slug": "03-powerview-adrecon-and-ad-enumeration-kerbrute-user-spray",
         "title": "PowerView, ADRecon & AD Enumeration (kerbrute user spray)",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 235
       },
       {
         "slug": "04-kerberoasting-and-as-rep-roasting-rubeus-and-impacket",
         "title": "Kerberoasting & AS-REP Roasting (Rubeus & Impacket)",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 245
       },
       {
         "slug": "05-pass-the-hash-pass-the-ticket-and-overpass-the-hash",
         "title": "Pass-the-Hash, Pass-the-Ticket & Overpass-the-Hash",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "06-golden-silver-and-diamond-ticket-attacks",
         "title": "Golden, Silver & Diamond Ticket Attacks",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 265
       },
       {
         "slug": "07-dcsync-dcshadow-and-domain-dominance",
         "title": "DCSync, DCShadow & Domain Dominance",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "08-kerberos-delegation-attacks-unconstrained-constrained-and-rbcd",
         "title": "Kerberos Delegation Attacks: Unconstrained, Constrained & RBCD",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 280
       },
       {
         "slug": "09-acl-ace-abuse-in-active-directory",
         "title": "ACL/ACE Abuse in Active Directory",
-        "number": 9
+        "number": 9,
+        "level": "Expert",
+        "minutes": 290
       },
       {
         "slug": "10-ntlm-relay-and-coercion-ntlmrelayx-petitpotam-coercer",
         "title": "NTLM Relay & Coercion: ntlmrelayx, PetitPotam, Coercer",
-        "number": 10
+        "number": 10,
+        "level": "Expert",
+        "minutes": 300
       },
       {
         "slug": "11-ad-certificate-services-ad-cs-esc-attacks-with-certipy",
         "title": "AD Certificate Services (AD CS / ESC) Attacks with Certipy",
-        "number": 11
+        "number": 11,
+        "level": "Expert",
+        "minutes": 320
       },
       {
         "slug": "12-impacket-netexec-crackmapexec-and-the-ad-attacker-toolkit",
         "title": "Impacket, NetExec/CrackMapExec & the AD Attacker Toolkit",
-        "number": 12
+        "number": 12,
+        "level": "Expert",
+        "minutes": 330
       }
     ]
   },
@@ -822,32 +1090,44 @@
       {
         "slug": "01-wi-fi-security-fundamentals-wep-wpa-wpa2-wpa3-and-handshakes",
         "title": "Wi-Fi Security Fundamentals: WEP, WPA, WPA2, WPA3 & Handshakes",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 245
       },
       {
         "slug": "02-aircrack-ng-suite-monitor-mode-capture-and-cracking",
         "title": "Aircrack-ng Suite: Monitor Mode, Capture & Cracking",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 250
       },
       {
         "slug": "03-wpa-wpa2-psk-and-pmkid-attacks-with-hcxdumptool",
         "title": "WPA/WPA2 PSK & PMKID Attacks with hcxdumptool",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 260
       },
       {
         "slug": "04-evil-twin-rogue-ap-and-captive-portal-attacks-wifiphisher",
         "title": "Evil Twin, Rogue AP & Captive Portal Attacks (wifiphisher)",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "05-deauthentication-wps-reaver-bully-and-client-side-attacks",
         "title": "Deauthentication, WPS (Reaver/Bully) & Client-Side Attacks",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 180
       },
       {
         "slug": "06-bluetooth-ble-and-other-radio-attack-surfaces",
         "title": "Bluetooth, BLE & Other Radio Attack Surfaces",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 195
       }
     ]
   },
@@ -860,17 +1140,23 @@
       {
         "slug": "01-full-scope-internal-pentest-external-to-domain-admin-walkthrough",
         "title": "Full-Scope Internal Pentest: External to Domain Admin Walkthrough",
-        "number": 1
+        "number": 1,
+        "level": "Expert",
+        "minutes": 240
       },
       {
         "slug": "02-solving-a-boot-to-root-ctf-machine-end-to-end-htb-thm-style",
         "title": "Solving a Boot-to-Root CTF Machine End to End (HTB/THM Style)",
-        "number": 2
+        "number": 2,
+        "level": "Expert",
+        "minutes": 230
       },
       {
         "slug": "03-professional-pentest-report-writing-and-cvss-scoring",
         "title": "Professional Pentest Report Writing & CVSS Scoring",
-        "number": 3
+        "number": 3,
+        "level": "Expert",
+        "minutes": 220
       }
     ]
   },
@@ -883,12 +1169,16 @@
       {
         "slug": "01-how-bug-bounty-works-platforms-scope-disclosure-and-payouts",
         "title": "How Bug Bounty Works: Platforms, Scope, Disclosure & Payouts",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 165
       },
       {
         "slug": "02-bug-bounty-recon-at-scale-assets-subdomains-and-content-discovery",
         "title": "Bug Bounty Recon at Scale: Assets, Subdomains & Content Discovery",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 195
       }
     ]
   },
@@ -901,37 +1191,51 @@
       {
         "slug": "01-burp-suite-part-1-setup-proxy-intercept-and-scope",
         "title": "Burp Suite Part 1: Setup, Proxy, Intercept & Scope",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 185
       },
       {
         "slug": "02-burp-suite-part-2-repeater-intruder-sequencer-and-decoder",
         "title": "Burp Suite Part 2: Repeater, Intruder, Sequencer & Decoder",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 205
       },
       {
         "slug": "03-burp-suite-part-3-scanner-bapp-extensions-and-collaborator",
         "title": "Burp Suite Part 3: Scanner, BApp Extensions & Collaborator",
-        "number": 3
+        "number": 3,
+        "level": "Intermediate",
+        "minutes": 195
       },
       {
         "slug": "04-owasp-zap-as-a-free-alternative",
         "title": "OWASP ZAP as a Free Alternative",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 185
       },
       {
         "slug": "05-content-and-parameter-discovery-ffuf-feroxbuster-dirsearch-arjun",
         "title": "Content & Parameter Discovery: ffuf, feroxbuster, dirsearch, Arjun",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 195
       },
       {
         "slug": "06-nuclei-template-based-vulnerability-scanning-at-scale",
         "title": "Nuclei: Template-Based Vulnerability Scanning at Scale",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 195
       },
       {
         "slug": "07-owasp-top-10-and-web-attack-surface-mapping",
         "title": "OWASP Top 10 & Web Attack-Surface Mapping",
-        "number": 7
+        "number": 7,
+        "level": "Advanced",
+        "minutes": 205
       }
     ]
   },
@@ -944,32 +1248,44 @@
       {
         "slug": "01-sql-injection-part-1-databases-sql-and-discovering-injection",
         "title": "SQL Injection Part 1: Databases, SQL & Discovering Injection",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 225
       },
       {
         "slug": "02-sql-injection-part-2-union-error-based-and-blind-exploitation",
         "title": "SQL Injection Part 2: UNION, Error-Based & Blind Exploitation",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 240
       },
       {
         "slug": "03-sql-injection-part-3-waf-bypass-second-order-and-sqlmap",
         "title": "SQL Injection Part 3: WAF Bypass, Second-Order & sqlmap",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "04-os-command-injection",
         "title": "OS Command Injection",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "05-server-side-template-injection-ssti",
         "title": "Server-Side Template Injection (SSTI)",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 260
       },
       {
         "slug": "06-xml-external-entity-xxe-injection",
         "title": "XML External Entity (XXE) Injection",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 255
       }
     ]
   },
@@ -982,27 +1298,37 @@
       {
         "slug": "01-cross-site-scripting-xss-part-1-reflected-and-stored",
         "title": "Cross-Site Scripting (XSS) Part 1: Reflected & Stored",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "02-cross-site-scripting-xss-part-2-dom-based-mutation-and-filter-bypass",
         "title": "Cross-Site Scripting (XSS) Part 2: DOM-Based, Mutation & Filter Bypass",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "03-weaponizing-xss-session-theft-and-the-beef-framework",
         "title": "Weaponizing XSS: Session Theft & the BeEF Framework",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "04-cross-site-request-forgery-csrf-and-samesite-defenses",
         "title": "Cross-Site Request Forgery (CSRF) & SameSite Defenses",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "05-cors-misconfiguration-exploitation",
         "title": "CORS Misconfiguration Exploitation",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 255
       }
     ]
   },
@@ -1015,27 +1341,37 @@
       {
         "slug": "01-broken-access-control-and-idor",
         "title": "Broken Access Control & IDOR",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "02-authentication-attacks-brute-force-logic-flaws-and-mfa-bypass",
         "title": "Authentication Attacks: Brute Force, Logic Flaws & MFA Bypass",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "03-jwt-and-token-attacks-forgery-algorithm-confusion-and-weak-secrets",
         "title": "JWT & Token Attacks: Forgery, Algorithm Confusion & Weak Secrets",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "04-session-management-flaws-and-fixation",
         "title": "Session Management Flaws & Fixation",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "05-business-logic-vulnerabilities-and-abuse-cases",
         "title": "Business Logic Vulnerabilities & Abuse Cases",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 255
       }
     ]
   },
@@ -1048,42 +1384,58 @@
       {
         "slug": "01-server-side-request-forgery-ssrf-and-cloud-metadata-attacks",
         "title": "Server-Side Request Forgery (SSRF) & Cloud Metadata Attacks",
-        "number": 1
+        "number": 1,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "02-file-upload-vulnerabilities-and-web-shells",
         "title": "File Upload Vulnerabilities & Web Shells",
-        "number": 2
+        "number": 2,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "03-path-traversal-lfi-and-rfi",
         "title": "Path Traversal, LFI & RFI",
-        "number": 3
+        "number": 3,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "04-insecure-deserialization",
         "title": "Insecure Deserialization",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "05-http-request-smuggling-and-desync-attacks",
         "title": "HTTP Request Smuggling & Desync Attacks",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "06-race-conditions-and-toctou-in-web-apps",
         "title": "Race Conditions & TOCTOU in Web Apps",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "07-web-cache-poisoning-and-deception",
         "title": "Web Cache Poisoning & Deception",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 260
       },
       {
         "slug": "08-subdomain-takeover-and-dangling-dns",
         "title": "Subdomain Takeover & Dangling DNS",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 255
       }
     ]
   },
@@ -1096,32 +1448,44 @@
       {
         "slug": "01-rest-api-security-testing-methodology",
         "title": "REST API Security Testing Methodology",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 220
       },
       {
         "slug": "02-graphql-api-attacks",
         "title": "GraphQL API Attacks",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 240
       },
       {
         "slug": "03-cms-and-framework-testing-wpscan-joomscan-and-known-vuln-exploitation",
         "title": "CMS & Framework Testing: WPScan, JoomScan & Known-Vuln Exploitation",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 245
       },
       {
         "slug": "04-chaining-bugs-for-maximum-impact-real-bug-bounty-kill-chains",
         "title": "Chaining Bugs for Maximum Impact: Real Bug-Bounty Kill Chains",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "05-bug-bounty-methodology-recon-to-report-workflow-and-automation",
         "title": "Bug Bounty Methodology: Recon-to-Report Workflow & Automation",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 240
       },
       {
         "slug": "06-writing-high-quality-vulnerability-reports-and-maximizing-payouts",
         "title": "Writing High-Quality Vulnerability Reports & Maximizing Payouts",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 230
       }
     ]
   },
@@ -1134,57 +1498,79 @@
       {
         "slug": "01-the-human-attack-surface-and-the-psychology-of-influence",
         "title": "The Human Attack Surface & the Psychology of Influence",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 150
       },
       {
         "slug": "02-social-engineering-recon-and-pretext-development",
         "title": "Social-Engineering Recon & Pretext Development",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 160
       },
       {
         "slug": "03-phishing-fundamentals-pretexts-lures-and-payload-delivery",
         "title": "Phishing Fundamentals: Pretexts, Lures & Payload Delivery",
-        "number": 3
+        "number": 3,
+        "level": "Intermediate",
+        "minutes": 170
       },
       {
         "slug": "04-email-spoofing-spf-dkim-dmarc-and-deliverability",
         "title": "Email Spoofing, SPF/DKIM/DMARC & Deliverability",
-        "number": 4
+        "number": 4,
+        "level": "Intermediate",
+        "minutes": 175
       },
       {
         "slug": "05-social-engineer-toolkit-set-and-credential-harvesters",
         "title": "Social-Engineer Toolkit (SET) & Credential Harvesters",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 175
       },
       {
         "slug": "06-gophish-running-a-full-phishing-campaign",
         "title": "Gophish: Running a Full Phishing Campaign",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 180
       },
       {
         "slug": "07-malicious-documents-macros-and-payload-pretexts",
         "title": "Malicious Documents, Macros & Payload Pretexts",
-        "number": 7
+        "number": 7,
+        "level": "Advanced",
+        "minutes": 170
       },
       {
         "slug": "08-evilginx-and-adversary-in-the-middle-aitm-phishing-bypassing-mfa",
         "title": "Evilginx & Adversary-in-the-Middle (AiTM) Phishing: Bypassing MFA",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 185
       },
       {
         "slug": "09-vishing-smishing-and-physical-pretexting",
         "title": "Vishing, Smishing & Physical Pretexting",
-        "number": 9
+        "number": 9,
+        "level": "Expert",
+        "minutes": 185
       },
       {
         "slug": "10-deepfakes-and-ai-driven-social-engineering",
         "title": "Deepfakes & AI-Driven Social Engineering",
-        "number": 10
+        "number": 10,
+        "level": "Expert",
+        "minutes": 190
       },
       {
         "slug": "11-defending-against-social-engineering-and-security-awareness",
         "title": "Defending Against Social Engineering & Security Awareness",
-        "number": 11
+        "number": 11,
+        "level": "Expert",
+        "minutes": 185
       }
     ]
   },
@@ -1197,27 +1583,37 @@
       {
         "slug": "01-malware-taxonomy-trojans-rats-ransomware-rootkits-and-loaders",
         "title": "Malware Taxonomy: Trojans, RATs, Ransomware, Rootkits & Loaders",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 185
       },
       {
         "slug": "02-building-payloads-and-droppers-lab-scoped",
         "title": "Building Payloads & Droppers (Lab-Scoped)",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 195
       },
       {
         "slug": "03-antivirus-and-edr-evasion-obfuscation-packing-and-encoding-concepts",
         "title": "Antivirus & EDR Evasion: Obfuscation, Packing & Encoding Concepts",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 205
       },
       {
         "slug": "04-amsi-bypass-and-in-memory-execution-concepts",
         "title": "AMSI Bypass & In-Memory Execution Concepts",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 200
       },
       {
         "slug": "05-process-injection-hollowing-and-dll-techniques-conceptual",
         "title": "Process Injection, Hollowing & DLL Techniques (Conceptual)",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 205
       }
     ]
   },
@@ -1230,47 +1626,65 @@
       {
         "slug": "01-red-team-vs-pentest-objectives-opsec-and-engagement-lifecycle",
         "title": "Red Team vs Pentest: Objectives, OPSEC & Engagement Lifecycle",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 195
       },
       {
         "slug": "02-command-and-control-c2-concepts-and-beaconing",
         "title": "Command & Control (C2) Concepts & Beaconing",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 205
       },
       {
         "slug": "03-cobalt-strike-overview-beacons-malleable-c2-and-listeners",
         "title": "Cobalt Strike Overview: Beacons, Malleable C2 & Listeners",
-        "number": 3
+        "number": 3,
+        "level": "Expert",
+        "minutes": 210
       },
       {
         "slug": "04-open-source-c2-sliver-mythic-havoc-and-empire",
         "title": "Open-Source C2: Sliver, Mythic, Havoc & Empire",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 215
       },
       {
         "slug": "05-red-team-infrastructure-redirectors-domains-and-opsec",
         "title": "Red Team Infrastructure: Redirectors, Domains & OPSEC",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 210
       },
       {
         "slug": "06-initial-access-phishing-infra-payloads-and-delivery",
         "title": "Initial Access: Phishing Infra, Payloads & Delivery",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 215
       },
       {
         "slug": "07-living-off-the-land-edr-evasion-and-opsec-in-depth",
         "title": "Living-off-the-Land, EDR Evasion & OPSEC in Depth",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 220
       },
       {
         "slug": "08-full-adversary-emulation-chaining-the-kill-chain-end-to-end",
         "title": "Full Adversary Emulation: Chaining the Kill Chain End to End",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 225
       },
       {
         "slug": "09-red-team-reporting-attack-narratives-and-deliverables",
         "title": "Red Team Reporting, Attack Narratives & Deliverables",
-        "number": 9
+        "number": 9,
+        "level": "Expert",
+        "minutes": 205
       }
     ]
   },
@@ -1283,67 +1697,93 @@
       {
         "slug": "01-defensive-foundations-soc-roles-tiers-and-defense-in-depth",
         "title": "Defensive Foundations: SOC Roles, Tiers & Defense-in-Depth",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 150
       },
       {
         "slug": "02-the-detection-mindset-logs-telemetry-and-data-sources",
         "title": "The Detection Mindset: Logs, Telemetry & Data Sources",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 155
       },
       {
         "slug": "03-the-cyber-kill-chain-and-mitre-att-and-ck-for-analysts",
         "title": "The Cyber Kill Chain & MITRE ATT&CK for Analysts",
-        "number": 3
+        "number": 3,
+        "level": "Beginner",
+        "minutes": 160
       },
       {
         "slug": "04-siem-fundamentals-with-splunk-searching-and-spl",
         "title": "SIEM Fundamentals with Splunk: Searching & SPL",
-        "number": 4
+        "number": 4,
+        "level": "Intermediate",
+        "minutes": 175
       },
       {
         "slug": "05-microsoft-sentinel-and-kql-for-soc-analysts",
         "title": "Microsoft Sentinel & KQL for SOC Analysts",
-        "number": 5
+        "number": 5,
+        "level": "Intermediate",
+        "minutes": 175
       },
       {
         "slug": "06-the-elastic-stack-elk-wazuh-and-log-aggregation",
         "title": "The Elastic Stack (ELK), Wazuh & Log Aggregation",
-        "number": 6
+        "number": 6,
+        "level": "Intermediate",
+        "minutes": 175
       },
       {
         "slug": "07-windows-event-log-analysis-for-analysts",
         "title": "Windows Event Log Analysis for Analysts",
-        "number": 7
+        "number": 7,
+        "level": "Intermediate",
+        "minutes": 175
       },
       {
         "slug": "08-linux-and-network-log-analysis-for-analysts",
         "title": "Linux & Network Log Analysis for Analysts",
-        "number": 8
+        "number": 8,
+        "level": "Intermediate",
+        "minutes": 180
       },
       {
         "slug": "09-email-and-phishing-analysis-for-the-soc",
         "title": "Email & Phishing Analysis for the SOC",
-        "number": 9
+        "number": 9,
+        "level": "Intermediate",
+        "minutes": 180
       },
       {
         "slug": "10-network-security-monitoring-zeek-suricata-snort-and-nids",
         "title": "Network Security Monitoring: Zeek, Suricata, Snort & NIDS",
-        "number": 10
+        "number": 10,
+        "level": "Advanced",
+        "minutes": 185
       },
       {
         "slug": "11-edr-fundamentals-and-endpoint-investigation",
         "title": "EDR Fundamentals & Endpoint Investigation",
-        "number": 11
+        "number": 11,
+        "level": "Advanced",
+        "minutes": 185
       },
       {
         "slug": "12-alert-triage-enrichment-and-reducing-false-positives",
         "title": "Alert Triage, Enrichment & Reducing False Positives",
-        "number": 12
+        "number": 12,
+        "level": "Advanced",
+        "minutes": 185
       },
       {
         "slug": "13-incident-handling-for-tier-1-and-tier-2-analysts",
         "title": "Incident Handling for Tier 1 & Tier 2 Analysts",
-        "number": 13
+        "number": 13,
+        "level": "Advanced",
+        "minutes": 185
       }
     ]
   },
@@ -1356,37 +1796,51 @@
       {
         "slug": "01-detection-engineering-with-sigma-rules",
         "title": "Detection Engineering with Sigma Rules",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 185
       },
       {
         "slug": "02-endpoint-detection-sysmon-osquery-and-velociraptor",
         "title": "Endpoint Detection: Sysmon, Osquery & Velociraptor",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 195
       },
       {
         "slug": "03-yara-writing-rules-to-detect-malware",
         "title": "YARA: Writing Rules to Detect Malware",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 200
       },
       {
         "slug": "04-writing-splunk-and-kql-detections-for-real-attacks",
         "title": "Writing Splunk & KQL Detections for Real Attacks",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 205
       },
       {
         "slug": "05-mapping-detections-to-mitre-att-and-ck",
         "title": "Mapping Detections to MITRE ATT&CK",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 210
       },
       {
         "slug": "06-soc-automation-and-soar-playbooks-and-response",
         "title": "SOC Automation & SOAR: Playbooks & Response",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 215
       },
       {
         "slug": "07-building-a-detection-lab-and-testing-your-coverage",
         "title": "Building a Detection Lab & Testing Your Coverage",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 225
       }
     ]
   },
@@ -1399,42 +1853,58 @@
       {
         "slug": "01-incident-response-lifecycle-prepare-detect-contain-eradicate-recover",
         "title": "Incident Response Lifecycle: Prepare, Detect, Contain, Eradicate, Recover",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 210
       },
       {
         "slug": "02-digital-forensics-fundamentals-evidence-chain-of-custody-and-imaging",
         "title": "Digital Forensics Fundamentals: Evidence, Chain of Custody & Imaging",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 215
       },
       {
         "slug": "03-disk-forensics-file-systems-artifacts-and-autopsy-sleuth-kit",
         "title": "Disk Forensics: File Systems, Artifacts & Autopsy/Sleuth Kit",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 240
       },
       {
         "slug": "04-memory-forensics-with-volatility",
         "title": "Memory Forensics with Volatility",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "05-windows-artifacts-and-triage-registry-mft-kape-and-eric-zimmerman-tools",
         "title": "Windows Artifacts & Triage: Registry, MFT, KAPE & Eric Zimmerman Tools",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 260
       },
       {
         "slug": "06-linux-and-cloud-forensics",
         "title": "Linux & Cloud Forensics",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 265
       },
       {
         "slug": "07-log-based-investigation-and-timeline-analysis",
         "title": "Log-Based Investigation & Timeline Analysis",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "08-ransomware-and-breach-investigation-case-study",
         "title": "Ransomware & Breach Investigation Case Study",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 275
       }
     ]
   },
@@ -1447,32 +1917,44 @@
       {
         "slug": "01-cyber-threat-intelligence-strategic-operational-and-tactical",
         "title": "Cyber Threat Intelligence: Strategic, Operational & Tactical",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 255
       },
       {
         "slug": "02-iocs-ioas-the-pyramid-of-pain-and-the-diamond-model",
         "title": "IOCs, IOAs, the Pyramid of Pain & the Diamond Model",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 255
       },
       {
         "slug": "03-threat-actor-profiling-ttps-and-attribution",
         "title": "Threat Actor Profiling, TTPs & Attribution",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 265
       },
       {
         "slug": "04-threat-intel-platforms-and-feeds-misp-opencti-and-stix-taxii",
         "title": "Threat Intel Platforms & Feeds: MISP, OpenCTI & STIX/TAXII",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 270
       },
       {
         "slug": "05-threat-hunting-methodology-and-hypothesis-driven-hunting",
         "title": "Threat Hunting Methodology & Hypothesis-Driven Hunting",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 275
       },
       {
         "slug": "06-hunting-across-endpoint-network-and-identity-telemetry",
         "title": "Hunting Across Endpoint, Network & Identity Telemetry",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 290
       }
     ]
   },
@@ -1485,42 +1967,58 @@
       {
         "slug": "01-malware-analysis-environment-and-safe-handling",
         "title": "Malware Analysis Environment & Safe Handling",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 230
       },
       {
         "slug": "02-static-analysis-strings-pe-headers-imports-pestudio-detect-it-easy",
         "title": "Static Analysis: Strings, PE Headers, Imports (PEStudio, Detect It Easy)",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 240
       },
       {
         "slug": "03-dynamic-analysis-sandboxing-and-sysinternals-procmon-process-explorer",
         "title": "Dynamic Analysis: Sandboxing & Sysinternals (Procmon, Process Explorer)",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 245
       },
       {
         "slug": "04-x86-x64-assembly-crash-course-for-analysts",
         "title": "x86/x64 Assembly Crash Course for Analysts",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 250
       },
       {
         "slug": "05-ghidra-and-radare2-cutter-reverse-engineering-and-decompilation",
         "title": "Ghidra & radare2/Cutter: Reverse Engineering & Decompilation",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 255
       },
       {
         "slug": "06-x64dbg-and-debugging-windows-malware",
         "title": "x64dbg & Debugging Windows Malware",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 260
       },
       {
         "slug": "07-unpacking-deobfuscation-and-anti-analysis-tricks",
         "title": "Unpacking, Deobfuscation & Anti-Analysis Tricks",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 265
       },
       {
         "slug": "08-analyzing-real-malware-from-sample-to-report",
         "title": "Analyzing Real Malware: From Sample to Report",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 270
       }
     ]
   },
@@ -1533,42 +2031,58 @@
       {
         "slug": "01-gdb-pwndbg-and-debugging-native-binaries",
         "title": "GDB, pwndbg & Debugging Native Binaries",
-        "number": 1
+        "number": 1,
+        "level": "Expert",
+        "minutes": 260
       },
       {
         "slug": "02-stack-buffer-overflows-from-crash-to-working-exploit",
         "title": "Stack Buffer Overflows: From Crash to Working Exploit",
-        "number": 2
+        "number": 2,
+        "level": "Expert",
+        "minutes": 265
       },
       {
         "slug": "03-return-oriented-programming-rop-and-bypassing-dep-nx",
         "title": "Return-Oriented Programming (ROP) & Bypassing DEP/NX",
-        "number": 3
+        "number": 3,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "04-aslr-stack-canaries-pie-and-mitigation-bypasses",
         "title": "ASLR, Stack Canaries, PIE & Mitigation Bypasses",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 285
       },
       {
         "slug": "05-format-string-vulnerabilities",
         "title": "Format String Vulnerabilities",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 280
       },
       {
         "slug": "06-heap-exploitation-fundamentals",
         "title": "Heap Exploitation Fundamentals",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 300
       },
       {
         "slug": "07-shellcoding-and-position-independent-payloads",
         "title": "Shellcoding & Position-Independent Payloads",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 285
       },
       {
         "slug": "08-fuzzing-for-bugs-afl-libfuzzer-and-crash-triage",
         "title": "Fuzzing for Bugs: AFL++, libFuzzer & Crash Triage",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 290
       }
     ]
   },
@@ -1581,47 +2095,65 @@
       {
         "slug": "01-cloud-security-fundamentals-shared-responsibility-and-attack-surface",
         "title": "Cloud Security Fundamentals: Shared Responsibility & Attack Surface",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 260
       },
       {
         "slug": "02-aws-security-and-recon-iam-s3-ec2-and-metadata-attacks",
         "title": "AWS Security & Recon: IAM, S3, EC2 & Metadata Attacks",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 295
       },
       {
         "slug": "03-cloud-pentest-tooling-pacu-scoutsuite-and-prowler",
         "title": "Cloud Pentest Tooling: Pacu, ScoutSuite & Prowler",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "04-azure-and-entra-id-azure-ad-attacks",
         "title": "Azure & Entra ID (Azure AD) Attacks",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 320
       },
       {
         "slug": "05-gcp-security-essentials-and-enumeration",
         "title": "GCP Security Essentials & Enumeration",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 320
       },
       {
         "slug": "06-docker-security-image-scanning-trivy-and-container-breakouts",
         "title": "Docker Security, Image Scanning (Trivy) & Container Breakouts",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 320
       },
       {
         "slug": "07-kubernetes-attacks-rbac-pods-secrets-kube-hunter-and-kube-bench",
         "title": "Kubernetes Attacks: RBAC, Pods, Secrets, kube-hunter & kube-bench",
-        "number": 7
+        "number": 7,
+        "level": "Advanced",
+        "minutes": 340
       },
       {
         "slug": "08-serverless-ci-cd-and-supply-chain-attacks",
         "title": "Serverless, CI/CD & Supply-Chain Attacks",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 355
       },
       {
         "slug": "09-cloud-detection-logging-and-defensive-guardrails",
         "title": "Cloud Detection, Logging & Defensive Guardrails",
-        "number": 9
+        "number": 9,
+        "level": "Expert",
+        "minutes": 365
       }
     ]
   },
@@ -1634,52 +2166,72 @@
       {
         "slug": "01-mobile-app-security-fundamentals-and-the-android-architecture",
         "title": "Mobile App Security Fundamentals & the Android Architecture",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 310
       },
       {
         "slug": "02-android-pentest-setup-emulator-adb-burp-and-traffic-interception",
         "title": "Android Pentest Setup: Emulator, adb, Burp & Traffic Interception",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "03-android-static-analysis-apktool-jadx-and-mobsf",
         "title": "Android Static Analysis: apktool, jadx & MobSF",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "04-android-dynamic-analysis-and-instrumentation-frida-and-objection",
         "title": "Android Dynamic Analysis & Instrumentation: Frida & Objection",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "05-bypassing-root-detection-and-ssl-pinning",
         "title": "Bypassing Root Detection & SSL Pinning",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "06-android-ipc-deep-links-intents-and-exported-components",
         "title": "Android IPC: Deep Links, Intents & Exported Components",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "07-ios-pentesting-fundamentals",
         "title": "iOS Pentesting Fundamentals",
-        "number": 7
+        "number": 7,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "08-mobile-api-and-backend-testing",
         "title": "Mobile API & Backend Testing",
-        "number": 8
+        "number": 8,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "09-iot-and-firmware-analysis-extraction-emulation-and-attacks",
         "title": "IoT & Firmware Analysis: Extraction, Emulation & Attacks",
-        "number": 9
+        "number": 9,
+        "level": "Expert",
+        "minutes": 330
       },
       {
         "slug": "10-hardware-hacking-uart-spi-jtag-and-physical-interfaces",
         "title": "Hardware Hacking: UART, SPI, JTAG & Physical Interfaces",
-        "number": 10
+        "number": 10,
+        "level": "Expert",
+        "minutes": 340
       }
     ]
   },
@@ -1692,47 +2244,65 @@
       {
         "slug": "01-ai-ml-security-landscape-why-it-matters-now",
         "title": "AI/ML Security Landscape: Why It Matters Now",
-        "number": 1
+        "number": 1,
+        "level": "Intermediate",
+        "minutes": 255
       },
       {
         "slug": "02-machine-learning-and-llm-fundamentals-for-security-people",
         "title": "Machine Learning & LLM Fundamentals for Security People",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 255
       },
       {
         "slug": "03-adversarial-ml-evasion-poisoning-and-model-extraction",
         "title": "Adversarial ML: Evasion, Poisoning & Model Extraction",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "04-llm-attacks-prompt-injection-jailbreaks-and-data-leakage",
         "title": "LLM Attacks: Prompt Injection, Jailbreaks & Data Leakage",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "05-securing-ai-agents-rag-and-tool-use-pipelines",
         "title": "Securing AI Agents, RAG & Tool-Use Pipelines",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "06-the-owasp-top-10-for-llm-applications",
         "title": "The OWASP Top 10 for LLM Applications",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "07-ai-red-teaming-tools-garak-pyrit-and-promptfoo",
         "title": "AI Red-Teaming Tools: garak, PyRIT & Promptfoo",
-        "number": 7
+        "number": 7,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "08-ai-for-defense-ml-driven-detection-and-automation",
         "title": "AI for Defense: ML-Driven Detection & Automation",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 300
       },
       {
         "slug": "09-red-teaming-ai-systems-methodology-and-full-engagement",
         "title": "Red-Teaming AI Systems: Methodology & Full Engagement",
-        "number": 9
+        "number": 9,
+        "level": "Expert",
+        "minutes": 330
       }
     ]
   },
@@ -1745,27 +2315,37 @@
       {
         "slug": "01-quantum-computing-primer-for-security-professionals",
         "title": "Quantum Computing Primer for Security Professionals",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 300
       },
       {
         "slug": "02-the-quantum-threat-shor-s-and-grover-s-algorithms-explained",
         "title": "The Quantum Threat: Shor's & Grover's Algorithms Explained",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 320
       },
       {
         "slug": "03-harvest-now-decrypt-later-and-crypto-agility-risk",
         "title": "Harvest-Now-Decrypt-Later & Crypto-Agility Risk",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 330
       },
       {
         "slug": "04-post-quantum-cryptography-kyber-dilithium-and-nist-standards",
         "title": "Post-Quantum Cryptography: Kyber, Dilithium & NIST Standards",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 345
       },
       {
         "slug": "05-migrating-to-post-quantum-planning-and-real-world-rollout",
         "title": "Migrating to Post-Quantum: Planning & Real-World Rollout",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 355
       }
     ]
   },
@@ -1778,22 +2358,30 @@
       {
         "slug": "01-purple-teaming-bridging-offense-and-defense",
         "title": "Purple Teaming: Bridging Offense & Defense",
-        "number": 1
+        "number": 1,
+        "level": "Expert",
+        "minutes": 210
       },
       {
         "slug": "02-adversary-emulation-with-atomic-red-team-and-caldera",
         "title": "Adversary Emulation with Atomic Red Team & CALDERA",
-        "number": 2
+        "number": 2,
+        "level": "Expert",
+        "minutes": 220
       },
       {
         "slug": "03-detection-validation-and-closing-coverage-gaps",
         "title": "Detection Validation & Closing Coverage Gaps",
-        "number": 3
+        "number": 3,
+        "level": "Expert",
+        "minutes": 230
       },
       {
         "slug": "04-running-a-full-purple-team-exercise-end-to-end",
         "title": "Running a Full Purple Team Exercise End to End",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 235
       }
     ]
   },
@@ -1806,32 +2394,44 @@
       {
         "slug": "01-governance-risk-and-compliance-grc-fundamentals",
         "title": "Governance, Risk & Compliance (GRC) Fundamentals",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 220
       },
       {
         "slug": "02-security-frameworks-and-standards-nist-csf-iso-27001-cis-soc-2",
         "title": "Security Frameworks & Standards: NIST CSF, ISO 27001, CIS, SOC 2",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 230
       },
       {
         "slug": "03-risk-assessment-management-and-quantification",
         "title": "Risk Assessment, Management & Quantification",
-        "number": 3
+        "number": 3,
+        "level": "Intermediate",
+        "minutes": 235
       },
       {
         "slug": "04-security-architecture-and-zero-trust-design",
         "title": "Security Architecture & Zero-Trust Design",
-        "number": 4
+        "number": 4,
+        "level": "Intermediate",
+        "minutes": 240
       },
       {
         "slug": "05-identity-and-access-management-iam-at-enterprise-scale",
         "title": "Identity & Access Management (IAM) at Enterprise Scale",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 260
       },
       {
         "slug": "06-privacy-data-protection-and-regulations-gdpr-hipaa-pci-dss",
         "title": "Privacy, Data Protection & Regulations (GDPR, HIPAA, PCI-DSS)",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 260
       }
     ]
   },
@@ -1844,42 +2444,58 @@
       {
         "slug": "01-ctf-101-formats-platforms-scoring-and-how-to-practice",
         "title": "CTF 101: Formats, Platforms, Scoring & How to Practice",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 225
       },
       {
         "slug": "02-web-exploitation-ctf-challenges-patterns-tricks-and-tooling",
         "title": "Web Exploitation CTF Challenges: Patterns, Tricks & Tooling",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 245
       },
       {
         "slug": "03-cryptography-ctf-challenges-classic-to-modern-attacks",
         "title": "Cryptography CTF Challenges: Classic to Modern Attacks",
-        "number": 3
+        "number": 3,
+        "level": "Intermediate",
+        "minutes": 245
       },
       {
         "slug": "04-forensics-and-steganography-ctf-challenges",
         "title": "Forensics & Steganography CTF Challenges",
-        "number": 4
+        "number": 4,
+        "level": "Intermediate",
+        "minutes": 245
       },
       {
         "slug": "05-osint-ctf-challenges-finding-the-needle",
         "title": "OSINT CTF Challenges: Finding the Needle",
-        "number": 5
+        "number": 5,
+        "level": "Intermediate",
+        "minutes": 245
       },
       {
         "slug": "06-reverse-engineering-ctf-challenges",
         "title": "Reverse Engineering CTF Challenges",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 260
       },
       {
         "slug": "07-binary-exploitation-pwn-ctf-challenges",
         "title": "Binary Exploitation (Pwn) CTF Challenges",
-        "number": 7
+        "number": 7,
+        "level": "Advanced",
+        "minutes": 260
       },
       {
         "slug": "08-building-a-ctf-workflow-toolkit-and-team-strategy",
         "title": "Building a CTF Workflow, Toolkit & Team Strategy",
-        "number": 8
+        "number": 8,
+        "level": "Advanced",
+        "minutes": 260
       }
     ]
   },
@@ -1892,27 +2508,37 @@
       {
         "slug": "01-choosing-your-path-mapping-fields-to-real-job-roles",
         "title": "Choosing Your Path: Mapping Fields to Real Job Roles",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 210
       },
       {
         "slug": "02-certification-roadmaps-oscp-pnpt-crtp-crto-ejpt-security-cissp-and-more",
         "title": "Certification Roadmaps: OSCP, PNPT, CRTP/CRTO, eJPT, Security+, CISSP & More",
-        "number": 2
+        "number": 2,
+        "level": "Intermediate",
+        "minutes": 225
       },
       {
         "slug": "03-building-a-portfolio-home-lab-and-ctf-practice-plan",
         "title": "Building a Portfolio, Home Lab & CTF Practice Plan",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "04-resume-interviews-and-landing-a-faang-level-security-role",
         "title": "Resume, Interviews & Landing a FAANG-Level Security Role",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "05-staying-current-research-community-and-lifelong-learning",
         "title": "Staying Current: Research, Community & Lifelong Learning",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 275
       }
     ]
   },
@@ -1925,42 +2551,58 @@
       {
         "slug": "01-the-product-security-engineer-role-scope-responsibilities-and-career-path",
         "title": "The Product Security Engineer Role: Scope, Responsibilities & Career Path",
-        "number": 1
+        "number": 1,
+        "level": "Beginner",
+        "minutes": 215
       },
       {
         "slug": "02-secure-software-development-lifecycle-s-sdlc-shift-left-and-security-gates",
         "title": "Secure Software Development Lifecycle (S-SDLC), Shift-Left & Security Gates",
-        "number": 2
+        "number": 2,
+        "level": "Beginner",
+        "minutes": 215
       },
       {
         "slug": "03-threat-modeling-for-products-pasta-data-flow-diagrams-and-design-level-risk",
         "title": "Threat Modeling for Products: PASTA, Data Flow Diagrams & Design-Level Risk",
-        "number": 3
+        "number": 3,
+        "level": "Intermediate",
+        "minutes": 235
       },
       {
         "slug": "04-conducting-security-design-reviews-architecture-data-flow-and-trust-boundaries",
         "title": "Conducting Security Design Reviews: Architecture, Data Flow & Trust Boundaries",
-        "number": 4
+        "number": 4,
+        "level": "Intermediate",
+        "minutes": 235
       },
       {
         "slug": "05-threat-modeling-tools-and-automation-owasp-threat-dragon-microsoft-tmt-and-iriusrisk",
         "title": "Threat Modeling Tools & Automation: OWASP Threat Dragon, Microsoft TMT & IriusRisk",
-        "number": 5
+        "number": 5,
+        "level": "Intermediate",
+        "minutes": 235
       },
       {
         "slug": "06-secure-coding-principles-owasp-guidelines-input-validation-and-defense-in-depth",
         "title": "Secure Coding Principles: OWASP Guidelines, Input Validation & Defense in Depth",
-        "number": 6
+        "number": 6,
+        "level": "Intermediate",
+        "minutes": 235
       },
       {
         "slug": "07-language-specific-secure-coding-python-javascript-java-go-and-c-cpp-patterns",
         "title": "Language-Specific Secure Coding: Python, JavaScript, Java, Go & C/C++ Patterns",
-        "number": 7
+        "number": 7,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "08-common-vulnerability-patterns-in-source-code-cwe-top-25-deep-dive",
         "title": "Common Vulnerability Patterns in Source Code: CWE Top 25 Deep Dive",
-        "number": 8
+        "number": 8,
+        "level": "Advanced",
+        "minutes": 255
       }
     ]
   },
@@ -1973,47 +2615,65 @@
       {
         "slug": "01-secure-code-review-fundamentals-methodology-checklists-and-prioritization",
         "title": "Secure Code Review Fundamentals: Methodology, Checklists & Prioritization",
-        "number": 1
+        "number": 1,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "02-manual-secure-code-review-reading-code-for-injection-auth-and-logic-flaws",
         "title": "Manual Secure Code Review: Reading Code for Injection, Auth & Logic Flaws",
-        "number": 2
+        "number": 2,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "03-sast-deep-dive-semgrep-sonarqube-and-codeql-for-automated-code-analysis",
         "title": "SAST Deep Dive: Semgrep, SonarQube & CodeQL for Automated Code Analysis",
-        "number": 3
+        "number": 3,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "04-dast-and-iast-in-the-sdlc-runtime-scanning-and-feedback-loops",
         "title": "DAST & IAST in the SDLC: Runtime Scanning & Feedback Loops",
-        "number": 4
+        "number": 4,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "05-software-composition-analysis-snyk-dependabot-sbom-and-supply-chain-risk",
         "title": "Software Composition Analysis: Snyk, Dependabot, SBOM & Supply-Chain Risk",
-        "number": 5
+        "number": 5,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "06-secrets-detection-and-credential-scanning-gitleaks-trufflehog-and-pre-commit-hooks",
         "title": "Secrets Detection & Credential Scanning: GitLeaks, TruffleHog & Pre-Commit Hooks",
-        "number": 6
+        "number": 6,
+        "level": "Advanced",
+        "minutes": 255
       },
       {
         "slug": "07-integrating-security-into-ci-cd-pipelines-github-actions-gitlab-ci-and-jenkins",
         "title": "Integrating Security into CI/CD Pipelines: GitHub Actions, GitLab CI & Jenkins",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "08-container-and-iac-security-scanning-trivy-checkov-tfsec-and-policy-as-code",
         "title": "Container & IaC Security Scanning: Trivy, Checkov, tfsec & Policy-as-Code",
-        "number": 8
+        "number": 8,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "09-vulnerability-management-and-sla-driven-remediation-workflows",
         "title": "Vulnerability Management & SLA-Driven Remediation Workflows",
-        "number": 9
+        "number": 9,
+        "level": "Expert",
+        "minutes": 270
       }
     ]
   },
@@ -2026,37 +2686,51 @@
       {
         "slug": "01-building-a-product-security-program-vision-maturity-models-and-metrics",
         "title": "Building a Product Security Program: Vision, Maturity Models & Metrics",
-        "number": 1
+        "number": 1,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "02-security-champions-scaling-security-through-engineering-teams",
         "title": "Security Champions: Scaling Security Through Engineering Teams",
-        "number": 2
+        "number": 2,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "03-bug-bounty-and-responsible-disclosure-program-management",
         "title": "Bug Bounty & Responsible Disclosure Program Management",
-        "number": 3
+        "number": 3,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "04-third-party-and-vendor-security-assessments",
         "title": "Third-Party & Vendor Security Assessments",
-        "number": 4
+        "number": 4,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "05-privacy-engineering-and-data-protection-by-design-gdpr-ccpa-in-code",
         "title": "Privacy Engineering & Data Protection by Design (GDPR, CCPA in Code)",
-        "number": 5
+        "number": 5,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "06-security-metrics-dashboards-and-communicating-risk-to-leadership",
         "title": "Security Metrics, Dashboards & Communicating Risk to Leadership",
-        "number": 6
+        "number": 6,
+        "level": "Expert",
+        "minutes": 270
       },
       {
         "slug": "07-product-security-capstone-full-s-sdlc-engagement-from-design-to-deployment",
         "title": "Product Security Capstone: Full S-SDLC Engagement from Design to Deployment",
-        "number": 7
+        "number": 7,
+        "level": "Expert",
+        "minutes": 270
       }
     ]
   }

@@ -1,11 +1,8 @@
 ---
 title: 'The Detection Mindset: Logs, Telemetry & Data Sources'
-description: >-
-  A Beginner-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Beginner-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · The Detection Mindset: Logs, Telemetry & Data Sources'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/02-the-detection-mindset-logs-telemetry-and-data-sources
 ---
-**Level:** Beginner · **Track:** SOC & Blue Team · **Read time:** 155 min
-
 This is Chapter 2 of the SOC & Blue Team notebook. Chapter 1 built the human system — the SOC, its tiers, the alert lifecycle, and the defense-in-depth model that determines where detections come from. This chapter goes one layer down, to the substance those detections are made of: **logs and telemetry**. Every alert you will ever triage, every Splunk search you will write in Chapter 4, every KQL analytic in Chapter 5, is ultimately a question asked of log data. If you do not understand the data — what each source can see, how it is structured, where the gaps are — you cannot write good detections, and you certainly cannot triage well.
 
 There is a phrase that captures the whole chapter: **you cannot detect what you do not collect, and you cannot triage what you do not understand.** A SOC's entire capability is bounded by its telemetry. A detection for lateral movement is worthless if the relevant Windows and network logs are not being collected; an "impossible travel" rule is impossible without sign-in logs. Before anyone writes a single detection rule, the real question is always: *which source would even see this, and are we collecting it?*
@@ -907,7 +902,3 @@ In the next chapter we take these data sources and give them a framework: the **
 5. (a) A benign cause — the forwarder/agent crashed, a disk filled, or NTP/config broke the pipeline; investigate agent health, forwarder status, and the transport target. (b) A malicious cause — an attacker cleared or disabled logging (T1562/T1070) to cover tracks; investigate the central copy shipped before the gap, look for a 1102 or audit-policy-change just before silence, and treat the pre-gap window as the interesting period.
 6. Brute force = many passwords against **one** account from a source (often triggers lockout/4740); spraying = **one** common password against **many** accounts (one attempt each) to *avoid* lockout thresholds. Attackers choose spraying precisely to stay under per-account lockout limits and blend into normal failure rates.
 7. Auth logs (identity is the first thing attackers touch), endpoint process telemetry (sees what they do), DNS (cheap, catches C2), firewall/proxy (connections + exfil). This order maximizes technique coverage per dollar before adding depth.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/02-the-detection-mindset-logs-telemetry-and-data-sources), with comments and the latest edits.*

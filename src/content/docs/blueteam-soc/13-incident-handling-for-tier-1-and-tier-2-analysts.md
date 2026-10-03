@@ -1,11 +1,8 @@
 ---
 title: Incident Handling for Tier 1 & Tier 2 Analysts
-description: >-
-  A Advanced-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 13
-  label: 13 · Incident Handling for Tier 1 & Tier 2 Analysts
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/13-incident-handling-for-tier-1-and-tier-2-analysts
 ---
-**Level:** Advanced · **Track:** SOC & Blue Team · **Read time:** 185 min
-
 This is Chapter 13 of the SOC & Blue Team notebook, and it closes the SOC-analyst arc. Chapters 7–11 taught you to read the evidence; Chapter 12 taught you to triage the alerts that evidence generates. This chapter is about what happens when triage produces a **true positive that matters**: the alert becomes an **incident**, and the calm, methodical, well-documented handling of that incident is what limits the damage. Incident handling is where a SOC's value is realised or squandered — the same breach, handled well or badly, is the difference between "contained in an hour, no data lost" and "a headline." For a Tier 1/2 analyst, knowing the incident-handling process — your role in it, what to do first, what *not* to do, and how to hand off — is the capstone skill.
 
 We teach incident handling from the ground up: the **IR lifecycle** (the NIST SP 800-61 and SANS PICERL models every team uses), the crucial distinction between an **event** and an **incident**, the **roles** on an incident (including the incident-commander model) and where Tier 1/2 fits, **declaration and severity**, then the heart of the craft — **evidence handling and chain of custody**, the **order of volatility** and safe **live-response collection**, and the **containment → eradication → recovery** arc done without destroying evidence or tipping off the attacker. We cover **communication and escalation** (often the part that goes wrong), **playbooks** for the incidents you'll actually see (ransomware, business email compromise, account compromise, commodity malware), and the **lessons-learned/post-incident** discipline plus the **metrics** that prove the program works. A full worked ransomware incident ties it together.
@@ -903,7 +898,3 @@ Triage:  KAPE (Win) / UAC (Unix) / Velociraptor (fleet) ; sha256 all items
 Answer each as an incident-record entry — the action, the reasoning, the authority level, and the evidence you'd preserve. That combination of technical action and disciplined process — fast but evidence-safe, complete before you clean, escalated at the right line, and reviewed to make the next one better — is what incident handling is, and it is the capstone of the SOC-analyst skill set built across this notebook.
 
 Step back and see the whole arc this notebook built: you learned to **read** the enterprise (Windows and Linux logs, network monitoring, EDR — Chapters 7–11), to **triage** the alerts that reading generates (Chapter 12), and now to **handle** the incidents that triage escalates (this chapter). That is the complete loop of a SOC analyst — detect, decide, respond, improve — and it is a loop, because every incident's lessons flow back into the detections and preparation that catch the next one sooner. The next notebook shifts stance: from *responding* to detections others wrote, to *engineering* your own — **Detection Engineering with Sigma Rules** — turning the hard-won knowledge of what attacks look like (from every chapter here) into portable, testable, shareable detection logic.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/13-incident-handling-for-tier-1-and-tier-2-analysts), with comments and the latest edits.*

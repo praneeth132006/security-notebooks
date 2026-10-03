@@ -1,9 +1,8 @@
 ---
 title: 'Open-Source C2: Sliver, Mythic, Havoc & Empire'
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Open-Source C2: Sliver, Mythic, Havoc & Empire'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-operations/04-open-source-c2-sliver-mythic-havoc-and-empire
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 215 min
-
 This is Chapter 4 of the Red Team Operations notebook. The previous chapter
 dissected **Cobalt Strike** — the commercial benchmark — at the level of
 Beacon, listeners, and Malleable C2, and then spent most of its length on how a
@@ -1181,7 +1178,3 @@ against third-party systems.
 > detections on the behaviour classes that outlive any single framework. The next
 > chapter moves from the C2 tools themselves to the **infrastructure** that
 > hides them — redirectors, domain fronting, and operational OPSEC.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-operations/04-open-source-c2-sliver-mythic-havoc-and-empire), with comments and the latest edits.*

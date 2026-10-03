@@ -1,9 +1,8 @@
 ---
 title: 'Practical Crypto Attacks: XOR, ECB, Padding Oracle & CTF Techniques'
-description: A Advanced-level Cryptography chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Cryptography chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: '07 · Practical Crypto Attacks: XOR, ECB, Padding Oracle & CTF Techniques'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cryptography/07-practical-crypto-attacks-xor-ecb-padding-oracle-and
 ---
-**Level:** Advanced · **Track:** Cryptography · **Read time:** 195 min
-
 This is Chapter 7 of the Cryptography series — Notebook 7, and the offensive capstone. The previous six
 chapters built cryptography up: encoding vs encryption vs hashing, symmetric and asymmetric ciphers,
 hashing and MACs, password storage, and PKI. This chapter tears it back down — not by breaking AES or RSA
@@ -904,7 +901,3 @@ ciphers, hashing and MACs, password storage, PKI and trust, and finally the offe
 exploit every misuse of the above. The next notebook shifts from the mathematics of secrets to the
 discipline that organizes all of it into defense: **Security Foundations — the CIA triad, AAA, threats,
 vulnerabilities, and risk.**
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cryptography/07-practical-crypto-attacks-xor-ecb-padding-oracle-and), with comments and the latest edits.*

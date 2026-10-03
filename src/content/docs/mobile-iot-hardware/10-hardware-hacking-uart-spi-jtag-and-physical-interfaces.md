@@ -1,9 +1,8 @@
 ---
 title: 'Hardware Hacking: UART, SPI, JTAG & Physical Interfaces'
-description: A Expert-level Mobile & IoT chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Mobile & IoT chapter from the Security Notebooks.
 sidebar:
   order: 10
-  label: '10 · Hardware Hacking: UART, SPI, JTAG & Physical Interfaces'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/10-hardware-hacking-uart-spi-jtag-and-physical-interfaces
 ---
-**Level:** Expert · **Track:** Mobile & IoT · **Read time:** 340 min
-
 This is Chapter 10 of the Mobile & IoT notebook, and the last one in the IoT & Hardware track. The previous chapter treated firmware as something you *download or carve out* — you got the image from a vendor portal, an OTA capture, or `binwalk` and worked on it entirely in software. This chapter is about the case where none of that works: the vendor never published the firmware, there is no OTA, the flash is soldered down, and the only way in is to put probes on the board. That is hardware hacking proper — the point where firmware analysis stops being a laptop activity and starts needing a bench, a multimeter, and sometimes a soldering iron.
 
 The good news is that embedded devices are astonishingly generous to an attacker. To be manufactured, tested, and debugged, almost every board ships with the exact interfaces an engineer would use to inspect and reprogram it: a **UART** serial console (often a root shell with no password), a **SPI** or **eMMC** flash chip you can read byte-for-byte, an **I2C** EEPROM holding config and secrets, and a **JTAG/SWD** port that gives you full control of the CPU — halt it, read every register, single-step, dump all of RAM and flash. Cost pressure means these are rarely removed from production units; they are just left as bare pads, hidden under a sticker, or de-populated of their header pins. Finding and using them is what this chapter teaches.
@@ -951,7 +948,3 @@ Hardware skills demand hardware, but plenty of these can be practiced cheaply or
 ---
 
 This closes the Mobile & IoT notebook. Across these ten chapters you went from the Android/iOS software client, through firmware carving and emulation, to putting probes on the board itself — the full stack of "the device is just an untrusted client." The next notebook shifts domains entirely, to the security of the machine-learning systems that increasingly sit behind these devices' cloud backends.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/10-hardware-hacking-uart-spi-jtag-and-physical-interfaces), with comments and the latest edits.*

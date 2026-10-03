@@ -1,11 +1,8 @@
 ---
 title: 'UDP, ICMP & Connectionless Protocols'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: '07 · UDP, ICMP & Connectionless Protocols'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/07-udp-icmp-and-connectionless-protocols
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 115 min
-
 This is Chapter 17 of the series. The previous chapter dissected TCP, the reliable, connection-oriented workhorse. Now we meet its opposite: **UDP** — fast, connectionless, fire-and-forget — and **ICMP**, the network's diagnostic and error-signalling protocol. Beginners often dismiss UDP as "the unreliable one," but half the internet's most important services (DNS, DHCP, VoIP, QUIC/HTTP-3, most gaming and streaming) ride on it, the most devastating volumetric DDoS attacks abuse it, and some of the sneakiest data-exfiltration and C2 channels hide inside it and ICMP. Understanding connectionless protocols makes you better at scanning (UDP scanning is genuinely hard — you'll learn *why*), at recognising amplification attacks, and at spotting covert tunnels that TCP-focused defenders miss.
 
 ## Connectionless vs Connection-Oriented: The Core Contrast
@@ -310,7 +305,3 @@ dig @<ip> version.bind txt chaos        # DNS fingerprint
 - **Exercise** — UDP-scan a lab host, capture the ICMP port-unreachable for a closed port, then set up a DNS or ICMP tunnel between two VMs and write the detection logic (payload size / query-entropy threshold) that would catch it.
 
 Next we go up to the most-abused connectionless service of all: **DNS — records, recursive resolution, zones, subdomain enumeration, cache poisoning and tunneling** — the internet's phone book and one of a hacker's richest recon and exfiltration surfaces.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/07-udp-icmp-and-connectionless-protocols), with comments and the latest edits.*

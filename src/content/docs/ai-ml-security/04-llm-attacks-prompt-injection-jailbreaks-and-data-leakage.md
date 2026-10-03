@@ -1,11 +1,8 @@
 ---
 title: 'LLM Attacks: Prompt Injection, Jailbreaks & Data Leakage'
-description: >-
-  A Advanced-level AI/ML Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level AI/ML Security chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · LLM Attacks: Prompt Injection, Jailbreaks & Data Leakage'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ai-ml-security/04-llm-attacks-prompt-injection-jailbreaks-and-data-leakage
 ---
-**Level:** Advanced · **Track:** AI/ML Security · **Read time:** 300 min
-
 This is Chapter 4 of the AI/ML Security notebook. Chapter 3 attacked classical
 models where the perturbation was pixels or bytes and the thing that broke was a
 decision boundary. Here the perturbation is *words*, and the thing that breaks is
@@ -904,7 +899,3 @@ agentic glue that turns a chat bug into data exfiltration and real-world actions
 and builds the secure architecture for AI agents, RAG pipelines, and tool use:
 isolation, least privilege, human-in-the-loop, and the patterns that contain the
 injection risk you can't fully eliminate.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ai-ml-security/04-llm-attacks-prompt-injection-jailbreaks-and-data-leakage), with comments and the latest edits.*

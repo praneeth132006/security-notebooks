@@ -1,11 +1,8 @@
 ---
 title: Insecure Deserialization
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Insecure Deserialization
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-server-side/04-insecure-deserialization
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 4 of the Server-Side notebook — Notebook 26. The three previous chapters shared a
 single theme: an attacker steering a server-side operation with tainted input. SSRF steered *which URL
 the server fetches*; file upload steered *what the server stores and runs*; path traversal and LFI
@@ -1068,7 +1063,3 @@ The next chapter continues the Server-Side notebook's arc into further server-si
 mental model you built here — *attacker-controlled bytes driving a privileged server-side operation* —
 carries directly forward. Master the fingerprint markers and the kick-off→sink chain mindset, and
 insecure deserialization stops being intimidating and becomes just another input you learn to read.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-server-side/04-insecure-deserialization), with comments and the latest edits.*

@@ -1,9 +1,8 @@
 ---
 title: 'Serverless, CI/CD & Supply-Chain Attacks'
-description: A Expert-level Cloud Security chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Cloud Security chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: '08 · Serverless, CI/CD & Supply-Chain Attacks'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cloud-security/08-serverless-ci-cd-and-supply-chain-attacks
 ---
-**Level:** Expert · **Track:** Cloud Security · **Read time:** 355 min
-
 This is Chapter 8 of the Cloud Security notebook. The previous chapter took apart Kubernetes — the control plane that schedules thousands of containers and the identity-and-authorization failures that turn one pod into cluster-admin. This chapter follows the images *backwards*, to the two systems that produced them in the first place: the **serverless functions** that run business logic without a server the defender can log into, and the **CI/CD pipeline and dependency graph** that build and ship every artefact the organisation deploys. Both are places where a single misconfiguration hands an attacker either an execution role that can read the whole account, or the ability to inject code into every future release.
 
 The single idea to carry through the whole chapter: **you no longer attack the server — you attack the thing that has permission to be the server.** A Lambda function is not a box you get a shell on and keep; it is an ephemeral process wearing an IAM role, and the role is the prize. A CI/CD pipeline is not a build script; it is a highly privileged robot that holds cloud credentials, signing keys, and write access to production, and it will run whatever code arrives in a pull request if you let it. A dependency is not "just a library"; it is arbitrary code you chose to execute with your build's privileges because someone you trust said it was fine. Understand where the trust and the permissions actually live, and both the offensive path (event injection → execution-role abuse → lateral movement; PR → poisoned pipeline → secret theft → production; typosquat → post-install script → build-server implant) and the defensive path (least-privilege roles, OIDC subject pinning, branch protection, signed provenance) stop being magic.
@@ -915,7 +912,3 @@ Train each skill in this chapter on a range built for it:
 - **PortSwigger Web Security Academy — SSRF labs** — the metadata-endpoint SSRF payloads transfer directly to cloud functions.
 
 Practice the full chain end-to-end at least once: exploit a function, steal and use its role, then separately poison a private pipeline and watch a secret leak, and finally trigger an install-time script via a name-confusion package locally. Once "the role and the pipeline are the target, not the server" is muscle memory, you understand serverless and supply-chain attack and defense at the level this chapter is aiming for. The next chapter closes the Cloud Security notebook by turning fully to the defender's side — **cloud detection, logging, and defensive guardrails** — the CloudTrail, audit-log, and policy-as-code machinery that catches everything you just learned to do.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cloud-security/08-serverless-ci-cd-and-supply-chain-attacks), with comments and the latest edits.*

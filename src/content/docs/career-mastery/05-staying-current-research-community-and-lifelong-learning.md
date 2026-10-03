@@ -1,9 +1,8 @@
 ---
 title: 'Staying Current: Research, Community & Lifelong Learning'
-description: A Expert-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Career chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Staying Current: Research, Community & Lifelong Learning'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/career-mastery/05-staying-current-research-community-and-lifelong-learning
 ---
-**Level:** Expert · **Track:** Career · **Read time:** 275 min
-
 This is the final chapter of the Career Mastery notebook and the last chapter of the core curriculum, and it is the one that determines whether everything before it has a lasting return. The previous four chapters took you from choosing a path to landing a role. This one is about the forty years after that — because security is not a body of knowledge you learn once and then apply, but a moving target you have to track for the length of a career, and the practitioners who thrive are not the ones who knew the most on the day they were hired, but the ones who kept learning long after everyone around them stopped.
 
 That is not a motivational flourish; it is a structural fact about the field. The specific techniques, tools, and vulnerabilities you learned in the preceding forty-four notebooks have a *half-life*. Some of what is cutting-edge today will be obsolete in five years, defended-against in ten, and a historical footnote in twenty. A practitioner who learned to exploit a particular class of bug in 2015 and never updated is, by 2027, working with a museum piece. The field does not wait, and the gap between someone who keeps current and someone who coasts widens every single year — quietly at first, then decisively.
@@ -565,7 +562,3 @@ deliberate practice (work at the EDGE of your ability)
 
 **A closing word**
 - You have reached the end of the core curriculum. The forty-five notebooks built your horizontal bar across the field; your career is where you grow the vertical bar, keep the whole thing current, contribute back, and wield real capability responsibly. Keep learning, keep contributing, and leave the field better than you found it.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/career-mastery/05-staying-current-research-community-and-lifelong-learning), with comments and the latest edits.*

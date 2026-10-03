@@ -1,9 +1,8 @@
 ---
 title: 'Password Storage Done Right: bcrypt, scrypt, Argon2, PBKDF2'
-description: A Advanced-level Cryptography chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Cryptography chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Password Storage Done Right: bcrypt, scrypt, Argon2, PBKDF2'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cryptography/05-password-storage-done-right-bcrypt-scrypt-argon2-pbkdf2
 ---
-**Level:** Advanced · **Track:** Cryptography · **Read time:** 190 min
-
 This is Chapter 5 of the Cryptography series — Notebook 7. Chapter 4 built the integrity-and-authenticity
 half of cryptography on cryptographic hashes and showed, in passing, why those hashes are the *wrong*
 tool for one specific job: storing passwords. This chapter is that job in full. Password storage is the
@@ -944,7 +941,3 @@ If you can articulate the offline-cracking threat model, explain why salt is nec
 pick and tune Argon2id (or bcrypt) for a real latency budget without opening a DoS, read any modular hash
 string on sight, migrate a legacy store without a flag day, and predict how your parameters price the
 attacker's hashcat rig — you own this chapter.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cryptography/05-password-storage-done-right-bcrypt-scrypt-argon2-pbkdf2), with comments and the latest edits.*

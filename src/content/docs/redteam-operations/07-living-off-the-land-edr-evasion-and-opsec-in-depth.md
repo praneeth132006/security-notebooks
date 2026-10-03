@@ -1,9 +1,8 @@
 ---
 title: 'Living-off-the-Land, EDR Evasion & OPSEC in Depth'
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: '07 · Living-off-the-Land, EDR Evasion & OPSEC in Depth'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-operations/07-living-off-the-land-edr-evasion-and-opsec-in-depth
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 220 min
-
 This is Chapter 7 of the Red Team Operations notebook. Chapter 6 got a foothold —
 first execution on a target endpoint. The instant that beacon starts, a new
 problem dominates everything: **staying quiet on a monitored host.** Modern
@@ -902,7 +899,3 @@ well enough to catch an operator who has beaten AMSI and unhooked `ntdll` — be
 you built your net where they can't cut it. The next chapter chains Chapters 5–7
 together into a single end-to-end **adversary-emulation** walkthrough in a lab
 range, then hands off to reporting.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-operations/07-living-off-the-land-edr-evasion-and-opsec-in-depth), with comments and the latest edits.*

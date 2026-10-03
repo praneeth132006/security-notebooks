@@ -1,9 +1,8 @@
 ---
 title: PowerShell Fundamentals & the Object Pipeline
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · PowerShell Fundamentals & the Object Pipeline
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/windows-fundamentals/04-powershell-fundamentals-and-the-object-pipeline
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 140 min
-
 This is Chapter 4 of the Windows Internals series. The previous chapters built up how Windows *works* — processes and the registry, the file-system security model, and how authentication mints your token. This chapter hands you the tool you'll use to *drive* all of it: **PowerShell**. It is the automation language of Windows, the first thing a defender reaches for to investigate a box, and — because it's signed, trusted, and everywhere — the first thing an attacker reaches for to live off the land.
 
 We start from absolute zero: what a shell is, what a *cmdlet* is, and the one idea that makes PowerShell unlike Bash or CMD — **it passes objects, not text.** From there we climb to the level a security engineer needs: the pipeline internals, remoting, credential handling, the offensive toolkit (encoded commands, download cradles, LOLBAS), and the defensive telemetry (script-block logging, AMSI, Constrained Language Mode) that decides whether any of it gets caught. Nothing assumes you've written a line of PowerShell before.
@@ -907,7 +904,3 @@ Train each specific skill from this chapter:
 5. Why does removing PowerShell 2.0 improve security even though 5.1 is installed, and what specific defensive mechanisms does the v2 downgrade evade?
 
 ---
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/windows-fundamentals/04-powershell-fundamentals-and-the-object-pipeline), with comments and the latest edits.*

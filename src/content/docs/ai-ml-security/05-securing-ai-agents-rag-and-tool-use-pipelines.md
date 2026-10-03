@@ -1,11 +1,8 @@
 ---
 title: 'Securing AI Agents, RAG & Tool-Use Pipelines'
-description: >-
-  A Advanced-level AI/ML Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level AI/ML Security chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Securing AI Agents, RAG & Tool-Use Pipelines'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ai-ml-security/05-securing-ai-agents-rag-and-tool-use-pipelines
 ---
-**Level:** Advanced · **Track:** AI/ML Security · **Read time:** 300 min
-
 This is Chapter 5 of the AI/ML Security notebook. Chapter 4 established that
 prompt injection cannot be fully prevented — you *manage* its likelihood and
 *contain* its impact. This chapter is about containment. It builds the secure
@@ -906,7 +901,3 @@ Applications** as a single, structured reference — consolidating the injection
 (Ch.4) and agentic (Ch.5) material with the remaining categories (poisoning,
 supply chain, misinformation, unbounded consumption) into a checklist you can
 apply to any LLM product.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ai-ml-security/05-securing-ai-agents-rag-and-tool-use-pipelines), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: 'Same-Origin Policy, CORS & the Browser Security Model'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Same-Origin Policy, CORS & the Browser Security Model'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/web-fundamentals/04-same-origin-policy-cors-and-the-browser-security
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 180 min
-
 This is Chapter 4 of the Web Fundamentals series — Notebook 6. Chapter 3 ended on cross-site
 trust: `SameSite` cookies, CSRF, and the idea that the browser sometimes attaches your identity
 to requests you did not intend. This chapter names the rule underneath all of that. The
@@ -900,7 +895,3 @@ read→SOP · granted read→CORS allowlist.
    attacker page that exploits it and the one-line fix.
 5. Your teammate says "we enabled CORS, so the endpoint is now secure against unauthorized
    access." Explain why that sentence is wrong in two different ways.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/web-fundamentals/04-same-origin-policy-cors-and-the-browser-security), with comments and the latest edits.*

@@ -1,9 +1,8 @@
 ---
 title: 'SOC Automation & SOAR: Playbooks & Response'
-description: A Expert-level SOC & Blue Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · SOC Automation & SOAR: Playbooks & Response'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-detection/06-soc-automation-and-soar-playbooks-and-response
 ---
-**Level:** Expert · **Track:** SOC & Blue Team · **Read time:** 215 min
-
 This is Chapter 6 of the Detection Engineering notebook. The previous five chapters took you from writing portable Sigma rules, through the endpoint telemetry that feeds them, YARA for files and memory, tuned SPL and KQL queries, and finally mapping every one of those detections to MITRE ATT&CK so you can measure coverage honestly. Every one of those chapters ends the same way: a rule fires, an alert lands in a queue, and a human has to *do something about it*. This chapter is about that last mile — taking the alert the moment it appears and driving it through triage, enrichment, decision, containment, and closure with as little human toil as the risk allows. That discipline is called SOAR, and done well it is the difference between a SOC that drowns and a SOC that scales.
 
 ## Why This Matters
@@ -911,7 +908,3 @@ Hands-on, topic-specific practice that actually trains SOAR skills:
 - **Disclosed post-incident write-ups** — read vendor and CERT reports on incidents where automated response helped (or hurt); reverse-engineer what playbook would have caught it and what guardrail would have prevented the over-reaction.
 
 Build the phishing playbook, prove its guardrails, wire one detection from the previous chapters straight into it, and you will have a working, safe, measurable slice of a real SOC automation programme — which is exactly the artefact that gets a detection engineer hired and promoted. The next chapter continues the Detection Engineering notebook by building on this response layer.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-detection/06-soc-automation-and-soar-playbooks-and-response), with comments and the latest edits.*

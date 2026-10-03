@@ -1,9 +1,8 @@
 ---
 title: 'AI for Defense: ML-Driven Detection & Automation'
-description: A Expert-level AI/ML Security chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level AI/ML Security chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: '08 · AI for Defense: ML-Driven Detection & Automation'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ai-ml-security/08-ai-for-defense-ml-driven-detection-and-automation
 ---
-**Level:** Expert · **Track:** AI/ML Security · **Read time:** 300 min
-
 This is Chapter 8 of the AI/ML Security notebook. Every prior chapter treated AI
 as the *thing under attack*. This one flips the lens: using machine learning and
 LLMs as *defensive* tools — in the SOC, in detection engineering, in incident
@@ -907,7 +904,3 @@ engagement** methodology that combines everything: scoping and rules of
 engagement, threat modeling with MITRE ATLAS, the attack playbook (Chapters 3–5),
 the tooling (Chapter 7), assessing defensive AI (this chapter), and producing a
 professional report — the end-to-end practice of AI security work.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ai-ml-security/08-ai-for-defense-ml-driven-detection-and-automation), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: Business Logic Vulnerabilities & Abuse Cases
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · Business Logic Vulnerabilities & Abuse Cases
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-access-logic/05-business-logic-vulnerabilities-and-abuse-cases
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 5 of the Access & Logic notebook — Notebook 25, and the notebook's closing
 chapter. The previous chapters attacked concrete, well-defined mechanisms — access control, login,
 tokens, sessions — each with recognisable signatures. This chapter is about the flaws that have no
@@ -890,7 +885,3 @@ code, a balance driven below zero, a total computed on stale state).
    cash balance. No single operation is a bug. Explain why the *combination* is an "infinite money"
    flaw, state the invariant the platform must enforce, and describe the minimal, non-fraudulent proof
    you would include in a report.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-access-logic/05-business-logic-vulnerabilities-and-abuse-cases), with comments and the latest edits.*

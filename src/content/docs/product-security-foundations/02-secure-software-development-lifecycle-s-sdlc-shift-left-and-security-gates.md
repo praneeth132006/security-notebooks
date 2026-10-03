@@ -1,13 +1,8 @@
 ---
 title: 'Secure Software Development Lifecycle (S-SDLC), Shift-Left & Security Gates'
-description: >-
-  A Beginner-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Beginner-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: >-
-    02 · Secure Software Development Lifecycle (S-SDLC), Shift-Left & Security
-    Gates
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-foundations/02-secure-software-development-lifecycle-s-sdlc-shift-left-and-security-gates
 ---
-**Level:** Beginner · **Track:** Product Security · **Read time:** 215 min
-
 Chapter 1 established *what* a product security engineer does and the enabler stance that makes them effective. This chapter is about the *structure* that stance operates within: the software development lifecycle, and how security integrates into every phase of it. If ProdSec is about building security in rather than bolting it on, the secure SDLC is the concrete answer to the question "built in *where*, exactly?" — a mapping of specific security activities onto the specific phases of how software actually gets made.
 
 The central concept is **shift-left**: moving security activities *earlier* in the development lifecycle, toward the left of the timeline that runs from design to production. The name has become a slogan, and like most slogans it is half-understood and often misapplied. This chapter treats it precisely — why shifting left is economically compelling (the cost-of-fixing curve), what security activity actually belongs at each phase, and — crucially — how to do it *without* the two failure modes that plague immature programs: turning security into a release-blocking bottleneck that engineering routes around (the gate problem from Chapter 1), and "shifting left" as a way to dump security work onto developers without giving them the tools to do it (blame-shifting rather than enablement).
@@ -492,7 +485,3 @@ beware theater: connect to the cost curve (caught earlier? risk reduced?)
 - **Microsoft SDL**, **NIST SSDF (SP 800-218)**, **OWASP SAMM**, and **BSIMM** — the four frameworks; read SAMM most closely for the program-building of Notebook 47.
 - Chapter 1 (the ProdSec role and the enabler stance) — the mindset this lifecycle operates within; Notebook 46 (DevSecOps) — the detailed automation of the pipeline activities; Notebook 42 (architecture) — the security-architecture principles the design phase applies.
 - Chapters 3–5 (threat modelling) next — the deep treatment of the highest-value design-phase activity in this whole lifecycle.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-foundations/02-secure-software-development-lifecycle-s-sdlc-shift-left-and-security-gates), with comments and the latest edits.*

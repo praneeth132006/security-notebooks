@@ -1,9 +1,8 @@
 ---
 title: 'How the Internet Works: Packets, Encapsulation & the Big Picture'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · How the Internet Works: Packets, Encapsulation & the Big Picture'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/01-how-the-internet-works-packets-encapsulation-and-the
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 110 min
-
 This is Chapter 11 of the series and the opening chapter of the Networking track. Everything you will ever do in security — scanning a host with Nmap, intercepting a request in Burp, sniffing a Wi-Fi handshake, exfiltrating data over DNS, pivoting through a compromised box — is *networking underneath*. If the network layer is a black box to you, every tool is magic and every failure is a mystery. This chapter tears the box open. By the end you will be able to trace, byte by byte, what happens between the moment you press Enter on `curl https://example.com` and the moment the page comes back — and you will see exactly where an attacker or defender can stand in that flow.
 
 We build from absolute zero: what a packet is, why data gets chopped up, how each layer wraps the one above it (encapsulation), how addresses at different layers do different jobs, and how a request finds its way across the planet and back. Then we get our hands dirty with `ping`, `traceroute`, `dig`, `curl` and Wireshark so the theory becomes something you can *see*.
@@ -575,7 +572,3 @@ ping -M do -s 1472 8.8.8.8   # largest un-fragmented ping on 1500 MTU
 - **RFC 791 (IP), RFC 793 (TCP), RFC 826 (ARP)**: skim the real specs once — seeing the actual header fields demystifies them.
 - **Beej's Guide to Network Programming**: friendly deep dive when you're ready to build tools.
 - **Hands-on habit** — pick one command from the cheat sheet each day, run it against your own network, and open a Wireshark capture alongside it. Within a week the whole stack will feel concrete.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/01-how-the-internet-works-packets-encapsulation-and-the), with comments and the latest edits.*

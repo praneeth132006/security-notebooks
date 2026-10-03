@@ -1,11 +1,8 @@
 ---
 title: 'Bug Bounty Recon at Scale: Assets, Subdomains & Content Discovery'
-description: >-
-  A Intermediate-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Bug Bounty Recon at Scale: Assets, Subdomains & Content Discovery'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-bugbounty-intro/02-bug-bounty-recon-at-scale-assets-subdomains-and-content-discovery
 ---
-**Level:** Intermediate · **Track:** Bug Bounty & AppSec · **Read time:** 195 min
-
 This is Chapter 2 of the Bug Bounty & AppSec notebook. Chapter 1 taught the rules
 of the game — scope, disclosure, severity and payouts. This chapter builds the
 machine that feeds the game: **reconnaissance**. If Chapter 1's lesson was "the
@@ -879,7 +874,3 @@ Practice questions:
    brute forcing.
 5. Write a one-liner that takes `live_hosts.txt`, pulls historical URLs, and outputs
    only the URLs that contain a query parameter *and* an `/api/` path.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-bugbounty-intro/02-bug-bounty-recon-at-scale-assets-subdomains-and-content-discovery), with comments and the latest edits.*

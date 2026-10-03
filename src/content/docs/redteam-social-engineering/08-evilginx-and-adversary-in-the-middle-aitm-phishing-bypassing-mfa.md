@@ -1,9 +1,8 @@
 ---
 title: 'Evilginx & Adversary-in-the-Middle (AiTM) Phishing: Bypassing MFA'
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: '08 · Evilginx & Adversary-in-the-Middle (AiTM) Phishing: Bypassing MFA'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/08-evilginx-and-adversary-in-the-middle-aitm-phishing-bypassing-mfa
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 185 min
-
 This is Chapter 8 of the Social Engineering series, and the final tooling chapter in it. The previous chapters took you from the psychology of influence through recon, pretexting, email spoofing, SET, GoPhish, and weaponised documents. Every credential-harvesting technique you've seen so far shares one fatal weakness against a modern target: **it captures a username and password, and a password alone no longer logs you in.** Multi-factor authentication (MFA) has become the default, and a stolen password without the second factor is often worthless.
 
 Adversary-in-the-Middle (AiTM) phishing is the answer attackers reached for, and it is the single most important reason that "we have MFA" is no longer a complete defence. Instead of collecting a static password, an AiTM attack **proxies the victim's entire login in real time** to the real site, lets the victim complete MFA against the genuine service, and then **steals the resulting authenticated session** — the cookie or token the server hands back. With that session in hand, the attacker is logged in *as the victim, past MFA*, without ever knowing the second factor.
@@ -942,7 +939,3 @@ The ordering is deliberate: the top items *prevent or neutralise* the attack cry
 - **Don't confuse** AiTM with push-fatigue, consent phishing, device-code phishing, or infostealers — device-code and consent phishing can survive FIDO2 and need their own controls.
 
 This closes the Social Engineering series. You now understand the human attack surface end to end — from the psychology of influence, through recon, pretexting, spoofing, tooling, and weaponised documents, to the most advanced credential-phishing model in use today and the specific, provable defence that defeats it. The next notebook moves from tricking humans to evading machines: malware and evasion, kept — as always — conceptual and lab-scoped.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/08-evilginx-and-adversary-in-the-middle-aitm-phishing-bypassing-mfa), with comments and the latest edits.*

@@ -1,9 +1,8 @@
 ---
 title: 'Windows Architecture, Processes, Threads & the Registry'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Windows Architecture, Processes, Threads & the Registry'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/windows-fundamentals/01-windows-architecture-processes-threads-and-the-registry
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 120 min
-
 This is Chapter 1 of the Windows Internals series, and the first notebook after the Linux and Networking tracks. Everything you learned about Linux processes, permissions and the shell has a Windows counterpart — but Windows does it very differently, and those differences are exactly where attackers live. Credential theft from LSASS, token impersonation, process injection, registry persistence, UAC bypasses and living-off-the-land tradecraft all rely on a precise mental model of how the Windows kernel, processes, threads, handles, tokens and the registry fit together. This chapter builds that model from zero.
 
 By the end you will understand what actually happens between pressing Enter and a program running, why `explorer.exe` spawning `powershell.exe` spawning `cmd.exe` is a red flag, what a handle and a token really are, how the registry is laid out on disk and in memory, and how to inspect all of it live with the Sysinternals suite, PowerShell and WinDbg. We stay lawful and lab-scoped throughout: everything here is done on a Windows VM you own.
@@ -899,7 +896,3 @@ Train these skills on real, legal targets:
 5. Distinguish `HKCU\...\Run` from `HKLM\...\Run` persistence in terms of required privilege, scope of effect, and detection signal (Parts 7 & 9).
 
 6. Your 32-bit tooling reports no suspicious `Run` key on a 64-bit host, yet the machine re-infects on logon. Which redirection from Part 12 explains this, and exactly which two registry paths must you check to be sure?
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/windows-fundamentals/01-windows-architecture-processes-threads-and-the-registry), with comments and the latest edits.*

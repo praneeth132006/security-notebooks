@@ -1,11 +1,8 @@
 ---
 title: 'PowerShell Remoting, WMI/CIM & Living-off-the-Land (LOLBAS)'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · PowerShell Remoting, WMI/CIM & Living-off-the-Land (LOLBAS)'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/windows-fundamentals/05-powershell-remoting-wmi-cim-and-living-off-the
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 130 min
-
 This is Chapter 5 of the Windows Internals series. The previous chapter gave you the object pipeline and local PowerShell tradecraft. This chapter takes the same shell and points it at *other machines* — the remoting stack that lets an admin (or an attacker) run a command on fifty servers as easily as one, the WMI/CIM management layer that underpins half of Windows administration and most lateral-movement tooling, and the "living off the land" mindset that explains why so many real intrusions never touch a custom executable at all.
 
 ---
@@ -599,7 +594,3 @@ wmiexec.py <domain>/<user>:<pass>@<target>
 3. **Impacket lab exercise:** stand up two VMs in your own isolated lab network, obtain valid low-priv credentials, and run `wmiexec.py`, then `smbexec.py`, then `psexec.py` against the same target — diff the resulting Event Logs (4688, 5140, 7045, 5861) to see how each tool's footprint differs.
 4. **WMI persistence lab (isolated VM only):** create a real `__EventFilter`/`__EventConsumer`/`__FilterToConsumerBinding` triggered by process start, confirm it fires, then find and remove it using only `Get-CimInstance -Namespace root/subscription`.
 5. **JEA hardening exercise:** register a custom JEA endpoint that only allows `Restart-Service` and `Get-EventLog`, connect as a restricted account, and confirm any other cmdlet is blocked — then check what Event ID fires for a disallowed command attempt.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/windows-fundamentals/05-powershell-remoting-wmi-cim-and-living-off-the), with comments and the latest edits.*

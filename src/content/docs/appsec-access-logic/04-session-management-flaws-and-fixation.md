@@ -1,11 +1,8 @@
 ---
 title: Session Management Flaws & Fixation
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Session Management Flaws & Fixation
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-access-logic/04-session-management-flaws-and-fixation
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 4 of the Access & Logic notebook — Notebook 25. The previous chapters attacked the
 login process (Chapter 2) and the tokens it issues (Chapter 3). This chapter is about what happens
 *between* logins: the **session**, the mechanism that lets a stateless protocol remember that this
@@ -894,7 +889,3 @@ server-side on logout → never put it in the URL → never reuse the session va
 7. A team proposes binding every session to the client's IP address to stop hijacking. Give one attack
    this stops, two categories of legitimate users it breaks, and a more robust binding mechanism that
    achieves the goal without the availability cost.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-access-logic/04-session-management-flaws-and-fixation), with comments and the latest edits.*

@@ -1,9 +1,8 @@
 ---
 title: 'Cobalt Strike Overview: Beacons, Malleable C2 & Listeners'
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Cobalt Strike Overview: Beacons, Malleable C2 & Listeners'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-operations/03-cobalt-strike-overview-beacons-malleable-c2-and-listeners
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 210 min
-
 This is Chapter 3 of the Red Team Operations notebook. The previous chapter built the *conceptual* model of command and control — agents, team servers, the beaconing rhythm, channel protocols, redirectors, and Malleable traffic shaping — deliberately framework-agnostic. This chapter grounds all of that in the single most consequential C2 platform in the industry: **Cobalt Strike**. Where Chapter 2 asked "what is a beacon?", this chapter asks "what is *Beacon* — capital B, the specific implant Raphael Mudge designed — how do its listeners, profiles, and post-exploitation jobs actually work, and how does a modern SOC catch it?"
 
 A framing note that governs this entire chapter, even more strongly than the rest of the notebook. Cobalt Strike is **commercial, licensed software** sold by Fortra (formerly HelpSystems) exclusively to vetted organizations for authorized adversary simulation. It is also, simultaneously, the most heavily *abused* offensive tool in real-world intrusions — cracked and leaked copies have been used in a large share of human-operated ransomware and espionage campaigns for years. That dual reality is exactly why a security engineer must understand it deeply. Nothing in this chapter is a walkthrough for pirating, deploying, or operating Cobalt Strike against systems you are not explicitly authorized to test. There are **no cracked-software instructions, no working malware, and no live C2 payloads here.** Every hands-on step is defensive and analytical: reading a profile, computing a fingerprint, recognizing an indicator. The offensive mechanics are taught at a capability and architecture level — enough to emulate the threat intellectually and, far more importantly, to *detect and defeat it*. If you operate it, do so only under a signed engagement with a legitimate license; if you defend, this chapter is written for you first.
@@ -900,7 +897,3 @@ Practice questions:
 3. You extract a Beacon config with `1768.py` and find a non-default pipename, `userwx=false`, a believable spawnto, but the default watermark of a known cracked build. What does the watermark tell you, and how would you use the C2 fields to scope the intrusion?
 4. Given only a Malleable profile file, list five network IOCs and three host IOCs you could hunt for, and state which of them a competent operator can trivially change.
 5. Describe a layered detection strategy (name one network, one host, one memory, one infra signal) and justify why breadth beats any single high-fidelity rule against a skilled operator.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-operations/03-cobalt-strike-overview-beacons-malleable-c2-and-listeners), with comments and the latest edits.*

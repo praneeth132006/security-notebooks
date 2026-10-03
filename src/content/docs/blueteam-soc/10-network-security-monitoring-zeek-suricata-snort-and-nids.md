@@ -1,11 +1,8 @@
 ---
 title: 'Network Security Monitoring: Zeek, Suricata, Snort & NIDS'
-description: >-
-  A Advanced-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 10
-  label: '10 · Network Security Monitoring: Zeek, Suricata, Snort & NIDS'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/10-network-security-monitoring-zeek-suricata-snort-and-nids
 ---
-**Level:** Advanced · **Track:** SOC & Blue Team · **Read time:** 185 min
-
 This is Chapter 10 of the SOC & Blue Team notebook. Chapter 8 introduced the network as a source of evidence — firewall, DNS, flow, and PCAP. This chapter makes the network a **monitoring discipline** in its own right. Endpoint telemetry (Chapters 7, 11) can be blinded: an attacker who owns a host can tamper with its agent, disable logging, or land on a device that can't run an agent at all (a printer, an IoT sensor, an appliance, an unmanaged contractor laptop). The network sees them anyway. Every lateral move, every C2 beacon, every byte of exfil must cross a wire you can watch. **Network Security Monitoring (NSM)** is the practice of watching that wire systematically — and it is one of the most durable detection capabilities a SOC can build.
 
 We teach NSM from the ground up: the two philosophies of network detection (**signature** vs. **behavioural**), where and how sensors are placed (TAP vs. SPAN, inline vs. passive), then the three tools that define the field — **Snort** and **Suricata** (signature IDS/IPS with a rule language) and **Zeek** (a protocol analyzer that turns traffic into rich, structured logs). We cover the hard modern problem — **encrypted traffic** — and how JA3/JA3S/JA4 fingerprints and TLS metadata keep you effective when you can't read payloads. We tie it together with **Security Onion**, the free platform that packages Zeek + Suricata + a SIEM, and a full hands-on lab that detects C2 beaconing and data exfil from sensor logs alone.
@@ -902,7 +897,3 @@ zeek-cut server_name ja3 validation_status < ssl.log | sort -u             # TLS
 7. Interpret these `conn.log` states from one source IP: 4000× `S0`, 3× `SF`. What is the host doing, and which single ratio makes it obvious?
 
 Answer each as an analyst would — the exact data source, the query/logic, and the corroborating signal you'd add before escalating. That signature-plus-behaviour-plus-metadata discipline is the heart of NSM, and it feeds straight into Chapter 11's endpoint investigation (which process owns that beacon?) and Chapter 12's alert triage.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/10-network-security-monitoring-zeek-suricata-snort-and-nids), with comments and the latest edits.*

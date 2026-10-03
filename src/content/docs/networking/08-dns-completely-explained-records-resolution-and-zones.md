@@ -1,11 +1,8 @@
 ---
 title: 'DNS Completely Explained: Records, Resolution & Zones'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: '08 · DNS Completely Explained: Records, Resolution & Zones'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/08-dns-completely-explained-records-resolution-and-zones
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 120 min
-
 This is Chapter 18 of the series. DNS — the **Domain Name System** — is the internet's phone book: it turns human-friendly names like `example.com` into the IP addresses machines route to. But for a security professional, DNS is far more than a lookup service. It is one of the **richest reconnaissance surfaces** in existence (subdomains, mail servers, infrastructure, and history all leak through it), the target of poisoning and hijacking attacks, and a favourite **covert exfiltration channel** precisely because firewalls almost never block it. This chapter takes you from "what is a DNS record" to zone transfers, cache poisoning, subdomain enumeration at scale, and DNS tunneling — with `dig` in your hands the whole way.
 
 ## Why DNS Matters to a Hacker
@@ -359,7 +354,3 @@ RECON FLOW: NS -> axfr? -> subfinder+crt.sh -> dnsx resolve -> httpx probe
 - **Exercise** — pick a domain you own, enumerate its subdomains with both passive and active methods, attempt an AXFR against its NS, then set up DNSSEC or restrict AXFR and confirm your earlier technique now fails.
 
 Next we look at how hosts get their addresses in the first place: **DHCP and dynamic address assignment** — the DORA handshake, options, leases, and the rogue-server and starvation attacks that turn address assignment into a man-in-the-middle.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/08-dns-completely-explained-records-resolution-and-zones), with comments and the latest edits.*

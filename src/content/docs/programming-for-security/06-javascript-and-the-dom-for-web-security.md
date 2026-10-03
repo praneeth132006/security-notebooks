@@ -1,11 +1,8 @@
 ---
 title: JavaScript & the DOM for Web Security
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: 06 · JavaScript & the DOM for Web Security
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/programming-for-security/06-javascript-and-the-dom-for-web-security
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 170 min
-
 This is Chapter 6 of the Programming for Security series — Notebook 5. The earlier
 chapters built your Python and C footing; this one crosses to the other side of every web
 request: the **browser**, and the language that runs inside it. You cannot seriously test
@@ -895,7 +890,3 @@ Set-Cookie: session=…; HttpOnly; Secure; SameSite=Lax
    `<div dangerouslySetInnerHTML={{__html: comment}} />`. Explain the one-line change that
    removes the XSS, and when a developer would legitimately need to keep raw HTML (and how to
    do so safely).
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/programming-for-security/06-javascript-and-the-dom-for-web-security), with comments and the latest edits.*

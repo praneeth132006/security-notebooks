@@ -1,11 +1,8 @@
 ---
 title: Identity & Access Management (IAM) at Enterprise Scale
-description: >-
-  A Advanced-level GRC & Architecture chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level GRC & Architecture chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · Identity & Access Management (IAM) at Enterprise Scale
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/grc-architecture/05-identity-and-access-management-iam-at-enterprise-scale
 ---
-**Level:** Advanced · **Track:** GRC & Architecture · **Read time:** 260 min
-
 Chapter 4 ended on a claim that deserves a whole chapter of its own: in a zero-trust architecture, **identity is the control plane**. Every policy decision in that chapter's OPA rules began by asking *who is this*, and every other signal — device posture, clearance, MFA state — hung off the answer. If the identity layer is wrong, everything downstream is decorating a broken foundation. A policy engine that faithfully enforces "only Finance may read payroll" is worthless if the definition of "Finance" is a stale group that still contains fourteen people who left the department two years ago.
 
 This chapter is about building that foundation properly at the scale where it actually gets hard — tens of thousands of humans, hundreds of thousands of non-human identities, dozens of applications with incompatible authentication protocols, and an audit that will demand evidence that every one of those access grants was deliberate. We will move from the vocabulary (identification versus authentication versus authorization), through the protocols that carry identity between systems (SAML, OIDC, OAuth 2.0), through the authorization models that decide what an authenticated subject may do (RBAC, ABAC, ReBAC, PBAC), into the governance machinery that keeps all of it honest over time (lifecycle automation, access certification, segregation of duties, privileged access management).
@@ -1014,7 +1009,3 @@ access review REVOCATION rate | open SoD violations by age
 - Google's Zanzibar paper — the definitive treatment of ReBAC at scale.
 - CISA *Zero Trust Maturity Model*, identity pillar — a practical self-assessment ladder.
 - Published post-incident reports for Colonial Pipeline, Uber (2022), Okta (2023) and MGM (2023). Read each one asking: which control in this chapter would have broken the chain, and at which step?
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/grc-architecture/05-identity-and-access-management-iam-at-enterprise-scale), with comments and the latest edits.*

@@ -1,9 +1,8 @@
 ---
 title: 'HTTP in Depth: Verbs, Headers, Cookies, Caching & Redirects'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · HTTP in Depth: Verbs, Headers, Cookies, Caching & Redirects'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/web-fundamentals/02-http-in-depth-verbs-headers-cookies-caching-and
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 175 min
-
 This is Chapter 2 of the Web Fundamentals series — Notebook 6. Chapter 1 followed a single
 request end to end and named every hop between the keystroke and the pixels. This chapter
 zooms in on the one protocol that rides across almost all of those hops: **HTTP**. Everything
@@ -1267,7 +1264,3 @@ Train each concept from this chapter on a purpose-built, legal target:
 5. Using only `curl`, demonstrate that a server reflects an arbitrary `Origin` with
    `Access-Control-Allow-Credentials: true`, and explain precisely what an attacker page can now do
    that the Same-Origin Policy would otherwise forbid.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/web-fundamentals/02-http-in-depth-verbs-headers-cookies-caching-and), with comments and the latest edits.*

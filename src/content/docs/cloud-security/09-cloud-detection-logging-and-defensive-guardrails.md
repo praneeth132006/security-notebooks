@@ -1,9 +1,8 @@
 ---
 title: 'Cloud Detection, Logging & Defensive Guardrails'
-description: A Expert-level Cloud Security chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Cloud Security chapter from the Security Notebooks.
 sidebar:
   order: 9
-  label: '09 · Cloud Detection, Logging & Defensive Guardrails'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cloud-security/09-cloud-detection-logging-and-defensive-guardrails
 ---
-**Level:** Expert · **Track:** Cloud Security · **Read time:** 365 min
-
 This is Chapter 9 of the Cloud Security notebook, and it is where the notebook turns around and looks back at itself. The previous eight chapters were mostly the attacker's story: shared-responsibility gaps, IMDS credential theft, over-permissioned IAM roles, S3 exposure, Pacu and ScoutSuite, Azure and Entra ID abuse, GCP enumeration, container breakouts, Kubernetes RBAC escalation, and poisoned CI/CD pipelines. Every one of those techniques left a trace, and every one of them could have been blocked by a control that was never turned on. This chapter is about the trace and the control — **detection** (seeing what happened) and **guardrails** (stopping it before it happens).
 
 The single idea to carry through the whole chapter: **in the cloud, everything is an API call, and an API call is a log line.** On-prem, an attacker who lands on a host can do a great deal without generating a single centralized log — local file reads, in-memory tradecraft, lateral movement over SMB. In the cloud, spinning up a server, reading a secret, attaching a policy, disabling a log, deleting a backup — every single one of those is an authenticated request to a provider API, and the provider will write it down if you asked it to. That is the defender's structural advantage in the cloud, and it is enormous. The catch is in the "if you asked it to": cloud logging is opt-in, sampled, and easy to misconfigure, and the default posture on a fresh account sees far less than most people assume. Getting the logging right, then writing detections against it, then adding preventive guardrails so the dangerous call never succeeds — that is the entire job, and it is what this chapter teaches from zero.
@@ -924,7 +921,3 @@ Train the exact skills in this chapter — both writing detections and reading t
 **Self-set challenge to prove mastery:** stand up a fresh AWS account, deploy the full Rung-1 baseline (org trail to an immutable bucket, GuardDuty, Config CIS pack, Security Hub, the Part 8 pipeline, the Part 10 baseline SCP). Then run CloudGoat's `ec2_ssrf` and Stratus's `aws.defense-evasion.cloudtrail-stop` against it. Success is: the SSRF credential theft surfaces as a GuardDuty `InstanceCredentialExfiltration` finding, and the CloudTrail-stop attempt **fails** because your SCP denied it *and* generates an `AccessDenied` alert. When both happen without you touching the console, you have detection and prevention working together — the entire point of this chapter.
 
 In the next chapter the Cloud Security notebook moves from operating the defenses to governing them at scale — cloud compliance, benchmarks, and building a cloud security program end to end.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cloud-security/09-cloud-detection-logging-and-defensive-guardrails), with comments and the latest edits.*

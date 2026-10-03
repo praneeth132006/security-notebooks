@@ -1,9 +1,8 @@
 ---
 title: Reverse Engineering CTF Challenges
-description: A Advanced-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Career chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: 06 · Reverse Engineering CTF Challenges
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ctf-wargames/06-reverse-engineering-ctf-challenges
 ---
-**Level:** Advanced · **Track:** Career · **Read time:** 260 min
-
 Reverse engineering is the category where you are handed a compiled program and asked to understand what it does — well enough to find the flag it is hiding, or to satisfy a check it is guarding. There is no source code. There is a binary: a translated, optimised, symbol-stripped artifact that a compiler produced from source you will never see, and your job is to run the translation backwards in your head far enough to answer one question.
 
 That sounds forbidding, and the steep learning curve is real — reversing and its sibling pwn (Chapter 7) are the two categories where beginners most often stall out. But the intimidation is mostly front-loaded. Once you accept two things, the category becomes tractable: first, that you almost never need to understand the *whole* program — only the part that checks the flag; and second, that modern decompilers turn most of the assembly back into readable C-like pseudocode, so you spend far more time *reading* than *decoding instructions by hand*. The skill is not memorising every x86 opcode. It is triage (finding the part that matters), reading (following the logic of the check), and choosing the right technique to defeat it (read it, reverse the transform, run it under a debugger, or let a symbolic-execution engine solve it for you).
@@ -575,7 +572,3 @@ packed (UPX)  -> upx -d ; custom -> dump from memory at OEP
 - *Practical Reverse Engineering* (Dang, Gazet, Bachaalany) and *Practical Malware Analysis* (Sikorski & Honig) — the reference texts; the latter bridges directly to Notebook 35.
 - Notebook 36 (vulnerability research & binary exploitation) and Chapter 7 of this notebook (pwn) — where reversing becomes exploitation.
 - The angr documentation and example repository — reading how others script angr is the fastest way to learn its edges.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ctf-wargames/06-reverse-engineering-ctf-challenges), with comments and the latest edits.*

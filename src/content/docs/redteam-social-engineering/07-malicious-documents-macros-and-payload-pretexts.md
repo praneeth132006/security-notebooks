@@ -1,9 +1,8 @@
 ---
 title: 'Malicious Documents, Macros & Payload Pretexts'
-description: A Advanced-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: '07 · Malicious Documents, Macros & Payload Pretexts'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/07-malicious-documents-macros-and-payload-pretexts
 ---
-**Level:** Advanced · **Track:** Red Team · **Read time:** 170 min
-
 This is Chapter 7 of the Social Engineering series. The previous chapters delivered a message and, for credential harvesting, a fake login. This chapter covers the other main phishing objective: **payload delivery** — getting a document or file that the target opens to execute attacker-chosen code.
 
 A hard rule frames everything here. **This chapter is conceptual and lab-scoped. It teaches how weaponised documents work so you can build authorised proof-of-execution artefacts and, above all, defend against them. It does not provide working malware, weaponised payloads, or evasion tuned to arm a real attack.** Every hands-on step uses a *benign* proof marker — a document that launches the calculator or writes a harmless file — inside an isolated lab you own. The malware-and-evasion notebook that follows keeps the same discipline.
@@ -909,7 +906,3 @@ A fleet that implements items 1–3 alone defeats the large majority of document
     A: Block internet macros and deploy ASR (Office child process).
 
 In the next chapter we tackle the technique that defeats even good passwords and many MFA setups: **Evilginx & Adversary-in-the-Middle (AiTM) Phishing — Bypassing MFA.**
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/07-malicious-documents-macros-and-payload-pretexts), with comments and the latest edits.*

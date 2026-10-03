@@ -1,11 +1,8 @@
 ---
 title: 'Alert Triage, Enrichment & Reducing False Positives'
-description: >-
-  A Advanced-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 12
-  label: '12 · Alert Triage, Enrichment & Reducing False Positives'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/12-alert-triage-enrichment-and-reducing-false-positives
 ---
-**Level:** Advanced · **Track:** SOC & Blue Team · **Read time:** 185 min
-
 This is Chapter 12 of the SOC & Blue Team notebook. Chapters 7–11 taught you to *read* every major source — Windows and Linux logs, network monitoring, EDR. This chapter is about the job those sources create: a **queue of alerts**, arriving all day, most of them wrong, a few of them the start of a breach. **Triage** is the discipline of working that queue — deciding fast and correctly which alerts are real, how bad they are, and what to do — and **detection tuning** is the discipline of making the queue better so tomorrow's is more signal and less noise. These two skills, more than any tool, determine whether a SOC actually protects the organisation or drowns while the real intrusion slips through at alert #4,312.
 
 The uncomfortable reality that shapes everything here: **the overwhelming majority of SOC alerts are false or benign positives.** Analysts routinely face hundreds to thousands of alerts per shift, and industry surveys consistently find teams ignore or never investigate a large fraction of them because there simply isn't time. Attackers know this — they *rely* on alert fatigue, hiding their few real events in the flood. So triage is not just "look at alerts"; it is a time-economics problem: spend the right amount of attention on each alert, ruthlessly cut the noise, and make sure the one that matters gets the depth it deserves.
@@ -902,7 +897,3 @@ Confirmed TP                          : as long as needed -> contain first, docu
 Answer each as you would in a real ticket or tuning record — the decision, the evidence/reasoning, and the risk you consciously accepted. That disciplined, documented judgement — spending attention where the risk is and cutting the noise that hides it — is what makes a SOC effective, and it hands directly to Chapter 13, where confirmed true positives become managed incidents.
 
 A closing thought to carry into that chapter: the best triage analysts are not the ones who read alerts fastest, but the ones who *decide* best — who know which single enrichment query flips a verdict, which low-severity trio is actually a kill chain, and which tuning change is safe versus which one quietly opens a door. Speed comes from method and playbooks; correctness comes from enrichment and correlation; sustainability comes from tuning. Hold all three and the queue stops being a flood you survive and becomes a signal you act on.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/12-alert-triage-enrichment-and-reducing-false-positives), with comments and the latest edits.*

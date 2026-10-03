@@ -1,11 +1,8 @@
 ---
 title: 'Domain Controllers, Global Catalog, LDAP & DNS in AD'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Domain Controllers, Global Catalog, LDAP & DNS in AD'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/active-directory-fundamentals/02-domain-controllers-global-catalog-ldap-and-dns-in
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 155 min
-
 This is Chapter 2 of the Active Directory series — Notebook 4. Chapter 1 built the
 logical
 map: objects, OUs, domains, trees, forests, trusts, and the crucial idea that the
@@ -898,7 +893,3 @@ target in
    from a workstation, not a DC. Name the technique, what the attacker is
 extracting, and the
    only reliable remediation if `krbtgt` was pulled.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/active-directory-fundamentals/02-domain-controllers-global-catalog-ldap-and-dns-in), with comments and the latest edits.*

@@ -1,9 +1,8 @@
 ---
 title: 'Security Roles, Teams (Red/Blue/Purple) & Career Fields Explained'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Security Roles, Teams (Red/Blue/Purple) & Career Fields Explained'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/security-foundations/04-security-roles-teams-red-blue-purple-and-career
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 185 min
-
 This is Chapter 4 of the Security Foundations series — Notebook 8. Chapter 3 gave you the attacker's
 model: the kill chain and the ATT&CK matrix that describe *what* adversaries do. This chapter answers
 the question that immediately follows it — *who does something about that, and what is their actual
@@ -1509,7 +1506,3 @@ Train the specific skills in this chapter, by track:
 5. Explain why the evasion variant in Part 11.4 evaded the rule at the level of the specific Sigma
    `detection` fields, then propose the *behavioural* data source that would catch both variants and
    say why it survives the mutation.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/security-foundations/04-security-roles-teams-red-blue-purple-and-career), with comments and the latest edits.*

@@ -6,7 +6,7 @@ import mermaid from 'astro-mermaid';
 import { unified } from '@astrojs/markdown-remark';
 import remarkHtmlAsText from './src/plugins/remark-html-as-text.mjs';
 
-/* Written by the portfolio's sync script (scripts/sync-public-notebooks.mjs).
+/* Written by the sync script in the private source repo.
    Books arrive in curriculum order, each tagged with its field. */
 const notebooks = fs.existsSync('./src/generated/notebooks.json')
 	? JSON.parse(fs.readFileSync('./src/generated/notebooks.json', 'utf8'))
@@ -31,13 +31,21 @@ export default defineConfig({
 		mermaid({ autoTheme: true }),
 		starlight({
 			title: 'Security Notebooks',
-			description: 'Cybersecurity notes from Linux fundamentals to red team operations, by Praneeth.',
+			description: 'Free cybersecurity notebooks, from Linux fundamentals to red team operations.',
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/praneeth132006/security-notebooks' },
-				{ icon: 'external', label: 'Portfolio', href: 'https://ping-praneeth.vercel.app' },
 			],
 			lastUpdated: false,
-			customCss: ['./src/styles/custom.css'],
+			customCss: ['@fontsource-variable/inter', './src/styles/custom.css'],
+			components: {
+				PageTitle: './src/components/PageTitle.astro',
+				Footer: './src/components/Footer.astro',
+			},
+			expressiveCode: {
+				themes: ['github-dark-default', 'github-light-default'],
+				defaultProps: { wrap: true },
+				styleOverrides: { borderRadius: '0.5rem', codeFontSize: '0.85rem' },
+			},
 			sidebar,
 		}),
 	],

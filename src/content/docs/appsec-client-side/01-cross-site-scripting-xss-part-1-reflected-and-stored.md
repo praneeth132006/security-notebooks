@@ -1,11 +1,8 @@
 ---
 title: 'Cross-Site Scripting (XSS) Part 1: Reflected & Stored'
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Cross-Site Scripting (XSS) Part 1: Reflected & Stored'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-client-side/01-cross-site-scripting-xss-part-1-reflected-and-stored
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 1 of the Client-Side notebook — Notebook 24. The Injection notebook that
 preceded it took you through server-side injection, where your payload changes a query the
 *server* runs — SQL, OS commands, templates, XML. Cross-Site Scripting is the mirror image:
@@ -1169,7 +1164,3 @@ CSP documentation for the defensive side.
 5. Given the CSP `script-src 'self' 'unsafe-inline'; object-src 'none'`, explain why it fails
    to stop a reflected XSS that injects an inline `<svg onload=...>`, and rewrite the policy
    into one that would block it.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-client-side/01-cross-site-scripting-xss-part-1-reflected-and-stored), with comments and the latest edits.*

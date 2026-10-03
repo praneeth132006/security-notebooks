@@ -1,9 +1,8 @@
 ---
 title: 'Windows File System, Permissions, ACLs & Security Descriptors'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Windows File System, Permissions, ACLs & Security Descriptors'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/windows-fundamentals/02-windows-file-system-permissions-acls-and-security-descriptors
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 120 min
-
 This is Chapter 2 of the Windows Internals series. In Chapter 1 we sketched the Windows security model in one sentence: *your identity is a token, and permission is an ACL checked when you open something.* This chapter turns that one sentence into a complete, working understanding, using the most tangible thing on any computer — **files and folders** — as the teaching ground. By the end you will be able to look at any file on any Windows machine and answer, precisely: who can read it, who can change it, who owns it, where those rights came from, and how an attacker might abuse a mistake in them.
 
 We start deliberately slowly, in plain English, so a complete newcomer can follow every step. Then we climb — layer by layer — to the level a security engineer at a large tech company needs: NTFS internals, the exact byte-layout intuition of a security descriptor, SDDL, inheritance rules, effective-access auditing, alternate data streams, and the ACL misconfigurations that turn an ordinary user into `SYSTEM`. Nothing here requires you to have memorized Chapter 1; we re-introduce each idea as we need it.
@@ -897,7 +894,3 @@ Train these skills on real, legal targets:
 5. Give two reasons NTFS permissions do **not** protect data against an attacker who removes the disk, and name the correct control that does.
 
 6. Decode this service SDDL ACE and say whether it's a privesc risk for a normal user: `(A;;RPWPCR;;;BU)`. Which single right makes it dangerous, and what would you do with it?
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/windows-fundamentals/02-windows-file-system-permissions-acls-and-security-descriptors), with comments and the latest edits.*

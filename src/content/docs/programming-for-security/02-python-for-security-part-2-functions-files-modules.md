@@ -1,9 +1,8 @@
 ---
 title: 'Python for Security Part 2: Functions, Files, Modules & Requests'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Python for Security Part 2: Functions, Files, Modules & Requests'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/programming-for-security/02-python-for-security-part-2-functions-files-modules
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 155 min
-
 This is Chapter 2 of the Programming for Security series — Notebook 5. Chapter 1 gave you
 the raw material: syntax, data types, the str/bytes boundary, conditionals, and loops.
 You wrote a few tiny scripts, but everything lived in one flat block of code. This chapter
@@ -901,7 +898,3 @@ Practice questions:
 5. On Kali, `pip install requests` fails with `externally-managed-environment`. What's the
    correct fix? (Create and activate a **virtual environment** (`python3 -m venv .venv`)
    and install inside it — not `--break-system-packages`.)
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/programming-for-security/02-python-for-security-part-2-functions-files-modules), with comments and the latest edits.*

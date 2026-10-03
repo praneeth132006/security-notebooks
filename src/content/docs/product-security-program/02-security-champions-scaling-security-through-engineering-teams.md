@@ -1,11 +1,8 @@
 ---
 title: 'Security Champions: Scaling Security Through Engineering Teams'
-description: >-
-  A Expert-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Security Champions: Scaling Security Through Engineering Teams'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-program/02-security-champions-scaling-security-through-engineering-teams
 ---
-**Level:** Expert · **Track:** Product Security · **Read time:** 270 min
-
 The previous chapter established the defining constraint of every product-security program: the security team is outnumbered by engineers by ratios of one-to-fifty, one-to-a-hundred, or worse, and no amount of hiring closes that gap. The chapter argued that the only path to security at scale is *leverage* — distributing security into how engineering already works rather than doing it centrally. This chapter is about the single most powerful mechanism for that distribution: the **security champion** — an engineer *embedded within a development team* who acts as the security team's presence in a team the security team could never staff.
 
 The idea is simple and its leverage is enormous. A central security team of five cannot be in every design review, every code review, and every planning session of fifty engineering teams — the arithmetic forbids it. But if each of those fifty teams has one of its *own* engineers who is security-minded, trained, connected to the security team, and empowered to raise security concerns, then security has a *presence* in all fifty teams at once, at a fraction of the headcount. The champion is not a security expert transplanted into the team; they are a *team member* who has taken on a security-advocate role, which is exactly what makes them effective — they are a trusted peer who understands the team's code and context, speaking security from *inside* rather than mandating it from outside. That insider trust is the champion program's core asset and the reason it scales culture (Notebook 47 Chapter 1) in a way no central team can.
@@ -496,7 +491,3 @@ measuring existence not effectiveness | one-time setup, no renewal
 - Chapter 1 (the program this champions mechanism scales) and Notebook 46 Chapters 7 and 9 (the developer-relationship and culture themes champions embody).
 - The OWASP Security Champions materials and community.
 - Chapter 3 next (bug bounty and responsible disclosure — another way the program scales its finding capacity, this time through external researchers), and Chapter 6 (the metrics and leadership communication that fund programs like this one).
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-program/02-security-champions-scaling-security-through-engineering-teams), with comments and the latest edits.*

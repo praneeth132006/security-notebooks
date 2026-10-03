@@ -1,9 +1,8 @@
 ---
 title: 'Resume, Interviews & Landing a FAANG-Level Security Role'
-description: A Advanced-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Career chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Resume, Interviews & Landing a FAANG-Level Security Role'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/career-mastery/04-resume-interviews-and-landing-a-faang-level-security-role
 ---
-**Level:** Advanced · **Track:** Career · **Read time:** 255 min
-
 You have chosen a direction (Chapter 1), earned the certifications that prove foundational knowledge (Chapter 2), and built a portfolio of demonstrated work (Chapter 3). This chapter is about the last mile — the one that trips up an enormous number of technically capable people — which is *converting all of that into an actual job offer*. It is a genuinely different skill from doing security work, and treating it as an afterthought is why strong practitioners sometimes lose roles to weaker candidates who simply interviewed better and presented themselves more clearly.
 
 The uncomfortable truth this chapter opens with is that **hiring is a marketing and communication process, not a pure meritocracy**. The best candidate does not automatically get the job; the candidate who most clearly *demonstrates* they are the best, to the specific people making the decision, through the specific artifacts and conversations that decision runs on, gets the job. That is not cynicism — it is a solvable problem, and the good news is that the skills it requires (clear writing, structured communication, reading what the other side actually needs) are learnable, and are the same skills that make you good at the *work* once you are hired.
@@ -514,7 +511,3 @@ first role = hardest gate = most valuable -> invest
 - Notebook 9 (reporting) — the communication standard your take-home assessments are judged against.
 - Chapter 5 (Staying Current) next — keeping the skills and network that landed the role sharp for the length of a career.
 - *Cracking the Coding Interview* (for the coding-round mechanics some security roles include) and the many security-specific interview-question compilations on GitHub — practise, don't just read.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/career-mastery/04-resume-interviews-and-landing-a-faang-level-security-role), with comments and the latest edits.*

@@ -1,9 +1,8 @@
 ---
 title: 'CTF 101: Formats, Platforms, Scoring & How to Practice'
-description: A Beginner-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Career chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · CTF 101: Formats, Platforms, Scoring & How to Practice'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ctf-wargames/01-ctf-101-formats-platforms-scoring-and-how-to-practice
 ---
-**Level:** Beginner · **Track:** Career · **Read time:** 225 min
-
 Everything in the previous forty-two notebooks has been organised the way knowledge is organised: by domain, in a sequence that builds. That is the right way to *learn* a subject and a poor way to *test* whether you can use it. Real security work does not announce which technique it needs. A target does not tell you it is vulnerable to SSTI; it gives you a text box and silence.
 
 Capture the flag competitions close that gap. A CTF hands you an artifact — a web app, a binary, a packet capture, a stripped ELF, a suspicious image — and a single objective: find the flag. Nothing tells you the category, the technique, or whether the thing is even solvable in the direction you have chosen. That ambiguity is the entire pedagogical value. It forces the skill that no chapter can teach directly: **deciding what to try next when you do not know what is wrong.**
@@ -649,7 +646,3 @@ Burp Community | ffuf | binwalk | exiftool | steghide | Volatility 3
 - The CTF Field Guide (Trail of Bits) — dated in places, excellent on mindset.
 - Published writeups from PlaidCTF, Google CTF and HITCON — read the top teams' accounts of challenges you attempted.
 - LiveOverflow's video archive, particularly the binary exploitation series, for the reasoning-out-loud style this chapter's Part 6 is trying to instil.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ctf-wargames/01-ctf-101-formats-platforms-scoring-and-how-to-practice), with comments and the latest edits.*

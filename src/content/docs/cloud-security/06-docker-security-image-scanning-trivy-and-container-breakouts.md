@@ -1,11 +1,8 @@
 ---
 title: 'Docker Security, Image Scanning (Trivy) & Container Breakouts'
-description: >-
-  A Advanced-level Cloud Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Cloud Security chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · Docker Security, Image Scanning (Trivy) & Container Breakouts'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cloud-security/06-docker-security-image-scanning-trivy-and-container-breakouts
 ---
-**Level:** Advanced · **Track:** Cloud Security · **Read time:** 320 min
-
 This is Chapter 6 of the Cloud Security notebook. The previous chapters mapped the shared-responsibility model, hands-on recon against AWS, Azure/Entra ID and GCP, and the multi-cloud tooling stack. This chapter drops down a layer — from cloud control planes to the workloads that actually run on them — and takes apart **containers**. Almost every modern cloud workload ships as a container image, so the security of your cloud estate is, in large part, the security of your images and the runtime that executes them.
 
 The single idea to carry through the whole chapter: **a container is not a lightweight virtual machine — it is a normal Linux process that has been lied to about the world around it.** There is no hard hardware boundary between a container and its host the way there is with a hypervisor. A container shares the host kernel. Everything that "contains" it — namespaces, cgroups, capabilities, seccomp, an LSM — is a set of kernel features that can be misconfigured, disabled, or bypassed. Understand what those features actually do, and both the offensive (breakout) and defensive (hardening, detection) sides of container security stop being magic.
@@ -989,7 +984,3 @@ docker run --read-only --cap-drop=ALL --cap-add=NET_BIND_SERVICE \
 - **PwnKit / Dirty Pipe / Dirty COW** kernel-LPE labs (on throwaway VMs) — to see why a shared kernel makes host patching non-negotiable for container hosts.
 
 Build the Part 10 lab once end-to-end, then repeat Steps 2–4 with each hardening control toggled on in turn — watching an escape that worked a moment ago start failing is the fastest way to make these primitives stick.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cloud-security/06-docker-security-image-scanning-trivy-and-container-breakouts), with comments and the latest edits.*

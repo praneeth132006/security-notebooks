@@ -1,9 +1,8 @@
 ---
 title: 'Routing, NAT & the Default Gateway'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Routing, NAT & the Default Gateway'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/05-routing-nat-and-the-default-gateway
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 110 min
-
 This is Chapter 15 of the series. The previous chapter kept us on the *local* segment with Ethernet and ARP. Now we answer the bigger question: **how does a packet get from your subnet to a server on another continent?** The answer is **routing** — the hop-by-hop forwarding of packets between networks — and **NAT**, the trick that lets millions of privately-addressed devices share a handful of public IPs. For a hacker these are not trivia: routing tables reveal how to **pivot** through a compromised host, NAT explains why you can't just connect back to a box behind a home router, and port forwarding is exactly how you *do* get that reverse shell through. Master this and post-exploitation networking stops being guesswork.
 
 ## The Big Picture: Local vs Remote, and the Gateway
@@ -306,7 +303,3 @@ IGP: RIP/OSPF/EIGRP (inside an org)   EGP: BGP (between organisations)
 - **Exercise** — build the two-VM mini-router lab, prove the client reaches a network only the router touches, then tear it down and reproduce it as a `chisel` SOCKS pivot. Same concept, two tools.
 
 Next we go deep on the transport layer's reliable workhorse: **TCP — the three-way handshake, flags, sequence numbers and connection states** — the protocol behind every port scan, every reverse shell, and every web request.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/05-routing-nat-and-the-default-gateway), with comments and the latest edits.*

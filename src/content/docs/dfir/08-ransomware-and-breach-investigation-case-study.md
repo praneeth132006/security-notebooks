@@ -1,11 +1,8 @@
 ---
 title: Ransomware & Breach Investigation Case Study
-description: >-
-  A Expert-level DFIR & Incident Response chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level DFIR & Incident Response chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: 08 · Ransomware & Breach Investigation Case Study
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/dfir/08-ransomware-and-breach-investigation-case-study
 ---
-**Level:** Expert · **Track:** DFIR & Incident Response · **Read time:** 275 min
-
 This is Chapter 8, the final chapter of the DFIR notebook, and it is
 deliberately different from the others. The previous chapters each
 taught one skill — memory forensics, disk artifacts, log timelines. This
@@ -1101,7 +1096,3 @@ This completes the DFIR notebook. The next notebook shifts from
 *investigating* an intrusion to *anticipating* it: Cyber Threat
 Intelligence and Threat Hunting — turning the IOCs, TTPs, and attacker
 behaviours you extracted here into proactive defence.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/dfir/08-ransomware-and-breach-investigation-case-study), with comments and the latest edits.*

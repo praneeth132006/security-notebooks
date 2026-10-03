@@ -1,9 +1,8 @@
 ---
 title: 'Email Spoofing, SPF/DKIM/DMARC & Deliverability'
-description: A Intermediate-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Intermediate-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Email Spoofing, SPF/DKIM/DMARC & Deliverability'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/04-email-spoofing-spf-dkim-dmarc-and-deliverability
 ---
-**Level:** Intermediate · **Track:** Red Team · **Read time:** 175 min
-
 This is Chapter 4 of the Social Engineering series. Chapter 3 built the phishing email as an artefact and repeatedly deferred one question to here: *why does a spoofed sender sometimes land in the inbox and sometimes get rejected?* The answer is the email-authentication stack — SPF, DKIM, and DMARC — and it is the single most important technical topic for both phishing operators and email defenders.
 
 This chapter is unusually mechanical for the Social Engineering track, and deliberately so. To spoof, to prevent spoofing, and to triage a phish, you must understand exactly how email is authenticated (or not). We start from how a message physically flows across the internet, then build each authentication pillar from zero, then show how they combine — and where they fail.
@@ -901,7 +898,3 @@ Practise the verdict until it's automatic: run the three `dig` queries, glance a
 Before moving on, do the Part 10 lab on a domain you own — publishing, breaking, and reading these records once teaches more than re-reading this chapter twice.
 
 In the next chapter we pick up the tooling that turns these concepts into a live credential-harvest capability: **The Social-Engineer Toolkit (SET) & Credential Harvesters.**
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/04-email-spoofing-spf-dkim-dmarc-and-deliverability), with comments and the latest edits.*

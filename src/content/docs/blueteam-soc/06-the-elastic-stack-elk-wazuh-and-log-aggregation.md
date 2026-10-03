@@ -1,11 +1,8 @@
 ---
 title: 'The Elastic Stack (ELK), Wazuh & Log Aggregation'
-description: >-
-  A Intermediate-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · The Elastic Stack (ELK), Wazuh & Log Aggregation'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/06-the-elastic-stack-elk-wazuh-and-log-aggregation
 ---
-**Level:** Intermediate · **Track:** SOC & Blue Team · **Read time:** 175 min
-
 This is Chapter 6 of the SOC & Blue Team notebook and the third and final tool primer in the SIEM sequence. Chapter 4 gave you Splunk/SPL (the commercial incumbent); Chapter 5 gave you Sentinel/KQL (the cloud-native challenger). This chapter gives you the **open-source** option: the **Elastic Stack** (often called ELK) and **Wazuh**. For a huge number of teams — startups, labs, budget-constrained SOCs, and anyone who wants total control of their pipeline — this is the SIEM, because it is free to run, self-hosted, and endlessly customizable. It is also, not coincidentally, the stack you most likely deployed in your own home lab back in Chapter 1.
 
 The pipeline thinking continues to transfer. Elasticsearch is a document store you query several ways; the most beginner-friendly is **KQL in Kibana** — confusingly named the same as Sentinel's language but a *different, simpler* filter syntax — alongside **Lucene**, the powerful **EQL** (Event Query Language, purpose-built for sequences of security events), and the newer **ES|QL** (a true piped query language that will feel like coming home after SPL and KQL). Wazuh then layers host-based detection — agents, decoders, rules, file-integrity monitoring — on top, giving you an open-source EDR-ish capability with ATT&CK mapping built in.
@@ -902,7 +897,3 @@ In the next chapter we zoom back down from the SIEM to the single most important
 
 6. The most likely cause is **disks filling because indices never rolled over or deleted** — unbounded data streams grow until the cluster runs out of space and goes red. The fix is an **ILM (Index Lifecycle Management) policy** with rollover and delete phases (hot→warm→cold→frozen→delete), set from day one. (Under-provisioned heap/disk is a related contributor.)
 7. EQL's **`until`** (and `by source.ip, user.name`) — a sequence of failures `with runs=N` terminated by an `until [ authentication where event.outcome == "success" ]`, so the sequence only completes as brute-force-then-success and resets cleanly at a success. This expresses the "many failures then a success, per account" logic natively.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/06-the-elastic-stack-elk-wazuh-and-log-aggregation), with comments and the latest edits.*

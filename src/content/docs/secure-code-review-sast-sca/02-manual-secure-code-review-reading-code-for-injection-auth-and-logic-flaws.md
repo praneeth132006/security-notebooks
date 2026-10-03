@@ -1,13 +1,8 @@
 ---
 title: 'Manual Secure Code Review: Reading Code for Injection, Auth & Logic Flaws'
-description: >-
-  A Advanced-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: >-
-    02 · Manual Secure Code Review: Reading Code for Injection, Auth & Logic
-    Flaws
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/02-manual-secure-code-review-reading-code-for-injection-auth-and-logic-flaws
 ---
-**Level:** Advanced · **Track:** Product Security · **Read time:** 255 min
-
 Chapter 1 gave the methodology — how to scope, where to spend attention, how to prioritize and report. This chapter is about the act itself: **reading code by hand and seeing the bug.** It is the most craft-heavy chapter in the notebook, because the highest-value review skills cannot be reduced to a checklist or a tool rule. They are reading techniques, and reading techniques are learned by doing them deliberately until they become perception.
 
 The organizing claim, which Chapter 1 introduced and this chapter proves in detail: there is a tier of vulnerabilities that **only a human reviewer finds**, and it is the most valuable tier. SAST (Chapter 3) is genuinely good at the injection family — it can trace tainted data from a source to a dangerous sink because that is a syntactic, mechanical property. It is nearly useless at the authorization and business-logic families, because those bugs are about *intent* — about what the code *should* do and does not — and intent is not in the syntax. A missing authorization check produces no dangerous line to flag; there is simply nothing there, and only a reviewer holding a model of what ought to be present notices the absence. The bugs that take down real companies — the IDOR that leaks every customer's data, the workflow flaw that lets you skip payment, the race that double-spends a balance — live overwhelmingly in this human-only tier.
@@ -510,7 +503,3 @@ tool output TARGETS the manual hunt; it does not BOUND it
 - **OWASP Business Logic Testing** guidance and the WSTG logic chapters.
 - Dowd, McDonald & Schuh, *The Art of Software Security Assessment* — the definitive manual-review reference.
 - Chapter 3 next (SAST) for the automated injection counterpart, and Notebook 45 Chapter 6 Part 7 for the secure-coding side of authorization.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/02-manual-secure-code-review-reading-code-for-injection-auth-and-logic-flaws), with comments and the latest edits.*

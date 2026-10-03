@@ -1,11 +1,8 @@
 ---
 title: 'Linux Networking, SSH & Tunneling from the Command Line'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 9
-  label: '09 · Linux Networking, SSH & Tunneling from the Command Line'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/09-linux-networking-ssh-and-tunneling-from-the-command
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 120 min
-
 Chapter 9 of the Linux series shifts from the single box to the network it lives on. It builds on the process/service knowledge from the previous chapter — you now know what's *running*; this chapter teaches what it's *talking to*, and, critically, how you as an operator move traffic through a Linux box using SSH tunnels and port forwarding. This is one of the highest-leverage chapters in the whole Foundations phase: tunneling is the backbone of pivoting in almost every internal penetration test and red-team engagement you'll ever run.
 
 ---
@@ -310,7 +305,3 @@ proxychains curl http://172.16.5.10/
 - **OSCP-style labs / PWK** — pivoting through a compromised host to reach a second internal subnet is a core exam skill, and SSH dynamic forwarding is the most common technique taught for it.
 - **`chisel` and `ligolo-ng` on GitHub** — once SSH tunneling is second nature, these tools generalize the same concept to non-SSH footholds; worth a follow-up lab session.
 - **PortSwigger "SSRF" labs** — while not SSH-specific, they're the most common way a *web* vulnerability turns into the kind of internal-network access this chapter's tunneling skills exploit.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/linux/09-linux-networking-ssh-and-tunneling-from-the-command), with comments and the latest edits.*

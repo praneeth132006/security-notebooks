@@ -1,9 +1,8 @@
 ---
 title: 'PKI, Digital Signatures, Certificates & Chains of Trust'
-description: A Advanced-level Cryptography chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Cryptography chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · PKI, Digital Signatures, Certificates & Chains of Trust'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cryptography/06-pki-digital-signatures-certificates-and-chains-of-trust
 ---
-**Level:** Advanced · **Track:** Cryptography · **Read time:** 195 min
-
 This is Chapter 6 of the Cryptography series — Notebook 7. Chapter 3 gave us asymmetric keys: a public key
 anyone can hold and a private key only you hold, with the magic property that a signature made with the
 private key can be verified by the public one. Chapter 4 gave us hashes. This chapter combines them to
@@ -901,7 +898,3 @@ This chapter turned signatures and hashes into planet-scale identity and trust. 
 of this notebook goes on the offense against everything we've built: **practical crypto attacks — XOR
 weaknesses, ECB structure leakage, the padding oracle, and the CTF techniques** that turn a subtle
 implementation slip into full plaintext recovery.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cryptography/06-pki-digital-signatures-certificates-and-chains-of-trust), with comments and the latest edits.*

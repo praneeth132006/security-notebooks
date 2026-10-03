@@ -1,9 +1,8 @@
 ---
 title: 'Android Dynamic Analysis & Instrumentation: Frida & Objection'
-description: A Advanced-level Mobile & IoT chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Mobile & IoT chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Android Dynamic Analysis & Instrumentation: Frida & Objection'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/04-android-dynamic-analysis-and-instrumentation-frida-and-objection
 ---
-**Level:** Advanced · **Track:** Mobile & IoT · **Read time:** 300 min
-
 This is Chapter 4 of the Mobile & IoT notebook. Chapter 3 read the app at rest and built a map — classes, methods, endpoints, the checks worth defeating. This chapter makes that map *live*. Dynamic instrumentation means attaching to the running process and, from the outside, reading its memory, intercepting its function calls, changing arguments and return values, and calling its own methods on demand. It is the single most powerful technique in mobile testing, because it operates on the app *as it actually executes* — after strings are decrypted, after keys are derived, after the "is this a legit device?" boolean has been computed. Anything the app can do, you can observe and rewrite.
 
 The tool at the centre is **Frida**, and its higher-level companion **objection**. By the end you'll be able to dump a function's arguments and return value, force a security check to pass, log every plaintext handed to the crypto engine, and (previewing Chapter 5) neutralise SSL pinning at runtime. This is where static analysis pays off: the classes and methods you noted in jadx are exactly what you hook here.
@@ -460,7 +457,3 @@ Java.perform(function () {
 - **HackTheBox mobile challenges / THM "Frida" rooms** — end-to-end targets that reward the enumerate→trace→hook loop.
 
 In the next chapter we focus the instrumentation firepower on the two defenses that most often stand between you and an app's traffic and internals: **root detection and SSL pinning** — how they work, and how to defeat them cleanly at runtime.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/04-android-dynamic-analysis-and-instrumentation-frida-and-objection), with comments and the latest edits.*

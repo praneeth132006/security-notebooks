@@ -1,11 +1,8 @@
 ---
 title: Third-Party & Vendor Security Assessments
-description: >-
-  A Expert-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Third-Party & Vendor Security Assessments
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-program/04-third-party-and-vendor-security-assessments
 ---
-**Level:** Expert · **Track:** Product Security · **Read time:** 270 min
-
 Every organization runs on other organizations. The cloud provider hosting your application, the SaaS tools your teams use, the payment processor, the analytics service, the email platform, the authentication provider, the AI API — modern software is assembled from dozens or hundreds of third-party *services*, each holding some of your data or sitting somewhere in your critical path. This chapter is about the security of that web of dependencies-on-other-companies, and the discipline of assessing and managing it: **third-party risk management (TPRM)**, or vendor security assessment.
 
 The organizing truth is uncomfortable and absolute: **your security is only as strong as your weakest vendor.** You can build a flawless internal security program — every technique in the previous notebooks, executed perfectly — and still be breached because a vendor you gave your customer data to had none of it. The attacker does not care whose security failed; the data is exposed either way, and it is *your* customers, *your* breach notification, *your* reputation, regardless of which company's control failed. When you hand data to a vendor or put a vendor in your critical path, you inherit their security posture as if it were your own — because, from your customers' and regulators' point of view, it *is* your own. Third-party risk is not a separate category of risk you can wall off; it is your risk, held by someone else.
@@ -455,7 +450,3 @@ residual risk (can't eliminate): REDUCE (less data/access + your own controls)
 - Post-incident analyses of Target (2013), SolarWinds (2020), and MOVEit (2023) — read each asking which vendor-risk control would have helped.
 - Notebook 46 Chapter 5 (the software-supply-chain counterpart) and Notebook 42 Chapter 6 (the DPA, processor obligations, and breach notification that vendor contracts encode).
 - Chapter 5 next (privacy engineering — protecting data in the code, the inside counterpart to protecting it at the vendor boundary), and Chapter 6 (communicating vendor and program risk to leadership).
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-program/04-third-party-and-vendor-security-assessments), with comments and the latest edits.*

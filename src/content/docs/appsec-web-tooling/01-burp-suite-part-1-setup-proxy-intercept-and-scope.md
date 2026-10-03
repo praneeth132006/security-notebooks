@@ -1,11 +1,8 @@
 ---
 title: 'Burp Suite Part 1: Setup, Proxy, Intercept & Scope'
-description: >-
-  A Intermediate-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Burp Suite Part 1: Setup, Proxy, Intercept & Scope'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/01-burp-suite-part-1-setup-proxy-intercept-and-scope
 ---
-**Level:** Intermediate · **Track:** Bug Bounty & AppSec · **Read time:** 185 min
-
 This is Chapter 1 of the Web Tooling notebook — Notebook 22 — and the first of a
 three-part deep dive on **Burp Suite**, the single most important tool in web
 application security. The previous notebook taught you *where* to look (recon and
@@ -643,7 +638,3 @@ Practice questions:
    Match-and-Replace, and describe how you'd configure it.
 5. You route `ffuf` through Burp with `-x http://127.0.0.1:8080` but see nothing in
    HTTP history. List two likely causes.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/01-burp-suite-part-1-setup-proxy-intercept-and-scope), with comments and the latest edits.*

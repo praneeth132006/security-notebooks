@@ -1,9 +1,8 @@
 ---
 title: Package Management & Compiling Software from Source
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: 05 · Package Management & Compiling Software from Source
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/05-package-management-and-compiling-software-from-source
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 110 min
-
 ---
 
 ## Who This Is For, and Why Package Management Matters
@@ -889,7 +886,3 @@ arm-linux-gnueabihf-gcc -static exploit.c -o exploit-arm
 - **pwn.college — "Building a Web Server" / program-interaction modules** — reinforces the toolchain (`gcc`, linking, `ldd`) that underpins both compiling tools and binary exploitation later in this notebook.
 - **Alex Birsan's "Dependency Confusion" writeup** — the canonical real-world bug-bounty case study for the supply-chain attack surface introduced here.
 - **The xz-utils/CVE-2024-3094 public timeline (Andres Freund's original mailing-list post and the follow-up analyses)** — read it once; it's the best real case study of a build-pipeline supply-chain attack in the Linux ecosystem to date.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/linux/05-package-management-and-compiling-software-from-source), with comments and the latest edits.*

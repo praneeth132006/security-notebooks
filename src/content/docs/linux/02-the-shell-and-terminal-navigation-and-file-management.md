@@ -1,9 +1,8 @@
 ---
 title: 'The Shell & Terminal: Navigation and File Management Mastery'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · The Shell & Terminal: Navigation and File Management Mastery'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/02-the-shell-and-terminal-navigation-and-file-management
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 70 min
-
 > **Foundations track — Yesterday you learned what the shell *is*. Today you learn what it can *do*. By the end of this chapter you'll be fluent in navigating, reading, finding, and manipulating files from the command line — the exact skill set a professional uses every single day on engagements and incident responses.
 
 ---
@@ -1114,7 +1111,3 @@ Make a local copy of this chapter's cheat sheet. Print it if you want. For the n
 ---
 
 > In nect chapter - Linux Permissions Deep Dive — chmod, chown, umask, SUID/SGID/Sticky bits. You've seen the permission column in `ls -la` and heard SUID mentioned twice already. Tomorrow you'll understand every bit of it, and more importantly, how permission misconfigurations become the most common Linux privilege escalation vulnerabilities.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/linux/02-the-shell-and-terminal-navigation-and-file-management), with comments and the latest edits.*

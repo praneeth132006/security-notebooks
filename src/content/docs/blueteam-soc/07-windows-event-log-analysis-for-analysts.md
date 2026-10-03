@@ -1,11 +1,8 @@
 ---
 title: Windows Event Log Analysis for Analysts
-description: >-
-  A Intermediate-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: 07 · Windows Event Log Analysis for Analysts
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/07-windows-event-log-analysis-for-analysts
 ---
-**Level:** Intermediate · **Track:** SOC & Blue Team · **Read time:** 175 min
-
 This is Chapter 7 of the SOC & Blue Team notebook, and it closes the loop the last three chapters opened. Chapters 4, 5, and 6 taught you to query Splunk, Sentinel, and Elastic — but every `EventCode=4624`, every `SecurityEvent | where EventID == 4769`, every `event.code : "1102"` pointed at a **Windows event** whose meaning we largely took on faith. This chapter pays that debt. Windows is the dominant enterprise OS, the primary target of most intrusions, and the Windows Event Log is the single richest, most-queried data source in a typical SOC. If you can read Windows events fluently — know what a LogonType 3 versus 10 means, why 4769 with RC4 encryption screams Kerberoasting, how to spot a cleared log — every SIEM query you write becomes sharper, and you can investigate directly on a host even when the SIEM is silent.
 
 This is a source-knowledge chapter. We go deep on the event IDs, the fields inside them, and the attack patterns they reveal, then on the tooling to read them (Event Viewer, `wevtutil`, `Get-WinEvent`, and the modern forensic triage tools EvtxECmd, Chainsaw, and Hayabusa), then on **Sysmon** — the free add-on that turns ordinary Windows into a rich sensor — and **Windows Event Forwarding**, the native way to centralize logs. Throughout, the offense-to-defense mapping from Chapter 3 stays front and center: each event ID is tied to the ATT&CK techniques it detects.
@@ -902,7 +897,3 @@ One parting principle that unifies all seven chapters. The blue team's entire ad
 3. Fails silently: the **"Office spawns a script interpreter"** and **encoded-PowerShell** detections (Chapters 3–6) rely on the `CommandLine`/`ParentProcessName` in 4688 (and/or Sysmon 1). Fix: enable Group Policy *Audit Process Creation* **and** *Administrative Templates → System → Audit Process Creation → Include command line in process creation events*, and enable PowerShell **Script Block Logging**. (Deploying Sysmon is the robust alternative/complement.)
 4. **Chainsaw** and/or **Hayabusa** (Sigma-powered) to hunt the whole EVTX set and produce an **ATT&CK-tagged timeline of suspicious events** in seconds, plus **EvtxECmd** to parse specific logs to CSV for detail. Faster than Event Viewer because they apply hundreds of detection rules across many files at once and output a prioritized, mapped timeline rather than making you manually filter one log at a time.
 5. A **1102 means the Security log was cleared** (T1070.001) — an anti-forensics action that is high-signal because legitimate clears are rare and should be change-controlled. You can still recover evidence if logs were **forwarded off-box in real time** (WEF/agent to SIEM) before the clear. The interesting activity is **immediately before 02:14** — attackers clear logs after acting, so the window just prior to the clear is where the intrusion happened.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/07-windows-event-log-analysis-for-analysts), with comments and the latest edits.*

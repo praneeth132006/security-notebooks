@@ -1,11 +1,8 @@
 ---
 title: REST API Security Testing Methodology
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: 01 · REST API Security Testing Methodology
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-api-bugbounty/01-rest-api-security-testing-methodology
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 220 min
-
 This is Chapter 1 of the APIs & CMS notebook. The previous notebook closed out the classic server-side web bugs — SSRF, deserialization, request smuggling, subdomain takeover. Those chapters attacked *pages*. Modern applications, however, are mostly *APIs* with a thin frontend bolted on top, and the single-page app or mobile client you see is just one of many consumers of a JSON backend that is frequently far less hardened than the HTML it renders. This chapter builds the mental model and the repeatable methodology you will reuse for every REST API you ever test — on a bug-bounty program, in a CTF web challenge, or on a red-team engagement.
 
 We start from the absolute basics — what an API is, what makes an API "RESTful", how HTTP verbs and status codes work — so a beginner can follow, then climb to the exact request-manipulation and authorization-logic nuance a senior tester needs to find BOLA (Broken Object Level Authorization), mass assignment, and business-logic flaws that automated scanners never catch. APIs are where the money is in bug bounty right now: the OWASP API Security Top 10 exists precisely because API bugs are pervasive, high-impact, and under-tested.
@@ -916,7 +911,3 @@ Train each skill in this chapter on purpose-built, lawful targets:
 5. The app is on `/v3/`. Why should you still test `/v1/` and `/v2/`, and which OWASP API item does that map to?
 
 The next chapter moves from REST to **GraphQL API attacks** — introspection abuse, batching, alias-based brute force, and the authorization pitfalls unique to a single flexible query endpoint.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-api-bugbounty/01-rest-api-security-testing-methodology), with comments and the latest edits.*

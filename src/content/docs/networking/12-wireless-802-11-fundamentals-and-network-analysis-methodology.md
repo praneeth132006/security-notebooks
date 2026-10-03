@@ -1,11 +1,8 @@
 ---
 title: Wireless 802.11 Fundamentals & Network Analysis Methodology
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 12
-  label: 12 · Wireless 802.11 Fundamentals & Network Analysis Methodology
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/12-wireless-802-11-fundamentals-and-network-analysis-methodology
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 115 min
-
 This is Chapter 22, the final chapter of the Networking track. We move off the wire and into the air. **Wi-Fi (IEEE 802.11)** replaces the Ethernet cable with radio, and that single change adds an enormous, invisible attack surface: anyone within radio range can *listen*, and — depending on the security — sometimes *join or hijack*. This chapter builds 802.11 from scratch (frames, channels, association, the WPA2 four-way handshake), teaches you **monitor mode** and wireless capture, and gives you the **network-analysis methodology** that underpins every Wi-Fi attack in the Pentest track. We stay foundational and lawful here — capturing and understanding — with the cracking and evil-twin offense saved for the dedicated Wireless track.
 
 ## Why Wireless Is a Different Beast
@@ -314,7 +309,3 @@ DEFENCE: WPA3/long-PSK/802.1X + 802.11w MFP + no WPS + segment + WIPS
 - **Exercise** — on your own network: enable monitor mode, survey with airodump, lock to your AP's BSSID/channel, capture the four-way handshake (deauth a device you own to force it), verify it in Wireshark with the `eapol` filter, then crack it with a wordlist you control. Doing the full loop once makes wireless click.
 
 That closes the Networking track. You now understand how data is built, addressed, moved, resolved, secured and inspected — from a single bit on a wire to a WPA2 handshake in the air. Every offensive and defensive technique ahead — scanning, web attacks, AD, wireless, cloud — stands on this foundation. The next track builds directly on it: **Windows internals and Active Directory**, where these networking concepts meet the enterprise environments you'll spend most engagements inside.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/12-wireless-802-11-fundamentals-and-network-analysis-methodology), with comments and the latest edits.*

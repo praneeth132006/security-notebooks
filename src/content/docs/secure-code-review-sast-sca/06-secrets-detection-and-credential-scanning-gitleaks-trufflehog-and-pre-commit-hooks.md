@@ -2,14 +2,9 @@
 title: >-
   Secrets Detection & Credential Scanning: GitLeaks, TruffleHog & Pre-Commit
   Hooks
-description: >-
-  A Advanced-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: >-
-    06 · Secrets Detection & Credential Scanning: GitLeaks, TruffleHog &
-    Pre-Commit Hooks
 head:
   - tag: link
     attrs:
@@ -17,8 +12,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/06-secrets-detection-and-credential-scanning-gitleaks-trufflehog-and-pre-commit-hooks
 ---
-**Level:** Advanced · **Track:** Product Security · **Read time:** 255 min
-
 The previous chapter was about the code you did not write; this one is about a specific thing that should *never* be in the code you did write: **secrets**. API keys, database passwords, cloud credentials, private keys, tokens — the credentials that grant access to real systems — end up committed to source repositories with astonishing regularity, and when they do, the consequence is direct and severe: an attacker who finds the secret has the access it grants, no exploitation required. It is Notebook 45's CWE-798 (hardcoded credentials) as an operational discipline, and it is one of the highest-frequency, highest-impact exposures in the entire field.
 
 The reason this deserves its own chapter, rather than a line in the secure-coding chapter, is that secrets have a property no other bug class has: **git history is forever, and a deleted secret is still there.** Delete a password from a file, commit the deletion, and the password is still sitting in the previous commit, retrievable by anyone with the repository, permanently, unless you rewrite history — which is disruptive and, crucially, still does not help once the secret has been pushed to a place others have cloned. This is the single most misunderstood fact about leaked secrets, and it drives the chapter's central, counterintuitive lesson: **when a secret leaks, you rotate it — you do not merely remove it.** Scrubbing the secret from the code does not un-leak it; only invalidating the credential does.
@@ -468,7 +461,3 @@ git filter-repo / BFG -> history rewriting (AFTER rotation)
 - The OWASP Secrets Management Cheat Sheet.
 - Notebook 45 Chapter 6 (CWE-798 and the secure-coding fix) and Chapter 5 of this notebook (dependencies — secrets also leak *into* and *out of* third-party packages).
 - Chapter 7 next, which integrates secrets scanning, SAST, and SCA into the full CI/CD pipeline.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/06-secrets-detection-and-credential-scanning-gitleaks-trufflehog-and-pre-commit-hooks), with comments and the latest edits.*

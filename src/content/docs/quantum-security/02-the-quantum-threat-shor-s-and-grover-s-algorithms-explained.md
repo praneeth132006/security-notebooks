@@ -1,11 +1,8 @@
 ---
 title: 'The Quantum Threat: Shor''s & Grover''s Algorithms Explained'
-description: >-
-  A Advanced-level Quantum Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Quantum Security chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · The Quantum Threat: Shor''s & Grover''s Algorithms Explained'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/quantum-security/02-the-quantum-threat-shor-s-and-grover-s-algorithms-explained
 ---
-**Level:** Advanced · **Track:** Quantum Security · **Read time:** 320 min
-
 This is Chapter 2 of the Quantum Security notebook. Chapter 1 built the machinery — qubits, superposition, entanglement, the circuit model, interference, and the hardware reality of physical versus logical qubits. This chapter spends all of that machinery on the only two algorithms that any security engineer is ever actually asked about: **Shor's algorithm**, which destroys every public-key primitive in production today, and **Grover's algorithm**, which does far less damage to symmetric cryptography than the headlines claim.
 
 The goal is not to make you able to derive the algorithms from scratch in a viva. The goal is that when someone in a design review says "quantum breaks AES" or "we have twenty years" or "we should double our AES key size and switch to SHA-512," you can say precisely what is right, what is wrong, and what the actual number is.
@@ -1087,7 +1082,3 @@ grep -rEn "RSA|ECDSA|ECDH|secp256|X25519|Ed25519" --include="*.go" --include="*.
 - Castryck & Decru (2022), *An efficient key recovery attack on SIDH* — the classical break of an isogeny finalist, and a lesson in cryptographic humility.
 
 The next chapter takes the threat model sketched in Part 11 and develops it properly: harvest-now-decrypt-later as a quantified risk, data shelf-life analysis, and what crypto-agility actually requires of an architecture.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/quantum-security/02-the-quantum-threat-shor-s-and-grover-s-algorithms-explained), with comments and the latest edits.*

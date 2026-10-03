@@ -1,11 +1,8 @@
 ---
 title: 'SQL Injection Part 1: Databases, SQL & Discovering Injection'
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · SQL Injection Part 1: Databases, SQL & Discovering Injection'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-injection/01-sql-injection-part-1-databases-sql-and-discovering-injection
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 225 min
-
 This is Chapter 1 of the Injection notebook — Notebook 23. The Web Tooling notebook
 that preceded it gave you the instruments (Burp, ZAP, ffuf, Nuclei) and the map (the
 OWASP Top 10 and attack-surface mapping). Now you begin exploiting a single, storied
@@ -685,7 +680,3 @@ Practice questions:
    hides, and explain what "second-order" SQLi means.
 5. On a live bug-bounty target you confirm SQLi. What is the *maximum* you should extract
    as proof, and name two things you must never do?
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-injection/01-sql-injection-part-1-databases-sql-and-discovering-injection), with comments and the latest edits.*

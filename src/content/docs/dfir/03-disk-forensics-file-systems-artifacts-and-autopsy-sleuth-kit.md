@@ -1,11 +1,8 @@
 ---
 title: 'Disk Forensics: File Systems, Artifacts & Autopsy/Sleuth Kit'
-description: >-
-  A Advanced-level DFIR & Incident Response chapter from Praneeth's
-  cybersecurity notebook.
+description: A Advanced-level DFIR & Incident Response chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Disk Forensics: File Systems, Artifacts & Autopsy/Sleuth Kit'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/dfir/03-disk-forensics-file-systems-artifacts-and-autopsy-sleuth-kit
 ---
-**Level:** Advanced · **Track:** DFIR & Incident Response · **Read time:** 240 min
-
 This is Chapter 3 of the DFIR notebook. Chapter 2 ended with a verified `.E01` on your analysis workstation and a hash that proves it matches the source. This chapter is what you do next: pull that image apart, understand the file system underneath it, recover what was deleted, and reconstruct — minute by minute — what a human being did on that machine.
 
 Acquisition is a procedure. Analysis is an investigation. The difference matters because acquisition has one right answer (a byte-identical image with a matching hash) while analysis has as many wrong answers as you have untested assumptions. A file's "date modified" in Windows Explorer is not a fact; it is one of eight timestamps that particular file carries, the one an attacker can trivially rewrite. A "deleted" file is not gone; on a spinning disk it is usually intact and merely unreferenced, and on an SSD it may have been electrically erased four seconds after the delete. Knowing which is which is the entire skill.
@@ -1264,7 +1259,3 @@ Three different timezones are in play and confusing them is the fastest way to p
 3. **Your reporting timezone** — pick one, state it on every page, and never mix.
 
 The professional default is **report everything in UTC**, note the system's local offset once, and present local time only where a human's working hours matter.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/dfir/03-disk-forensics-file-systems-artifacts-and-autopsy-sleuth-kit), with comments and the latest edits.*

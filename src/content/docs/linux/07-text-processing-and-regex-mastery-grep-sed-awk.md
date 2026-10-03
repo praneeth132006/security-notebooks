@@ -1,11 +1,8 @@
 ---
 title: 'Text Processing & Regex Mastery: grep, sed, awk, cut, sort'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: '07 · Text Processing & Regex Mastery: grep, sed, awk, cut, sort'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/07-text-processing-and-regex-mastery-grep-sed-awk
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 110 min
-
 Chapter 7 of the Linux series moves from writing scripts to feeding them: everything a script does eventually comes down to slicing, filtering, and transforming text, and this chapter builds the toolbox for that — regular expressions, `grep`, `sed`, `awk`, and their smaller cousins `cut`, `sort`, `uniq`, and `tr`. It builds directly on the bash scripting chapter before it: every loop and conditional you learned there becomes far more useful once it can pull exactly the data it needs out of a wall of text.
 
 ---
@@ -446,7 +441,3 @@ grep "pattern" file | awk '{print $1}' | sort | uniq -c | sort -nr | head -10
 - **HackTheBox Starting Point / Tier 0** boxes — practice piping real `nmap -oG` output through `awk`/`grep` to build target lists instead of reading scan output manually.
 - **regex101.com** (set to PCRE or POSIX mode as needed) — the fastest way to build and test a regex interactively before dropping it into `grep`/`sed`/`awk`.
 - **TryHackMe "Linux Fundamentals" and "Grep" rooms** — guided walkthroughs reinforcing everything in this chapter with graded exercises.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/linux/07-text-processing-and-regex-mastery-grep-sed-awk), with comments and the latest edits.*

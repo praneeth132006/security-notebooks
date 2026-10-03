@@ -1,9 +1,8 @@
 ---
 title: 'Python for Security Part 1: Syntax, Data Types & Control Flow'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Python for Security Part 1: Syntax, Data Types & Control Flow'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/programming-for-security/01-python-for-security-part-1-syntax-data-types
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 150 min
-
 This is Chapter 1 of the Programming for Security series — Notebook 5. The Active
 Directory notebook you just finished was full of tools — Impacket, `GetUserSPNs.py`,
 `ticketer.py`, BloodHound collectors — and nearly all of them are written in **Python**.
@@ -885,7 +882,3 @@ Practice questions:
    say whether it's set. (`uac & 0x400000` → `0x400000` truthy → **set**.)
 5. Which of these are falsy: `0`, `"0"`, `[]`, `" "`, `None`, `{}`? (`0`, `[]`, `None`,
    `{}` are falsy; `"0"` and `" "` are non-empty strings, so truthy.)
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/programming-for-security/01-python-for-security-part-1-syntax-data-types), with comments and the latest edits.*

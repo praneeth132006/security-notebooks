@@ -1,11 +1,8 @@
 ---
 title: 'Chaining Bugs for Maximum Impact: Real Bug-Bounty Kill Chains'
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Chaining Bugs for Maximum Impact: Real Bug-Bounty Kill Chains'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-api-bugbounty/04-chaining-bugs-for-maximum-impact-real-bug-bounty-kill-chains
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 4 of the APIs & CMS notebook, and the capstone of everything the notebook has built toward. The previous three chapters gave you the primitives: REST API methodology, GraphQL tradecraft, and CMS/known-vuln exploitation. Each taught you to *find* a class of bug. This chapter teaches the skill that actually pays: taking two, three, or six individually-modest findings and welding them into a single narrative that walks from "anonymous internet user" to "arbitrary code execution on your production server" — a **kill chain**.
 
 The gap between an average bug-bounty hunter and a great one is rarely raw payload knowledge. It is *impact synthesis*. A great hunter looks at an open redirect — a bug most programs mark informational and pay $0 for — and sees the first link in a chain that steals an OAuth token and takes over any account. They look at a self-XSS that "only affects the attacker's own browser" and see a login-CSRF primitive that forces a victim into an attacker-controlled account where the XSS suddenly fires against real users. They look at a JSON error that leaks an internal hostname and see the target for an SSRF they found three endpoints away. This chapter is about developing that eye, and then proving the chain works with a reproducible proof-of-concept a triager cannot downgrade.
@@ -926,7 +921,3 @@ Train each link, then practise composing them:
 3. Build a 3-link chain in a lab of your choice starting from an information-disclosure foothold; produce the full report skeleton (Part 12) and a correct CVSS vector for the end impact.
 4. Take a stored-XSS lab and rewrite the PoC so it targets an *admin* rendering context, articulating why that raises the severity from Medium to High.
 5. From an upload-bypass lab, achieve a web shell, then (in a boot-to-root box) continue the chain into OS privilege escalation for a full unauth-to-root writeup.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-api-bugbounty/04-chaining-bugs-for-maximum-impact-real-bug-bounty-kill-chains), with comments and the latest edits.*

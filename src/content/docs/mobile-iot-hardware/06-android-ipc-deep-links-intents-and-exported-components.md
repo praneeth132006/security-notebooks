@@ -1,9 +1,8 @@
 ---
 title: 'Android IPC: Deep Links, Intents & Exported Components'
-description: A Advanced-level Mobile & IoT chapter from Praneeth's cybersecurity notebook.
+description: A Advanced-level Mobile & IoT chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · Android IPC: Deep Links, Intents & Exported Components'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/06-android-ipc-deep-links-intents-and-exported-components
 ---
-**Level:** Advanced · **Track:** Mobile & IoT · **Read time:** 300 min
-
 This is Chapter 6 of the Mobile & IoT notebook. Chapter 3 catalogued the app's **exported components** from the manifest; Chapters 4–5 gave you the runtime tools to get inside. This chapter weaponises that catalogue. Android apps are not islands — they talk to each other, and to the web, through a rich inter-process communication (IPC) system built on **Intents**, the four **components**, and **Binder** underneath. Every piece of that surface an app exposes to *other apps* (or to a web link) is something a malicious app or a crafted URL can poke. This is the classic "an app on the same device attacks the target app" threat model, and it's where a large share of Android CVEs and bug-bounty reports live.
 
 We'll build the IPC model, then walk each attack surface — exported activities, broadcasts, services, and the perennially-vulnerable **Content Providers** — and finish with **deep links / App Links**, where the entry point comes from a URL the victim taps. Everything ties back to the manifest read you already did.
@@ -310,7 +307,3 @@ adb shell am start -a android.intent.action.VIEW -d "exampleapp://transfer?to=at
 - **Google's App Links + Digital Asset Links docs** — to understand what a *correct* verified link looks like (and thus what a broken one looks like).
 
 In the next chapter we cross to the other platform: **iOS pentesting fundamentals** — jailbreaking vs no-jailbreak testing, the IPA and app sandbox, keychain and data protection, and how the same interception/instrumentation ideas translate to Apple's world.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/06-android-ipc-deep-links-intents-and-exported-components), with comments and the latest edits.*

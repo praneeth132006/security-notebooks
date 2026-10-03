@@ -1,11 +1,8 @@
 ---
 title: 'DAST & IAST in the SDLC: Runtime Scanning & Feedback Loops'
-description: >-
-  A Advanced-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · DAST & IAST in the SDLC: Runtime Scanning & Feedback Loops'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/04-dast-and-iast-in-the-sdlc-runtime-scanning-and-feedback-loops
 ---
-**Level:** Advanced · **Track:** Product Security · **Read time:** 255 min
-
 The last chapter analyzed code *without running it*. This one runs the application and attacks it. **Dynamic Application Security Testing (DAST)** is the automated, black-box counterpart to SAST: it does not read the source, it sends the application malicious requests and watches how it responds — the automated cousin of the penetration test from Chapter 1. Where SAST reasons about what the code *could* do across all paths, DAST observes what the running system *actually does* on the inputs it sends, and that difference is the whole story of this chapter: the two find different bugs, miss different bugs, and a serious program runs both.
 
 The framing that keeps DAST in its place: **it tests the thing you actually ship.** SAST analyzes source in isolation; DAST attacks the deployed application, with its real configuration, its real server, its real TLS setup, its real reverse proxy and its real runtime dependencies all in play. That means DAST finds a class of problems SAST cannot see at all — a misconfigured security header, a debug endpoint left on, a TLS weakness, an authentication flaw that only manifests when the whole stack is assembled — because those are properties of the *running system*, not of any single source file. The price of that realism is DAST's central weakness: it can only test what it can *reach*, and reaching everything in a modern application is genuinely hard.
@@ -470,7 +465,3 @@ prerequisite: a stable, authenticated, seeded staging environment
 - Chapters 1–3 (manual review and SAST — the static and human counterparts DAST complements) and Chapter 7 (wiring dynamic testing into the full pipeline).
 - Notebook 36 for fuzzing and memory-safety bug discovery in depth.
 - The OWASP DAST/IAST guidance and vendor documentation for authenticated-scan and SPA-crawling configuration, which is where real DAST programs succeed or fail.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/04-dast-and-iast-in-the-sdlc-runtime-scanning-and-feedback-loops), with comments and the latest edits.*

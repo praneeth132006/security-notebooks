@@ -1,11 +1,8 @@
 ---
 title: Bash Scripting for Offensive & Defensive Automation
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Bash Scripting for Offensive & Defensive Automation
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/programming-for-security/04-bash-scripting-for-offensive-and-defensive-automation
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 170 min
-
 This is Chapter 4 of the Programming for Security series — Notebook 5. The three Python
 chapters gave you a full programming language for tool-building. This chapter steps sideways
 into **Bash**, the language that is *already installed* on every Linux box you will ever
@@ -1148,7 +1143,3 @@ Train these exact skills — argument-parsing, pipelines, `/dev/tcp`, reverse sh
 - **Build it yourself:** extend Lab A's scanner with `& + wait` concurrency, then extend Lab B's
   `sshwatch.sh` to ship alerts to a Discord webhook and auto-`iptables`-drop offenders — you'll have
   a genuinely useful mini-`fail2ban` you fully understand.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/programming-for-security/04-bash-scripting-for-offensive-and-defensive-automation), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: OS Command Injection
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · OS Command Injection
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-injection/04-os-command-injection
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 4 of the Injection notebook — Notebook 23. The first three chapters lived
 inside the database: you learned what SQL is, how to discover an injection point, how to
 exploit it in-band and blind, and how to defeat WAFs and drive `sqlmap`. This chapter changes
@@ -1169,7 +1164,3 @@ Chapter 5 of this notebook moves from injection into a shell to **injection into
 interpreters** — the broader template/expression/LDAP/XPath injection family — where the same
 "untrusted data reaches an interpreter that does more than string handling" instinct you've now
 built for shells applies to entirely new evaluation engines.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-injection/04-os-command-injection), with comments and the latest edits.*

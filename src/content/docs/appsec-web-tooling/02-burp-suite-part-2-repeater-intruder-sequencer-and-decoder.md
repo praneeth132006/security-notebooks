@@ -1,11 +1,8 @@
 ---
 title: 'Burp Suite Part 2: Repeater, Intruder, Sequencer & Decoder'
-description: >-
-  A Intermediate-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Burp Suite Part 2: Repeater, Intruder, Sequencer & Decoder'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/02-burp-suite-part-2-repeater-intruder-sequencer-and-decoder
 ---
-**Level:** Intermediate · **Track:** Bug Bounty & AppSec · **Read time:** 205 min
-
 This is Chapter 2 of the Web Tooling notebook and the second part of the Burp Suite
 series. Chapter 1 got you intercepting and scoping traffic — Burp as a *window* onto
 HTTP. This chapter turns Burp into a *workshop*. Four tools do the heavy lifting of
@@ -496,7 +491,3 @@ Practice questions:
    what attack does that enable and how would you demonstrate it non-destructively?
 5. Why is a large Intruder Cluster Bomb in Community Edition slow, and what tool from
    a later chapter would you use instead for a big brute force?
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/02-burp-suite-part-2-repeater-intruder-sequencer-and-decoder), with comments and the latest edits.*

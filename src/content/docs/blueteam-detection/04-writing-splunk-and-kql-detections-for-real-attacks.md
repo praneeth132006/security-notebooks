@@ -1,11 +1,8 @@
 ---
 title: Writing Splunk & KQL Detections for Real Attacks
-description: >-
-  A Advanced-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Writing Splunk & KQL Detections for Real Attacks
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-detection/04-writing-splunk-and-kql-detections-for-real-attacks
 ---
-**Level:** Advanced · **Track:** SOC & Blue Team · **Read time:** 205 min
-
 This is Chapter 4 of the Detection Engineering notebook. Chapter 1 taught you to write portable detections in Sigma; Chapters 2 and 3 taught you the endpoint telemetry (Sysmon, osquery, Velociraptor) and the pattern-matching (YARA) that feed detections. Now we sit down at the two consoles where most of the world's detections actually run — **Splunk** with its **SPL** and **Microsoft Sentinel** with its **KQL** — and write real, tuned, ATT&CK-mapped rules for the attacks a SOC is genuinely asked to catch.
 
 The earlier SOC notebook introduced both languages as *search* tools (Splunk in its Chapter 4, Sentinel/KQL in its Chapter 5). This chapter is different in stance: we are not searching to answer a one-off question, we are **authoring detections** — logic that will run unattended thousands of times a day, page a human when it fires, and be judged by whether that page was worth waking someone for. That changes everything about how you write the query. A hunt query can be greedy and noisy because a human is reading every row; a detection must be precise, cheap, resilient to benign variation, and mapped to a response. We will write every detection in *both* languages so that the skill transfers regardless of which SIEM your employer runs, and so you internalise the handful of idioms (`stats` vs `summarize`, `rex` vs `extract`, lookups vs `externaldata`) that are all that really separate them.
@@ -917,7 +912,3 @@ Train these exact skills, not generic ones:
 - **CyberDefenders** and **Blue Team Labs Online** — SIEM/DFIR challenges that make you write the search that finds the attack under time pressure.
 
 Work each detection in this chapter through BOTS (SPL) and the Sentinel Training Lab (KQL) until you can write the credential-access trio and the spray-then-success correlation from memory in both languages. That fluency — the same detection, either console, tuned — is the deliverable of this chapter.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-detection/04-writing-splunk-and-kql-detections-for-real-attacks), with comments and the latest edits.*

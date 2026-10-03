@@ -1,9 +1,8 @@
 ---
 title: 'TCP Deep Dive: Handshake, Flags, Sequence Numbers & States'
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · TCP Deep Dive: Handshake, Flags, Sequence Numbers & States'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/networking/06-tcp-deep-dive-handshake-flags-sequence-numbers-and
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 115 min
-
 This is Chapter 16 of the series. We're at the transport layer now, and no single protocol matters more to a hacker than **TCP**. Every port scan interprets TCP replies. Every reverse shell, every Burp request, every SSH session rides on a TCP connection. When you understand the three-way handshake, the flag bits, sequence numbers and the connection state machine, you can read a scan's output like a story, explain *why* a stealth scan is stealthy, craft packets with `hping3`/Scapy, and recognise a SYN flood or a hijack attempt on sight. This chapter turns TCP from a black box into something you can operate byte by byte.
 
 ## Why TCP Exists: Reliability on an Unreliable Network
@@ -341,7 +338,3 @@ sysctl net.ipv4.tcp_syncookies             # should be 1
 - **Exercise** — capture and annotate a full connection (handshake → data → teardown), then reproduce a one-port SYN scan in both `hping3` and Scapy and confirm the `SA`/`RA` replies match Nmap's open/closed verdict.
 
 Next we cross to the other side of the transport layer: **UDP, ICMP and connectionless protocols** — no handshake, minimal overhead, and the basis of DNS, DHCP, amplification DDoS and covert exfiltration.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/networking/06-tcp-deep-dive-handshake-flags-sequence-numbers-and), with comments and the latest edits.*

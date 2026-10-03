@@ -1,11 +1,8 @@
 ---
 title: 'Windows Artifacts & Triage: Registry, MFT, KAPE & Eric Zimmerman Tools'
-description: >-
-  A Advanced-level DFIR & Incident Response chapter from Praneeth's
-  cybersecurity notebook.
+description: A Advanced-level DFIR & Incident Response chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Windows Artifacts & Triage: Registry, MFT, KAPE & Eric Zimmerman Tools'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/dfir/05-windows-artifacts-and-triage-registry-mft-kape-and-eric-zimmerman-tools
 ---
-**Level:** Advanced · **Track:** DFIR & Incident Response · **Read time:** 260 min
-
 This is Chapter 5 of the DFIR notebook. Chapter 4 froze a single instant of a running machine and reconstructed it from RAM. This chapter is the other half of that pair: the persistent record Windows leaves on disk of *everything that has happened* — every program run, every USB inserted, every folder opened, every file deleted — long after the process exited and the memory was reclaimed.
 
 Windows is, from a forensic standpoint, a compulsive note-taker. To make the desktop feel fast and personal it caches, indexes, and logs your behaviour in dozens of places most users never see: the registry, Prefetch files, a half-dozen execution caches, the NTFS metadata journals, shell history, and the event logs. An attacker who deletes their tools and clears the obvious logs almost never cleans all of it, because most of these artifacts are undocumented side effects of features, not "logs" anyone thinks to wipe. Knowing where they are, what each one proves, and how to parse them at speed is the core skill of host forensics.
@@ -668,7 +663,3 @@ Practice questions to test yourself on any image:
 3. Detect a timestomped file and state exactly which timestamp fields established the forgery.
 4. Show that the Security event log was cleared, and give the event ID and time that proves it.
 5. Reconstruct, from disk artifacts alone, the order of drop → execute → persist → exfiltrate → encrypt for the lab host, citing the artifact behind each step.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/dfir/05-windows-artifacts-and-triage-registry-mft-kape-and-eric-zimmerman-tools), with comments and the latest edits.*

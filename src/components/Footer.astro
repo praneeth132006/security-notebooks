@@ -1,0 +1,80 @@
+---
+/* Chapter pages get a comment thread above Starlight's previous/next links.
+   Threads live in the public praneeth132006/discuss-security repo and are
+   keyed "notebook/<book>/<chapter>", the same key the original notebook
+   uses, so both places show one shared conversation. */
+import Default from '@astrojs/starlight/components/Footer.astro';
+import { lookup } from '../lib/notebooks';
+
+const found = lookup(Astro.locals.starlightRoute.id);
+const term = found?.chapter ? `notebook/${found.notebook.slug}/${found.chapter.slug}` : null;
+---
+
+{
+	term && (
+		<section class="discussion" aria-labelledby="discussion-title">
+			<h2 id="discussion-title">Discussion</h2>
+			<p>Questions, corrections, or something to add? Comment with your GitHub account.</p>
+			<div class="giscus" data-term={term} />
+		</section>
+	)
+}
+
+<Default />
+
+<script>
+	import { paint } from '../scripts/progress';
+
+	paint();
+
+	const host = document.querySelector<HTMLElement>('.giscus');
+	if (host) {
+		const theme = () =>
+			document.documentElement.dataset.theme === 'light' ? 'light' : 'dark_dimmed';
+
+		const script = document.createElement('script');
+		Object.entries({
+			src: 'https://giscus.app/client.js',
+			'data-repo': 'praneeth132006/discuss-security',
+			'data-repo-id': 'R_kgDOThHKMg',
+			'data-category': 'General',
+			'data-category-id': 'DIC_kwDOThHKMs4DBy0v',
+			'data-mapping': 'specific',
+			'data-term': host.dataset.term!,
+			'data-strict': '0',
+			'data-reactions-enabled': '1',
+			'data-emit-metadata': '0',
+			'data-input-position': 'bottom',
+			'data-theme': theme(),
+			'data-lang': 'en',
+			'data-loading': 'lazy',
+			crossorigin: 'anonymous',
+		}).forEach(([k, v]) => script.setAttribute(k, v));
+		script.async = true;
+		host.append(script);
+
+		// Follow Starlight's theme switcher.
+		new MutationObserver(() => {
+			document
+				.querySelector<HTMLIFrameElement>('iframe.giscus-frame')
+				?.contentWindow?.postMessage({ giscus: { setConfig: { theme: theme() } } }, 'https://giscus.app');
+		}).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+	}
+</script>
+
+<style>
+	.discussion {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid var(--sl-color-hairline);
+	}
+	.discussion h2 {
+		font-size: var(--sl-text-h4);
+		color: var(--sl-color-white);
+	}
+	.discussion p {
+		margin: 0.25rem 0 1.25rem;
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-3);
+	}
+</style>

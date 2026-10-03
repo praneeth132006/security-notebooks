@@ -1,9 +1,8 @@
 ---
 title: 'Vishing, Smishing & Physical Pretexting'
-description: A Expert-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 9
-  label: '09 · Vishing, Smishing & Physical Pretexting'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/09-vishing-smishing-and-physical-pretexting
 ---
-**Level:** Expert · **Track:** Red Team · **Read time:** 185 min
-
 This is Chapter 9 of the Social Engineering series. The previous chapters built up the email-and-web side of social engineering — pretext development, phishing lures, spoofing, SET, Gophish, weaponised documents, and finally Evilginx-style adversary-in-the-middle attacks that steal a live session past MFA. Every one of those attacks arrives through a mailbox or a browser. This chapter deliberately leaves that channel behind and covers the three vectors that reach a target through a phone line, a text message, or a physical doorway: **vishing** (voice phishing), **smishing** (SMS/RCS phishing), and **physical pretexting** (talking or badging your way into a building).
 
 These channels matter because they route around almost everything the last eight chapters' defenders spent money on. A secure email gateway, DMARC enforcement, a browser isolation stack, and an EDR agent do nothing when the attack is a phone call to the help desk, a text to a personal phone, or a person in a hi-vis vest holding a ladder at the loading dock. The human is reached directly, in a medium with far weaker technical controls and far stronger social pressure. That is exactly why real intrusions — from the 2020 Twitter breach to the 2022 Uber/Rockstar incidents to the 2023 MGM/Caesars casino attacks — leaned on a phone call or a help-desk reset, not a clever email.
@@ -901,7 +898,3 @@ Train these specific skills (authorised/lab environments only):
 5. **Threat-model comparison:** for a mid-size company with strong email security (SEG + DMARC + FIDO2 for some apps) but SMS OTP for VPN and a knowledge-based help desk, rank the vishing, smishing, and physical vectors by likely success and justify the ranking with reference to the controls each bypasses.
 
 Worked answers are intentionally omitted so you can reason them through; every answer is derivable from the parts above. The next chapter moves from these human-channel attacks into **deepfakes and AI-driven social engineering**, where synthetic voice and video supercharge exactly the vishing and pretexting techniques covered here.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/09-vishing-smishing-and-physical-pretexting), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: 'Logging, Hardening & the Linux Security Baseline'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 10
-  label: '10 · Logging, Hardening & the Linux Security Baseline'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/linux/10-logging-hardening-and-the-linux-security-baseline
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 120 min
-
 Chapter 10 closes out the Linux track of the Foundations phase. It pulls together everything from the earlier chapters — permissions, users, processes, services, and networking — into the discipline of actually securing and monitoring a box: where logs live and how to read them, how `auditd` provides fine-grained visibility, and the concrete hardening steps that turn a default Linux install into something resembling a real security baseline. Every offensive technique explored in the rest of this notebook has a defensive mirror here; this chapter is that mirror.
 
 ---
@@ -316,7 +311,3 @@ sudo sysctl --system
 - **Lynis (`github.com/CISOfy/lynis`)** — a free automated hardening-audit tool; run it against your lab VM before and after applying this chapter's steps to see a measurable score improvement.
 - **HackTheBox / TryHackMe "DFIR"-tagged rooms** — practice reconstructing an attacker timeline purely from log excerpts, mirroring the CTF Angle worked pattern above.
 - **OpenSCAP / `oscap`** — open-source tooling that can automatically evaluate a box against a CIS or DISA STIG profile, useful for turning this chapter's manual checklist into an automated, repeatable scan.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/linux/10-logging-hardening-and-the-linux-security-baseline), with comments and the latest edits.*

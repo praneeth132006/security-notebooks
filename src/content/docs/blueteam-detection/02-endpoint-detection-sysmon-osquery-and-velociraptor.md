@@ -1,11 +1,8 @@
 ---
 title: 'Endpoint Detection: Sysmon, Osquery & Velociraptor'
-description: >-
-  A Advanced-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Endpoint Detection: Sysmon, Osquery & Velociraptor'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-detection/02-endpoint-detection-sysmon-osquery-and-velociraptor
 ---
-**Level:** Advanced · **Track:** SOC & Blue Team · **Read time:** 195 min
-
 This is Chapter 2 of the Detection Engineering notebook. Chapter 1 taught you to *express* a detection as portable Sigma logic and convert it to any backend — but a Sigma rule is only as good as the telemetry it runs against. If the endpoint never records that `powershell.exe` spawned from `winword.exe`, no rule anywhere will catch it. This chapter builds the layer underneath detection: **endpoint visibility**. You will stand up three open-source pillars — **Sysmon** for rich Windows event generation, **Osquery** for querying the live state of any OS as if it were a SQL database, and **Velociraptor** for fleet-wide hunting and live incident response — and learn each one from zero: what it is, why it exists, how to install and configure it, its internals and event schema, and how to turn its raw output into detections mapped to MITRE ATT&CK.
 
 The stance is defensive throughout. These tools generate and collect telemetry on systems *you own and defend*. The attacker behaviours we instrument for — process injection, LSASS access, encoded PowerShell, persistence, credential dumping — are described so you can *see* them in the data and build detections; any offensive commands shown are meant to be run in your own detection lab (DetectionLab, Attack Range, a couple of throwaway VMs) to validate that your sensors actually fire. We build from why native logging is insufficient, through Sysmon end to end, Osquery end to end, and Velociraptor end to end, then a full lab that instruments a host and catches an attack chain, a consolidated Detection & Defense part, a final revision, a cheat sheet, and topic-specific practice.
@@ -994,7 +989,3 @@ Train these exact skills, not generic theory:
 ---
 
 This chapter gave you the sensors; the next chapter continues the Detection Engineering track by building detections and analytics on top of the telemetry you can now generate and collect. You control your endpoint visibility now — the raw material every detection in this notebook is built from.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-detection/02-endpoint-detection-sysmon-osquery-and-velociraptor), with comments and the latest edits.*

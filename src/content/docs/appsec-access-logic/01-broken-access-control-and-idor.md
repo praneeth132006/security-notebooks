@@ -1,11 +1,8 @@
 ---
 title: Broken Access Control & IDOR
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: 01 · Broken Access Control & IDOR
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-access-logic/01-broken-access-control-and-idor
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 1 of the Access & Logic notebook — Notebook 25. The Client-Side notebook
 (Notebook 24) lived in the browser: injecting and weaponizing script, forging requests, and
 defeating the Same-Origin read barrier. This notebook moves to the logic of the application
@@ -891,7 +886,3 @@ the whole class largely disappears; leave it to per-endpoint vigilance and IDOR 
 every new feature. The next chapters — authentication, tokens, sessions, and business logic — each attack
 a different part of this same "who are you and what may you do" question, and each rewards the same
 systematic, coverage-first mindset.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-access-logic/01-broken-access-control-and-idor), with comments and the latest edits.*

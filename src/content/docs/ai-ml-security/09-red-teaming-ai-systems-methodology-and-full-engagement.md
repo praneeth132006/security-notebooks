@@ -1,9 +1,8 @@
 ---
 title: 'Red-Teaming AI Systems: Methodology & Full Engagement'
-description: A Expert-level AI/ML Security chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level AI/ML Security chapter from the Security Notebooks.
 sidebar:
   order: 9
-  label: '09 · Red-Teaming AI Systems: Methodology & Full Engagement'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ai-ml-security/09-red-teaming-ai-systems-methodology-and-full-engagement
 ---
-**Level:** Expert · **Track:** AI/ML Security · **Read time:** 330 min
-
 This is Chapter 9 of the AI/ML Security notebook, and it is the capstone. Every
 earlier chapter handed you a piece: Chapter 3 the classical adversarial-ML
 attacks, Chapter 4 the LLM attacks (prompt injection, jailbreaks, data leakage),
@@ -1185,7 +1182,3 @@ measure every finding's success rate over 20 attempts, and produce a 4-finding r
 with narratives, canary evidence, ranked remediation, and a promptfoo retest suite.
 That single exercise is a portfolio-grade demonstration of the whole chapter — and of
 the entire AI/ML Security notebook.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ai-ml-security/09-red-teaming-ai-systems-methodology-and-full-engagement), with comments and the latest edits.*

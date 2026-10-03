@@ -1,11 +1,8 @@
 ---
 title: 'Law & Ethics: Authorization, Scope & Rules of Engagement'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Law & Ethics: Authorization, Scope & Rules of Engagement'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/security-foundations/05-law-and-ethics-authorization-scope-and-rules-of
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 180 min
-
 This is Chapter 5 of the Security Foundations series — Notebook 8. Chapter 4 mapped the industry as a
 set of jobs. This chapter covers the thing every one of those jobs is built on: the document, the
 signature and the boundary that make your work legal.
@@ -1703,7 +1698,3 @@ exploits, so the labs look different from other chapters.
    begins resolving to `104.18.32.77`. Explain what has probably happened, what `scope_guard.py` does
    about it, and why the same failure would have been invisible if you had resolved the hostname once at
    scoping time and cached the result.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/security-foundations/05-law-and-ethics-authorization-scope-and-rules-of), with comments and the latest edits.*

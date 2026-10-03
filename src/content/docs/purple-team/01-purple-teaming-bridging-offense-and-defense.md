@@ -1,9 +1,8 @@
 ---
 title: 'Purple Teaming: Bridging Offense & Defense'
-description: A Expert-level Purple Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Purple Team chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Purple Teaming: Bridging Offense & Defense'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/purple-team/01-purple-teaming-bridging-offense-and-defense
 ---
-**Level:** Expert · **Track:** Purple Team · **Read time:** 210 min
-
 This is Chapter 1 of the Purple Team notebook, and it sits deliberately at a hinge point in the whole series. The offensive notebooks taught you how to break in — recon, exploitation, privilege escalation, Active Directory abuse, C2, evasion. The defensive notebooks taught you how to watch, hunt, and respond — SOC operations, detection engineering, DFIR, threat intelligence. Purple teaming is the discipline that puts those two halves in the same room, points them at the same attack, and asks a single blunt question: **when the red side does X, does the blue side actually see it?** Everything in this notebook is built around answering that question honestly, repeatably, and with numbers.
 
 A framing note that governs this notebook exactly as it governed the offensive ones. Everything here assumes **explicit, written authorization** and a lawful, scoped engagement against systems the organization owns or is contractually permitted to test. Purple teaming is offense performed in the open, with the defenders watching and participating, for the sole purpose of making detection and response better. That transparency is the point — there is no "gotcha," no secret. The offensive techniques described are the same ones covered earlier in the series; here they are executed as controlled, announced tests inside a lab or an authorized exercise window, with the explicit goal of improving the blue team's coverage. Running any of this against systems you do not own or lack signed authorization to test is a crime regardless of intent.
@@ -904,7 +901,3 @@ sigma convert -t splunk rule.yml         # -> SPL   (also: sentinel/KQL, elastic
 3. Design a **threat-intelligence-led** micro-emulation plan (8 techniques, as hypotheses in the Part 6 table format) for an adversary that realistically targets a sector of your choice. Justify each technique from the actor's known ATT&CK profile, and specify the exact pass criterion and data source for each.
 4. Run the same CALDERA operation twice, a week apart, after deliberately breaking one log source in between (e.g. stop Sysmon or disable a forwarder). Show how the coverage map flips a technique from green to red, and explain why this "regression test" property is the core argument for continuous purple teaming.
 5. For a technique your lab *does* alert on, measure and improve **detection quality**: generate benign activity that trips the same rule (false positives), then tune the rule to eliminate them without losing the true positive. Report before/after false-positive counts and MTTD, and argue whether the original alert was actually a coverage asset or a liability.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/purple-team/01-purple-teaming-bridging-offense-and-defense), with comments and the latest edits.*

@@ -1,9 +1,8 @@
 ---
 title: Adversary Emulation with Atomic Red Team & CALDERA
-description: A Expert-level Purple Team chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Purple Team chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: 02 · Adversary Emulation with Atomic Red Team & CALDERA
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/purple-team/02-adversary-emulation-with-atomic-red-team-and-caldera
 ---
-**Level:** Expert · **Track:** Purple Team · **Read time:** 220 min
-
 This is Chapter 2 of the Purple Team notebook. The previous chapter defined purple teaming as a transparent, collaborative loop in which offensive operators execute known adversary techniques while defenders watch the telemetry and measure coverage. That chapter answered *why* and *what*. This chapter answers *how you actually fire the techniques*. The engine that drives every purple exercise is **adversary emulation** — the disciplined execution of specific, catalogued adversary behaviours against your own environment — and the two open-source tools that dominate this space are **Atomic Red Team** and **MITRE CALDERA**. By the end of this chapter you will be able to install both, plan an emulation from real threat intelligence, run individual atomic tests and full autonomous operations, validate whether each technique was detected, and feed the results back into your detection engineering.
 
 The same framing that governed the offensive notebooks governs this one. Everything here assumes **explicit, written authorization** and a lawful, scoped engagement against systems the organization owns or is contractually permitted to test. Adversary emulation deliberately executes real attacker behaviour — dumping credentials, creating scheduled tasks, spawning C2 agents — and running any of it outside an authorized lab or exercise window is indistinguishable from a real intrusion to anyone watching, and is a crime regardless of intent. Every technique in this chapter should be run first in a disposable lab you own, with snapshots you can roll back, before it ever touches an authorized production exercise.
@@ -923,7 +920,3 @@ sigma convert -t splunk -p sysmon rule.yml     # convert a rule to Splunk
 - **ATT&CK Navigator:** build a coverage layer from your own emulation results — colour each tested technique by score — and keep it as the living artifact of your program's detection coverage.
 
 In the next chapter we take the output of this emulation work — the gaps and the scorecards — and go deep on **detection validation and closing coverage gaps**: turning "not logged" and "logged-only" results into deployed, tuned, regression-tested detections.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/purple-team/02-adversary-emulation-with-atomic-red-team-and-caldera), with comments and the latest edits.*

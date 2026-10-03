@@ -1,9 +1,8 @@
 ---
 title: The Cyber Kill Chain & MITRE ATT&CK Framework
-description: A Beginner-level Foundations chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: 03 · The Cyber Kill Chain & MITRE ATT&CK Framework
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/security-foundations/03-the-cyber-kill-chain-and-mitre-attandck-framework
 ---
-**Level:** Beginner · **Track:** Foundations · **Read time:** 190 min
-
 This is Chapter 3 of the Security Foundations series — Notebook 8. Chapter 2 taught you to model a system
 you own and enumerate what could go wrong with it. This chapter flips the telescope around and models the
 *attacker*: the ordered sequence of things an adversary must accomplish to get from "has never heard of you"
@@ -1537,7 +1534,3 @@ kill-chain narrative for the executive summary and a technique-level ATT&CK mapp
 backlog, then turn that mapping into a Navigator layer, a gap list, an emulation test, and a tested rule, you
 own this chapter. That pipeline *is* threat-informed defense, and it is the same pipeline whether you are on
 the red side proving the gaps exist or the blue side closing them.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/security-foundations/03-the-cyber-kill-chain-and-mitre-attandck-framework), with comments and the latest edits.*

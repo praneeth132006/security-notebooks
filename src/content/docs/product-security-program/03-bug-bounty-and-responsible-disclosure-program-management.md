@@ -1,11 +1,8 @@
 ---
 title: Bug Bounty & Responsible Disclosure Program Management
-description: >-
-  A Expert-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: 03 · Bug Bounty & Responsible Disclosure Program Management
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-program/03-bug-bounty-and-responsible-disclosure-program-management
 ---
-**Level:** Expert · **Track:** Product Security · **Read time:** 270 min
-
 The previous chapter scaled security *inward* — through champions embedded in the organization's own teams. This chapter scales it *outward*, to a resource no organization can hire: the global community of security researchers who will test your systems, often for reward, and report what they find. A **bug bounty** pays external researchers for valid vulnerabilities; a **vulnerability disclosure program (VDP)** gives them a safe, legal channel to report vulnerabilities they find whether or not you pay. Together they harness thousands of skilled testers with diverse techniques, attacking your real production systems continuously, finding the things your internal testing and automated scanning missed.
 
 The economic and epistemic case is compelling: no internal team, however good, has the diversity of skill, technique, and perspective of the entire external researcher community, and no scheduled pentest provides the *continuous* coverage that an always-open program does. Researchers approach your systems with fresh eyes, unusual specializations, and — crucially — the *attacker's actual mindset*, because they are doing exactly what a real attacker does, minus the malice. The findings they surface are frequently things internal testing structurally could not find: the creative chain, the assumption nobody on the inside questioned, the edge case in a corner of the product the internal team never prioritized. This is genuine leverage — the security team's reach extended to a crowd it does not employ, paid only for results.
@@ -526,7 +521,3 @@ sequence: VDP -> PRIVATE -> PUBLIC | the bounty is the LAST thing, not the first
 - Chapter 1 (the program this capability sits at the top of — the run phase) and Notebook 46 Chapter 9 (the vulnerability management that is the readiness prerequisite).
 - Notebook 43 Chapter 1 and Notebook 42 Chapter 6 for the researcher-ethics and minimal-impact principles the rules of engagement encode.
 - Chapter 4 next (third-party and vendor security — assessing the security of others, the inverse of being assessed), and the disclose.io and platform communities for the living practice of running these programs.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-program/03-bug-bounty-and-responsible-disclosure-program-management), with comments and the latest edits.*

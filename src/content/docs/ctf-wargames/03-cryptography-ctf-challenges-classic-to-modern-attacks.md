@@ -1,9 +1,8 @@
 ---
 title: 'Cryptography CTF Challenges: Classic to Modern Attacks'
-description: A Intermediate-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Intermediate-level Career chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Cryptography CTF Challenges: Classic to Modern Attacks'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ctf-wargames/03-cryptography-ctf-challenges-classic-to-modern-attacks
 ---
-**Level:** Intermediate · **Track:** Career · **Read time:** 245 min
-
 There is one sentence that will save you more time in crypto CTF than any other, and it is worth putting first: **you are not going to break the cipher — you are going to find the mistake in how it was used.** AES is not broken. SHA-256 is not broken. RSA with correct parameters is not broken. Every solvable crypto challenge in every CTF you will ever play exists because the author used a strong primitive incorrectly — a reused nonce, an IV that never changed, an RSA exponent of 3, two keys that shared a prime, a mode that leaks structure. Crypto CTF is **construction review**, and once that reframing lands, the whole category becomes a recognition game with a finite, learnable list of tells.
 
 This is genuinely good news for a beginner, because it means you do not need a mathematics degree to be effective. You need to recognise, from the shape of what you are given, *which* mistake was made — and then apply the known attack for that mistake. The mathematics behind each attack is worth understanding (and this chapter explains the mechanisms rather than handing you black-box scripts), but the winning skill is identification. A challenge that hands you two ciphertexts encrypted with the same keystream is a many-time-pad break; recognising *that this is what you are looking at* is 90% of the solve.
@@ -496,7 +493,3 @@ CyberChef (identify) -> factordb + RsaCtfTool (RSA) -> sympy/gmpy2 (plain math)
 - *A Graduate Course in Applied Cryptography* (Boneh & Shoup) — free, and the reference for why each attack works.
 - Notebook 7 (cryptography fundamentals) for the primitives, and Notebook 40 (quantum security) for the lattice and post-quantum crossover in Part 10.
 - The `RsaCtfTool` source — reading how it decides which attack to try is itself an education in RSA recognition.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ctf-wargames/03-cryptography-ctf-challenges-classic-to-modern-attacks), with comments and the latest edits.*

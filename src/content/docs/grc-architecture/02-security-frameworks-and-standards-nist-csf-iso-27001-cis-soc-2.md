@@ -1,11 +1,8 @@
 ---
 title: 'Security Frameworks & Standards: NIST CSF, ISO 27001, CIS, SOC 2'
-description: >-
-  A Beginner-level GRC & Architecture chapter from Praneeth's cybersecurity
-  notebook.
+description: A Beginner-level GRC & Architecture chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Security Frameworks & Standards: NIST CSF, ISO 27001, CIS, SOC 2'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/grc-architecture/02-security-frameworks-and-standards-nist-csf-iso-27001-cis-soc-2
 ---
-**Level:** Beginner · **Track:** GRC & Architecture · **Read time:** 230 min
-
 This is Chapter 2 of the GRC & Architecture notebook. Chapter 1 built the vocabulary — governance, risk, compliance, controls, control objectives, the policy hierarchy. It repeatedly gestured at "frameworks" as the place where control objectives are organised, without opening any of them. This chapter opens the four that the security industry actually runs on: **NIST Cybersecurity Framework, ISO/IEC 27001, the CIS Critical Security Controls, and SOC 2.**
 
 The goal is not to memorise control catalogues — nobody memorises Annex A, and you should not try. The goal is to understand what each framework *is for*, how it is structured, when you would choose it, and how the same control you configured in the technical notebooks can be mapped once and satisfy several frameworks at once. By the end you will be able to read a "we need to be SOC 2 compliant" request and know exactly what that means, what it does not mean, and how it relates to the ISO 27001 certification the company is also chasing and the NIST CSF the board keeps mentioning.
@@ -746,7 +741,3 @@ Map once, satisfy many. But: mappings approximate; each keeps its own evidence.
 - **TryHackMe / free foundation courses** on ISO 27001, SOC 2, and security frameworks reinforce the structures here; pair them with the crosswalk and profile you built rather than treating them as standalone reading.
 
 The next chapter goes deep on the risk pillar itself — risk assessment, management, and quantification — turning the qualitative register from Chapter 1 into rigorous, comparable, sometimes-monetary analysis using the vocabulary and frameworks this chapter and the last have established.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/grc-architecture/02-security-frameworks-and-standards-nist-csf-iso-27001-cis-soc-2), with comments and the latest edits.*

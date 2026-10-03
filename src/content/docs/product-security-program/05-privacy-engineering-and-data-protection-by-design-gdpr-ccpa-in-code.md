@@ -1,11 +1,8 @@
 ---
 title: 'Privacy Engineering & Data Protection by Design (GDPR, CCPA in Code)'
-description: >-
-  A Expert-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Privacy Engineering & Data Protection by Design (GDPR, CCPA in Code)'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-program/05-privacy-engineering-and-data-protection-by-design-gdpr-ccpa-in-code
 ---
-**Level:** Expert · **Track:** Product Security · **Read time:** 270 min
-
 Notebook 42 Chapter 6 laid out privacy *law* — GDPR, HIPAA, PCI-DSS, the principles, the rights, the obligations. This chapter is about the other half: turning that law into *code*. Because here is the reality that catches organizations by surprise: **privacy is now an engineering discipline, and the hardest parts of complying with privacy law are engineering problems, not legal ones.** A lawyer can tell you that a user has a right to erasure; only an engineer can actually delete that user's data across a primary database, three read replicas, a search index, a data warehouse, eleven months of backups, a recommendation model trained on it, and four third-party services you shared it with. The right is legal; the *implementation* is a distributed-systems problem, and it is a hard one.
 
 This is why privacy engineering has emerged as a discipline and why product security engineers increasingly own it. Privacy and security are different (Notebook 42 Chapter 6 Part 1 — security asks whether data is protected, privacy asks whether the *use* is legitimate), but they share the same tooling, the same data maps, the same access controls, the same deletion mechanics, and the same place in the SDLC — so the security engineer, who already understands where the data lives and how the systems fit together, is the natural owner of the *engineering* of privacy. The lawyer defines the requirement; the privacy engineer builds the system that satisfies it. This chapter is about that building.
@@ -531,7 +526,3 @@ LEAKS: logs (identifiers, subject to erasure) | analytics (pre-consent, shared)
 - The re-identification research (Sweeney; Narayanan & Shmatikov; the Nature Communications 15-attribute paper) and Dwork & Roth on differential privacy.
 - Notebook 39 for the ML privacy attacks (membership inference, extraction) that make models personal-data disclosures.
 - Chapter 6 next (communicating privacy and security risk to leadership) and Chapter 7 (the capstone, where privacy engineering is one thread of a full S-SDLC engagement).
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-program/05-privacy-engineering-and-data-protection-by-design-gdpr-ccpa-in-code), with comments and the latest edits.*

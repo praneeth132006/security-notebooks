@@ -1,11 +1,8 @@
 ---
 title: 'Content & Parameter Discovery: ffuf, feroxbuster, dirsearch, Arjun'
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Content & Parameter Discovery: ffuf, feroxbuster, dirsearch, Arjun'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/05-content-and-parameter-discovery-ffuf-feroxbuster-dirsearch-arjun
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 195 min
-
 This is Chapter 5 of the Web Tooling notebook. The Burp and ZAP chapters gave you
 interactive proxies; the Recon chapter gave you the assets. This chapter zooms into
 one high-yield activity that sits between them: **content and parameter discovery** —
@@ -562,7 +557,3 @@ Practice questions:
    first thing you test on the v1 endpoint and why?
 5. Arjun reports a hidden `url` parameter on an endpoint. Name the two vulnerability
    classes this most suggests and how you'd prove one non-destructively.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-web-tooling/05-content-and-parameter-discovery-ffuf-feroxbuster-dirsearch-arjun), with comments and the latest edits.*

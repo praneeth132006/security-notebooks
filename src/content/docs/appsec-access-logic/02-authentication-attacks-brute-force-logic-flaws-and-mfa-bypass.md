@@ -1,11 +1,8 @@
 ---
 title: 'Authentication Attacks: Brute Force, Logic Flaws & MFA Bypass'
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: '02 · Authentication Attacks: Brute Force, Logic Flaws & MFA Bypass'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-access-logic/02-authentication-attacks-brute-force-logic-flaws-and-mfa-bypass
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 2 of the Access & Logic notebook — Notebook 25. The previous chapter attacked
 *authorization* — what an already-identified user is allowed to do. This chapter attacks the
 layer beneath it: *authentication*, the mechanisms that establish who a user is in the first
@@ -891,7 +886,3 @@ flows, and gate every authenticated session on genuinely-completed MFA. The next
 (Chapter 3) and sessions (Chapter 4) — cover the credentials this authentication process issues, and
 business logic (Chapter 5) the rules it protects; together they form the full picture of "who are you, and
 what may you do."
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-access-logic/02-authentication-attacks-brute-force-logic-flaws-and-mfa-bypass), with comments and the latest edits.*

@@ -1,13 +1,8 @@
 ---
 title: 'Software Composition Analysis: Snyk, Dependabot, SBOM & Supply-Chain Risk'
-description: >-
-  A Advanced-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: >-
-    05 · Software Composition Analysis: Snyk, Dependabot, SBOM & Supply-Chain
-    Risk
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/05-software-composition-analysis-snyk-dependabot-sbom-and-supply-chain-risk
 ---
-**Level:** Advanced · **Track:** Product Security · **Read time:** 255 min
-
 Every chapter so far has been about *your* code — reviewing it, scanning it, testing it. This chapter is about the uncomfortable truth that **most of your application is not your code.** A modern application is a thin shell of first-party logic wrapped around a vast body of third-party dependencies — frameworks, libraries, utilities, and their dependencies, and *their* dependencies, recursively — and by every measure that body is 80–90% of what you ship. You reviewed the 10%. Nobody on your team reviewed the 90%. That 90% is your attack surface too, and securing it is a different discipline from everything in the prior chapters, because you cannot fix code you did not write and often cannot even read.
 
 **Software Composition Analysis (SCA)** is that discipline: identifying every third-party component in your application and matching it against databases of known vulnerabilities, so you learn that the version of a library you depend on has a published, exploitable flaw. It is conceptually simple — an inventory joined against a vulnerability list — and operationally deep, because modern dependency trees are enormous, mostly *transitive* (dependencies of your dependencies, which you never chose and often cannot see), and because "this dependency has a known CVE" is not the same as "you are exploitable," a gap that reachability analysis tries to close.
@@ -519,7 +512,3 @@ SBOM:    Syft | cyclonedx tools
 - Alex Birsan, *Dependency Confusion* (2021) — the original research.
 - The xz-utils backdoor analysis and the SolarWinds SUNBURST technical reports.
 - Notebook 45 Chapter 7 (dependency hygiene per ecosystem), Chapter 6 next (secrets — the credentials that leak *into* your code and your dependencies), and Chapter 8 (container and IaC scanning, which extends SCA to images and infrastructure).
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/secure-code-review-sast-sca/05-software-composition-analysis-snyk-dependabot-sbom-and-supply-chain-risk), with comments and the latest edits.*

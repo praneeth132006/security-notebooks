@@ -1,11 +1,8 @@
 ---
 title: 'GDB, pwndbg & Debugging Native Binaries'
-description: >-
-  A Expert-level Vulnerability Research chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Vulnerability Research chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · GDB, pwndbg & Debugging Native Binaries'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/01-gdb-pwndbg-and-debugging-native-binaries
 ---
-**Level:** Expert · **Track:** Vulnerability Research · **Read time:** 260 min
-
 This is Chapter 1 of the Binary Exploitation notebook. Before you can overflow a buffer, chain a ROP gadget, or groom a heap, you have to be able to *see* — precisely, instruction by instruction — what a native program is doing to its registers, its stack, and its memory. That instrument is the debugger, and for Linux userland binary exploitation the debugger is GDB, dramatically upgraded by the pwndbg extension. This chapter teaches the debugger from zero and builds the mental model of process memory that every later chapter assumes.
 
 Everything downstream — Chapter 2's stack overflows, Chapter 3's return-oriented programming, Chapter 4's ASLR and canary bypasses, Chapter 5's format strings, Chapter 6's heap exploitation — is really "make the program do something the programmer did not intend, and *watch it happen in the debugger* until it works." If you are fluent here, those chapters are mechanics. If you are not, they are magic. So we go slowly and concretely, with real commands and real output.
@@ -910,7 +905,3 @@ Build debugger fluency on ranges that reward it:
 A concrete graduation test: take any easy picoCTF or ROP Emporium binary, and without running it outside GDB, produce (1) its `checksec` strategy read, (2) the exact overflow offset via `cyclic`, (3) a `p $rip`-proven control of the instruction pointer, and (4) a watchpoint that lands on the instruction doing the corruption. If you can do all four without notes, you are ready for Chapter 2.
 
 Do ten challenges where you never leave GDB — no external tools, just the debugger — and the commands here will become muscle memory. That fluency is the prerequisite for every remaining chapter.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/vuln-research-binexp/01-gdb-pwndbg-and-debugging-native-binaries), with comments and the latest edits.*

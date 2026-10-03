@@ -1,11 +1,8 @@
 ---
 title: Linux & Network Log Analysis for Analysts
-description: >-
-  A Intermediate-level SOC & Blue Team chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level SOC & Blue Team chapter from the Security Notebooks.
 sidebar:
   order: 8
-  label: 08 · Linux & Network Log Analysis for Analysts
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/blueteam-soc/08-linux-and-network-log-analysis-for-analysts
 ---
-**Level:** Intermediate · **Track:** SOC & Blue Team · **Read time:** 180 min
-
 This is Chapter 8 of the SOC & Blue Team notebook. Chapter 7 taught you to read Windows events fluently — LogonTypes, 4624/4688/4769, Sysmon, EVTX triage. This chapter does the same job for the other half of the enterprise: **Linux hosts and the network fabric that connects everything**. Over 96% of public-facing web servers, almost every container, and the entire cloud control plane run on Linux, and every packet between every host crosses devices that can log it. When an intrusion touches a web server, a jump box, a Kubernetes node, or an appliance, the evidence lands in Linux logs and network telemetry — not the Windows Security channel. A SOC analyst who can only read Windows is blind to half the kill chain.
 
 This is a source-knowledge chapter, the Linux/network twin of Chapter 7. We go deep on where Linux writes its logs and why (syslog vs. `systemd-journald`), the authentication trail (`auth.log`/`secure`, `sshd`, `sudo`, PAM), the Linux **audit framework** (`auditd`) that gives you process-execution and file-access telemetry equivalent to Sysmon, and the application logs that matter most in a breach (Apache/Nginx access logs, reverse proxies). Then we climb the stack to the **network**: firewall logs, DNS and DHCP, web proxies, flow records (NetFlow/IPFIX), and full packet capture. Throughout, each source is tied to the ATT&CK techniques it reveals and to the SIEM fields (Chapters 4–6) it feeds.
@@ -969,7 +964,3 @@ Train these exact skills on hands-on material:
 5. You suspect an attacker wiped `/var/log/wtmp`. Describe two independent ways to detect the gap without trusting that file.
 
 Work each answer as if writing an IR ticket — claim, evidence (the exact log line/command), and the pivot you'd make next. That habit — assertion tied to a specific artifact — is the core discipline this chapter builds, and it carries straight into Chapter 9's email-and-phishing analysis and Chapter 10's network security monitoring.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/blueteam-soc/08-linux-and-network-log-analysis-for-analysts), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: 'Privacy, Data Protection & Regulations (GDPR, HIPAA, PCI-DSS)'
-description: >-
-  A Advanced-level GRC & Architecture chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level GRC & Architecture chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · Privacy, Data Protection & Regulations (GDPR, HIPAA, PCI-DSS)'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/grc-architecture/06-privacy-data-protection-and-regulations-gdpr-hipaa-pci-dss
 ---
-**Level:** Advanced · **Track:** GRC & Architecture · **Read time:** 260 min
-
 This chapter closes the GRC & Architecture notebook, and it closes it on the topic that most reliably turns a security decision into a legal one. Chapter 1 gave the governance vocabulary, Chapter 2 the frameworks, Chapter 3 the risk mathematics, Chapter 4 the architecture, Chapter 5 the identity layer that architecture depends on. Every one of those chapters was, ultimately, about protecting *something*. This chapter is about the cases where the law tells you what that something is, who it belongs to, what you may do with it, and what happens when you get it wrong.
 
 The framing that matters from the first page: **privacy and security are different disciplines that share tooling**. Security asks whether data is protected from unauthorised parties. Privacy asks whether the *authorised* use is legitimate in the first place. A system can be flawlessly secure — encrypted at rest and in transit, zero-trust access, perfect audit trail — and be a serious privacy violation, because it collects biometric data nobody agreed to hand over and retains it forever. Encryption does not make unlawful processing lawful. That gap is where most engineering teams get into trouble, because they reach for a security control when the actual defect is a *purpose* problem.
@@ -987,7 +982,3 @@ if any box is unticked -> it is PSEUDONYMISED and still in scope
 - NIST Privacy Framework and NIST IR 8053 on de-identification.
 - ICO guidance on anonymisation, legitimate interests, and DSARs — unusually practical for a regulator.
 - Published decisions: the Meta transfer decision (2023), the British Airways penalty notice (2020), and a handful of HHS OCR settlement summaries. Read each asking which control in this chapter was missing.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/grc-architecture/06-privacy-data-protection-and-regulations-gdpr-hipaa-pci-dss), with comments and the latest edits.*

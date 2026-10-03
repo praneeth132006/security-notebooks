@@ -1,11 +1,8 @@
 ---
 title: 'JWT & Token Attacks: Forgery, Algorithm Confusion & Weak Secrets'
-description: >-
-  A Advanced-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · JWT & Token Attacks: Forgery, Algorithm Confusion & Weak Secrets'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-access-logic/03-jwt-and-token-attacks-forgery-algorithm-confusion-and-weak-secrets
 ---
-**Level:** Advanced · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 3 of the Access & Logic notebook — Notebook 25. The previous chapter attacked the
 authentication *process* — logins, resets, MFA. This chapter attacks the *credential the process
 issues*: the token that represents an authenticated session on every subsequent request. In
@@ -892,7 +887,3 @@ python3 jwt_tool.py <token>                            # decode + claims
 7. You capture two RS256 tokens from a target that does **not** expose a JWKS endpoint. Explain how
    you can still attempt an algorithm-confusion attack, what you recover from the two tokens, and
    why "we never publish our public key" fails to prevent the attack.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-access-logic/03-jwt-and-token-attacks-forgery-algorithm-confusion-and-weak-secrets), with comments and the latest edits.*

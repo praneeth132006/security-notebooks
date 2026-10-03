@@ -1,11 +1,8 @@
 ---
 title: 'Risk Assessment, Management & Quantification'
-description: >-
-  A Intermediate-level GRC & Architecture chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level GRC & Architecture chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Risk Assessment, Management & Quantification'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/grc-architecture/03-risk-assessment-management-and-quantification
 ---
-**Level:** Intermediate · **Track:** GRC & Architecture · **Read time:** 235 min
-
 This is Chapter 3 of the GRC & Architecture notebook. Chapter 1 introduced risk vocabulary and built a small qualitative register — likelihood times impact, banded Low to Critical. Chapter 2 placed that register inside frameworks. This chapter goes deep on the risk pillar itself and turns the intuition into method: how to assess risk rigorously, when qualitative scales are enough and when they mislead, and how to put actual numbers — often money — on risk so that "this is our biggest exposure" becomes a defensible, comparable claim rather than a coloured square.
 
 The step up in this chapter is from *describing* risk to *measuring* it. A High/Medium/Low matrix is fine for triage, but it cannot answer "is this $2M risk worth a $300k control?" or "which of these two Highs should we fund first?" — and those are the questions that decide budgets. By the end you will run a qualitative assessment properly (avoiding the biases that make most matrices lie), compute annualised loss expectancy, decompose a risk with the FAIR model, and run a Monte Carlo simulation that produces a loss-exceedance curve — the single most useful artifact in quantitative cyber risk.
@@ -783,7 +778,3 @@ KRI (leading) != KPI (performance) != incident (already realised)
 - **Third-party risk exercise.** Take three vendors you use, gather their public attestations, and rate each by access-value and attestation-credibility, then decide a treatment for the highest residual. This applies the whole chapter to the supply-chain risk that Part 12 and the wider series keep flagging.
 
 The next chapter shifts from measuring risk to *designing against it* — security architecture and zero-trust design, where the controls that lower FAIR's Vulnerability factor and shift the loss-exceedance curve are actually structured into systems.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/grc-architecture/03-risk-assessment-management-and-quantification), with comments and the latest edits.*

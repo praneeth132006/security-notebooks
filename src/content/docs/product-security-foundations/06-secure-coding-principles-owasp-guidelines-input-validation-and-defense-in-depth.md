@@ -2,14 +2,9 @@
 title: >-
   Secure Coding Principles: OWASP Guidelines, Input Validation & Defense in
   Depth
-description: >-
-  A Intermediate-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: >-
-    06 · Secure Coding Principles: OWASP Guidelines, Input Validation & Defense
-    in Depth
 head:
   - tag: link
     attrs:
@@ -17,8 +12,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-foundations/06-secure-coding-principles-owasp-guidelines-input-validation-and-defense-in-depth
 ---
-**Level:** Intermediate · **Track:** Product Security · **Read time:** 235 min
-
 The previous three chapters worked above the code. Threat modeling, design review, and tooling all ask *what could go wrong with this system* before a line is written. This chapter descends into the code itself, where the abstract threats of a data-flow diagram become concrete lines that either hold or fail. It is the hinge of the notebook: everything before it decides *what* to protect, and everything after it — code review, SAST, the whole DevSecOps pipeline of Notebook 46 — is about *checking* that the protection is present. This chapter is about writing the protection in the first place.
 
 The organizing observation is almost embarrassing in its simplicity: **the overwhelming majority of real-world vulnerabilities are a small handful of coding mistakes, made over and over, across every language and framework for thirty years.** SQL injection is not a new idea; it is the same trust mistake as command injection, as XSS, as LDAP injection, as XXE — user input treated as trusted code. The CWE Top 25 that Chapter 8 dissects is not twenty-five unrelated problems; it is a few underlying errors wearing different costumes. Once you see the meta-patterns, secure coding stops being a checklist of a thousand rules and becomes a small number of principles you apply everywhere.
@@ -604,7 +597,3 @@ defense in depth = INDEPENDENT layers that fail differently
 - McGraw, *Software Security: Building Security In* — the bugs-vs-flaws framing of Part 1.
 - Notebooks 21–27 (web attacks) and 36 (binary exploitation) — read as the offensive inverse of everything here.
 - Chapter 7 next, which takes these principles into Python, JavaScript, Java, Go, and C/C++ idioms; and Notebook 46, which is about *checking* that this chapter's controls are present.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-foundations/06-secure-coding-principles-owasp-guidelines-input-validation-and-defense-in-depth), with comments and the latest edits.*

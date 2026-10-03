@@ -1,11 +1,8 @@
 ---
 title: Cross-Site Request Forgery (CSRF) & SameSite Defenses
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: 04 · Cross-Site Request Forgery (CSRF) & SameSite Defenses
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-client-side/04-cross-site-request-forgery-csrf-and-samesite-defenses
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 255 min
-
 This is Chapter 4 of the Client-Side notebook — Notebook 24. Chapters 1–3 were about
 Cross-Site Scripting: injecting and then weaponizing script that runs *inside* the target
 origin. CSRF is the mirror image. Where XSS gets your code running in the victim's origin,
@@ -891,7 +886,3 @@ CSRF rather than a legitimate action or a session-riding XSS.
    that fixes it.
 
 With this chapter and the CORS chapter that follows, the Client-Side notebook covers the full arc of cross-origin trust: XSS runs code in your origin, CSRF forges requests into it, and CORS governs who may read its responses — three complementary controls that must all be correct, since each defends against attacks the others do not.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-client-side/04-cross-site-request-forgery-csrf-and-samesite-defenses), with comments and the latest edits.*

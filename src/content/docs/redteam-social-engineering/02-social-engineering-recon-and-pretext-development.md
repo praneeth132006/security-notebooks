@@ -1,9 +1,8 @@
 ---
 title: Social-Engineering Recon & Pretext Development
-description: A Beginner-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: 02 · Social-Engineering Recon & Pretext Development
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/02-social-engineering-recon-and-pretext-development
 ---
-**Level:** Beginner · **Track:** Red Team · **Read time:** 160 min
-
 This is Chapter 2 of the Social Engineering series. Chapter 1 built the mental model — the human attack surface, the psychology of influence, the kill chain, and the ethics that gate everything. This chapter turns that model into tradecraft.
 
 Two disciplines dominate the early kill chain and decide whether an engagement succeeds:
@@ -920,7 +917,3 @@ pretexts:
 This single file is the bridge to the rest of the notebook. Chapter 3 turns pretext #1 or #3 into a real email; Chapter 4 makes it deliverable; Chapters 5–9 execute. As a defender, reading this dossier tells you *exactly* where to spend your next hardening hour: fix DMARC, add dual-auth in finance, harden help-desk proofing, and roll out FIDO2.
 
 In the next chapter we put recon and pretext to work on the wire: **Phishing Fundamentals — Pretexts, Lures & Payload Delivery.**
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/02-social-engineering-recon-and-pretext-development), with comments and the latest edits.*

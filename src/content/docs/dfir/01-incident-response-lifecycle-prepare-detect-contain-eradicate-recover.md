@@ -1,13 +1,10 @@
 ---
 title: 'Incident Response Lifecycle: Prepare, Detect, Contain, Eradicate, Recover'
 description: >-
-  A Intermediate-level DFIR & Incident Response chapter from Praneeth's
-  cybersecurity notebook.
+  A Intermediate-level DFIR & Incident Response chapter from the Security
+  Notebooks.
 sidebar:
   order: 1
-  label: >-
-    01 · Incident Response Lifecycle: Prepare, Detect, Contain, Eradicate,
-    Recover
 head:
   - tag: link
     attrs:
@@ -15,8 +12,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/dfir/01-incident-response-lifecycle-prepare-detect-contain-eradicate-recover
 ---
-**Level:** Intermediate · **Track:** DFIR & Incident Response · **Read time:** 210 min
-
 This is Chapter 1 of the DFIR notebook. The Detection Engineering notebook ended with you building a lab and proving what your detections actually catch; this notebook starts one second after a detection fires for real and asks the only question that matters at that moment — *what do we do now, in what order, and who decides?*
 
 Incident response is the discipline that turns an alert into a resolved, documented, understood event. It is the least glamorous and most consequential skill in defensive security, because every other control you have ever built exists to feed it. This chapter teaches the lifecycle end to end: the vocabulary and severity model, the two frameworks everyone quotes (and the third nobody reads), the preparation that silently determines your outcome months before the incident, and then each phase — detection and analysis, containment, eradication, recovery, and post-incident activity — with the decisions, commands, and tradeoffs that live inside them.
@@ -1163,7 +1158,3 @@ Repeat-by-same-root-cause rate                <- the honest one
 - Published incident reports and post-mortems from vendors and affected organisations — read them specifically for *what the responders could not do and why*, which is where the preparation lessons live.
 
 **Where this goes next.** Chapter 2 takes the evidence-handling rules that this chapter used informally — hash on acquisition, never work on the original, record custody — and makes them rigorous: evidence types and volatility order, chain of custody, forensic imaging with write blockers, and verification. Everything in the containment and analysis phases depends on getting that right.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/dfir/01-incident-response-lifecycle-prepare-detect-contain-eradicate-recover), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: 'Certification Roadmaps: OSCP, PNPT, CRTP/CRTO, eJPT, Security+, CISSP & More'
-description: A Intermediate-level Career chapter from Praneeth's cybersecurity notebook.
+description: A Intermediate-level Career chapter from the Security Notebooks.
 sidebar:
   order: 2
-  label: >-
-    02 · Certification Roadmaps: OSCP, PNPT, CRTP/CRTO, eJPT, Security+, CISSP &
-    More
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/career-mastery/02-certification-roadmaps-oscp-pnpt-crtp-crto-ejpt-security-cissp-and-more
 ---
-**Level:** Intermediate · **Track:** Career · **Read time:** 225 min
-
 The certification market is designed to separate you from your money, and it is very good at it. There are hundreds of security certificates, they cost anywhere from a hundred to several thousand dollars, new ones launch constantly, and every vendor claims theirs is essential. Into this walks the aspiring security professional, anxious about the entry-level paradox from Chapter 1, and the temptation is to buy certainty: "if I just get enough certs, someone will hire me." This produces the cert collector — a résumé with eight certificates and no job — because certifications, misunderstood, are one of the biggest wastes of time and money in a security career.
 
 Understood correctly, one or two well-chosen certs are among the highest-return investments you can make. The difference is entirely in *which* certs, *why*, and *when*. A certificate is a tool with one main job (getting you past a résumé filter) and a few secondary ones (forcing structured learning, signalling commitment, satisfying a compliance requirement). Matched to your target role from Chapter 1 and your current stage, the right cert opens doors. Bought at random or stacked for their own sake, certs are a costly distraction from the portfolio and experience that actually get you hired (Chapter 3).
@@ -283,7 +278,3 @@ OSCP = earn in the labs; document as you go; enumerate harder when stuck
 **Next in this notebook**
 - Chapter 3 (Portfolio, Home Lab & CTF Plan) — the demonstrated work that certs cannot replace and that beats a third certificate every time.
 - Chapter 4 (Resume & Interviews) — putting the cert on the résumé where it does its one job, and closing the offer.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/career-mastery/02-certification-roadmaps-oscp-pnpt-crtp-crto-ejpt-security-cissp-and-more), with comments and the latest edits.*

@@ -1,11 +1,8 @@
 ---
 title: 'Cloud Security Fundamentals: Shared Responsibility & Attack Surface'
-description: >-
-  A Intermediate-level Cloud Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Cloud Security chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · Cloud Security Fundamentals: Shared Responsibility & Attack Surface'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cloud-security/01-cloud-security-fundamentals-shared-responsibility-and-attack-surface
 ---
-**Level:** Intermediate · **Track:** Cloud Security · **Read time:** 260 min
-
 This is Chapter 1 of the Cloud Security notebook. Everything in the earlier notebooks — Linux, networking, web, Active Directory, binary exploitation — still matters, but the ground has shifted underneath it. Workloads no longer live on servers you can walk up to; they live in someone else's data centre, created and destroyed by API calls, addressed by identity rather than by network location, and billed by the second. That shift changes what the attack surface *is*, where the perimeter *sits*, and who is responsible for securing *what*. This chapter builds the mental model the rest of the notebook depends on.
 
 The single most important idea in cloud security is that **the cloud is API-driven and identity-centric**. In a traditional data centre, compromising a machine usually meant a foothold on that machine. In the cloud, compromising a *credential* — an access key, a token, a role — can mean control over the entire environment, because every action (spin up a server, read a database, delete all backups) is an authenticated API call. The firewall is no longer the perimeter; **identity is the perimeter**. Get this one idea and most of cloud attack and defence follows.
@@ -903,7 +898,3 @@ Cloud security "CTFs" are the vulnerable-lab kind — **flAWS/flAWS2**, **CloudG
 Having the map is the prerequisite for the terrain. With the shared-responsibility model, the control/data-plane split, IMDS, IAM, and the kill chain in hand, the hands-on chapters can move fast — every technique they teach is an instance of a concept established here.
 
 The next chapter goes hands-on with the most-used cloud provider: **AWS security and recon** — enumerating IAM, S3, and EC2; the IMDS/SSRF credential-theft chain in practice; and the CLI/enumeration workflow that turns the concepts here into concrete findings.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cloud-security/01-cloud-security-fundamentals-shared-responsibility-and-attack-surface), with comments and the latest edits.*

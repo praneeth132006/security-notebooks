@@ -1,11 +1,8 @@
 ---
 title: 'Windows Event Logs, Sysmon & Telemetry'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: '07 · Windows Event Logs, Sysmon & Telemetry'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/windows-fundamentals/07-windows-event-logs-sysmon-and-telemetry
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 150 min
-
 This is Chapter 7 of the Windows Internals series. Chapter 6 took you down to the wire — SMB, named pipes, and MS-RPC — and showed how tools like `psexec` and `secretsdump` move across a network. Every one of those actions leaves a trail. This chapter is about that trail: **where Windows records what happened, how complete those records are, how to read them, how to enrich them with Sysmon, and how both attackers and defenders fight over them.**
 
 If you only ever learn one "blue" topic deeply as an offensive operator, make it this one — because you cannot evade what you don't understand, and you cannot investigate what you can't read. Event logs are simultaneously the defender's primary evidence source and the attacker's biggest liability. By the end of this chapter you will know exactly which Event ID fires when someone runs `whoami`, why "clearing the logs" is both possible and self-incriminating, and how a well-tuned Sysmon config turns a quiet box into a glass house.
@@ -902,7 +897,3 @@ Hands-on practice that trains *this* chapter's skills specifically:
 3. An attacker ran `powershell -enc <base64>`. Which single Event ID recovers the *plaintext* command despite the encoding, and which registry key must have been set for it to exist?
 4. Explain why patching `ntdll!EtwEventWrite` in a process does **not** stop Sysmon Event 10 (LSASS ProcessAccess) from firing when that process reads LSASS.
 5. A junior analyst says "the logs are clean, nothing happened." The Security log is 20 MB, circular, and on a busy DC. Give two concrete reasons this conclusion may be wrong and the two configuration changes that fix it.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/windows-fundamentals/07-windows-event-logs-sysmon-and-telemetry), with comments and the latest edits.*

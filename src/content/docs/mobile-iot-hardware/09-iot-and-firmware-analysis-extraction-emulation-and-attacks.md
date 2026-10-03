@@ -1,9 +1,8 @@
 ---
 title: 'IoT & Firmware Analysis: Extraction, Emulation & Attacks'
-description: A Expert-level Mobile & IoT chapter from Praneeth's cybersecurity notebook.
+description: A Expert-level Mobile & IoT chapter from the Security Notebooks.
 sidebar:
   order: 9
-  label: '09 · IoT & Firmware Analysis: Extraction, Emulation & Attacks'
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/09-iot-and-firmware-analysis-extraction-emulation-and-attacks
 ---
-**Level:** Expert · **Track:** Mobile & IoT · **Read time:** 330 min
-
 This is Chapter 9 of the Mobile & IoT notebook. The earlier chapters treated a mobile phone as the untrusted client in front of a backend; here the "client" is a router, an IP camera, a smart plug, a PLC, or a car's telematics unit — a physical device whose software (its *firmware*) you can pull off the flash chip, unpack, read, emulate, and break. The mental model carries over almost unchanged: **the device is just a client, its cloud API is a backend, and the firmware is the source code the vendor never meant you to read.** The difference is that IoT hands you something mobile rarely does — the complete, unobfuscated, root-privileged operating system of the target, often with hardcoded credentials and debug shells left in by an overworked embedded team.
 
 IoT is where a single bug scales to millions of identical devices, where patches arrive late or never, and where the same buffer overflow that CTFs retired from web challenges in 2005 is still a remote root in a 2027-shipped camera. That combination — huge fleets, weak security, and long lifetimes — is why firmware analysis is one of the highest-leverage skills in offensive security, and why the defensive side (secure boot, signed updates, SBOMs, network segmentation) is finally becoming a board-level concern.
@@ -892,7 +889,3 @@ Train each specific skill in this chapter on these targets:
 Work each target with the full lifecycle: **identify -> extract -> triage -> emulate -> exploit -> (defend)**. Once the loop is automatic on a deliberately-vulnerable image, real vendor firmware becomes just a bigger, messier version of the same seven steps.
 
 This chapter completes the offensive core of the Mobile & IoT notebook; the next chapter moves on to the broader hardware and radio attack surface that surrounds these devices.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/mobile-iot-hardware/09-iot-and-firmware-analysis-extraction-emulation-and-attacks), with comments and the latest edits.*

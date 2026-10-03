@@ -1,11 +1,8 @@
 ---
 title: 'Adversarial ML: Evasion, Poisoning & Model Extraction'
-description: >-
-  A Advanced-level AI/ML Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Advanced-level AI/ML Security chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Adversarial ML: Evasion, Poisoning & Model Extraction'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ai-ml-security/03-adversarial-ml-evasion-poisoning-and-model-extraction
 ---
-**Level:** Advanced · **Track:** AI/ML Security · **Read time:** 300 min
-
 This is Chapter 3 of the AI/ML Security notebook. Chapter 2 built the mental
 model: a model is a function fitted to data, the gradient points downhill, and
 the same gradient reversed points toward misclassification. This chapter turns
@@ -920,7 +915,3 @@ Topic-specific, hands-on training.
 attack surface — prompt injection, jailbreaks, and data leakage — where the
 "perturbation" is words, not pixels, and the boundary that breaks is the model's
 alignment rather than its decision surface.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ai-ml-security/03-adversarial-ml-evasion-poisoning-and-model-extraction), with comments and the latest edits.*

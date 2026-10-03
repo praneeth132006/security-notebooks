@@ -1,9 +1,8 @@
 ---
 title: The Human Attack Surface & the Psychology of Influence
-description: A Beginner-level Red Team chapter from Praneeth's cybersecurity notebook.
+description: A Beginner-level Red Team chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: 01 · The Human Attack Surface & the Psychology of Influence
 head:
   - tag: link
     attrs:
@@ -11,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/01-the-human-attack-surface-and-the-psychology-of-influence
 ---
-**Level:** Beginner · **Track:** Red Team · **Read time:** 150 min
-
 This is Chapter 1 of the Social Engineering series — the first notebook in the Red Team track. Every earlier notebook attacked machines: services, protocols, web apps, Active Directory. This one attacks the one component you can never patch — the human being who reads the email, answers the phone, holds the door, and types their password when a convincing voice tells them to. Social engineering is not a fringe trick; it is the *initial access* stage of the overwhelming majority of real intrusions. Verizon's Data Breach Investigations Report has for years put the human element at the root of roughly three quarters of breaches, and phishing plus pretexting dominate that category.
 
 This chapter is deliberately foundational. We will not send a single email yet. Instead we build the model everything else in this notebook sits on: what the *human attack surface* actually is, the cognitive machinery attackers exploit, the principles of influence that make a pretext work, the end-to-end social-engineering kill chain, and — throughout — the ethical and legal guardrails that separate an authorised red-team operator from a criminal. Everything here is framed for authorised, scoped engagements and defensive understanding. You practise on infrastructure and personnel you are contracted to test, or on yourself.
@@ -909,7 +906,3 @@ Cover the answer and recall it aloud. Twenty prompts spanning the whole chapter.
     A: Run the same passive recon against yourself, harden crown-jewel processes (finance/help desk), and add process controls — not just training.
 
 In the next chapter we move from theory to tradecraft: **Social-Engineering Recon & Pretext Development** — turning the OSINT toolchain and the psychology in this chapter into specific, believable pretexts ready to weaponise.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/redteam-social-engineering/01-the-human-attack-surface-and-the-psychology-of-influence), with comments and the latest edits.*

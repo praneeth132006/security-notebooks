@@ -1,11 +1,8 @@
 ---
 title: 'Asymmetric Encryption: RSA, ECC & Diffie-Hellman Key Exchange'
-description: >-
-  A Intermediate-level Cryptography chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Cryptography chapter from the Security Notebooks.
 sidebar:
   order: 3
-  label: '03 · Asymmetric Encryption: RSA, ECC & Diffie-Hellman Key Exchange'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/cryptography/03-asymmetric-encryption-rsa-ecc-and-diffie-hellman-key
 ---
-**Level:** Intermediate · **Track:** Cryptography · **Read time:** 190 min
-
 This is Chapter 3 of the Cryptography series — Notebook 7. Chapter 2 built fast, practical
 confidentiality with symmetric ciphers, but left one problem wide open: **how do two parties who
 have never met agree on a shared secret key over an insecure channel?** If Alice and Bob both need
@@ -896,7 +891,3 @@ openssl pkeyutl -encrypt -pubin -inkey pub.pem -pkeyopt rsa_padding_mode:oaep -i
 If you can name the right primitive for encrypt/agree/sign, size keys across families, and spot
 textbook RSA, a reused ECDSA nonce, an unauthenticated DH, or a leaked private key on sight, you
 own this chapter.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/cryptography/03-asymmetric-encryption-rsa-ecc-and-diffie-hellman-key), with comments and the latest edits.*

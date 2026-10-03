@@ -1,11 +1,8 @@
 ---
 title: 'Group Policy (GPO), Delegation & Administrative Tiering'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 4
-  label: '04 · Group Policy (GPO), Delegation & Administrative Tiering'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/active-directory-fundamentals/04-group-policy-gpo-delegation-and-administrative-tiering
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 165 min
-
 This is Chapter 4 of the Active Directory series — Notebook 4. Chapter 3 defined the
 principals (users, groups, computers) and the SIDs that identify them. This chapter is
 about the machinery that *governs* those principals: **Group Policy**, which pushes
@@ -902,7 +897,3 @@ Practice questions:
    land in that Tier-2 box's memory where they can be stolen; **Authentication Policy
    Silos** (or deny-logon user rights + PAWs) prevent Tier-0 accounts from logging on to
    lower-tier hosts.)
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/active-directory-fundamentals/04-group-policy-gpo-delegation-and-administrative-tiering), with comments and the latest edits.*

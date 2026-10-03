@@ -1,11 +1,8 @@
 ---
 title: 'Bug Bounty Methodology: Recon-to-Report Workflow & Automation'
-description: >-
-  A Expert-level Bug Bounty & AppSec chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Bug Bounty & AppSec chapter from the Security Notebooks.
 sidebar:
   order: 5
-  label: '05 · Bug Bounty Methodology: Recon-to-Report Workflow & Automation'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/appsec-api-bugbounty/05-bug-bounty-methodology-recon-to-report-workflow-and-automation
 ---
-**Level:** Expert · **Track:** Bug Bounty & AppSec · **Read time:** 240 min
-
 This is Chapter 5 of the APIs & CMS notebook. The previous chapters gave you the offensive primitives — REST and GraphQL testing, CMS exploitation, and how to weld small findings into high-impact kill chains. This chapter zooms out and answers a different, more important question for anyone who wants to earn consistently: **what do you actually *do*, in what order, every single day, to turn a scope page into paid reports?**
 
 Most people who "learn bug bounty" learn payloads. They can spot an XSS, they know what an IDOR is, they can read an SSRF write-up and nod along. Then they open a real program with 4,000 in-scope hosts and freeze, because knowing a payload is not the same as having a *method*. A method is what tells you which of those 4,000 hosts to look at first, how to enumerate the ones nobody else has found, how to keep track of what you've tested so you don't waste a week re-checking the same login form, and how to build tooling so that the boring 80% happens automatically and you spend your human hours on the creative 20% that actually pays.
@@ -905,7 +900,3 @@ subfinder -d TARGET -all -silent | anew subs.txt | tee new.txt   # only-new line
 3. Explain why `anew` is the linchpin of continuous monitoring. What property of its output makes the "only act on new things" pipeline possible?
 4. nuclei reports `[env-file] [high] https://staging.acme.com/.env`. What are your exact next three steps, and what must you *not* do?
 5. From the defender's side, which of your recon actions are invisible and which are logged? What single control most reduces the "forgotten asset" risk this chapter exploits?
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/appsec-api-bugbounty/05-bug-bounty-methodology-recon-to-report-workflow-and-automation), with comments and the latest edits.*

@@ -1,13 +1,8 @@
 ---
 title: 'Product Security Capstone: Full S-SDLC Engagement from Design to Deployment'
-description: >-
-  A Expert-level Product Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Expert-level Product Security chapter from the Security Notebooks.
 sidebar:
   order: 7
-  label: >-
-    07 · Product Security Capstone: Full S-SDLC Engagement from Design to
-    Deployment
 head:
   - tag: link
     attrs:
@@ -15,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/product-security-program/07-product-security-capstone-full-s-sdlc-engagement-from-design-to-deployment
 ---
-**Level:** Expert · **Track:** Product Security · **Read time:** 270 min
-
 This is the last chapter of the Product Security Program notebook, the last chapter of the three-notebook product-security arc (45, 46, 47), and the capstone of everything the curriculum has built toward the defensive, build-it-right side of security. It introduces almost no new material — deliberately. Its purpose is *integration*: to take every discipline you have learned separately — threat modeling, secure coding, SAST/DAST/SCA, secrets and container and IaC scanning, manual code review, vulnerability management, bug bounty, third-party assessment, privacy engineering, and leadership communication — and show how they *compose* into a single, coherent, end-to-end engagement that follows one real feature from an idea on a whiteboard to running code in production and beyond.
 
 The reason a capstone is necessary is that the disciplines were taught in isolation and *real work is never isolated*. In the previous chapters you threat-modeled a design in one lab, scanned code in another, reviewed authorization in a third, assessed a vendor in a fourth — each a self-contained skill. But a real product-security engagement is not a sequence of separate skills; it is a *flow* in which each discipline feeds the next: the threat model tells the code reviewer what to look for, the reviewer's findings feed vulnerability management, the vendor assessment shapes what the design can safely use, the privacy analysis drives what data the code may collect, and the whole thing culminates in a risk decision communicated to leadership. **The capstone skill is orchestrating the flow — knowing which discipline applies at which phase, how each feeds the others, and how the whole composes into a defensible product** — and that orchestration is what distinguishes a product security *engineer* from someone who can perform individual security tasks.
@@ -503,7 +496,3 @@ leadership altitude -- no CVEs, no tool names
 - **Notebook 45** (secure design and coding — the requirements, design, and implementation disciplines), **Notebook 46** (the scanning, review, and vulnerability-management disciplines), and **Notebook 47 Chapters 1–6** (the program, champions, bounty, vendor, privacy, and communication disciplines) — this capstone composes them all.
 - **Notebook 42** (GRC and architecture — the risk, compliance, and zero-trust foundations this engagement rests on) and **Notebook 9** (the pentest the verification phase invokes).
 - The secure-development-lifecycle literature (Microsoft SDL, NIST SSDF, OWASP SAMM) and the practice of running real engagements — which, more than any reading, is how the orchestration skill is built.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/product-security-program/07-product-security-capstone-full-s-sdlc-engagement-from-design-to-deployment), with comments and the latest edits.*

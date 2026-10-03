@@ -1,11 +1,8 @@
 ---
 title: 'AI/ML Security Landscape: Why It Matters Now'
-description: >-
-  A Intermediate-level AI/ML Security chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level AI/ML Security chapter from the Security Notebooks.
 sidebar:
   order: 1
-  label: '01 · AI/ML Security Landscape: Why It Matters Now'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/ai-ml-security/01-ai-ml-security-landscape-why-it-matters-now
 ---
-**Level:** Intermediate · **Track:** AI/ML Security · **Read time:** 255 min
-
 This is Chapter 1 of the AI/ML Security notebook. Every prior notebook in
 this series has assumed a world of *deterministic* software — code that does
 exactly what it was written to do, where a bug is a mistake in logic you can
@@ -1371,7 +1366,3 @@ security person needs (how training, embeddings, tokens, and inference actually
 work) so the attacks in Chapter 3 onward land on solid ground. Keep the
 four-asset map and the OWASP LLM Top 10 from this chapter next to you — every
 following chapter is an in-depth pass over one region of the map you just built.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/ai-ml-security/01-ai-ml-security-landscape-why-it-matters-now), with comments and the latest edits.*

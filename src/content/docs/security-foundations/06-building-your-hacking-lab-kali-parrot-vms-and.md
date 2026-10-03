@@ -1,11 +1,8 @@
 ---
 title: 'Building Your Hacking Lab: Kali/Parrot, VMs & Vulnerable Targets'
-description: >-
-  A Intermediate-level Foundations chapter from Praneeth's cybersecurity
-  notebook.
+description: A Intermediate-level Foundations chapter from the Security Notebooks.
 sidebar:
   order: 6
-  label: '06 · Building Your Hacking Lab: Kali/Parrot, VMs & Vulnerable Targets'
 head:
   - tag: link
     attrs:
@@ -13,8 +10,6 @@ head:
       href: >-
         https://ping-praneeth.vercel.app/notebook/security-foundations/06-building-your-hacking-lab-kali-parrot-vms-and
 ---
-**Level:** Intermediate · **Track:** Foundations · **Read time:** 185 min
-
 This is Chapter 6 of the Security Foundations series — Notebook 8. Chapter 5 drew the legal boundary that separates a paid engagement from a crime: authorization, scope, and rules of engagement. This chapter gives you the one place where none of that paperwork is required — a lab you own, on hardware you own, air-gapped from anything you do not. Everything you break here, you are allowed to break.
 
 A lab is not optional. You cannot learn offensive security by reading, any more than you can learn to swim from a textbook. Every technique in every later chapter — port scanning, SQL injection, privilege escalation, Kerberoasting, buffer overflows — assumes you have a machine to attack and a machine to attack *from*, both under your control, both disposable. The single most common reason beginners stall is that they never build this, so every lesson stays abstract. By the end of this chapter you will have a working attacker VM, at least one vulnerable target, an isolated network the two share, and a snapshot workflow that lets you blow the whole thing up and rebuild it in under a minute.
@@ -905,7 +900,3 @@ Build these in order — each reinforces this chapter's skills:
 - **VulnHub** — downloadable boot2root VMs to drop straight onto your host-only network.
 
 **Where to go next:** with a working attacker, isolated targets, and a snapshot workflow, Notebook 9 opens the penetration-testing methodology — the structured lifecycle (recon → scanning → exploitation → post-exploitation → reporting) that turns the ad-hoc scan you just ran into a repeatable engagement. Everything from here on assumes the lab you built in this chapter.
-
----
-
-*Also on [Praneeth's portfolio](https://ping-praneeth.vercel.app/notebook/security-foundations/06-building-your-hacking-lab-kali-parrot-vms-and), with comments and the latest edits.*
